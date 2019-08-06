@@ -1,0 +1,376 @@
+[
+  {
+    "category": "familia",
+    "referenceId": "11HiPzCan-P9vOhGRMq8iia4Gn9_paYta",
+    "sections": {
+      "01": {
+        "description": "Es importante identificar al menor de edad, quien necesita la autorización de sus padres para salir del país sin ellos, o la autorización de sólo uno, en caso de salir con el otro. ",
+        "label": "Datos del menor",
+        "fields": {
+          "01": {
+            "label": "Nombre del menor",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Apellido del menor",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Tipo de documento",
+            "description": "",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker"
+          },
+          "04": {
+            "label": "Numero del documento",
+            "description": "",
+            "idField": "01-04-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "05": {
+            "label": "Numero del pasaporte",
+            "description": "",
+            "idField": "01-05-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "02": {
+        "description": "En este paso deberás indicar la información acerca del viaje a realizar por el menor; lugar de destino, propósito del viaje y fecha de salida y regreso.",
+        "label": "viaje",
+        "fields": {
+          "01": {
+            "label": "Pais de destino",
+            "description": "",
+            "idField": "02-01-country",
+            "contentType": "country",
+            "fieldType": "Dropdown"
+          },
+          "02": {
+            "label": "Ciudad de destino",
+            "description": "",
+            "idField": "02-02-city",
+            "contentType": "city",
+            "fieldType": "Dropdown"
+          },
+          "03": {
+            "label": "Proposito de viaje",
+            "description": "",
+            "idField": "02-03-additional",
+            "contentType": "",
+            "fieldType": "TextField"
+          },
+          "04": {
+            "label": "Fecha de salida",
+            "description": "",
+            "idField": "02-04-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          },
+          "05": {
+            "label": "Fecha de regreso",
+            "description": "",
+            "idField": "02-05-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          }
+        }
+      },
+      "03": {
+        "description": "Cuando el menor de edad realice el viaje en compañía de un adulto, ya sea uno de los padres o un tercero, deberán señalarse sus datos en el documento.",
+        "label": "acompañantes",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "03-01-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Tipo de documento",
+            "description": "",
+            "idField": "03-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Numero del documento",
+            "description": "",
+            "idField": "03-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "04": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Informacion General",
+        "fields": {
+          "01": {
+            "label": "Ciudad",
+            "description": "generalCity",
+            "idField": "04-01-city",
+            "contentType": "city",
+            "fieldType": "Dropdown"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "",
+            "idField": "04-02-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          },
+          "03": {
+            "label": "Nombre de quien emite la autorización",
+            "description": "",
+            "idField": "04-03-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "04": {
+            "label": "Tipo de documento de quien emite la autorización",
+            "description": "",
+            "idField": "04-04-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker"
+          },
+          "05": {
+            "label": "Número de documento de quien emite la autorización",
+            "description": "",
+            "idField": "04-05-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "referenceId": "1-u3ZI1JuvdxFSqBF912x163Xnu1KoYaw",
+    "sections": {
+      "01": {
+        "description": "Descripción: Diligencia los siguientes datos acerca del trabajador, quien presentará la carta de renuncia.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre del trabajador",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Apellido del trabajador",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Tipo de documento",
+            "description": "",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker"
+          },
+          "04": {
+            "label": "Numero del documento",
+            "description": "",
+            "idField": "01-04-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "05": {
+            "label": "Cargo desempeñado",
+            "description": "",
+            "idField": "01-05-additional",
+            "fieldType": "TextField",
+            "contentType": "additional"
+          },
+          "06": {
+            "label": "Fecha de ingreso laboral",
+            "description": "Fecha en la que ingreso a trabajar",
+            "idField": "01-06-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          },
+          "07": {
+            "label": "Numero de contacto",
+            "description": "Numero de celular",
+            "idField": "01-07-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "08": {
+            "label": "Dirección de notificaciones",
+            "description": "Dirección de notificaciones",
+            "idField": "01-08-address",
+            "contentType": "address",
+            "fieldType": "TextInput"
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, es decir, la parte contratante. Quien podrá ser una persona natural o jurídica.",
+        "label": "Tipo de empleador",
+        "fields": {
+          "01": {
+            "label": "Seleccione tipo de empleador",
+            "description": "",
+            "idField": "02-01-typeEmployer",
+            "contentType": "typeEmployer",
+            "fieldType": "Picker"
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia los siguientes datos acerca del empleador, ante quien será presentada la carta de renuncia.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Nombre del empleador",
+            "description": "",
+            "idField": "03-01-name",
+            "contentType": "name",
+            "fieldType": "TextInput",
+            "condition": {
+              "id": "02-01-typeEmployer",
+              "value": "persona natural"
+            }
+          },
+          "02": {
+            "label": "Apellido del empleador",
+            "description": "",
+            "idField": "03-02-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-typeEmployer",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "03-03-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-typeEmployer",
+              "value": "persona juridica"
+            }
+          },
+          "04": {
+            "label": "NIT",
+            "description": "Identificador de persona juridica",
+            "idField": "03-04-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-typeEmployer",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales.",
+        "label": "Tipo de motivo",
+        "01": {
+          "label": "Seleccione tipo de Motivo",
+          "description": "",
+          "idField": "04-01-reasonType",
+          "contentType": "reasonType",
+          "fieldType": "Picker"
+        }
+      },
+      "05": {
+        "description": "En este paso deberá indicarse las razones de la renuncia.",
+        "label": "Motivos",
+        "fields": {
+          "01": {
+            "label": "Profesionales",
+            "description": "",
+            "idField": "05-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-01-reasonType",
+              "value": "profesionales"
+            }
+          },
+          "02": {
+            "label": "Personales",
+            "description": "",
+            "idField": "05-02-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-01-reasonType",
+              "value": "personales"
+            }
+          },
+          "03": {
+            "label": "Ampliar explicación de motivos",
+            "description": "",
+            "idField": "05-03-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "06": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento.",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Irrevocabilidad",
+            "description": "",
+            "idField": "06-01-irrevocability",
+            "contentType": "irrevocability",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Fecha presentación de carta",
+            "description": "Selecciona la fecha en la que presentarás la carta.",
+            "idField": "06-02-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          },
+          "03": {
+            "label": "Fecha entrega de cargo",
+            "description": "Selecciona la fecha en la que entregaras el cargo definitivamente.",
+            "idField": "06-03-date",
+            "contentType": "date",
+            "fieldType": "datePicker"
+          },
+          "04": {
+            "label": "Departamento",
+            "description": "",
+            "idField": "06-04-department",
+            "contentType": "department",
+            "fieldType": "Dropdown"
+          },
+          "05": {
+            "label": "Ciudad",
+            "description": "",
+            "idField": "06-04-city",
+            "contentType": "city",
+            "fieldType": "Dropdown"
+          }
+        }
+      }
+    }
+  }
+]
