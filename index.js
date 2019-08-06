@@ -15,6 +15,10 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+// Get custom module
+const { getData, saveData } = require('./general');
+
+// Get database values
 const templates = require('./database-structure/templates.json');
 const contentTypes = require('./database-structure/contentType.json');
 const forms = require('./database-structure/forms.json');
@@ -32,7 +36,12 @@ function uploadForm(id, index, Forms) {
       .doc(id)
       .set(form)
       .then(() => {
-        console.log('Document successfully writen!');
+        // Save data
+        const formsData = getData('firebase-backup/forms.json');
+        formsData.push(form);
+        saveData('firebase-backup/forms.json', formsData);
+        // Print message
+        console.log('Document successfully written!');
       })
       .catch((error) => {
         console.log('Error writing document: ', error);
@@ -42,14 +51,20 @@ function uploadForm(id, index, Forms) {
 
 function uploadTemplateInfo(Templates = [], Forms = []) {
   Templates.forEach((template, index) => {
+    const add = {
+      ...template,
+      created: firebase.firestore.Timestamp.now(),
+      updated: firebase.firestore.Timestamp.now(),
+    };
     mainQuery
       .collection('Templates')
-      .add({
-        ...template,
-        created: firebase.firestore.Timestamp.now(),
-        updated: firebase.firestore.Timestamp.now(),
-      })
+      .add(add)
       .then(async (docRef) => {
+        // Save data
+        const templatesData = getData('firebase-backup/templates.json');
+        templatesData.push(add);
+        saveData('firebase-backup/templates.json', templatesData);
+        // Print current id and message
         console.log('Document successfully written!');
         console.log(docRef.id);
         await uploadForm(docRef.id, index, Forms);
@@ -69,6 +84,7 @@ function uploadContentTypes(typeFields = {}) {
       .doc(key)
       .set(nestedContent)
       .then(() => {
+        // Print message
         console.log('Document successfully written!');
       })
       .catch((error) => {
@@ -79,3 +95,5 @@ function uploadContentTypes(typeFields = {}) {
 
 uploadTemplateInfo(templates, forms);
 uploadContentTypes(contentTypes);
+
+saveData('firebase-backup/contentType.json', contentTypes);
