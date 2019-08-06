@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=production node index",
+    "lint": "cross-env NODE_ENV=development eslint ./**/*.js",
+    "test": "cross-env NODE_ENV=test echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,10 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "firebase": "^5.11.1"
   }
 }
