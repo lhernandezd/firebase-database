@@ -53,20 +53,20 @@
             "description": "",
             "idField": "02-01-country",
             "contentType": "country",
-            "fieldType": "Dropdown"
+            "fieldType": "TextField"
           },
           "02": {
             "label": "Ciudad de destino",
             "description": "",
             "idField": "02-02-city",
             "contentType": "city",
-            "fieldType": "Dropdown"
+            "fieldType": "TextField"
           },
           "03": {
             "label": "Proposito de viaje",
             "description": "",
             "idField": "02-03-additional",
-            "contentType": "",
+            "contentType": "additional",
             "fieldType": "TextField"
           },
           "04": {
@@ -74,14 +74,14 @@
             "description": "",
             "idField": "02-04-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           },
           "05": {
             "label": "Fecha de regreso",
             "description": "",
             "idField": "02-05-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           }
         }
       },
@@ -121,14 +121,14 @@
             "description": "generalCity",
             "idField": "04-01-city",
             "contentType": "city",
-            "fieldType": "Dropdown"
+            "fieldType": "TextField"
           },
           "02": {
             "label": "Fecha",
             "description": "",
             "idField": "04-02-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           },
           "03": {
             "label": "Nombre de quien emite la autorización",
@@ -203,7 +203,7 @@
             "description": "Fecha en la que ingreso a trabajar",
             "idField": "01-06-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           },
           "07": {
             "label": "Numero de contacto",
@@ -217,7 +217,7 @@
             "description": "Dirección de notificaciones",
             "idField": "01-08-address",
             "contentType": "address",
-            "fieldType": "TextInput"
+            "fieldType": "TextField"
           }
         }
       },
@@ -228,8 +228,8 @@
           "01": {
             "label": "Seleccione tipo de empleador",
             "description": "",
-            "idField": "02-01-typeEmployer",
-            "contentType": "typeEmployer",
+            "idField": "02-01-personType",
+            "contentType": "personType",
             "fieldType": "Picker"
           }
         }
@@ -243,9 +243,9 @@
             "description": "",
             "idField": "03-01-name",
             "contentType": "name",
-            "fieldType": "TextInput",
+            "fieldType": "TextField",
             "condition": {
-              "id": "02-01-typeEmployer",
+              "id": "02-01-personType",
               "value": "persona natural"
             }
           },
@@ -256,7 +256,7 @@
             "contentType": "name",
             "fieldType": "TextField",
             "condition": {
-              "id": "02-01-typeEmployer",
+              "id": "02-01-personType",
               "value": "persona natural"
             }
           },
@@ -267,7 +267,7 @@
             "contentType": "additional",
             "fieldType": "TextField",
             "condition": {
-              "id": "02-01-typeEmployer",
+              "id": "02-01-personType",
               "value": "persona juridica"
             }
           },
@@ -278,7 +278,7 @@
             "contentType": "number",
             "fieldType": "TextField",
             "condition": {
-              "id": "02-01-typeEmployer",
+              "id": "02-01-personType",
               "value": "persona juridica"
             }
           }
@@ -346,28 +346,28 @@
             "description": "Selecciona la fecha en la que presentarás la carta.",
             "idField": "06-02-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           },
           "03": {
             "label": "Fecha entrega de cargo",
             "description": "Selecciona la fecha en la que entregaras el cargo definitivamente.",
             "idField": "06-03-date",
             "contentType": "date",
-            "fieldType": "datePicker"
+            "fieldType": "DatePicker"
           },
           "04": {
             "label": "Departamento",
             "description": "",
             "idField": "06-04-department",
             "contentType": "department",
-            "fieldType": "Dropdown"
+            "fieldType": "TextField"
           },
           "05": {
             "label": "Ciudad",
             "description": "",
             "idField": "06-04-city",
             "contentType": "city",
-            "fieldType": "Dropdown"
+            "fieldType": "TextField"
           }
         }
       }

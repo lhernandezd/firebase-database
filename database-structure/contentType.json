@@ -1,16 +1,4 @@
 {
-  "identificationNumberChild": {
-    "label": "Identification Number",
-    "type": "TextField"
-  },
-  "identificationNumber": {
-    "label": "Identification Number",
-    "type": "TextField"
-  },
-  "passportNumberChild": {
-    "label": "Identification Number",
-    "type": "TextField"
-  },
   "name": {
     "label": "name",
     "type": "TextField"
@@ -19,35 +7,10 @@
     "label": "number",
     "type": "TextField"
   },
-  "identificationNumberCompanion": {
-    "label": "Identification Number",
-    "type": "TextField"
+  "additional": {
+    "label": "additional",
+    "type": "textField"
   },
-  "identificationNumberAuth": {
-    "label": "Identification Number",
-    "type": "TextField"
-  },
-  "firstname": {
-    "label": "firstname",
-    "type": "TextField"
-  },
-  "lastname": {
-    "label": "lastname",
-    "type": "TextField"
-  },
-  "companionFullname": {
-    "label": "fullname",
-    "type": "TextField"
-  },
-  "authFullname": {
-    "label": "fullname",
-    "type": "TextField"
-  },
-  "phoneNumber": {
-    "label": "phoneNumber",
-    "type": "TextField"
-  },
-
   "country": {
     "label": "destinationCountry",
     "type": "TextField"
@@ -60,29 +23,9 @@
     "label": "department",
     "type": "TextField"
   },
-  "generalCity": {
-    "label": "city where document is made",
-    "type": "TextField"
-  },
-  "travelPurpose": {
-    "label": "travelPorpouse",
-    "type": "TextField"
-  },
-  "workPosition": {
-    "label": "workPosition",
-    "type": "TextField"
-  },
   "address": {
     "label": "address",
     "type": "TextField"
-  },
-  "socialReasons": {
-    "label": "socialReasons",
-    "type": "TextField"
-  },
-  "textArea": {
-    "label": "textArea",
-    "type": "textArea"
   },
   "irrevocability": {
     "label": "irrevocability",
@@ -98,26 +41,18 @@
       }
     ]
   },
-  "nit": {
-    "label": "nit",
-    "type": "TextField"
-  },
-  "professionalReasons": {
-    "label": "professionalReasons",
-    "type": "TextField"
-  },
-  "personalReasons": {
-    "label": "personalReasons",
-    "type": "TextField"
-  },
-  "moreReasons": {
-    "label": "moreReasons",
-    "type": "TextField"
-  },
-  "typeIdentificationChild": {
-    "label": "typeIdentificationChild",
+  "documentType": {
+    "label": "documentType",
     "type": "Picker",
     "content": [
+      {
+        "value": "cedula de ciudadania",
+        "label": "Cédula de Ciudadanía"
+      },
+      {
+        "value": "cedula de extranjeria",
+        "label": "Cédula de extranjería"
+      },
       {
         "value": "tarjeta de identidad",
         "label": "Tarjeta de identidad"
@@ -128,50 +63,12 @@
       }
     ]
   },
-  "typeIdentificationCompanion": {
-    "label": "typeIdentification",
-    "type": "Picker",
-    "content": [
-      {
-        "value": "cedula de ciudadania",
-        "label": "Cédula de Ciudadanía"
-      },
-      {
-        "value": "cedula de extranjeria",
-        "label": "Cédula de extranjería"
-      }
-    ]
+  "date": {
+    "label": "date",
+    "type": "DatePicker"
   },
-  "typeIdentificationAuth": {
-    "label": "typeIdentification",
-    "type": "Picker",
-    "content": [
-      {
-        "value": "cedula de ciudadania",
-        "label": "Cédula de Ciudadanía"
-      },
-      {
-        "value": "cedula de extranjeria",
-        "label": "Cédula de extranjería"
-      }
-    ]
-  },
-  "typeIdentification": {
-    "label": "typeIdentification",
-    "type": "Picker",
-    "content": [
-      {
-        "value": "cedula de ciudadania",
-        "label": "Cédula de Ciudadanía"
-      },
-      {
-        "value": "cedula de extranjeria",
-        "label": "Cédula de extranjería"
-      }
-    ]
-  },
-  "typeEmployer": {
-    "label": "typeEmployer",
+  "personType": {
+    "label": "personType",
     "type": "Picker",
     "content": [
       {
@@ -183,36 +80,6 @@
         "label": "Persona jurídica"
       }
     ]
-  },
-  "irrevocabilitypartureDate": {
-    "label": "date",
-    "type": "DatePicker"
-  },
-  "arrivalDate": {
-    "label": "date",
-    "type": "DatePicker"
-  },
-  "typeEmpolyer": {
-    "label": "typeEmployer",
-    "type": "Picker",
-    "content": [
-      {
-        "value": "persona natural",
-        "label": "Persona natural"
-      },
-      {
-        "value": "persona juridica",
-        "label": "Persona jurídica"
-      }
-    ]
-  },
-  "generalDate": {
-    "label": "date",
-    "type": "DatePicker"
-  },
-  "startWorkingDate": {
-    "label": "startWorkingDate",
-    "type": "DatePicker"
   },
   "reasonType": {
     "label": "reasonType",
@@ -227,6 +94,5 @@
         "label": "Personales"
       }
     ]
-  },
-  "hola": {}
+  }
 }
