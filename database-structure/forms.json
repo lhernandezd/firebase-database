@@ -36,7 +36,7 @@
             "fieldType": "TextField"
           },
           "05": {
-            "label": "Numero del pasaporte",
+            "label": "Numero del documento",
             "description": "",
             "idField": "01-05-number",
             "contentType": "number",
