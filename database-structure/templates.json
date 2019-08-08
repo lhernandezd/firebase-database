@@ -2,6 +2,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "familia",
+    "subcategory": "hijos",
     "countPages": 1,
     "downloads": 1,
     "description": "Es un documento a través del cual se autoriza la salida del país de un menor de edad por parte de sus padres o uno de ellos, en caso que no funjan como acompañantes del menor.",
@@ -16,6 +17,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "laboral",
+    "subcategory": "terminacion",
     "countPages": 1,
     "downloads": 1,
     "description": "Es un documento por medio del cual un trabajador puede dar por terminada su relación laboral de manera formal y voluntaria, sin que medie coacción alguna por parte de su empleador o algún tercero.",

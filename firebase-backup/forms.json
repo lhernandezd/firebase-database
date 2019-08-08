@@ -1,6 +1,7 @@
 [
   {
     "category": "familia",
+    "subcategory": "hijos",
     "referenceId": "11HiPzCan-P9vOhGRMq8iia4Gn9_paYta",
     "sections": {
       "01": {
@@ -157,6 +158,7 @@
   },
   {
     "category": "laboral",
+    "subcategory": "terminacion",
     "referenceId": "1-u3ZI1JuvdxFSqBF912x163Xnu1KoYaw",
     "sections": {
       "01": {
