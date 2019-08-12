@@ -335,5 +335,79 @@
         "label":"Cumplir con las medidas preventivas de accidentes de trabajo."
       }
     ]
+  },
+  "obligationReason":{
+    "label":"obligationReason",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"ha inobservado los preceptos del reglamento interno de trabajo",
+        "label":"Ha inobservado los preceptos del reglamento interno de trabajo."
+      },
+      {
+        "value":"ha desacatado las órdenes e instrucciones del empleador",
+        "label":"Ha desacatado las órdenes e instrucciones del empleador."
+      },
+      {
+        "value":"ha violado la obligación de confidencialidad respecto de los asuntos del empleador",
+        "label":"Ha violado la obligación de confidencialidad respecto de los asuntos del empleador."
+      },
+      {
+        "value":"ha hecho uso indebido y maltratado los útiles entregados",
+        "label":"Ha hecho uso indebido y maltratado los útiles entregados."
+      },
+      {
+        "value":"no ha guardado la moral en las relaciones con las demás personas en su sitio de trabajo",
+        "label":"No ha guardado la moral en las relaciones con las demás personas en su sitio de trabajo."
+      },
+      {
+        "value":"no ha comunicado al empleador información necesaria para evitarle perjuicios.",
+        "label":"No ha comunicado al empleador información necesaria para evitarle perjuicios.."
+      },
+      {
+        "value":"no ha prestado su colaboración en una situación de siniestro o riesgo inminente",
+        "label":"No ha prestado su colaboración en una situación de siniestro o riesgo inminente."
+      },
+      {
+        "value":"no ha observado las medidas preventivas higiénicas ordenadas por los médicos",
+        "label":"No ha observado las medidas preventivas higiénicas ordenadas por los médicos."
+      },
+      {
+        "value":"no ha observado las órdenes preventivas de accidentes de trabajo o de enfermedades profesionales",
+        "label":"No ha observado las órdenes preventivas de accidentes de trabajo o de enfermedades profesionales."
+      }
+    ]
+  },
+  "YN":{
+    "label":"YN",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"si",
+        "label":"Si"
+      },
+      {
+        "value":null,
+        "label":"No"
+      }
+    ]
+  },
+  "article":{
+    "label":"article",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"camisas",
+        "label":"Camisas"
+      },
+      {
+        "value":"pantalones",
+        "label":"Pantalones"
+      },
+      {
+        "value":"zapatos",
+        "label":"Zapatos"
+      }
+    ]
   }
 }

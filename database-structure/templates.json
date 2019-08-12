@@ -238,5 +238,35 @@
     "price":4990,
     "rating":0,
     "version":"1.0"
+  },
+  {
+    "availableFormats":"pdf/doc",
+    "category":"laboral",
+    "subcategory":"sanciones",
+    "countPages":1,
+    "downloads":1,
+    "description":"Es una comunicación realizada por el empleador, por medio de la cual conmina a su trabajador a acatar las obligaciones del contrato de trabajo que sostienen, en los casos que áquel observe por parte del trabajador un incumplimeinto de las mismas.",
+    "isActive":true,
+    "name":"Llamado de atencion",
+    "opened":1,
+    "preview":"",
+    "price":4990,
+    "rating":0,
+    "version":"1.0"
+  },
+  {
+    "availableFormats":"pdf/doc",
+    "category":"laboral",
+    "subcategory":"vinculacion",
+    "countPages":1,
+    "downloads":1,
+    "description":"Es un documento por medio del cual el empleador lleva el control del suministro que realiza a sus trabajadores que, por ley, tienen derecho a la dotación, consistente en la entrega de un par de zapatos y un vestido de labor.",
+    "isActive":true,
+    "name":"Entrega de Dotacion",
+    "opened":1,
+    "preview":"",
+    "price":4990,
+    "rating":0,
+    "version":"1.0"
   }
 ]
