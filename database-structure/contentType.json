@@ -94,5 +94,246 @@
         "label": "Personales"
       }
     ]
+  },
+  "numberMonth": {
+    "label": "Number month",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"un mes",
+        "label": "Un mes"
+      },
+      {
+        "value":"varios meses",
+        "label":"Varios meses"
+      }
+    ]
+  },
+  "docType": {
+    "label":"docType",
+    "type":"Picker",
+    "content":[
+      {
+        "value": "sentencia",
+        "label": "Sentencia"
+      },
+      {
+        "value": "acta de conciliacion",
+        "label": "Acta de conciliacion"
+      }
+    ]
+  },
+  "payType": {
+    "label":"payType",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"quincenal",
+        "label":"Quincenal"
+      },
+      {
+        "value":"mensual",
+        "label":"Mensual"
+      }
+    ]
+  },
+  "workType":{
+    "label": "workType",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"medio tiempo",
+        "label":"Medio tiempo"
+      },
+      {
+        "value":"tiempo completo",
+        "label":"Tiempo completo"
+      }
+    ]
+  },
+  "workDay":{
+    "label":"workDay",
+    "type":"Picker",
+    "content":[
+      {
+        "value": "viernes",
+        "label":"Viernes"
+      },
+      {
+        "value":"sabado",
+        "label":"Sabado"
+      }
+    ]
+  },
+  "work":{
+    "label":"work",
+    "type":"Picker",
+    "content":[
+      {
+        "value": "laborando",
+        "label": "Laborando"
+      },
+      {
+        "value":"finalizo la relacion laboral",
+        "label":"Finalizo la relacion laboral"
+      }
+    ]
+  },
+  "typeConc":{
+    "label":"typeConc",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"termino fijo",
+        "label": "Termino fijo"
+      },
+      {
+        "value":"termino indefinido",
+        "label":"Termino indefinido"
+      },
+      {
+        "value":"por obra o labor indeterminada",
+        "label":"Por obra o labor indeterminada"
+      }
+    ]
+  },
+  "legalCause":{
+    "label":"legalCause",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"engañar al empleador presentando certificados falsos",
+        "label": "Engañar al empleador presentando certificados falsos."
+      },
+      {
+        "value":"realizar, en el desarrollo de sus labores, actos violentos e injuriosos en contra del empleador, su familia o compañeros de trabajo",
+        "label":"Realizar, en el desarrollo de sus labores, actos violentos e injuriosos en contra del empleador, su familia o compañeros de trabajo."
+      },
+      {
+        "value":"realizar, por fuera de sus labores, actos violentos e injuriosos en contra del empleador, su familia o compañeros de trabajo",
+        "label":"Realizar, por fuera de sus labores, actos violentos e injuriosos en contra del empleador, su familia o compañeros de trabajo."
+      },
+      {
+        "value":"causar daño intencional a los elementos relacionados con el trabajo y poner en peligro la seguridad de personas y cosas",
+        "label":"Causar daño intencional a los elementos relacionados con el trabajo y poner en peligro la seguridad de personas y cosas."
+      },
+      {
+        "value":"realizar actos inmorales o delictuosos en el desempeño de sus labores",
+        "label":"Realizar actos inmorales o delictuosos en el desempeño de sus labores."
+      },
+      {
+        "value":"incumplir las obligaciones y prohibiciones legales, convencionales y judiciales",
+        "label":"Incumplir las obligaciones y prohibiciones legales, convencionales y judiciales."
+      },
+      {
+        "value":"revelar secretos o asuntos de carácter reservado con perjuicio de la empresa",
+        "label":"Revelar secretos o asuntos de carácter reservado con perjuicio de la empresa."
+      },
+      {
+        "value":"bajo rendimiento laboral",
+        "label":"Bajo rendimiento laboral."
+      },
+      {
+        "value":"no ejecutar injustificadamente las obligaciones convencionales o legales",
+        "label":"No ejecutar injustificadamente las obligaciones convencionales o legales."
+      },
+      {
+        "value":"todo vicio del trabajador que perturbe la disciplina del establecimiento",
+        "label":"Todo vicio del trabajador que perturbe la disciplina del establecimiento."
+      },
+      {
+        "value":"renuencia en adoptar las medidas prescritas para evitar enfermedades o accidentes",
+        "label":"Renuencia en adoptar las medidas prescritas para evitar enfermedades o accidentes."
+      },
+      {
+        "value":"la ineptitud del trabajador para realizar la labor encomendada",
+        "label":"La ineptitud del trabajador para realizar la labor encomendada."
+      },
+      {
+        "value":"el reconocimiento al trabajador de la pensión de la jubilación o invalidez estando al servicio de la empresa",
+        "label":"El reconocimiento al trabajador de la pensión de la jubilación o invalidez estando al servicio de la empresa."
+      }
+    ]
+  },
+  "concepttype":{
+    "label":"conceptType",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"salario",
+        "label": "Salario"
+      },
+      {
+        "value":"prestaciones sociales",
+        "label":"Prestaciones sociales"
+      },
+      {
+        "value":"seguridad social",
+        "label":"Seguridad social"
+      },
+      {
+        "value":"salario y prestaciones sociales",
+        "label": "Salario y prestaciones sociales"
+      },{
+        "value":"salario y seguirdad social",
+        "label": "Salario y seguridad social"
+      },
+      {
+        "value":"prestaciones sociales y seguridad social",
+        "label":"Prestaciones sociales y seguridad social"
+      }
+    ]
+  },
+  "motives":{
+    "label":"motives",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"dar motivos",
+        "label":"Dar motivos"
+      },
+      {
+        "value":"no dar motivos",
+        "label":"No dar motivos"
+      }
+    ]
+  },
+  "obligation":{
+    "label":"obligation",
+    "type":"Picker",
+    "content":[
+      {
+        "value":"realizar personalmente la labor y cumplir las órdenes del empleador",
+        "label":"Realizar personalmente la labor y cumplir las órdenes del empleador."
+      },
+      {
+        "value":"violar la reserva de la información del empleador",
+        "label":"Violar la reserva de la información del empleador."
+      },
+      {
+        "value":"hacer buen uso de los útiles de trabajo",
+        "label":"Hacer buen uso de los útiles de trabajo."
+      },
+      {
+        "value":"guardar la moral en las relaciones de trabajo",
+        "label":"Guardar la moral en las relaciones de trabajo."
+      },
+      {
+        "value":"evitarle daños y perjuicios al patrono",
+        "label":"Evitarle daños y perjuicios al patrono."
+      },
+      {
+        "value":"prestar la colaboración posible en caso de siniestro o de riesgo inminente",
+        "label":"Prestar la colaboración posible en caso de siniestro o de riesgo inminente."
+      },
+      {
+        "value":"cumplir con las medidas higiénicas",
+        "label":"Cumplir con las medidas higiénicas."
+      },
+      {
+        "value":"cumplir con las medidas preventivas de accidentes de trabajo",
+        "label":"Cumplir con las medidas preventivas de accidentes de trabajo."
+      }
+    ]
   }
 }
