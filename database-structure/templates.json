@@ -1,32 +1,163 @@
 [
+  
   {
     "availableFormats": "pdf/doc",
-    "category": "familia",
-    "subcategory": "hijos",
-    "countPages": 1,
+    "category": "comercial",
+    "subcategory": "acuerdosContratos",
+    "countPages":3,
     "downloads": 1,
-    "description": "Es un documento a través del cual se autoriza la salida del país de un menor de edad por parte de sus padres o uno de ellos, en caso que no funjan como acompañantes del menor.",
+    "description": "Este documento permite redactar un contrato en virtud del cual una persona se obliga a prestar un servicio a otra, de manera independiente y a cambio de una remuneración económica, denominada honorarios.",
     "isActive": true,
-    "name": "Permiso para salir del país",
+    "name": "Contrato de Prestación de Servicios",
     "opened": 1,
     "preview": "",
     "price": 4990,
     "rating": 0,
     "version": "1.0"
   },
+
   {
     "availableFormats": "pdf/doc",
-    "category": "laboral",
-    "subcategory": "terminacion",
+    "category": "comercial",
+    "subcategory": "acuerdosContratos",
+    "countPages": 6,
+    "downloads": 1,
+    "description": "Es un contrato que tiene como objetivo obligar legalmente a una o ambas partes contratantes para que mantengan en reserva y confidencialidad determinada información comunicada por una o ambas partes.",
+    "isActive": true,
+    "name": "Acuerdo de Confidencialidad",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "acuerdosContratos",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "Este documento es un contrato por medio del cual una parte otorga a otra el derecho exclusivo o no, de vender una cantidad determinada de bienes o prestar determinados servicios, como contraprestación a una comisión, es decir, un porcentaje sobre el precio obtenido de la venta o la prestación.",
+    "isActive": true,
+    "name": "Acuerdo de Comisiones",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "otrosDocumentos",
     "countPages": 1,
     "downloads": 1,
-    "description": "Es un documento por medio del cual un trabajador puede dar por terminada su relación laboral de manera formal y voluntaria, sin que medie coacción alguna por parte de su empleador o algún tercero.",
+    "description": "A través de este documento una persona solicita, ante su Banco, la cancelación de la cuenta bancaria de la cual es titular por medio del mismo.",
     "isActive": true,
-    "name": "Carta de renuncia voluntaria",
+    "name": "Cancelación de Cuenta Bancaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "otrosDocumentos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "A través de este documento una persona solicita, ante su Banco, la cancelación de la tarjeta de crédito de la cual es titular por medio del mismo.",
+    "isActive": true,
+    "name": "Cancelación de Tarjeta de Crédito",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "otrosDocumentos",
+    "countPages": 4,
+    "downloads": 1,
+    "description": "Este documento es un contrato que permite al propietario de un bien mueble o inmueble realizar la entrega del mismo a otra persona para su utilización a título gratuito, con la obliación de restituirlo en un tiempo determinado.",
+    "isActive": true,
+    "name": "Comodato",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "compraventa",
+    "countPages": 4,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes muebles entre ellas.",
+    "isActive": true,
+    "name": "Permuta de Muebles",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "compraventa",
+    "countPages": 4,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes inmuebles entre ellas.",
+    "isActive": true,
+    "name": "Permuta de Inmuebles",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "otrosDocumentos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento que acredita el pago de un dinero por parte de una persona a otra.",
+    "isActive": true,
+    "name": "Recibo de Pago",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+
+  {
+    "availableFormats": "pdf/doc",
+    "category": "comercial",
+    "subcategory": "otrosDocumentos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual una persona realiza el cobro de una suma de dinero a otra, en virtud de una relación preexistente generadora de una deuda.",
+    "isActive": true,
+    "name": "Cuenta de Cobro",
     "opened": 1,
     "preview": "",
     "price": 4990,
     "rating": 0,
     "version": "1.0"
   }
+
 ]
