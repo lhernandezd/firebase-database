@@ -31,7 +31,7 @@
             }
         },
         "02":{
-          "label": "Apellido del vendedor",
+          "label": "Apellido del contractor",
             "description": "",
             "idField": "02-02-name",
             "contentType": "name",
@@ -75,42 +75,20 @@
           }
         },
         "06":{
-          "label":"Nombre del representante legal",
+          "label":"Ciudad de domicilio",
           "description":"",
-          "idField":"02-06-name",
-          "contentType":"name",
+          "idField":"02-06-city",
+          "contentType":"city",
           "fieldType":"TextField",
           "condition": {
-           "id": "01-01-personType",
-           "value": "persona juridica"
-         }
-         },
-         "07":{
-          "label":"Apellido del representante legal",
-          "description":"",
-          "idField":"02-07-name",
-          "contentType":"name",
-          "fieldType":"TextField",
-          "condition": {
-           "id": "01-01-personType",
-           "value": "persona juridica"
-         }
-         },
-         "08":{
-          "label": "Tipo de documento del representante legal",
-            "description": "",
-            "idField": "02-08-documentType",
-            "contentType": "documentType",
-            "fieldType": "Picker",
-            "condition": {
-              "id": "01-01-personType",
-              "value": "persona juridica"
-            }
+            "id": "01-01-personType",
+            "value": "persona natural"
+          }
         },
-        "09":{
-          "label":"Numero del documento del representante legal",
+        "07":{
+          "label":"NIT del representante legal",
           "description":"",
-          "idField":"02-02-number",
+          "idField":"02-07-number",
           "contentType":"number",
           "fieldType":"TextField",
           "condition": {
@@ -118,32 +96,32 @@
             "value": "persona juridica"
           }
         },
+        "08":{
+          "label":"Nombre del representante legal",
+          "description":"",
+          "idField":"02-08-name",
+          "contentType":"name",
+          "fieldType":"TextField",
+          "condition": {
+           "id": "01-01-personType",
+           "value": "persona juridica"
+         }
+         },
+         "09":{
+          "label":"Apellido del representante legal",
+          "description":"",
+          "idField":"02-09-name",
+          "contentType":"name",
+          "fieldType":"TextField",
+          "condition": {
+           "id": "01-01-personType",
+           "value": "persona juridica"
+         }
+         },
          "10":{
-           "label":"Razón social de la empresa",
-           "description": "",
-           "idField": "02-10-additional",
-           "contentType": "additional",
-           "fieldType": "TextField",
-           "condition": {
-             "id": "01-01-personType",
-             "value": "persona juridica"
-             }
-         },
-         "11":{
-            "label":"Domicilio de la persona jurídica",
-            "description":"",
-            "idField":"02-11-address",
-            "contentType":"address",
-            "fieldType":"TextField",
-            "condition": {
-              "id": "01-01-personType",
-              "value": "persona juridica"
-            }
-         },
-         "12":{
-          "label": "Tipo de documento de la persona jurídica",
+          "label": "Tipo de documento del representante legal",
             "description": "",
-            "idField": "02-12-documentType",
+            "idField": "02-10-documentType",
             "contentType": "documentType",
             "fieldType": "Picker",
             "condition": {
@@ -151,10 +129,65 @@
               "value": "persona juridica"
             }
         },
-        "13":{
+        "11":{
+          "label":"Numero del documento del representante legal",
+          "description":"",
+          "idField":"02-11-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "01-01-personType",
+            "value": "persona juridica"
+          }
+        },
+         "12":{
+           "label":"Razón social de la empresa",
+           "description": "",
+           "idField": "02-12-additional",
+           "contentType": "additional",
+           "fieldType": "TextField",
+           "condition": {
+             "id": "01-01-personType",
+             "value": "persona juridica"
+             }
+         },
+         "13":{
+            "label":"Domicilio de la persona jurídica",
+            "description":"",
+            "idField":"02-13-address",
+            "contentType":"address",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+         },
+         "14":{
+          "label":"Ciudad de domicilio",
+          "description":"",
+          "idField":"02-14-city",
+          "contentType":"city",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "01-01-personType",
+            "value": "persona juridica"
+          }
+        },
+         "15":{
+          "label": "Tipo de documento de la persona jurídica",
+            "description": "",
+            "idField": "02-15-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+        },
+        "16":{
           "label":"Numero del documento de la persona jurídica",
           "description":"",
-          "idField":"02-13-number",
+          "idField":"02-16-number",
           "contentType":"number",
           "fieldType":"TextField",
           "condition": {
