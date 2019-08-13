@@ -247,6 +247,20 @@
       }
     ]
   },
+  "cantidadBienes":{
+    "label": "cantidadBienes",
+    "type": "Picker",
+    "content":[
+      {
+        "value": "unBien",
+        "label": "Un solo bien"
+      },
+      {
+        "value": "varios",
+        "label": "varios bienes"
+      }
+    ]
+  },
   "valueDifference":{
     "label": "valueDifference",
     "type": "Picker",

@@ -197,264 +197,461 @@
         }
       }        
       },
-    "03":{
+      "03":{
+        "description":"Seleccione el tipo de contratista",
+        "label":"Tipo de contratista",
+        "01":{
+          "description":"",
+          "label":"Seleccione el tipo de contratista",
+          "idField":"03-01-personType",
+          "contentType": "personType",
+          "fieldType": "Picker"
+        }
+      },
+      "04":{
+        "description": "Diligencia los siguientes datos acerca del contratista.",
+        "label": "Información del contratista",
+        "fields":{
+        "01":{
+            "label": "Nombre del contratista",
+            "description": "",
+            "idField": "04-01-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona natural"
+            }
+        },
+        "02":{
+          "label": "Apellido del contratista",
+            "description": "",
+            "idField": "04-02-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona natural"
+            }
+        },
+        "03":{
+          "label": "Tipo de documento",
+            "description": "",
+            "idField": "04-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona natural"
+            }
+        },
+        "04":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField": "04-04-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona natural"
+          }
+        },
+        "05":{
+          "label":"Domicilio del contratista",
+          "description":"",
+          "idField":"04-05-address",
+          "contentType":"address",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona natural"
+          }
+        },
+        "06":{
+          "label":"Ciudad de domicilio",
+          "description":"",
+          "idField":"04-06-city",
+          "contentType":"city",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona natural"
+          }
+        },
+        "07":{
+          "label":"NIT del representante legal",
+          "description":"",
+          "idField":"04-07-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona juridica"
+          }
+        },
+        "08":{
+          "label":"Nombre del representante legal",
+          "description":"",
+          "idField":"04-08-name",
+          "contentType":"name",
+          "fieldType":"TextField",
+          "condition": {
+           "id": "03-01-personType",
+           "value": "persona juridica"
+         }
+         },
+         "09":{
+          "label":"Apellido del representante legal",
+          "description":"",
+          "idField":"04-09-name",
+          "contentType":"name",
+          "fieldType":"TextField",
+          "condition": {
+           "id": "03-01-personType",
+           "value": "persona juridica"
+         }
+         },
+         "10":{
+          "label": "Tipo de documento del representante legal",
+            "description": "",
+            "idField": "04-10-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
+        },
+        "11":{
+          "label":"Numero del documento del representante legal",
+          "description":"",
+          "idField":"04-11-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona juridica"
+          }
+        },
+         "12":{
+           "label":"Razón social de la empresa",
+           "description": "",
+           "idField": "04-12-additional",
+           "contentType": "additional",
+           "fieldType": "TextField",
+           "condition": {
+             "id": "03-01-personType",
+             "value": "persona juridica"
+             }
+         },
+         "13":{
+            "label":"Domicilio de la persona jurídica",
+            "description":"",
+            "idField":"04-13-address",
+            "contentType":"address",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
+         },
+         "14":{
+          "label":"Ciudad de domicilio",
+          "description":"",
+          "idField":"04-14-city",
+          "contentType":"city",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona juridica"
+          }
+        },
+         "15":{
+          "label": "Tipo de documento de la persona jurídica",
+            "description": "",
+            "idField": "04-15-documentType",
+            "contentType": "documentType",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
+        },
+        "16":{
+          "label":"Numero del documento de la persona jurídica",
+          "description":"",
+          "idField":"04-16-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition": {
+            "id": "03-01-personType",
+            "value": "persona juridica"
+          }
+        }
+      }        
+      },
+    "05":{
       "label":"Objeto",
       "description":"",
       "01":{
       "label":"Descripción del servicio",
       "description":"Realizar una descripción del servicio a contratar",
-      "idField":"03-01-additional",
+      "idField":"05-01-additional",
       "contentType":"additional",
       "fieldType":"TextField"
       }
     },
-    "04":{
+    "06":{
       "label":"Precio y forma de pago",
       "description":"",
       "fields":{
       "01":{
-        "label":"Valor",
-        "description":"Valor expresado en palabras y valor númerico entre paréntesis",
-        "idField":"04-01-additional",
+        "label":"Valor en Palabras",
+        "description":"Valor expresado en palabras",
+        "idField":"06-01-additional",
         "contentType":"additional",
         "fieldType":"TextField"
       },
       "02":{
+        "label":"Valor Númerico",
+        "description":"Valor númerico entre paréntesis",
+        "idField":"06-02-number",
+        "contentType":"number",
+        "fieldType":"TextField"
+      },
+      "03":{
         "label":"Plazo de pago",
         "description":"Eliga el plazo de pago",
-        "idField":"04-02-plazoType",
+        "idField":"06-03-plazoType",
         "contentType":"plazoType",
         "fieldType":"Picker"
       },
-      "03":{
-        "label":"Numero del día de pago",
-        "description":"",
-        "idField":"04-03-number",
-        "contentType":"number",
-        "fieldType":"TextField",
-        "condition": {
-          "id": "04-02-plazoType",
-          "value": "fechaEspecifica"
-        }
-      },
       "04":{
-        "label":"Mes de pago",
+        "label":"Fecha específica",
         "description":"",
-        "idField":"04-04-number",
-        "contentType":"number",
+        "idField":"06-04-additional",
+        "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "fechaEspecifica"
         }
       },
       "05":{
-        "label":"Año de pago",
+        "label":"Seleccione la fecha de pago único",
         "description":"",
-        "idField":"04-05-number",
-        "contentType":"number",
-        "fieldType":"TextField",
+        "idField":"06-05-date",
+        "contentType":"date",
+        "fieldType":"DatePicker",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "fechaEspecifica"
         }
       },
       "06":{
         "label":"Obligaciones cumplidas",
         "description":"en el momento en que EL(LA) CONTRATISTA cumpla con todas las obligaciones derivadas del presente contrato.",
-        "idField":"04-06-additional",
+        "idField":"06-06-additional",
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "obligacionesCumplidas"
         }
       },
       "07":{
-        "label":"Valor de cada pago",
-        "description":"Valor expresado en palabras y valor númerico entre paréntesis",
-        "idField":"04-07-additional",
+        "label":"En forma específica",
+        "description":"Diligencie los datos a continuación para pagar en una forma específica",
+        "idField":"06-07-additional",
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "formaEspecifica"
         }
       },
       "08":{
-        "label":"Numero del día de pago",
-        "description":"",
-        "idField":"04-08-number",
-        "contentType":"number",
+        "label":"Valor de cada pago en letras",
+        "description":"Valor expresado en palabras",
+        "idField":"06-08-additional",
+        "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "formaEspecifica"
         }
       },
       "09":{
-        "label":"Mes de pago",
-        "description":"",
-        "idField":"04-09-number",
+        "label":"Valor de cada pago numeríco",
+        "description":"Valor númerico entre paréntesis",
+        "idField":"06-09-number",
         "contentType":"number",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "formaEspecifica"
         }
       },
       "10":{
-        "label":"Año de pago",
+        "label":"Seleccione la fecha de pago",
         "description":"",
-        "idField":"04-10-number",
-        "contentType":"number",
-        "fieldType":"TextField",
+        "idField":"06-10-date",
+        "contentType":"date",
+        "fieldType":"DatePicker",
         "condition": {
-          "id": "04-02-plazoType",
+          "id": "06-03-plazoType",
           "value": "formaEspecifica"
         }
       },
       "11":{
         "label":"Forma de pago",
         "description":"Eliga la forma de pago",
-        "idField":"04-11-paymentType",
+        "idField":"06-11-paymentType",
         "contentType":"paymentType",
         "fieldType":"Picker"
       },
       "12":{
-        "label":"Dirección de pago",
+        "label":"Pago en efectivo",
         "description":"",
-        "idField":"04-12-address",
-        "contentType":"address",
+        "idField":"06-12-additional",
+        "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-11-paymentType",
+          "id": "06-11-paymentType",
           "value": "efectivo"
         }
       },
       "13":{
-        "label":"Tipo de cuenta",
+        "label":"Dirección de pago",
         "description":"",
-        "idField":"04-13-accountType",
-        "contentType":"accountType",
-        "fieldType":"Picker",
+        "idField":"06-13-address",
+        "contentType":"address",
+        "fieldType":"TextField",
         "condition": {
-          "id": "04-11-paymentType",
-          "value": "consignacion"
+          "id": "06-11-paymentType",
+          "value": "efectivo"
         }
       },
       "14":{
-        "label":"Numero de cuenta",
-        "description":"",
-        "idField":"04-14-number",
-        "contentType":"number",
+        "label":"Consignación a cuenta",
+        "description":"Diligencie los datos de la cuenta a consignar",
+        "idField":"06-14-additional",
+        "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-11-paymentType",
+          "id": "06-11-paymentType",
           "value": "consignacion"
         }
       },
       "15":{
-        "label":"Nombre del banco",
+        "label":"Tipo de cuenta",
         "description":"",
-        "idField":"04-15-additional",
-        "contentType":"additional",
-        "fieldType":"TextField",
+        "idField":"06-15-accountType",
+        "contentType":"accountType",
+        "fieldType":"Picker",
         "condition": {
-          "id": "04-11-paymentType",
+          "id": "06-13-paymentType",
           "value": "consignacion"
         }
       },
       "16":{
+        "label":"Numero de cuenta",
+        "description":"",
+        "idField":"06-16-number",
+        "contentType":"number",
+        "fieldType":"TextField",
+        "condition": {
+          "id": "06-13-paymentType",
+          "value": "consignacion"
+        }
+      },
+      "17":{
+        "label":"Nombre del banco",
+        "description":"",
+        "idField":"06-17-additional",
+        "contentType":"additional",
+        "fieldType":"TextField",
+        "condition": {
+          "id": "06-13-paymentType",
+          "value": "consignacion"
+        }
+      },
+      "18":{
         "label":"Nombre del titular de la cuenta",
         "description":"",
-        "idField":"04-16-name",
+        "idField":"06-18-name",
         "contentType":"name",
         "fieldType":"TextField",
         "condition": {
-          "id": "04-11-paymentType",
+          "id": "06-13-paymentType",
           "value": "consignacion"
         }
       }
     }
     },
-    "05":{
+    "07":{
       "label":"Datos de celebración del contrato",
       "description":"",
       "fields":{
       "01":{
         "label":"Ciudad",
         "description":"Lugar donde se firma del contrato",
-        "idField":"05-01-city",
+        "idField":"07-01-city",
         "contentType":"city",
         "fieldType":"TextField"
       },
       "02":{
-        "label":"Día de firma",
+        "label":"Fecha de firma",
         "description":"",
-        "idField":"05-02-number",
-        "contentType":"number",
-        "fieldType":"TextField"
-      },
-      "03":{
-        "label":"Mes de firma",
-        "description":"",
-        "idField":"05-03-number",
-        "contentType":"number",
-        "fieldType":"TextField"
-      },
-      "04":{
-        "label":"Año de firma",
-        "description":"",
-        "idField":"05-02-number",
-        "contentType":"number",
-        "fieldType":"TextField"
+        "idField":"07-02-date",
+        "contentType":"date",
+        "fieldType":"DatePicker"
       },
       "05":{
         "label":"Numero de ejemplares que se firman",
         "description":"",
-        "idField":"05-05-number",
+        "idField":"07-05-number",
         "contentType":"number",
         "fieldType":"TextField"
       }
     }
     },
-    "06":{
+    "08":{
       "label":"Firmas",
       "description":"Una por cada parte que suscriba el contrato",
       "fields":{
       "01":{
         "label":"Firma",
         "description":"",
-        "idField":"06-01-additional",
+        "idField":"08-01-additional",
         "contentType":"additional",
         "fieldType":"TextField"
       },
       "02":{
         "label":"Nombre de quien firma",
         "description":"",
-        "idField":"06-02-name",
+        "idField":"08-02-name",
         "contentType":"name",
         "fieldType":"TextField"
       },
       "03":{
         "label":"Tipo de documento",
         "description":"",
-        "idField":"06-03-documentType",
+        "idField":"08-03-documentType",
         "contentType":"documentType",
         "fieldType":"Picker"
       },
       "04":{
         "label":"Numero del documento",
         "description":"",
-        "idField":"06-04-number",
+        "idField":"08-04-number",
         "contentType":"number",
         "fieldType":"TextField"
       },
       "05":{
         "label":"Representante Legal",
         "description":"",
-        "idField":"06-05-additional",
+        "idField":"08-05-additional",
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
@@ -464,6 +661,51 @@
       }
       
     }
+    },
+    "09":{
+      "label":"Firmas",
+      "description":"Una por cada parte que suscriba el contrato",
+      "fields":{
+      "01":{
+        "label":"Firma",
+        "description":"",
+        "idField":"09-01-additional",
+        "contentType":"additional",
+        "fieldType":"TextField"
+      },
+      "02":{
+        "label":"Nombre de quien firma",
+        "description":"",
+        "idField":"09-02-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+      },
+      "03":{
+        "label":"Tipo de documento",
+        "description":"",
+        "idField":"09-03-documentType",
+        "contentType":"documentType",
+        "fieldType":"Picker"
+      },
+      "04":{
+        "label":"Numero del documento",
+        "description":"",
+        "idField":"09-04-number",
+        "contentType":"number",
+        "fieldType":"TextField"
+      },
+      "05":{
+        "label":"Representante Legal",
+        "description":"",
+        "idField":"09-05-additional",
+        "contentType":"additional",
+        "fieldType":"TextField",
+        "condition": {
+          "id": "03-01-personType",
+          "value": "persona juridica"
+        }
+      }
+    }
     }
     }
   },
@@ -472,10 +714,10 @@
   {
     "category": "comercial",
     "subcategory": "acuerdosContratos",
-    "referenceId": "1_5GTF25uSZpsjW1BOVtrsFJGY_GbKOPL",
+    "referenceId": "1GpdUjOKhVOis3jV2I5SaGfH6pzJY1FoU",
     "sections":{
       "01":{
-        "label":"Partes",
+        "label":"Parte 1",
         "description":"Debes diligenciar los datos de las personas, ya sean naturales o jurídicas, que suscribirán el acuerdo de confidencialidad.",
         "01":{
             "description":"",
@@ -483,7 +725,8 @@
             "idField":"01-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
-        },
+        }
+      },
         "02":{
           "label":"Datos de las Personas",
           "description":"",
@@ -634,103 +877,295 @@
         }
         },
         "03":{
+          "label":"Parte 2",
+          "description":"Debes diligenciar los datos de las personas, ya sean naturales o jurídicas, que suscribirán el acuerdo de confidencialidad.",
+          "01":{
+              "description":"",
+              "label":"Seleccione el tipo de persona",
+              "idField":"03-01-personType",
+              "contentType": "personType",
+              "fieldType": "Picker"
+          }
+        },
+          "04":{
+            "label":"Datos de las Personas",
+            "description":"",
+            "fields":{
+            "01":{
+              "label": "Nombre de la persona",
+                "description": "",
+                "idField": "04-01-name",
+                "contentType": "name",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona natural"
+                }
+            },
+            "02":{
+              "label": "Apellido de la persona",
+                "description": "",
+                "idField": "04-02-name",
+                "contentType": "name",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona natural"
+                }
+            },
+            "03":{
+              "label": "Tipo de documento",
+                "description": "",
+                "idField": "04-03-documentType",
+                "contentType": "documentType",
+                "fieldType": "Picker",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona natural"
+                }
+            },
+            "04":{
+              "label":"Numero del documento",
+              "description":"",
+              "idField": "04-04-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona natural"
+              }
+            },
+            "05": {
+              "label": "Pais",
+              "description": "",
+              "idField": "04-05-country",
+              "contentType": "country",
+              "fieldType": "TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona natural"
+              }
+            },
+            "06": {
+              "label": "Ciudad",
+              "description": "",
+              "idField": "04-06-city",
+              "contentType": "city",
+              "fieldType": "TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona natural"
+              }
+            },
+            "07":{
+              "label":"Razón social de la empresa",
+              "description": "",
+              "idField": "04-07-additional",
+              "contentType": "additional",
+              "fieldType": "TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona juridica"
+                }
+            },
+            "08":{
+              "label":"NIT",
+              "description": "Identificador de persona juridica",
+              "idField": "04-08-number",
+              "contentType": "number",
+              "fieldType": "TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona juridica"
+                }
+            },
+            "09":{
+              "label": "Nombre del representante legal",
+                "description": "",
+                "idField": "04-09-name",
+                "contentType": "name",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona juridica"
+                }
+            },
+            "10":{
+              "label": "Apellido del representante legal",
+                "description": "",
+                "idField": "04-10-name",
+                "contentType": "name",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona juridica"
+                }
+            },
+            "11":{
+              "label": "Tipo de documento de la persona jurídica",
+                "description": "",
+                "idField": "04-11-documentType",
+                "contentType": "documentType",
+                "fieldType": "Picker",
+                "condition": {
+                  "id": "03-01-personType",
+                  "value": "persona juridica"
+                }
+            },
+            "12":{
+              "label":"Numero del documento de la persona jurídica",
+              "description":"",
+              "idField":"04-12-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona juridica"
+              }
+            },
+            "13":{
+              "label":"Ciudad de domicilio",
+              "description":"",
+              "idField":"04-13-city",
+              "contentType":"city",
+              "fieldType":"TextField",
+              "condition": {
+                "id": "03-01-personType",
+                "value": "persona juridica"
+              }
+            }    
+          }
+          },
+        "05":{
           "label":"Duración",
           "description":"Es indispensable que las partes establezcan el término de duración del contrato, asimismo un plazo adicional en el cual se mantendrá en reserva la información compartida luego de finalizado el contrato.",
           "fields":{
             "01":{
               "label":"Término de duración",
               "description":" Señala el término de duración del contrato.",
-              "idField":"03-01-additional",
+              "idField":"05-01-additional",
               "contentType":"additional",
               "fieldType":"TextField"
             },
             "02":{
               "label":"Plazo adicional",
               "description":" Señala un plazo adicional en el cual se mantendrá en reserva la información compartida luego de finalizado el contrato.",
-              "idField":"03-02-additional",
+              "idField":"05-02-additional",
               "contentType":"additional",
               "fieldType":"TextField"
             }
           }
         },
-        "04":{
+        "06":{
           "label":"Cláusula Penal",
           "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula a favor de la(s) otra(s).",
           "fields":{
             "01":{
               "label":"Valor",
-              "description":"Digíte el valor de la clausula",
-              "idField":"04-01-number",
+              "description":"Digíte el valor de la clausula en letras",
+              "idField":"06-01-additional",
+              "contentType":"additional",
+              "fieldType":"TextField"
+            },
+            "02":{
+              "label":"Valor",
+              "description":"Digíte el valor de la clausula en números",
+              "idField":"06-02-number",
               "contentType":"number",
               "fieldType":"TextField"
             }
           }
         },
-        "05":{
+        "07":{
           "label":"Resolución de Controversias",
           "description":" Las partes deberán establecer el medio a través del cual serán resueltas las diferencias o controversias derivadas del acuerdo o relacionadas con el mismo.",
           "fields":{
             "01":{
               "label":"Escoga una forma de resolución",
               "description":"",
-              "idField":"05-01-resolutionType",
+              "idField":"07-01-resolutionType",
               "contentType":"resolutionType",
               "fieldType":"Picker"
             },
             "02":{
-              "label":"Composición del tribunal",
+              "label":"Jurisdicción ordinaria",
               "description":"",
-              "idField":"05-02-tribunalNumber",
-              "contentType":"tribunalNumber",
-              "fieldType":"Picker",
+              "idField":"07-02-additional",
+              "contentType":"additional",
+              "fieldType":"TextField",
               "condition": {
-                "id": "05-01-personType",
-                "value": "tribunal"
+                "id": "07-01-personType",
+                "value": "ordinaria"
               }
             },
             "03":{
+              "label":"Composición del tribunal",
+              "description":"",
+              "idField":"07-03-tribunalNumber",
+              "contentType":"tribunalNumber",
+              "fieldType":"Picker",
+              "condition": {
+                "id": "07-01-personType",
+                "value": "tribunal"
+              }
+            },
+            "04":{
               "label":"Ciudad del tribunal",
               "description":"Seleccione la ciudad donde se conformará el tribunal",
-              "idField":"05-03-city",
+              "idField":"07-04-city",
               "contentType":"city",
               "fieldType":"TextField",
               "condition": {
-                "id": "05-01-personType",
+                "id": "07-01-personType",
                 "value": "tribunal"
               }
            }
           }
         },
-        "06":{
+        "08":{
           "label":"Información General",
           "description":"Diligencia la siguiente información clave para la generación de tu documento",
           "fields":{
             "01":{
-              "label":"Fecha",
-              "description":"Señale la fecha de celebración del documento",
-              "idField":"06-01-date",
-              "contentType":"date",
-              "fieldType":"DatePicker"
-            },
-            "02":{
               "label":"Ciudad",
               "description":"Digite la ciudad de celebración del documento",
-              "idField":"06-02-city",
+              "idField":"08-01-city",
               "contentType":"city",
               "fieldType":"TextField"
             },
+            "02":{
+              "label":"Numero del día",
+              "description":"",
+              "idField":"08-02-number",
+              "contentType":"number",
+              "fieldType":"TextField"
+            },
             "03":{
+              "label":"Mes",
+              "description":"",
+              "idField":"08-03-number",
+              "contentType":"number",
+              "fieldType":"TextField"
+            },
+            "04":{
+              "label":"Año",
+              "description":"",
+              "idField":"08-04-number",
+              "contentType":"number",
+              "fieldType":"TextField"
+            },
+            "05":{
               "label":"Número de ejemplares",
               "description":"Digite el número de ejemplares que serán firmados",
-              "idField":"06-03-number",
+              "idField":"08-05-number",
               "contentType":"number",
               "fieldType":"TextField"
             }
           }
         }
-      }
     }
   },
+
 
   {
     "category": "comercial",
@@ -878,6 +1313,28 @@
             "description":"",
             "idField":"02-12-number",
             "contentType":"number",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "13":{
+            "label":"Ciudad PJ",
+            "description":"",
+            "idField":"02-13-city",
+            "contentType":"city",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "14":{
+            "label":"País PJ",
+            "description":"",
+            "idField":"02-14-country",
+            "contentType":"country",
             "fieldType":"TextField",
             "condition": {
               "id": "01-01-personType",
@@ -1032,6 +1489,28 @@
               "id": "03-01-personType",
               "value": "persona juridica"
             }
+          },
+          "13":{
+            "label":"Ciudad PJ",
+            "description":"",
+            "idField":"04-13-city",
+            "contentType":"city",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "14":{
+            "label":"País PJ",
+            "description":"",
+            "idField":"04-14-country",
+            "contentType":"country",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
           }
         }
       },
@@ -1075,14 +1554,30 @@
       },
       "07":{
         "label":"Comisiones",
-        "description":"Señala el momento en que serán pagadas las comisiones.",
+        "description":"",
+        "fields":{
         "01":{
-          "label":"Seleccione el tiempode pago",
-          "description":"",
-          "idField":"07-01-payTime",
+          "label":"Porcentaje en Letras",
+          "description":"Señala el porcentaje que le corresponderá al comisionista sobre el total de las ganancias",
+          "idField":"07-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Porcentaje en Números",
+          "description":"Señala el porcentaje que le corresponderá al comisionista sobre el total de las ganancias",
+          "idField":"07-01-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Seleccione el tiempo de pago",
+          "description":"Señala el momento en que serán pagadas las comisiones.",
+          "idField":"07-03-payTime",
           "contentType":"payTime",
           "fieldType":"Picker"
         }
+      }
       },
       "08":{
         "label":"Información General",
@@ -1230,7 +1725,7 @@
           "10":{
             "label":"Numero del documento de la persona jurídica",
             "description":"",
-            "idField":"02-1-number",
+            "idField":"02-10-number",
             "contentType":"number",
             "fieldType":"TextField",
             "condition": {
@@ -1337,7 +1832,7 @@
           "01":{
             "label":"Nombre del banco",
             "description":"",
-            "idField":"02-10-additional",
+            "idField":"02-01-additional",
             "contentType":"additional",
             "fieldType":"TextField"
           },
@@ -1514,19 +2009,19 @@
         }
       },
       "03":{
-        "label":"Tipo de Comodante",
-        "description":"Selecciona el tipo de comodante, es decir quien entrega el bien al comodatario para su uso y posterior devolución. Podrá ser una persona natural o jurídica.",
+        "label":"Tipo de Comodatario",
+        "description":"Selecciona el tipo de comodatario, es decir quien recibe el bien del comodante, comprometido al uso exclusivo pactado en el contrato y a su devolución. Podrá ser una persona natural o jurídica.",
         "01":{
             "description":"",
-            "label":"Seleccione el tipo de comodante",
+            "label":"Seleccione el tipo de comodatario",
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
         }
       },
       "04":{
-        "label":"Infomación del comodante",
-        "description":"Diligencia la siguiente información acerca del comodante.",
+        "label":"Infomación del comodatario",
+        "description":"Diligencia la siguiente información acerca del comodatario.",
         "fields":{
           "01":{
             "label": "Nombre de la persona",
@@ -1698,8 +2193,8 @@
           "06":{
             "label":"Notaría",
             "description":"Señala la notaría en la cual fue otorgada la escritura pública",
-            "idField":"05-06-additional",
-            "contentType":"additional",
+            "idField":"05-06-number",
+            "contentType":"number",
             "fieldType":"TextField",
             "condition": {
               "id": "05-02-goodType",
@@ -1749,6 +2244,28 @@
               "id": "05-02-goodType",
               "value": "inmueble"
             }
+          },
+          "11":{
+            "label":"Mueble",
+            "description":"",
+            "idField":"05-11-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-02-goodType",
+              "value": "mueble"
+            }
+          },
+          "12":{
+            "label":"Inmueble",
+            "description":"Señala el número de matrícula inmobiliaria del inmueble.",
+            "idField":"05-12-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-02-goodType",
+              "value": "inmueble"
+            }
           }
         }
       },
@@ -1772,6 +2289,17 @@
             "condition": {
               "id": "06-01,-tiempoEntrga",
               "value": "determinada"
+            }
+          },
+          "03":{
+            "label":"Entregado en el acto",
+            "description":"",
+            "idField":"06-03-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "06-01,-tiempoEntrga",
+              "value": "celebracion"
             }
           }
         }
@@ -1803,8 +2331,15 @@
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento por parte del comodatario en alguna de sus obligaciones, quedando obligado a cancelar dicho valor a favor del comodante.",
         "01":{
           "label":"Valor",
-          "description":"Digíte el valor de la clausula",
-          "idField":"09-01-number",
+          "description":"Digíte el valor de la clausula en letras",
+          "idField":"09-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Valor",
+          "description":"Digíte el valor de la clausula en números",
+          "idField":"09-02-number",
           "contentType":"number",
           "fieldType":"TextField"
         }
@@ -1814,23 +2349,44 @@
         "description":"Diligencia la siguiente información clave para la generación de tu documento",
         "fields":{
           "01":{
-            "label":"Fecha",
-            "description":"Señala la fecha en que se firmará el documento",
-            "idField":"10-01-date",
-            "contentType":"date",
-            "fieldType":"DatePicker"
+            "label":"Dia",
+            "description":"",
+            "idField":"10-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"
           },
           "02":{
-            "label":"Ciudad",
-            "description":"Señala la ciudad en que se firmará el documento",
-            "idField":"10-02-city",
-            "contentType":"city",
+            "label":"Mes",
+            "description":"",
+            "idField":"10-02-number",
+            "contentType":"number",
             "fieldType":"TextField"
           },
           "03":{
-            "label":"Número de ejemplares",
-            "description":"Digite el número de ejemplares que serán firmados",
+            "label":"Año",
+            "description":"",
             "idField":"10-03-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Ciudad",
+            "description":"Señala la ciudad en que se firmará el documento",
+            "idField":"10-04-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Número de ejemplares en letra",
+            "description":"Escriba el número de ejemplares que serán firmados",
+            "idField":"10-05-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Número de ejemplares en número",
+            "description":"Digite el número de ejemplares que serán firmados",
+            "idField":"10-06-number",
             "contentType":"number",
             "fieldType":"TextField"
           }
@@ -1973,7 +2529,6 @@
         }
       },
       "03":{
-        "01":{
           "label":"Segundo Permutante",
           "description":"Selecciona el tipo de permutante. Quien podrá ser una persona natural o jurídica",
           "01":{
@@ -1982,8 +2537,7 @@
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
-        }
-        }
+          }
       },
       "04":{
         "label":"Segundo Permutante",
@@ -2106,30 +2660,59 @@
         "description":"Bien(es) del primer permutante",
         "fields":{
           "01":{
-            "label":"Bien",
+            "label":"Uno o más bienes",
             "description":"",
-            "idField":"05-01-additional",
-            "contentType":"additional",
-            "fieldType":"TextField"
+            "idField":"05-01-cantidadBienes",
+            "contentType":"cantidadBienes",
+            "fieldType":"Picker"
           },
           "02":{
-            "label":"Cantidad",
+            "label":"Un Bien",
             "description":"",
-            "idField":"05-02-number",
-            "contentType":"number",
-            "fieldType":"TextField"
+            "idField":"05-02-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-01-cantidadBienes",
+              "value": "unBien"
+            }
           },
-          "03":{
-            "label":"Descripción",
+          "03:":{
+            "label":"Varios bienes",
             "description":"",
             "idField":"05-03-additional",
             "contentType":"additional",
-            "fieldType":"TextField"
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-01-cantidadBienes",
+              "value": "varios"
+            }
           },
           "04":{
-            "label":"Forma de adquisición",
+            "label":"Bien",
             "description":"",
             "idField":"05-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Cantidad",
+            "description":"",
+            "idField":"05-05-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Descripción",
+            "description":"",
+            "idField":"05-06-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "07":{
+            "label":"Forma de adquisición",
+            "description":"",
+            "idField":"05-07-additional",
             "contentType":"additional",
             "fieldType":"TextField"
           }
@@ -2140,30 +2723,59 @@
         "description":"Bien(es) del segundo permutante",
         "fields":{
           "01":{
-            "label":"Bien",
+            "label":"Uno o más bienes",
             "description":"",
-            "idField":"06-01-additional",
-            "contentType":"additional",
-            "fieldType":"TextField"
+            "idField":"06-01-cantidadBienes",
+            "contentType":"cantidadBienes",
+            "fieldType":"Picker"
           },
           "02":{
-            "label":"Cantidad",
+            "label":"Un Bien",
             "description":"",
-            "idField":"06-02-number",
-            "contentType":"number",
-            "fieldType":"TextField"
+            "idField":"06-02-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "06-01-cantidadBienes",
+              "value": "unBien"
+            }
           },
-          "03":{
-            "label":"Descripción",
+          "03:":{
+            "label":"Varios bienes",
             "description":"",
             "idField":"06-03-additional",
             "contentType":"additional",
-            "fieldType":"TextField"
+            "fieldType":"TextField",
+            "condition": {
+              "id": "06-01-cantidadBienes",
+              "value": "varios"
+            }
           },
           "04":{
-            "label":"Forma de adquisición",
+            "label":"Bien",
             "description":"",
             "idField":"06-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Cantidad",
+            "description":"",
+            "idField":"06-05-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Descripción",
+            "description":"",
+            "idField":"06-06-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "07":{
+            "label":"Forma de adquisición",
+            "description":"",
+            "idField":"06-07-additional",
             "contentType":"additional",
             "fieldType":"TextField"
           }
@@ -2174,16 +2786,30 @@
         "description":"A efectos de conocer el valor que tienen los bienes objeto de contrato, es necesario determinar el valor de cada uno por separado.",
         "fields":{
           "01":{
-            "label":"Valor del(de los) bien(es) del primer permutante",
+            "label":"Valor del(de los) bien(es) del primer permutante en letras",
             "description":"",
-            "idField":"07-01-number",
-            "contentType":"number",
+            "idField":"07-01-additional",
+            "contentType":"additional",
             "fieldType":"TextField"
           },
           "02":{
-            "label":"Valor del(de los) bien(es) del segundo permutante",
+            "label":"Valor del(de los) bien(es) del primer permutante en números",
             "description":"",
             "idField":"07-02-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "03":{
+            "label":"Valor del(de los) bien(es) del segundo permutante en letras",
+            "description":"",
+            "idField":"07-03-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Valor del(de los) bien(es) del segundo permutante en números",
+            "description":"",
+            "idField":"07-04-number",
             "contentType":"number",
             "fieldType":"TextField"
           }
@@ -2234,7 +2860,11 @@
             "description":"",
             "idField":"08-05-paymentType",
             "contentType":"paymentType",
-            "fieldType":"Picker"
+            "fieldType":"Picker",
+            "condition": {
+              "id": "08-03-saldarDiferencia",
+              "value": "determined"
+            }
           },
           "06":{
             "label":"Dirección de pago",
@@ -2297,9 +2927,16 @@
         "label":"Cláusula Penal",
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
         "01":{
-          "label":"Valor de la cláusula",
+          "label":"Valor de la cláusula en letras",
           "description":"",
-          "idField":"09-01-number",
+          "idField":"09-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Valor de la cláusula en números",
+          "description":"",
+          "idField":"09-02-number",
           "contentType":"number",
           "fieldType":"TextField"
         }
@@ -2309,23 +2946,44 @@
         "description":"Diligencia la siguiente información clave para la generación de tu documento",
         "fields":{
           "01":{
-            "label":"Fecha",
-            "description":"Señala la fecha en que se firmará el documento",
-            "idField":"10-01-date",
-            "contentType":"date",
-            "fieldType":"DatePicker"
+            "label":"Dia",
+            "description":"",
+            "idField":"10-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"
           },
           "02":{
-            "label":"Ciudad",
-            "description":"Señala la ciudad en que se firmará el documento",
-            "idField":"10-02-city",
-            "contentType":"city",
+            "label":"Mes",
+            "description":"",
+            "idField":"10-02-number",
+            "contentType":"number",
             "fieldType":"TextField"
           },
           "03":{
-            "label":"Número de ejemplares",
-            "description":"Digite el número de ejemplares que serán firmados",
+            "label":"Año",
+            "description":"",
             "idField":"10-03-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Ciudad",
+            "description":"Señala la ciudad en que se firmará el documento",
+            "idField":"10-04-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Número de ejemplares en letra",
+            "description":"Escriba el número de ejemplares que serán firmados",
+            "idField":"10-05-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Número de ejemplares en número",
+            "description":"Digite el número de ejemplares que serán firmados",
+            "idField":"10-06-number",
             "contentType":"number",
             "fieldType":"TextField"
           }
@@ -2601,24 +3259,60 @@
         "description":"Bien(es) del primer permutante",
         "fields":{
           "01":{
-            "label":"Bien",
+            "label":"Uno o más bienes",
             "description":"",
-            "idField":"05-01-additional",
-            "contentType":"additional",
-            "fieldType":"TextField"
+            "idField":"05-01-cantidadBienes",
+            "contentType":"cantidadBienes",
+            "fieldType":"Picker"
           },
           "02":{
-            "label":"Número de escritura pública",
+            "label":"Un Bien",
             "description":"",
-            "idField":"05-02-number",
-            "contentType":"number",
-            "fieldType":"TextField"
+            "idField":"05-02-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-01-cantidadBienes",
+              "value": "unBien"
+            }
           },
-          "03":{
-            "label":"Forma de adquisición",
+          "03:":{
+            "label":"Varios bienes",
             "description":"",
             "idField":"05-03-additional",
             "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "05-01-cantidadBienes",
+              "value": "varios"
+            }
+          },
+          "04":{
+            "label":"Bien",
+            "description":"",
+            "idField":"05-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Número de escritura pública",
+            "description":"",
+            "idField":"05-05-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Forma de adquisición",
+            "description":"",
+            "idField":"05-06-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "07":{
+            "label":"Ciudad de la escritura",
+            "description":"",
+            "idField":"06-07-city",
+            "contentType":"city",
             "fieldType":"TextField"
           }
         }
@@ -2628,24 +3322,60 @@
         "description":"Bien(es) del segundo permutante",
         "fields":{
           "01":{
-            "label":"Bien",
+            "label":"Uno o más bienes",
             "description":"",
-            "idField":"06-01-additional",
-            "contentType":"additional",
-            "fieldType":"TextField"
+            "idField":"06-01-cantidadBienes",
+            "contentType":"cantidadBienes",
+            "fieldType":"Picker"
           },
           "02":{
-            "label":"Número de escritura pública",
+            "label":"Un Bien",
             "description":"",
             "idField":"06-02-additional",
             "contentType":"additional",
-            "fieldType":"TextField"
+            "fieldType":"TextField",
+            "condition": {
+              "id": "06-01-cantidadBienes",
+              "value": "unBien"
+            }
           },
-          "03":{
-            "label":"Forma de adquisición",
+          "03:":{
+            "label":"Varios bienes",
             "description":"",
             "idField":"06-03-additional",
             "contentType":"additional",
+            "fieldType":"TextField",
+            "condition": {
+              "id": "06-01-cantidadBienes",
+              "value": "varios"
+            }
+          },
+          "04":{
+            "label":"Bien",
+            "description":"",
+            "idField":"06-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Número de escritura pública",
+            "description":"",
+            "idField":"06-05-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Forma de adquisición",
+            "description":"",
+            "idField":"06-06-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "07":{
+            "label":"Ciudad de la escritura",
+            "description":"",
+            "idField":"06-07-city",
+            "contentType":"city",
             "fieldType":"TextField"
           }
         }
@@ -2655,16 +3385,30 @@
         "description":"A efectos de conocer el valor que tienen los bienes objeto de contrato, es necesario determinar el valor de cada uno por separado.",
         "fields":{
           "01":{
-            "label":"Valor del(de los) bien(es) del primer permutante",
+            "label":"Valor del(de los) bien(es) del primer permutante en letras",
             "description":"",
-            "idField":"07-01-number",
-            "contentType":"number",
+            "idField":"07-01-additional",
+            "contentType":"additional",
             "fieldType":"TextField"
           },
           "02":{
-            "label":"Valor del(de los) bien(es) del segundo permutante",
+            "label":"Valor del(de los) bien(es) del primer permutante en números",
             "description":"",
             "idField":"07-02-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "03":{
+            "label":"Valor del(de los) bien(es) del segundo permutante en letras",
+            "description":"",
+            "idField":"07-03-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Valor del(de los) bien(es) del segundo permutante en números",
+            "description":"",
+            "idField":"07-04-number",
             "contentType":"number",
             "fieldType":"TextField"
           }
@@ -2715,7 +3459,11 @@
             "description":"",
             "idField":"08-05-paymentType",
             "contentType":"paymentType",
-            "fieldType":"Picker"
+            "fieldType":"Picker",
+            "condition": {
+              "id": "08-03-saldarDiferencia",
+              "value": "determined"
+            }
           },
           "06":{
             "label":"Dirección de pago",
@@ -2778,9 +3526,16 @@
         "label":"Cláusula Penal",
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
         "01":{
-          "label":"Valor de la cláusula",
+          "label":"Valor de la cláusula en letras",
           "description":"",
-          "idField":"09-01-number",
+          "idField":"09-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Valor de la cláusula en números",
+          "description":"",
+          "idField":"09-02-number",
           "contentType":"number",
           "fieldType":"TextField"
         }
@@ -2790,23 +3545,44 @@
         "description":"Diligencia la siguiente información clave para la generación de tu documento",
         "fields":{
           "01":{
-            "label":"Fecha",
-            "description":"Señala la fecha en que se firmará el documento",
-            "idField":"10-01-date",
-            "contentType":"date",
-            "fieldType":"DatePicker"
+            "label":"Dia",
+            "description":"",
+            "idField":"10-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"
           },
           "02":{
-            "label":"Ciudad",
-            "description":"Señala la ciudad en que se firmará el documento",
-            "idField":"10-02-city",
-            "contentType":"city",
+            "label":"Mes",
+            "description":"",
+            "idField":"10-02-number",
+            "contentType":"number",
             "fieldType":"TextField"
           },
           "03":{
-            "label":"Número de ejemplares",
-            "description":"Digite el número de ejemplares que serán firmados",
+            "label":"Año",
+            "description":"",
             "idField":"10-03-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Ciudad",
+            "description":"Señala la ciudad en que se firmará el documento",
+            "idField":"10-04-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"Número de ejemplares en letra",
+            "description":"Escriba el número de ejemplares que serán firmados",
+            "idField":"10-05-additional",
+            "contentType":"additional",
+            "fieldType":"TextField"
+          },
+          "06":{
+            "label":"Número de ejemplares en número",
+            "description":"Digite el número de ejemplares que serán firmados",
+            "idField":"10-06-number",
             "contentType":"number",
             "fieldType":"TextField"
           }
@@ -3086,6 +3862,20 @@
           "idField":"05-01-additional",
           "contentType":"additional",
           "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Valor del pago en letras",
+          "description":"",
+          "idField":"05-02-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Valor del pago en números",
+          "description":"",
+          "idField":"05-03-number",
+          "contentType":"number",
+          "fieldType":"TextField"
         }
       },
       "06":{
@@ -3093,16 +3883,30 @@
         "description":"Diligencia la siguiente información clave para la generación de tu documento",
         "fields":{
           "01":{
-            "label":"Fecha",
-            "description":"Señala la fecha en que se firmará el documento",
-            "idField":"06-01-date",
-            "contentType":"date",
-            "fieldType":"DatePicker"
+            "label":"Dia",
+            "description":"",
+            "idField":"10-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"
           },
           "02":{
+            "label":"Mes",
+            "description":"",
+            "idField":"10-02-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "03":{
+            "label":"Año",
+            "description":"",
+            "idField":"10-03-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "04":{
             "label":"Ciudad",
             "description":"Señala la ciudad en que se firmará el documento",
-            "idField":"06-02-city",
+            "idField":"06-04-city",
             "contentType":"city",
             "fieldType":"TextField"
           }
@@ -3381,6 +4185,20 @@
           "description":"",
           "idField":"05-01-additional",
           "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Valor del pago en letras",
+          "description":"",
+          "idField":"05-02-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Valor del pago en números",
+          "description":"",
+          "idField":"05-03-number",
+          "contentType":"number",
           "fieldType":"TextField"
         }
       },
