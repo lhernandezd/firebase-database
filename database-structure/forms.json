@@ -7,6 +7,7 @@
       "01":{
         "description":"Seleccione el tipo de contractor",
         "label":"Tipo de Contractor",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de contractor",
@@ -14,6 +15,7 @@
           "contentType": "personType",
           "fieldType": "Picker"
         }
+      }
       },
       "02":{
         "description": "Diligencia los siguientes datos acerca del contractor.",
@@ -393,6 +395,7 @@
     "05":{
       "label":"Objeto",
       "description":"",
+      "fields":{
       "01":{
       "label":"Descripción del servicio",
       "description":"Realizar una descripción del servicio a contratar",
@@ -400,6 +403,7 @@
       "contentType":"additional",
       "fieldType":"TextField"
       }
+    }
     },
     "06":{
       "label":"Precio y forma de pago",
@@ -719,12 +723,14 @@
       "01":{
         "label":"Parte 1",
         "description":"Debes diligenciar los datos de las personas, ya sean naturales o jurídicas, que suscribirán el acuerdo de confidencialidad.",
+        "fields":{
         "01":{
             "description":"",
             "label":"Seleccione el tipo de persona",
             "idField":"01-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
+          }
         }
       },
         "02":{
@@ -879,12 +885,14 @@
         "03":{
           "label":"Parte 2",
           "description":"Debes diligenciar los datos de las personas, ya sean naturales o jurídicas, que suscribirán el acuerdo de confidencialidad.",
+          "fields":{
           "01":{
               "description":"",
               "label":"Seleccione el tipo de persona",
               "idField":"03-01-personType",
               "contentType": "personType",
               "fieldType": "Picker"
+            }
           }
         },
           "04":{
@@ -1175,12 +1183,14 @@
       "01":{
         "label":"Tipo de Contratante",
         "description":"Selecciona el tipo de contratante, es decir quien será el comitente.",
+        "fields":{
         "01":{
             "description":"",
             "label":"Seleccione el tipo de contratante",
             "idField":"01-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
+          }
         }
       },
       "02":{
@@ -1346,13 +1356,15 @@
       "03":{
         "label":"Tipo de Contratista",
         "description":"Selecciona el tipo de contratista, es decir quien será el comisionista.",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de contratista",
           "idField":"03-01-personType",
           "contentType": "personType",
           "fieldType": "Picker"
-         }
+          }
+        }
       },
       "04":{
         "label":"Información del Contratista",
@@ -1544,12 +1556,14 @@
       "06":{
         "label":"Duración del Acuerdo",
         "description":"",
+        "fields":{
         "01":{
         "label":"Señala el término de duración del acuerdo",
         "description":"",
         "idField":"06-01-date",
         "contentType":"date",
         "fieldType":"DatePicker"
+          }
         }
       },
       "07":{
@@ -1611,12 +1625,14 @@
       "01":{
         "label":"Tipo de Titular",
         "description":"Selecciona el tipo de titular de la cuenta bancaria. Quien podrá ser una persona natural o jurídica.",
+        "fields":{
         "01":{
             "description":"",
             "label":"Seleccione el tipo de contratante",
             "idField":"01-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
+          }
         }
       },
       "02":{
@@ -1884,12 +1900,14 @@
       "01":{
         "label":"Tipo de Comodante",
         "description":"Selecciona el tipo de comodante, es decir quien entrega el bien al comodatario para su uso y posterior devolución. Podrá ser una persona natural o jurídica.",
+        "fields":{
         "01":{
             "description":"",
             "label":"Seleccione el tipo de comodante",
             "idField":"01-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
+          }
         }
       },
       "02":{
@@ -2011,12 +2029,14 @@
       "03":{
         "label":"Tipo de Comodatario",
         "description":"Selecciona el tipo de comodatario, es decir quien recibe el bien del comodante, comprometido al uso exclusivo pactado en el contrato y a su devolución. Podrá ser una persona natural o jurídica.",
+        "fields":{
         "01":{
             "description":"",
             "label":"Seleccione el tipo de comodatario",
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
+          }
         }
       },
       "04":{
@@ -2307,28 +2327,33 @@
       "07":{
         "label":"Uso Autorizado",
         "description":"Señala el uso atribuido al comodatario al bien objeto del contrato, de manera exclusiva y personal. Ej. uso académico.",
+        "fields":{
         "01":{
           "label":"Escriba el uso",
           "description":"",
           "idField":"07-01-additional",
           "contentType":"additional",
           "fieldType":"TextField"
+          }
         }
       },
       "08":{
         "label":"Duración del Acuerdo",
         "description":"Debes señalar el tiempo de duración del contrato, el cual empezará a correr a partir de la suscripción del mismo.",
+        "fields":{
         "01":{
           "label":"Termino de duración",
           "description":"",
           "idField":"08-01-date",
           "contentType":"date",
           "fieldType":"DatePicker"
+          }
         }
       },
       "09":{
         "label":"Cláusula Penal",
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento por parte del comodatario en alguna de sus obligaciones, quedando obligado a cancelar dicho valor a favor del comodante.",
+        "fields":{
         "01":{
           "label":"Valor",
           "description":"Digíte el valor de la clausula en letras",
@@ -2342,6 +2367,7 @@
           "idField":"09-02-number",
           "contentType":"number",
           "fieldType":"TextField"
+        }
         }
       },
       "10":{
@@ -2404,13 +2430,15 @@
       "01":{
         "label":"Primer Permutante",
         "description":"Selecciona el tipo de permutante. Quien podrá ser una persona natural o jurídica",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de permutante",
           "idField":"01-01-personType",
           "contentType": "personType",
           "fieldType": "Picker"
-      }
+          }
+        }
       },
       "02":{
         "label":"Infomación del Permutante",
@@ -2531,6 +2559,7 @@
       "03":{
           "label":"Segundo Permutante",
           "description":"Selecciona el tipo de permutante. Quien podrá ser una persona natural o jurídica",
+          "fields":{
           "01":{
             "description":"",
             "label":"Seleccione el tipo de permutante",
@@ -2538,6 +2567,7 @@
             "contentType": "personType",
             "fieldType": "Picker"
           }
+        }
       },
       "04":{
         "label":"Segundo Permutante",
@@ -2926,6 +2956,7 @@
       "09":{
         "label":"Cláusula Penal",
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "fields":{
         "01":{
           "label":"Valor de la cláusula en letras",
           "description":"",
@@ -2939,6 +2970,7 @@
           "idField":"09-02-number",
           "contentType":"number",
           "fieldType":"TextField"
+        }
         }
       },
       "10":{
@@ -3001,13 +3033,15 @@
       "01":{
         "label":"Primer Permutante",
         "description":"Selecciona el tipo de permutante. Quien podrá ser una persona natural o jurídica",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de permutante",
           "idField":"01-01-personType",
           "contentType": "personType",
           "fieldType": "Picker"
-      }
+          }
+        }
       },
       "02":{
         "label":"Infomación del Permutante",
@@ -3126,16 +3160,16 @@
         }
       },
       "03":{
-        "01":{
           "label":"Segundo Permutante",
           "description":"Selecciona el tipo de permutante. Quien podrá ser una persona natural o jurídica",
+          "fields":{
           "01":{
             "description":"",
             "label":"Seleccione el tipo de permutante",
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
-        }
+          }
         }
       },
       "04":{
@@ -3525,6 +3559,7 @@
       "09":{
         "label":"Cláusula Penal",
         "description":"La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "fields":{
         "01":{
           "label":"Valor de la cláusula en letras",
           "description":"",
@@ -3539,6 +3574,7 @@
           "contentType":"number",
           "fieldType":"TextField"
         }
+      }
       },
       "10":{
         "label":"Información General",
@@ -3600,13 +3636,15 @@
       "01":{
         "label":"Tipo de acreedor",
         "description":"Selecciona el tipo de acreedor, quien podrá ser una persona natural o jurídica.",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de acreedor",
           "idField":"01-01-personType",
           "contentType": "personType",
           "fieldType": "Picker"
-      }
+          }
+        }
       },
       "02":{
         "label":"Infomación del acreedor",
@@ -3725,16 +3763,16 @@
         }
       },
       "03":{
-        "01":{
           "label":"Tipo de Deudor",
           "description":"Selecciona el tipo de deudor, quien podrá ser una persona natural o jurídica.",
+          "fields":{
           "01":{
             "description":"",
             "label":"Seleccione el tipo de deudor",
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
-        }
+          }
         }
       },
       "04":{
@@ -3856,6 +3894,7 @@
       "05":{
         "label":"Concepto de Pago",
         "description":"En este paso deberás diligenciar el concepto de pago, es decir, el motivo por el cual se está recibiendo el dinero por parte del acreedor.",
+        "fields":{
         "01":{
           "label":"Concepto de Pago",
           "description":"",
@@ -3877,6 +3916,7 @@
           "contentType":"number",
           "fieldType":"TextField"
         }
+      }
       },
       "06":{
         "label":"Información General",
@@ -3924,13 +3964,15 @@
       "01":{
         "label":"Tipo de acreedor",
         "description":"Selecciona el tipo de acreedor, quien podrá ser una persona natural o jurídica.",
+        "fields":{
         "01":{
           "description":"",
           "label":"Seleccione el tipo de acreedor",
           "idField":"01-01-personType",
           "contentType": "personType",
           "fieldType": "Picker"
-      }
+          }
+        }
       },
       "02":{
         "label":"Infomación del acreedor",
@@ -4049,16 +4091,16 @@
         }
       },
       "03":{
-        "01":{
           "label":"Tipo de Deudor",
           "description":"Selecciona el tipo de deudor, quien podrá ser una persona natural o jurídica.",
+          "fields":{
           "01":{
             "description":"",
             "label":"Seleccione el tipo de deudor",
             "idField":"03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
-        }
+          }
         }
       },
       "04":{
@@ -4180,6 +4222,7 @@
       "05":{
         "label":"Concepto de la Deuda",
         "description":"En este paso deberás diligenciar el concepto de la deuda, es decir, el motivo por el cual se adeuda la suma de dinero por parte del deudor en favor del acreedor.",
+        "fields":{
         "01":{
           "label":"Concepto de pago",
           "description":"",
@@ -4201,6 +4244,7 @@
           "contentType":"number",
           "fieldType":"TextField"
         }
+      }
       },
       "06":{
         "label":"Detalles",
