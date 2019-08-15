@@ -95,8 +95,8 @@
       }
     ]
   },
-  "plazoType":{
-    "label": "plazoType",
+  "termType":{
+    "label": "termType",
     "type": "Picker",
     "content":[
       {
@@ -233,8 +233,8 @@
       }
     ]
   },
-  "tiempoEntrega":{
-    "label": "tiempoEntrega",
+  "dueDate":{
+    "label": "dueDate",
     "type": "Picker",
     "content":[
       {
@@ -247,8 +247,8 @@
       }
     ]
   },
-  "cantidadBienes":{
-    "label": "cantidadBienes",
+  "goodsAmount":{
+    "label": "goodsAmount",
     "type": "Picker",
     "content":[
       {
@@ -275,8 +275,8 @@
       }
     ]
   },
-  "saldarDiferencia":{
-    "label": "saldarDiferencia",
+  "payDifference":{
+    "label": "payDifference",
     "type": "Picker",
     "content":[
       {

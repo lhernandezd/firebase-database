@@ -426,8 +426,8 @@
       "03":{
         "label":"Plazo de pago",
         "description":"Eliga el plazo de pago",
-        "idField":"06-03-plazoType",
-        "contentType":"plazoType",
+        "idField":"06-03-termType",
+        "contentType":"termType",
         "fieldType":"Picker"
       },
       "04":{
@@ -437,7 +437,7 @@
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "fechaEspecifica"
         }
       },
@@ -448,7 +448,7 @@
         "contentType":"date",
         "fieldType":"DatePicker",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "fechaEspecifica"
         }
       },
@@ -459,7 +459,7 @@
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "obligacionesCumplidas"
         }
       },
@@ -470,7 +470,7 @@
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "formaEspecifica"
         }
       },
@@ -481,7 +481,7 @@
         "contentType":"additional",
         "fieldType":"TextField",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "formaEspecifica"
         }
       },
@@ -492,7 +492,7 @@
         "contentType":"number",
         "fieldType":"TextField",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "formaEspecifica"
         }
       },
@@ -503,7 +503,7 @@
         "contentType":"date",
         "fieldType":"DatePicker",
         "condition": {
-          "id": "06-03-plazoType",
+          "id": "06-03-termType",
           "value": "formaEspecifica"
         }
       },
@@ -2296,8 +2296,8 @@
           "01":{
             "label":"Escoga el tiempo de entrega",
             "description":"",
-            "idField":"06-01-tiempoEntrega",
-            "contentType":"tiempoEntrega",
+            "idField":"06-01-dueDate",
+            "contentType":"dueDate",
             "fieldType":"Picker"
           },
           "02":{
@@ -2307,7 +2307,7 @@
             "contentType":"date",
             "fieldType":"DatePicker",
             "condition": {
-              "id": "06-01,-tiempoEntrga",
+              "id": "06-01,-dueDate",
               "value": "determinada"
             }
           },
@@ -2318,7 +2318,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "06-01,-tiempoEntrga",
+              "id": "06-01,-dueDate",
               "value": "celebracion"
             }
           }
@@ -2692,8 +2692,8 @@
           "01":{
             "label":"Uno o más bienes",
             "description":"",
-            "idField":"05-01-cantidadBienes",
-            "contentType":"cantidadBienes",
+            "idField":"05-01-goodsAmount",
+            "contentType":"goodsAmount",
             "fieldType":"Picker"
           },
           "02":{
@@ -2703,7 +2703,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "05-01-cantidadBienes",
+              "id": "05-01-goodsAmount",
               "value": "unBien"
             }
           },
@@ -2714,7 +2714,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "05-01-cantidadBienes",
+              "id": "05-01-goodsAmount",
               "value": "varios"
             }
           },
@@ -2755,8 +2755,8 @@
           "01":{
             "label":"Uno o más bienes",
             "description":"",
-            "idField":"06-01-cantidadBienes",
-            "contentType":"cantidadBienes",
+            "idField":"06-01-goodsAmount",
+            "contentType":"goodsAmount",
             "fieldType":"Picker"
           },
           "02":{
@@ -2766,7 +2766,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "06-01-cantidadBienes",
+              "id": "06-01-goodsAmount",
               "value": "unBien"
             }
           },
@@ -2777,7 +2777,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "06-01-cantidadBienes",
+              "id": "06-01-goodsAmount",
               "value": "varios"
             }
           },
@@ -2866,8 +2866,8 @@
           "03":{
             "label":"Tiempo de saldo",
             "description":"",
-            "idField":"08-03-saldarDiferencia",
-            "contentType":"saldarDiferencia",
+            "idField":"08-03-payDifference",
+            "contentType":"payDifference",
             "fieldType":"Picker",
             "condition": {
               "id": "08-02-yesNo",
@@ -2881,7 +2881,7 @@
             "contentType":"date",
             "fieldType":"DatePicker",
             "condition": {
-              "id": "08-03-saldarDiferencia",
+              "id": "08-03-payDifference",
               "value": "determined"
             }
           },
@@ -2892,7 +2892,7 @@
             "contentType":"paymentType",
             "fieldType":"Picker",
             "condition": {
-              "id": "08-03-saldarDiferencia",
+              "id": "08-03-payDifference",
               "value": "determined"
             }
           },
@@ -3295,8 +3295,8 @@
           "01":{
             "label":"Uno o más bienes",
             "description":"",
-            "idField":"05-01-cantidadBienes",
-            "contentType":"cantidadBienes",
+            "idField":"05-01-goodsAmount",
+            "contentType":"goodsAmount",
             "fieldType":"Picker"
           },
           "02":{
@@ -3306,7 +3306,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "05-01-cantidadBienes",
+              "id": "05-01-goodsAmount",
               "value": "unBien"
             }
           },
@@ -3317,7 +3317,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "05-01-cantidadBienes",
+              "id": "05-01-goodsAmount",
               "value": "varios"
             }
           },
@@ -3358,8 +3358,8 @@
           "01":{
             "label":"Uno o más bienes",
             "description":"",
-            "idField":"06-01-cantidadBienes",
-            "contentType":"cantidadBienes",
+            "idField":"06-01-goodsAmount",
+            "contentType":"goodsAmount",
             "fieldType":"Picker"
           },
           "02":{
@@ -3369,7 +3369,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "06-01-cantidadBienes",
+              "id": "06-01-goodsAmount",
               "value": "unBien"
             }
           },
@@ -3380,7 +3380,7 @@
             "contentType":"additional",
             "fieldType":"TextField",
             "condition": {
-              "id": "06-01-cantidadBienes",
+              "id": "06-01-goodsAmount",
               "value": "varios"
             }
           },
@@ -3469,8 +3469,8 @@
           "03":{
             "label":"Tiempo de saldo",
             "description":"",
-            "idField":"08-03-saldarDiferencia",
-            "contentType":"saldarDiferencia",
+            "idField":"08-03-payDifference",
+            "contentType":"payDifference",
             "fieldType":"Picker",
             "condition": {
               "id": "08-02-yesNo",
@@ -3484,7 +3484,7 @@
             "contentType":"date",
             "fieldType":"DatePicker",
             "condition": {
-              "id": "08-03-saldarDiferencia",
+              "id": "08-03-payDifference",
               "value": "determined"
             }
           },
@@ -3495,7 +3495,7 @@
             "contentType":"paymentType",
             "fieldType":"Picker",
             "condition": {
-              "id": "08-03-saldarDiferencia",
+              "id": "08-03-payDifference",
               "value": "determined"
             }
           },
@@ -4267,6 +4267,7 @@
         }
       }
     }
+    
   }
   
 ]
