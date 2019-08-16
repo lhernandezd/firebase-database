@@ -1,10 +1,9 @@
 [
-  
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
     "subcategory": "acuerdosContratos",
-    "countPages":3,
+    "countPages": 3,
     "downloads": 1,
     "description": "Este documento permite redactar un contrato en virtud del cual una persona se obliga a prestar un servicio a otra, de manera independiente y a cambio de una remuneración económica, denominada honorarios.",
     "isActive": true,
@@ -51,7 +50,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
-    "subcategory": "otrosDocumentos",
+    "subcategory": "otros",
     "countPages": 1,
     "downloads": 1,
     "description": "A través de este documento una persona solicita, ante su Banco, la cancelación de la cuenta bancaria de la cual es titular por medio del mismo.",
@@ -67,7 +66,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
-    "subcategory": "otrosDocumentos",
+    "subcategory": "otros",
     "countPages": 1,
     "downloads": 1,
     "description": "A través de este documento una persona solicita, ante su Banco, la cancelación de la tarjeta de crédito de la cual es titular por medio del mismo.",
@@ -83,7 +82,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
-    "subcategory": "otrosDocumentos",
+    "subcategory": "otros",
     "countPages": 4,
     "downloads": 1,
     "description": "Este documento es un contrato que permite al propietario de un bien mueble o inmueble realizar la entrega del mismo a otra persona para su utilización a título gratuito, con la obliación de restituirlo en un tiempo determinado.",
@@ -131,7 +130,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
-    "subcategory": "otrosDocumentos",
+    "subcategory": "otros",
     "countPages": 1,
     "downloads": 1,
     "description": "Es un documento que acredita el pago de un dinero por parte de una persona a otra.",
@@ -147,7 +146,7 @@
   {
     "availableFormats": "pdf/doc",
     "category": "comercial",
-    "subcategory": "otrosDocumentos",
+    "subcategory": "otros",
     "countPages": 1,
     "downloads": 1,
     "description": "Es un documento por medio del cual una persona realiza el cobro de una suma de dinero a otra, en virtud de una relación preexistente generadora de una deuda.",
@@ -159,5 +158,4 @@
     "rating": 0,
     "version": "1.0"
   }
-
 ]
