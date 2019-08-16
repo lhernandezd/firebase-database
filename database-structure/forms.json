@@ -289,12 +289,14 @@
       "04": {
         "description": "En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales.",
         "label": "Tipo de motivo",
-        "01": {
-          "label": "Seleccione tipo de Motivo",
-          "description": "",
-          "idField": "04-01-reasonType",
-          "contentType": "reasonType",
-          "fieldType": "Picker"
+        "fields": {
+          "01": {
+            "label": "Seleccione tipo de Motivo",
+            "description": "",
+            "idField": "04-01-reasonType",
+            "contentType": "reasonType",
+            "fieldType": "Picker"
+          }
         }
       },
       "05": {
