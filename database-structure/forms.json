@@ -1,381 +1,5 @@
 [
     {
-      "category": "familia",
-      "subcategory": "hijos",
-      "referenceId": "11HiPzCan-P9vOhGRMq8iia4Gn9_paYta",
-      "sections": {
-        "01": {
-          "description": "Es importante identificar al menor de edad, quien necesita la autorización de sus padres para salir del país sin ellos, o la autorización de sólo uno, en caso de salir con el otro. ",
-          "label": "Datos del menor",
-          "fields": {
-            "01": {
-              "label": "Nombre del menor",
-              "description": "",
-              "idField": "01-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Apellido del menor",
-              "description": "",
-              "idField": "01-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "01-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "Numero del documento",
-              "description": "",
-              "idField": "01-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "Numero del documento",
-              "description": "",
-              "idField": "01-05-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "description": "En este paso deberás indicar la información acerca del viaje a realizar por el menor; lugar de destino, propósito del viaje y fecha de salida y regreso.",
-          "label": "viaje",
-          "fields": {
-            "01": {
-              "label": "Pais de destino",
-              "description": "",
-              "idField": "02-01-country",
-              "contentType": "country",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Ciudad de destino",
-              "description": "",
-              "idField": "02-02-city",
-              "contentType": "city",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "Proposito de viaje",
-              "description": "",
-              "idField": "02-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "Fecha de salida",
-              "description": "",
-              "idField": "02-04-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "05": {
-              "label": "Fecha de regreso",
-              "description": "",
-              "idField": "02-05-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            }
-          }
-        },
-        "03": {
-          "description": "Cuando el menor de edad realice el viaje en compañía de un adulto, ya sea uno de los padres o un tercero, deberán señalarse sus datos en el documento.",
-          "label": "acompañantes",
-          "fields": {
-            "01": {
-              "label": "Nombre completo",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "03-02-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "Numero del documento",
-              "description": "",
-              "idField": "03-03-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "04": {
-          "description": "Diligencia la siguiente información clave para la generación de tu documento",
-          "label": "Informacion General",
-          "fields": {
-            "01": {
-              "label": "Ciudad",
-              "description": "generalCity",
-              "idField": "04-01-city",
-              "contentType": "city",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Fecha",
-              "description": "",
-              "idField": "04-02-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "03": {
-              "label": "Nombre de quien emite la autorización",
-              "description": "",
-              "idField": "04-03-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "Tipo de documento de quien emite la autorización",
-              "description": "",
-              "idField": "04-04-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "05": {
-              "label": "Número de documento de quien emite la autorización",
-              "description": "",
-              "idField": "04-05-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        }
-      }
-    },
-    {
-      "category": "laboral",
-      "subcategory": "terminacion",
-      "referenceId": "1-u3ZI1JuvdxFSqBF912x163Xnu1KoYaw",
-      "sections": {
-        "01": {
-          "description": "Descripción: Diligencia los siguientes datos acerca del trabajador, quien presentará la carta de renuncia.",
-          "label": "Información del trabajador",
-          "fields": {
-            "01": {
-              "label": "Nombre del trabajador",
-              "description": "",
-              "idField": "01-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Apellido del trabajador",
-              "description": "",
-              "idField": "01-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "01-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "Numero del documento",
-              "description": "",
-              "idField": "01-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "Cargo desempeñado",
-              "description": "",
-              "idField": "01-05-additional",
-              "fieldType": "TextField",
-              "contentType": "additional"
-            },
-            "06": {
-              "label": "Fecha de ingreso laboral",
-              "description": "Fecha en la que ingreso a trabajar",
-              "idField": "01-06-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "07": {
-              "label": "Numero de contacto",
-              "description": "Numero de celular",
-              "idField": "01-07-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "08": {
-              "label": "Dirección de notificaciones",
-              "description": "Dirección de notificaciones",
-              "idField": "01-08-address",
-              "contentType": "address",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "description": "Selecciona el tipo de empleador, es decir, la parte contratante. Quien podrá ser una persona natural o jurídica.",
-          "label": "Tipo de empleador",
-          "fields": {
-            "01": {
-              "label": "Seleccione tipo de empleador",
-              "description": "",
-              "idField": "02-01-personType",
-              "contentType": "personType",
-              "fieldType": "Picker"
-            }
-          }
-        },
-        "03": {
-          "description": "Diligencia los siguientes datos acerca del empleador, ante quien será presentada la carta de renuncia.",
-          "label": "Información del empleador",
-          "fields": {
-            "01": {
-              "label": "Nombre del empleador",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona natural"
-              }
-            },
-            "02": {
-              "label": "Apellido del empleador",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona natural"
-              }
-            },
-            "03": {
-              "label": "Razón social de la empresa",
-              "description": "",
-              "idField": "03-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona juridica"
-              }
-            },
-            "04": {
-              "label": "NIT",
-              "description": "Identificador de persona juridica",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona juridica"
-              }
-            }
-          }
-        },
-        "04": {
-          "description": "En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales.",
-          "label": "Tipo de motivo",
-          "01": {
-            "label": "Seleccione tipo de Motivo",
-            "description": "",
-            "idField": "04-01-reasonType",
-            "contentType": "reasonType",
-            "fieldType": "Picker"
-          }
-        },
-        "05": {
-          "description": "En este paso deberá indicarse las razones de la renuncia.",
-          "label": "Motivos",
-          "fields": {
-            "01": {
-              "label": "Profesionales",
-              "description": "",
-              "idField": "05-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "04-01-reasonType",
-                "value": "profesionales"
-              }
-            },
-            "02": {
-              "label": "Personales",
-              "description": "",
-              "idField": "05-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "04-01-reasonType",
-                "value": "personales"
-              }
-            },
-            "03": {
-              "label": "Ampliar explicación de motivos",
-              "description": "",
-              "idField": "05-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "06": {
-          "description": "Diligencia la siguiente información clave para la generación de tu documento.",
-          "label": "Información general",
-          "fields": {
-            "01": {
-              "label": "Irrevocabilidad",
-              "description": "",
-              "idField": "06-01-irrevocability",
-              "contentType": "irrevocability",
-              "fieldType": "Picker"
-            },
-            "02": {
-              "label": "Fecha presentación de carta",
-              "description": "Selecciona la fecha en la que presentarás la carta.",
-              "idField": "06-02-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "03": {
-              "label": "Fecha entrega de cargo",
-              "description": "Selecciona la fecha en la que entregaras el cargo definitivamente.",
-              "idField": "06-03-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "04": {
-              "label": "Departamento",
-              "description": "",
-              "idField": "06-04-department",
-              "contentType": "department",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "Ciudad",
-              "description": "",
-              "idField": "06-05-city",
-              "contentType": "city",
-              "fieldType": "TextField"
-            }
-          }
-        }
-      }
-    },
-    {
       "category":"familia",
       "subcategory":"hijos",
       "referenceId":"1nnBtKjHXCrWOdBVXBGaIFnEId5HD2LOP",
@@ -536,11 +160,12 @@
                     "condition":{
                       "id":"01-01-personType",
                       "value":"persona natural"
+                     }
               },
-              "08":{
+              "07":{
                 "label":"Razon social de la empreza",
                   "description":"",
-                  "idField":"01-08-additional",
+                  "idField":"01-07-additional",
                   "contentType":"additional",
                   "fieldType":"TextField",
                   "condition":{
@@ -548,17 +173,17 @@
                     "value":"persona juridica"
                   }
               },
-              "09":{
+              "08":{
                 "label":"NIT",
                   "description":"",
-                  "idField":"01-09-number",
+                  "idField":"01-08-number",
                   "contentType":"number",
                   "fieldType":"TextField",
                   "condition":{
                     "id":"01-01-personType",
                     "value":"persona juridica"
                    }
-                }
+                
               }
             }
           },
@@ -689,7 +314,7 @@
     },
     {
         "category":"laboral",
-        "subcategory":"solicitudes y reclamos",
+        "subcategory":"solicitudesReclamos",
         "referenceId":"1IMYWXBmUyKmkzOVtS17m6w7Gcs-k-pah",
         "sections":{
           "01":{
@@ -748,13 +373,13 @@
               "08":{
                 "label":"Salario numeros",
                 "description":"Debe ingresar el monto en numeros",
-                "idField":"01-07-additional",
+                "idField":"01-08-additional",
                 "contentType":"additional",
                 "fieldType":"TextField"
               }
             }
           },
-            "02":{
+          "02":{
             "description":"",
             "label":"Desarrollo del cargo",
             "fields":{
@@ -774,14 +399,14 @@
                   "id":"01-06-work",
                   "value":"finalizo la relacion laboral"
               }
-            },
+              },
               "03":{
                 "label":"Tipo de contrato",
                 "description":"",
                 "idField":"02-03-additional",
                 "contentType":"typeConc",
                 "fieldType":"Picker"
-            }
+              }
           }
         },
         "03":{
@@ -833,8 +458,8 @@
                     "id":"03-01-personType",
                     "value":"persona natural"
             }
-          },
-          "07":{
+            },
+            "07":{
             "label":"Direccion de notificaciones",
                   "description":"",
                   "idField":"03-07-additional",
@@ -844,8 +469,8 @@
                     "id":"03-01-personType",
                     "value":"persona natural"
                   }
-              },
-              "08":{
+            },
+            "08":{
                 "label":"Razon social de la empreza",
                   "description":"",
                   "idField":"03-08-additional",
@@ -855,8 +480,8 @@
                     "id":"03-01-personType",
                     "value":"persona juridica"
                   }
-              },
-              "09":{
+            },
+            "09":{
                 "label":"NIT",
                   "description":"",
                   "idField":"03-09-number",
@@ -866,7 +491,7 @@
                     "id":"03-01-personType",
                     "value":"persona juridica"
                   }
-              }
+            }
           } 
         },
         "04":{
@@ -880,7 +505,7 @@
               "contentType":"date",
               "fieldType":"DatePicker"
               },
-              "02":{
+            "02":{
                 "label":"Ciudad",
                 "description":"Selecciona la ciudad en la cual firmas la certificacion",
                 "idField":"04-02-city",
@@ -998,7 +623,7 @@
                     "id":"02-01-personType",
                     "value":"persona natural"
             }
-          },
+             },
             "07":{
               "label":"Direccion de notificaciones",
                     "description":"",
@@ -1009,8 +634,8 @@
                       "id":"02-01-personType",
                       "value":"persona natural"
                     }
-                },
-                "08":{
+             },
+            "08":{
                   "label":"Razon social de la empreza",
                     "description":"",
                     "idField":"02-08-additional",
@@ -1020,8 +645,8 @@
                       "id":"02-01-personType",
                       "value":"persona juridica"
                     }
-                },
-                "09":{
+             },
+            "09":{
                   "label":"NIT",
                     "description":"",
                     "idField":"02-09-number",
@@ -1205,8 +830,8 @@
                 "id":"03-01-personType",
                 "value":"persona juridica"
                     }
-                },
-                "07":{
+            },
+            "07":{
                   "label":"NIT",
                     "description":"",
                     "idField":"03-07-number",
@@ -1216,15 +841,15 @@
                       "id":"03-01-personType",
                       "value":"persona juridica"
                     }
-                  }
-                }
             }
+          }
+        }
       }
       
     },
     {
       "category":"laboral",
-      "subcategory":"solicitudes y reclamos",
+      "subcategory":"solicitudesReclamos",
       "referenceId":"1xOHaC7McVA29oahnMv40pL1pEiNuZQpw",
       "sections":{
         "01":{
@@ -1324,7 +949,7 @@
                     "id":"02-01-personType",
                     "value":"persona natural"
             }
-          },
+            },
             "07":{
               "label":"Cargo de quien debe hacer el pago",
                     "description":"",
@@ -1335,8 +960,8 @@
                       "id":"02-01-personType",
                       "value":"persona juridica"
                     }
-                },
-                "08":{
+            },
+            "08":{
                   "label":"Razon social de la empreza",
                     "description":"",
                     "idField":"02-08-additional",
@@ -1346,8 +971,8 @@
                       "id":"02-01-personType",
                       "value":"persona juridica"
                     }
-                },
-                "09":{
+            },
+            "09":{
                   "label":"NIT",
                     "description":"",
                     "idField":"02-09-number",
@@ -1357,7 +982,7 @@
                       "id":"02-01-personType",
                       "value":"persona juridica"
                     }
-              }
+            }
           }
         },
         "03":{
@@ -1472,8 +1097,8 @@
                       "id":"01-01-personType",
                       "value":"persona natural"
                     }
-                },
-                "08":{
+            },
+            "08":{
                   "label":"Razon social de la empreza",
                     "description":"",
                     "idField":"01-08-additional",
@@ -1483,8 +1108,8 @@
                       "id":"01-01-personType",
                       "value":"persona juridica"
                     }
-                },
-                "09":{
+            },
+            "09":{
                   "label":"NIT",
                     "description":"",
                     "idField":"01-09-number",
@@ -1494,7 +1119,7 @@
                       "id":"01-01-personType",
                       "value":"persona juridica"
                     }
-              }
+            }
           }
         },
         "02":{
@@ -1701,8 +1326,8 @@
                       "id":"01-01-personType",
                       "value":"persona natural"
                     }
-                },
-                "08":{
+            },
+            "08":{
                   "label":"Razon social de la empreza",
                     "description":"",
                     "idField":"01-08-additional",
@@ -1712,8 +1337,8 @@
                       "id":"01-01-personType",
                       "value":"persona juridica"
                     }
-                },
-                "09":{
+            },
+            "09":{
                   "label":"NIT",
                     "description":"",
                     "idField":"01-09-number",
@@ -1962,109 +1587,111 @@
               "idField": "03-02-name",
               "contentType": "name",
               "fieldType": "TextField"
-              }
             },
             "03": {
-              "label": "Razón social de la empresa",
-              "description": "",
-              "idField": "03-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona juridica"
-              }
+                "label": "Razón social de la empresa",
+                "description": "",
+                "idField": "03-03-additional",
+                "contentType": "additional",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "02-01-personType",
+                  "value": "persona juridica"
+                }
             },
             "04": {
-              "label": "NIT",
-              "description": "Identificador de persona juridica",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "02-01-personType",
-                "value": "persona juridica"
-              }
+                "label": "NIT",
+                "description": "Identificador de persona juridica",
+                "idField": "03-04-number",
+                "contentType": "number",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "02-01-personType",
+                  "value": "persona juridica"
+                }
+            }
+            }
+          },
+          "04": {
+            "description": "En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales.",
+            "label": "Tipo de motivo",
+            "fields":{
+            "01": {
+              "label": "Seleccione tipo de Motivo",
+              "description": "",
+              "idField": "04-01-reasonType",
+              "contentType": "reasonType",
+              "fieldType": "Picker"
             }
           }
-        },
-        "04": {
-          "description": "En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales.",
-          "label": "Tipo de motivo",
-          "01": {
-            "label": "Seleccione tipo de Motivo",
-            "description": "",
-            "idField": "04-01-reasonType",
-            "contentType": "reasonType",
-            "fieldType": "Picker"
-          }
-        },
-        "05": {
-          "description": "En este paso deberá indicarse las razones de la renuncia.",
-          "label": "Motivos",
-          "fields": {
-            "01": {
-              "label": "Profesionales",
-              "description": "",
-              "idField": "05-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "04-01-reasonType",
-                "value": "profesionales"
+          },
+          "05": {
+            "description": "En este paso deberá indicarse las razones de la renuncia.",
+            "label": "Motivos",
+            "fields": {
+              "01": {
+                "label": "Profesionales",
+                "description": "",
+                "idField": "05-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "04-01-reasonType",
+                  "value": "profesionales"
+                }
+              },
+              "02": {
+                "label": "Personales",
+                "description": "",
+                "idField": "05-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField",
+                "condition": {
+                  "id": "04-01-reasonType",
+                  "value": "personales"
+                }
+              },
+              "03": {
+                "label": "Ampliar explicación de motivos",
+                "description": "",
+                "idField": "05-03-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
               }
-            },
-            "02": {
-              "label": "Personales",
-              "description": "",
-              "idField": "05-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField",
-              "condition": {
-                "id": "04-01-reasonType",
-                "value": "personales"
-              }
-            },
-            "03": {
-              "label": "Ampliar explicación de motivos",
-              "description": "",
-              "idField": "05-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
             }
-          }
-        },
-        "06": {
-          "description": "Diligencia la siguiente información clave para la generación de tu documento.",
-          "label": "Información general",
-          "fields": {
-            "01": {
-              "label": "Fecha presentación de carta",
-              "description": "Selecciona la fecha en la que presentarás la carta.",
-              "idField": "06-01-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "02": {
-              "label": "Fecha entrega de cargo",
-              "description": "Selecciona la fecha en la que entregaras el cargo definitivamente.",
-              "idField": "06-02-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "03": {
-              "label": "Departamento",
-              "description": "",
-              "idField": "06-03-department",
-              "contentType": "department",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "Ciudad",
-              "description": "",
-              "idField": "06-04-city",
-              "contentType": "city",
-              "fieldType": "TextField"
+          },
+          "06": {
+            "description": "Diligencia la siguiente información clave para la generación de tu documento.",
+            "label": "Información general",
+            "fields": {
+              "01": {
+                "label": "Fecha presentación de carta",
+                "description": "Selecciona la fecha en la que presentarás la carta.",
+                "idField": "06-01-date",
+                "contentType": "date",
+                "fieldType": "DatePicker"
+              },
+              "02": {
+                "label": "Fecha entrega de cargo",
+                "description": "Selecciona la fecha en la que entregaras el cargo definitivamente.",
+                "idField": "06-02-date",
+                "contentType": "date",
+                "fieldType": "DatePicker"
+              },
+              "03": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "06-03-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "04": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "06-04-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
             }
           }
         }
@@ -2198,8 +1825,8 @@
                   "id":"03-01-personType",
                   "value":"persona juridica"
                       }
-                  },
-                  "07":{
+              },
+              "07":{
                     "label":"NIT",
                       "description":"",
                       "idField":"03-07-number",
@@ -2209,9 +1836,9 @@
                         "id":"03-01-personType",
                         "value":"persona juridica"
                       }
-                    }
-                  }
               }
+            }
+          }
         }
       },
       {
@@ -2321,7 +1948,7 @@
                       "id":"02-01-personType",
                       "value":"persona natural"
               }
-            },
+              },
               "07":{
                 "label":"Direccion de notificaciones",
                       "description":"",
@@ -2332,8 +1959,8 @@
                         "id":"02-01-personType",
                         "value":"persona natural"
                       }
-                  },
-                  "08":{
+              },
+              "08":{
                     "label":"Razon social de la empreza",
                       "description":"",
                       "idField":"02-08-additional",
@@ -2343,8 +1970,8 @@
                         "id":"02-01-personType",
                         "value":"persona juridica"
                       }
-                  },
-                  "09":{
+              },
+              "09":{
                     "label":"NIT",
                       "description":"",
                       "idField":"02-09-number",
@@ -2354,9 +1981,10 @@
                         "id":"02-01-personType",
                         "value":"persona juridica"
                       }
-                }
+              }
             }
-          },"03":{
+          },
+          "03":{
             "label":"Motivos",
             "description":"El usuario decidira si desea incluir motivos",
             "fields":{
@@ -2364,7 +1992,7 @@
                 "label":"Motivos",
                 "description":"Desicion de si se quiere ingresar motivos",
                 "idField":"03-01-additional",
-                "contentType":"motives",
+                "contentType":"giveReason",
                 "fieldType":"Picker"
               },
               "02":{
@@ -2511,7 +2139,7 @@
                       "id":"02-01-personType",
                       "value":"persona natural"
               }
-            },
+              },
               "07":{
                 "label":"Direccion de notificaciones",
                       "description":"",
@@ -2522,8 +2150,8 @@
                         "id":"02-01-personType",
                         "value":"persona natural"
                       }
-                  },
-                  "08":{
+              },
+              "08":{
                     "label":"Razon social de la empreza",
                       "description":"",
                       "idField":"02-08-additional",
@@ -2533,8 +2161,8 @@
                         "id":"02-01-personType",
                         "value":"persona juridica"
                       }
-                  },
-                  "09":{
+              },
+              "09":{
                     "label":"NIT",
                       "description":"",
                       "idField":"02-09-number",
@@ -2544,7 +2172,7 @@
                         "id":"02-01-personType",
                         "value":"persona juridica"
                       }
-                }
+              }
             }
           },
           "03":{            
@@ -2685,7 +2313,7 @@
                   "id":"02-01-personType",
                   "value":"persona natural"
           }
-        },
+          },
           "07":{
             "label":"Direccion de notificaciones",
                   "description":"",
@@ -2696,8 +2324,8 @@
                     "id":"02-01-personType",
                     "value":"persona natural"
                   }
-              },
-              "08":{
+          },
+          "08":{
                 "label":"Razon social de la empreza",
                   "description":"",
                   "idField":"02-08-additional",
@@ -2707,8 +2335,8 @@
                     "id":"02-01-personType",
                     "value":"persona juridica"
                   }
-              },
-              "09":{
+          },
+          "09":{
                 "label":"NIT",
                   "description":"",
                   "idField":"02-09-number",
@@ -2718,7 +2346,7 @@
                     "id":"02-01-personType",
                     "value":"persona juridica"
                   }
-            }
+          }
         }
       },
       "03":{            
@@ -2756,7 +2384,7 @@
             "label":"Motivos",
             "description":"Desicion de si se quiere ingresar motivos",
             "idField":"04-01-additional",
-            "contentType":"motives",
+            "contentType":"giveReason",
             "fieldType":"Picker"
           },
           "02":{
@@ -2867,11 +2495,12 @@
               "condition":{
                 "id":"03-01-personType",
                 "value":"persona natural"
+        }
         },
-        "08":{
+        "07":{
           "label":"Razon social de la empreza",
             "description":"",
-            "idField":"03-08-additional",
+            "idField":"03-07-additional",
             "contentType":"additional",
             "fieldType":"TextField",
             "condition":{
@@ -2879,10 +2508,10 @@
               "value":"persona juridica"
             }
         },
-        "09":{
+        "08":{
           "label":"NIT",
             "description":"",
-            "idField":"03-09-number",
+            "idField":"03-08-number",
             "contentType":"number",
             "fieldType":"TextField",
             "condition":{
@@ -2891,8 +2520,7 @@
             }
         }
       }
-     }
-    },
+     },
     "04":{
       "description":"",
       "label":"Fecha y hora en que ocurririeron los hechos",
@@ -2954,11 +2582,11 @@
       }
     }
    }
- },
+  },
  {
    "category":"laboral",
    "subcategory":"sanciones",
-   "referenceId":"1lbd17yn3GnPxnW0nMLr38gYA90S15F6H",
+   "referenceId":"1HicDi2n2cFHZNJK410Bh66kXTSBO1NL3",
    "sections":{
      "01":{
        "description":"Diligencia la siguiente información clave para la generación de tu documento",
@@ -2982,7 +2610,7 @@
         "label":"Copia a hoja de vida",
         "description":"Seleccione si desea que el documento tenga una copia a la hoja de vida del trabajador.",
         "idField":"01-03-additional",
-        "contentType":"YN",
+        "contentType":"yesNo",
         "fieldType":"Picker"
        }
      }
@@ -3069,11 +2697,12 @@
             "condition":{
               "id":"03-01-personType",
               "value":"persona natural"
+      }
       },
-      "08":{
+      "07":{
         "label":"Razon social de la empreza",
           "description":"",
-          "idField":"03-08-additional",
+          "idField":"03-07-additional",
           "contentType":"additional",
           "fieldType":"TextField",
           "condition":{
@@ -3081,10 +2710,10 @@
             "value":"persona juridica"
           }
       },
-      "09":{
+      "08":{
         "label":"NIT",
           "description":"",
-          "idField":"03-09-number",
+          "idField":"03-08-number",
           "contentType":"number",
           "fieldType":"TextField",
           "condition":{
@@ -3093,30 +2722,29 @@
            }
        }
       } 
-    }
-   },
-   "04":{
-     "description":"Seleccionar la obligacion violada y la razon de la violacion",
-     "label":"Obligacion violada",
-     "fields":{
-       "01":{
-         "label":"Obligacion violada",
+    },
+    "04":{
+      "description":"Seleccionar la obligacion violada y la razon de la violacion",
+      "label":"Obligacion violada",
+      "fields":{
+        "01":{
+          "label":"Obligacion violada",
+          "description":"",
+          "idField":"04-01-additional",
+          "contentType":"obligation",
+          "fieldType":"Picker"
+        },
+        "02":{
+         "label":"Razon de violacion",
          "description":"",
-         "idField":"04-01-additional",
-         "contentType":"obligation",
+         "idField":"04-02-additional",
+         "contentType":"obligationReason",
          "fieldType":"Picker"
-       },
-       "02":{
-        "label":"Razon de violacion",
-        "description":"",
-        "idField":"04-02-additional",
-        "contentType":"obligationReason",
-        "fieldType":"Picker"
-       }
-     }
+        }
+      }
+    }
    }
-  }
- },
+  },
  {
    "category":"laboral",
    "subcategory":"vinculacion",
@@ -3190,11 +2818,12 @@
               "condition":{
                 "id":"02-01-personType",
                 "value":"persona natural"
+        } 
         },
-        "08":{
+        "07":{
           "label":"Razon social de la empreza",
             "description":"",
-            "idField":"02-08-additional",
+            "idField":"02-07-additional",
             "contentType":"additional",
             "fieldType":"TextField",
             "condition":{
@@ -3202,10 +2831,10 @@
               "value":"persona juridica"
             }
         },
-        "09":{
+        "08":{
           "label":"NIT",
             "description":"",
-            "idField":"02-09-number",
+            "idField":"02-08-number",
             "contentType":"number",
             "fieldType":"TextField",
             "condition":{
@@ -3214,7 +2843,6 @@
             }
         }
       }
-       }
      },
      "03":{
        "description":"Diligencia los siguientes datos acerca del trabajador",
@@ -3251,39 +2879,2537 @@
        }
      },
      "04":{
-       "description":"Diligencie las descripciones de la camisa del uniforme",
-       "label":"Descripcion Camisa",
+       "description":"Selecciona los articulos que decias dotar",
+       "label":"Selleccion articulos",
        "fields":{
          "01":{
-           "label":"Cantidad",
+           "label":"Articulos",
            "description":"",
-           "idField":"04-01-number",
-           "contentType":"number",
-           "fieldType":"TextField"
-         },
-         "02":{
-          "label":"Talla",
-          "description":"",
-          "idField":"04-02-number",
-          "contentType":"number",
-          "fieldType":"TextField"
-         },
-         "03":{
-          "label":"Color",
-          "description":"",
-          "idField":"04-03-additional",
-          "contentType":"additional",
-          "fieldType":"TextField"
-         },
-         "04":{
-           "label":"Tipo articulo",
-           "description":"Debera elegir el articulo que este dotando",
-           "idField":"04-04-additional",
+           "idField":"04-01-additional",
            "contentType":"article",
            "fieldType":"Picker"
          }
        }
+     },
+     "05":{
+      "description":"Diligencie las descripciones de la camisa del uniforme",
+      "label":"Descripcion Camisa",
+      "fields":{
+        "01":{
+          "label":"Cantidad",
+          "description":"",
+          "idField":"05-01-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition":{
+            "id":"04-01-additional",
+            "value":"camisas"
+          }
+        },
+        "02":{
+         "label":"Talla",
+         "description":"",
+         "idField":"05-02-number",
+         "contentType":"number",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"camisas"
+        }
+        },
+        "03":{
+         "label":"Color",
+         "description":"",
+         "idField":"05-03-additional",
+         "contentType":"additional",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"camisas"
+        }
+        }
+      }
+    },
+    "06":{
+      "description":"Diligencie las descripciones del pantalon del uniforme",
+      "label":"Descripcion Pantalon",
+      "fields":{
+        "01":{
+          "label":"Cantidad",
+          "description":"",
+          "idField":"06-01-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition":{
+            "id":"04-01-additional",
+            "value":"pantalones"
+          }
+        },
+        "02":{
+         "label":"Talla",
+         "description":"",
+         "idField":"06-02-number",
+         "contentType":"number",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"pantalones"
+        }
+        },
+        "03":{
+         "label":"Color",
+         "description":"",
+         "idField":"06-03-additional",
+         "contentType":"additional",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"pantalones"
+        }
+        }
+      }
+    },
+    "07":{
+      "description":"Diligencie las descripciones de los zapatos del uniforme",
+      "label":"Descripcion Camisa",
+      "fields":{
+        "01":{
+          "label":"Cantidad",
+          "description":"",
+          "idField":"07-01-number",
+          "contentType":"number",
+          "fieldType":"TextField",
+          "condition":{
+            "id":"04-01-additional",
+            "value":"zapatos"
+          }
+        },
+        "02":{
+         "label":"Talla",
+         "description":"",
+         "idField":"07-02-number",
+         "contentType":"number",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"zapatos"
+        }
+        },
+        "03":{
+         "label":"Color",
+         "description":"",
+         "idField":"07-03-additional",
+         "contentType":"additional",
+         "fieldType":"TextField",
+         "condition":{
+          "id":"04-01-additional",
+          "value":"zapatos"
+        }
+        }
+      }
+    }
+    }
+   },
+ {
+   "category":"laboral",
+   "subcategory":"solicitudesReclamos",
+   "referenceId":"1WvzRyHKjHOv8xm185QSAwrraIqghFhLy",
+   "sections":{
+     "01":{
+       "description":"Diligencia la siguiente información acerca del fondo de cesantías al cual se encuentra afiliado el trabajador y ante quien será dirigido el documento.",
+       "label":"Fondo de cesantias",
+       "fields":{
+         "01":{
+          "label":"Nombre del fondo",
+          "description":"Señala el nombre del fondo al cual se encuentra afiliado el trabajador.",
+          "idField":"01-01-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Fecha de consignacion",
+          "description":"Señala la fecha en la cual realizaste la consignación de las cesantías en el fondo.",
+          "idField":"01-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         }
+       }
+     },
+     "02":{
+       "description":"Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que se retira de su cargo, teniendo en cuenta que será a ella a quien se entregarán las cesantías.",
+       "label":"Información del trabajador",
+       "fields":{
+        "01":{
+          "label":"Nombre del trabajador",
+          "description":"",
+          "idField":"02-01-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Apellido del trabajador",
+          "description":"",
+          "idField":"02-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "03":{
+          "label":"Tipo de documento del trabajador",
+          "description":"",
+          "idField":"02-03-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+         },
+         "04":{
+          "label":"Numero de documento del trabajador",
+          "description":"",
+          "idField":"02-04-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         },
+         "05":{
+          "label":"Fecha de terminacion",
+          "description":"Señala la fecha de terminacion de los labores del trabajador",
+          "idField":"02-05-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         }
+       }
+     },
+     "03":{
+       "description":"Diligencia los siguientes datos acerca del empleador, quien autorizará ante el fondo el retiro de cesantías",
+       "label":"Información del empleador",
+       "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"",
+          "idField":"03-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+          "label":"Nombre empleador",
+          "description":"",
+          "idField":"03-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Apellido empleador",
+          "description":"",
+          "idField":"03-03-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "04":{
+          "label":"Tipo de documento",
+          "description":"",
+          "idField":"03-04-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+        },
+        "05":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField":"03-05-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Numero de contacto",
+              "description":"",
+              "idField":"03-06-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"03-01-personType",
+                "value":"persona natural"
+        }
+       },
+        "07":{
+          "label":"Razon social de la empreza",
+            "description":"",
+            "idField":"03-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"03-01-personType",
+              "value":"persona juridica"
+            }
+        },
+        "08":{
+          "label":"NIT",
+            "description":"",
+            "idField":"03-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"03-01-personType",
+              "value":"persona juridica"
+            }
+          }
+        }
+     },
+     "04":{
+        "description":"Diligencia la siguiente información clave para la generación de tu documento",
+        "label":"Informacion General",
+        "fields":{
+         "01":{
+           "label":"Ciudad",
+           "description":"Diligencia la ciudad de donde se emite la carta",
+           "idField":"04-01-city",
+           "contentType":"city",
+           "fieldType":"TextField"
+         },
+         "02":{
+           "label":"Fecha",
+           "description":"Diligencie la fecha de presentacion del documento",
+           "idField":"04-02-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         },
+         "03":{
+           "label":"Departamento",
+           "description":"Diligencia el departamento desde donde se emite el documento",
+           "idField":"04-03-departament",
+           "contentType":"departament",
+           "fieldType":"TextField"
+         }
+        }
+      }
      }
+   },
+ {
+   "category":"laboral",
+   "subcategory":"solicitudesReclamos",
+   "referenceId":"1Y4dUY8MtYIzoSSWAv72Dqwve1hwr_p_L",
+   "sections":{
+     "01":{
+       "description":"Diligencia los siguientes datos acerca del empleador",
+       "label":"Información del empleador",
+       "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"",
+          "idField":"01-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+          "label":"Nombre empleador",
+          "description":"",
+          "idField":"01-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Apellido empleador",
+          "description":"",
+          "idField":"01-03-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "04":{
+          "label":"Tipo de documento",
+          "description":"",
+          "idField":"01-04-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+        },
+        "05":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField":"01-05-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Numero de contacto",
+              "description":"",
+              "idField":"01-06-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"01-01-personType",
+                "value":"persona natural"
+        }
+        },
+        "07":{
+          "label":"Razon social de la empreza",
+            "description":"",
+            "idField":"01-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        },
+        "08":{
+          "label":"NIT",
+            "description":"",
+            "idField":"01-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+          }
+        }
+       },
+       "02":{
+         "description":"Diligencia los siguientes datos acerca de la trabajadora que se encuentra en estado de embarazo y desea notificar el mismo a su empleador.",
+         "label":"Información de la trabajadora",
+         "fields":{
+          "01":{
+            "label":"Nombre de la trabajadora",
+            "description":"",
+            "idField":"02-01-name",
+            "contentType":"name",
+            "fieldType":"TextField"
+           },
+           "02":{
+            "label":"Apellido de la trabajadora",
+            "description":"",
+            "idField":"02-02-name",
+            "contentType":"name",
+            "fieldType":"TextField"
+           },
+           "03":{
+            "label":"Tipo de documento de la trabajadora",
+            "description":"",
+            "idField":"02-03-documentType",
+            "contentType":"documentType",
+            "fieldType":"Picker"
+           },
+           "04":{
+            "label":"Numero de documento del trabajador",
+            "description":"",
+            "idField":"02-04-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+           }
+         }
+       },
+       "03":{
+         "description":"Diligencia la siguiente información clave para la generación de tu documento",
+         "label":"Informacion General",
+         "fields":{
+          "01":{
+            "label":"Ciudad",
+            "description":"Diligencia la ciudad de donde se emite el documento",
+            "idField":"03-01-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "02":{
+            "label":"Fecha",
+            "description":"Diligencie la fecha de presentacion del documento",
+            "idField":"03-02-date",
+            "contentType":"date",
+            "fieldType":"DatePicker"
+          }
+         }
+       }
+     }
+   },
+ {
+  "category":"laboral",
+  "subcategory":"solicitudesReclamos",
+  "referenceId":"1x3dNn7d3Jv0IUT6GUyLoy0LU1Ts5kWiD",
+  "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+       "01":{
+         "label":"Tipo de empleador",
+         "description":"",
+         "idField":"01-01-personType",
+         "contentType":"personType",
+         "fieldType":"Picker"
+       },
+       "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       }
+      }
+     },
+     "02":{
+       "description":"Diligencia los siguientes datos acerca de la trabajadora.",
+       "label":"Información de la trabajadora",
+       "fields":{
+        "01":{
+          "label":"Nombre de la trabajadora",
+          "description":"",
+          "idField":"02-01-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Apellido de la trabajadora",
+          "description":"",
+          "idField":"02-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "03":{
+          "label":"Tipo de documento de la trabajadora",
+          "description":"",
+          "idField":"02-03-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+         },
+         "04":{
+          "label":"Numero de documento de la trabajadora",
+          "description":"",
+          "idField":"02-04-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         }
+       }
+     },
+     "03":{
+       "description":"Diligencia la siguiente información clave para la generación de tu documento",
+       "label":"Informacion General",
+       "fields":{
+        "01":{
+          "label":"Ciudad",
+          "description":"Diligencia la ciudad de donde se emite el documento",
+          "idField":"03-01-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Fecha de licencia",
+          "description":"Señala la fecha a partir de la cual iniciaría el tiempo de licencia",
+          "idField":"03-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        },
+        "03":{
+          "label":"Fecha del documento",
+          "description":"Señala la fecha de presentación del documento",
+          "idField":"03-03-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        }
+       }
+     }
+    }
+  },
+{
+  "category":"laboral",
+  "subcategory":"solicitudesReclamos",
+  "referenceId":"1BHGC4pNvpGL5yVeWa5HzLw5RY8176AJp",
+  "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+       "01":{
+         "label":"Tipo de empleador",
+         "description":"",
+         "idField":"01-01-personType",
+         "contentType":"personType",
+         "fieldType":"Picker"
+       },
+       "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+         }
+       }
+      },
+      "02":{
+        "description":"Diligencia los siguientes datos acerca del trabajador.",
+        "label":"Información de la trabajadora",
+        "fields":{
+         "01":{
+           "label":"Nombre del trabajador",
+           "description":"",
+           "idField":"02-01-name",
+           "contentType":"name",
+           "fieldType":"TextField"
+          },
+          "02":{
+           "label":"Apellido del trabajador",
+           "description":"",
+           "idField":"02-02-name",
+           "contentType":"name",
+           "fieldType":"TextField"
+          },
+          "03":{
+           "label":"Tipo de documento del trabajador",
+           "description":"",
+           "idField":"02-03-documentType",
+           "contentType":"documentType",
+           "fieldType":"Picker"
+          },
+          "04":{
+           "label":"Numero de documento del trabajador",
+           "description":"",
+           "idField":"02-04-number",
+           "contentType":"number",
+           "fieldType":"TextField"
+          }
+        }
+      },
+      "03":{
+        "description":"Diligencia la siguiente información clave para la generación de tu documento",
+        "label":"Informacion General",
+        "fields":{
+         "01":{
+           "label":"Ciudad",
+           "description":"Diligencia la ciudad de donde se emite el documento",
+           "idField":"03-01-city",
+           "contentType":"city",
+           "fieldType":"TextField"
+         },
+         "02":{
+           "label":"Fecha de nacimiento",
+           "description":"Señala la fecha de nacimiento del hijo(a) del trabajador",
+           "idField":"03-02-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         },
+         "03":{
+           "label":"Fecha del documento",
+           "description":"Señala la fecha de presentación del documento",
+           "idField":"03-03-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         }
+        }
+      }
+    }
+  },
+{
+  "category":"laboral",
+  "subcategory":"solicitudesReclamos",
+  "referenceId":"1dnS3Y0HrxOlDE6lnRjHGEtp5vBPSWWvG",
+  "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+       "01":{
+         "label":"Tipo de empleador",
+         "description":"",
+         "idField":"01-01-personType",
+         "contentType":"personType",
+         "fieldType":"Picker"
+       },
+       "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       }
+      }
+     },
+     "02":{
+       "description":"Diligencia los siguientes datos acerca del trabajador.",
+       "label":"Información de la trabajadora",
+       "fields":{
+        "01":{
+          "label":"Nombre del trabajador",
+          "description":"",
+          "idField":"02-01-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Apellido del trabajador",
+          "description":"",
+          "idField":"02-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "03":{
+          "label":"Tipo de documento del trabajador",
+          "description":"",
+          "idField":"02-03-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+         },
+         "04":{
+          "label":"Numero de documento del trabajador",
+          "description":"",
+          "idField":"02-04-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         }
+       }
+     },
+     "03":{
+       "description":"Es importante señalar, en el documento, el período en el cual el trabajador desea tomar su licencia.",
+       "label":"Periodo de licencia",
+       "fields":{
+         "01":{
+           "label":"Fecha de inicio",
+           "description":"Señala la fecha en la cual iniciaría la licencia del trabajado.",
+           "idField":"03-01-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         },
+         "02":{
+           "label":"Fecha de finalizacion",
+           "description":"Señala la fecha en la cual finalizaría la licencia del trabajador.",
+           "idField":"03-02-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         }
+       }
+     },
+     "04":{
+       "description":"Es importante que el trabajador indique el parentesco sostenido entre él y la persona fallecida, con el fin de verificar si podrá solicitar la licencia. ",
+       "label":"Defucion",
+       "fields":{
+         "01":{
+           "label":"Parentesco",
+           "description":"Señala el parentesco sostenido entre el trabajador y la persona fallecida.",
+           "idField":"04-01-additional",
+           "contentType":"additional",
+           "fieldType":"TextField"
+         },
+         "02":{
+           "label":"Fecha de defuncion",
+           "description":"Señala la fecha en la cual falleció el(la) cónyuge o familiar del trabajador.",
+           "idField":"04-02-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         }
+       }
+     },
+     "05":{
+       "description":"Diligencia la siguiente información clave para la generación de tu documento",
+       "label":"Informacion General",
+       "fields":{
+        "01":{
+          "label":"Ciudad",
+          "description":"Diligencia la ciudad de donde se emite el documento",
+          "idField":"05-01-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Fecha del documento",
+          "description":"Señala la fecha de presentación del documento",
+          "idField":"05-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        }
+        
+       }
+     }
+    }
+  },
+{
+"category":"laboral",
+"subcategory":"solicitudesReclamos",
+"referenceId":"1EJDkBwtWRF9jH8aG9-FmZ3YqSUx1AhtI",
+"sections":{
+  "01":{
+    "description":"Diligencia los siguientes datos acerca del empleador",
+    "label":"Información del empleador",
+    "fields":{
+     "01":{
+       "label":"Tipo de empleador",
+       "description":"",
+       "idField":"01-01-personType",
+       "contentType":"personType",
+       "fieldType":"Picker"
+     },
+     "02":{
+       "label":"Nombre empleador",
+       "description":"",
+       "idField":"01-02-name",
+       "contentType":"name",
+       "fieldType":"TextField"
+     },
+     "03":{
+       "label":"Apellido empleador",
+       "description":"",
+       "idField":"01-03-name",
+       "contentType":"name",
+       "fieldType":"TextField"
+     },
+     "04":{
+       "label":"Tipo de documento",
+       "description":"",
+       "idField":"01-04-documentType",
+       "contentType":"documentType",
+       "fieldType":"Picker"
+     },
+     "05":{
+       "label":"Numero del documento",
+       "description":"",
+       "idField":"01-05-number",
+       "contentType":"number",
+       "fieldType":"TextField"
+     },
+     "06":{
+       "label":"Numero de contacto",
+           "description":"",
+           "idField":"01-06-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona natural"
+     }
+     },
+     "07":{
+       "label":"Razon social de la empreza",
+         "description":"",
+         "idField":"01-07-additional",
+         "contentType":"additional",
+         "fieldType":"TextField",
+         "condition":{
+           "id":"01-01-personType",
+           "value":"persona juridica"
+         }
+     },
+     "08":{
+       "label":"NIT",
+         "description":"",
+         "idField":"01-08-number",
+         "contentType":"number",
+         "fieldType":"TextField",
+         "condition":{
+           "id":"01-01-personType",
+           "value":"persona juridica"
+         }
+     }
+    }
+   },
+   "02":{
+     "description":"Diligencia los siguientes datos acerca del trabajador.",
+     "label":"Información de la trabajadora",
+     "fields":{
+      "01":{
+        "label":"Nombre del trabajador",
+        "description":"",
+        "idField":"02-01-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "02":{
+        "label":"Apellido del trabajador",
+        "description":"",
+        "idField":"02-02-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "03":{
+        "label":"Tipo de documento del trabajador",
+        "description":"",
+        "idField":"02-03-documentType",
+        "contentType":"documentType",
+        "fieldType":"Picker"
+       },
+       "04":{
+        "label":"Numero de documento del trabajador",
+        "description":"",
+        "idField":"02-04-number",
+        "contentType":"number",
+        "fieldType":"TextField"
+       }
+     }
+   },
+   "03":{
+     "description":" Es importante señalar, en el documento, el período en el cual el trabajador desea tomar su licencia.",
+     "label":"Periodo de licencia",
+     "fields":{
+       "01":{
+         "label":"Fecha de inicio",
+        "description":"Señala la fecha a partir de la cual iniciaría el tiempo de licencia",
+        "idField":"03-01-date",
+        "contentType":"date",
+        "fieldType":"DatePicker"
+       },
+       "02":{
+         "label":"Fecha de finalizacion",
+        "description":"Señala la fecha en la cual finalizaría la licencia del trabajador.",
+        "idField":"03-01-date",
+        "contentType":"date",
+        "fieldType":"DatePicker"
+       }
+     }
+   },
+   "04":{
+     "description":"Diligencia la siguiente información clave para la generación de tu documento",
+     "label":"Informacion General",
+     "fields":{
+      "01":{
+        "label":"Ciudad",
+        "description":"Diligencia la ciudad de donde se emite el documento",
+        "idField":"04-01-city",
+        "contentType":"city",
+        "fieldType":"TextField"
+      },
+      "02":{
+        "label":"Fecha de nacimiento",
+        "description":"Señala la fecha de presentacion del documento",
+        "idField":"04-02-date",
+        "contentType":"date",
+        "fieldType":"DatePicker"
+      }
+     }
+   }
+  }
+},
+{
+  "category":"laboral",
+  "subcategory":"solicitudesReclamos",
+  "referenceId":"1yTYJ9XRFrNQjPp3wkKZhBjamhbAFzGNr",
+  "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+       "01":{
+         "label":"Tipo de empleador",
+         "description":"",
+         "idField":"01-01-personType",
+         "contentType":"personType",
+         "fieldType":"Picker"
+       },
+       "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       }
+      }
+     },
+     "02":{
+       "description":"Diligencia los siguientes datos acerca del trabajador.",
+       "label":"Información de la trabajadora",
+       "fields":{
+        "01":{
+          "label":"Nombre del trabajador",
+          "description":"",
+          "idField":"02-01-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Apellido del trabajador",
+          "description":"",
+          "idField":"02-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+         },
+         "03":{
+          "label":"Tipo de documento del trabajador",
+          "description":"",
+          "idField":"02-03-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+         },
+         "04":{
+          "label":"Numero de documento del trabajador",
+          "description":"",
+          "idField":"02-04-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         }
+       }
+     },
+     "03":{
+       "description":" Es importante señalar, en el documento, el período en el cual el trabajador desea tomar sus vacaciones, indicando además el número de días acumulados.",
+       "label":"Vacaciones",
+       "fields":{
+         "01":{
+          "label":"Dias acumulados letras",
+          "description":"Señala el número de días de vacaciones acumulados a favor del trabajador en letras",
+          "idField":"03-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Fecha de inicio",
+          "description":"Señala la fecha en la cual iniciarían las vacaciones del trabajador",
+          "idField":"03-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         },
+         "03":{
+          "label":"Fecha de finalizacion",
+          "description":"Señala la fecha en la cual finalizarían las vacaciones del trabajador",
+          "idField":"03-03-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         },
+         "04":{
+         "label":"Dias acumulados numeros",
+          "description":"Señala el número de días de vacaciones acumulados a favor del trabajador en numeros",
+          "idField":"03-04-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         }
+       }
+     },
+     "04":{
+       "description":"Diligencia la siguiente información clave para la generación de tu documento",
+       "label":"Informacion General",
+       "fields":{
+         "01":{
+          "label":"Fecha",
+          "description":"Señala la fecha de presentacion del documento",
+          "idField":"04-01-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         },
+         "02":{
+          "label":"Ciudad",
+          "description":"Señala la ciudad de presentacion del documento",
+          "idField":"04-02-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+         }
+       }
+     }
+  }
+},
+{
+  "category":"laboral",
+  "subcategory":"contratos",
+  "referenceId":"1ZwKfMbrW4nftZjSlkT46_cst5hhsua9S",
+  "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"",
+          "idField":"01-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+          "label":"Nombre empleador",
+          "description":"",
+          "idField":"01-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Apellido empleador",
+          "description":"",
+          "idField":"01-03-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "04":{
+          "label":"Tipo de documento",
+          "description":"",
+          "idField":"01-04-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+        },
+        "05":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField":"01-05-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Numero de contacto",
+              "description":"",
+              "idField":"01-06-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"01-01-personType",
+                "value":"persona natural"
+        }
+        },
+        "07":{
+          "label":"Razon social de la empreza",
+            "description":"",
+            "idField":"01-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        },
+        "08":{
+          "label":"NIT",
+            "description":"",
+            "idField":"01-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        }
+       }
+    },
+    "02":{
+      "description":"Diligencia los siguientes datos acerca del trabajador.",
+      "label":"Información de la trabajadora",
+      "fields":{
+       "01":{
+         "label":"Nombre del trabajador",
+         "description":"",
+         "idField":"02-01-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "02":{
+         "label":"Apellido del trabajador",
+         "description":"",
+         "idField":"02-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "03":{
+         "label":"Tipo de documento del trabajador",
+         "description":"",
+         "idField":"02-03-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+        },
+        "04":{
+         "label":"Numero de documento del trabajador",
+         "description":"",
+         "idField":"02-04-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+        },
+        "05":{
+          "label":"Ciudad de recidencia",
+          "description":"",
+          "idField":"02-05-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Direccion de recidencia",
+          "description":"",
+          "idField":"02-06-additional",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "07":{
+          "label":"Numero de telefono",
+          "description":"",
+          "idField":"02-07-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "08":{
+          "label":"Interno",
+          "description":"Selecciona si el trabajador será interno o no de la vivienda en la cual desarrollará sus labores, es decir, si residirá en ella durante la vigencia del contrato.",
+          "idField":"02-08-additional",
+          "contentType":"yesNo",
+          "fieldType":"Picker"
+        }
+      }
+    },
+    "03":{
+      "description":"Señala la fecha de inicio de las labores. En este caso, al ser un contrato a término indefinido, no será necesario establecer en el documento una fecha de terminación.",
+      "label":"Fecha de inicio",
+      "fields":{
+        "01":{
+          "label":"Fecha de inicio",
+          "description":"",
+          "idField":"03-01-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         }
+        }
+      },
+      "04":{
+        "description":"Señala la remuneración que recibirá el trabajador, el tipo de salario y su forma de pago. Es importante este paso porque constituye uno de los elementos esenciales del contrato de trabajo.",
+        "label":"Salario",
+        "fields":{
+          "01":{
+            "label":"Valor del salario",
+            "description":"",
+            "idField":"04-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"                       
+          },
+          "02":{
+            "label":"Forma de pago",
+            "description":"",
+            "idField":"04-02-additional",
+            "contentType":"payType",
+            "fieldType":"Picker"
+          },
+          "03":{
+            "label":"Salario en especie",
+            "description":"",
+            "idField":"04-03-additional",
+            "contentType":"yesNo",
+            "fieldType":"Picker"
+          },
+          "04":{
+            "label":"Porcentaje del salario en especie letras",
+            "description":"",
+            "idField":"04-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "05":{
+            "label":"Valor del salario en especie numeros",
+            "description":"",
+            "idField":"04-05-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "06":{
+            "label":"Porcentaje del salario en especie numeros",
+            "description":"",
+            "idField":"04-06-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "07":{
+            "label":"Valor del salario en especie letras",
+            "description":"",
+            "idField":"04-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          }
+        }
+      },
+      "05":{
+        "description":"Al tratarse de un empleado del servicio doméstico, existen ciertas labores propias de dicho cargo las cuales desarrollará el trabajador. Selecciona las que deseas incluir en el contrato, adicionando otras en caso que lo consideres.",
+        "label":"labores",
+        "fields":{
+          "01":{
+            "label":"Labores",
+            "description":"",
+            "idField":"05-01-additional",
+            "contentType":"number",
+            "fieldType":"TextField"
+          }
+        }
+      },
+      "06":{
+        "description":"En todo contrato de trabajo debe definirse la jornada laboral a la que estará sujeto el trabajador. Aquí se deberá señalar el tipo de jornada (si será medio tiempo o tiempo completo), el tiempo de trabajo (si será mañana o tarde) y el período de tiempo de trabajo (número de horas).",
+        "label":"Jornada laboral",
+        "fields":{
+          "01":{
+            "label":"Jornada",
+            "description":"",
+            "idField":"06-01-additional",
+            "contentType":"workType",
+            "fieldType":"Picker"
+          },
+          "02":{
+            "label":"Horas laborales por dia",
+            "description":"",
+            "idField":"06-02-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "03":{
+            "label":"Horario",
+            "description":"",
+            "idField":"06-03-additional",
+            "contentType":"workHours",
+            "fieldType":"Picker"
+          },
+          "04":{
+            "label":"Hora entrada mañana",
+            "description":"",
+            "idField":"06-04-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"mañana"
+            }
+          },
+          "05":{
+            "label":"Hora salida mañana",
+            "description":"",
+            "idField":"06-05-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"mañana"
+            }
+          },
+          "06":{
+            "label":"Hora entrada Tarde",
+            "description":"",
+            "idField":"06-06-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"tarde"
+            }
+          },
+          "07":{
+            "label":"Hora salida Tarde",
+            "description":"",
+            "idField":"06-07-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"tarde"
+            }
+          },
+          "08":{
+            "label":"Hora entrada Almuerzo",
+            "description":"",
+            "idField":"06-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "09":{
+            "label":"Hora salida Almuerzo",
+            "description":"",
+            "idField":"06-09-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "10":{
+            "label":"Hora entrada tarde",
+            "description":"",
+            "idField":"06-10-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "11":{
+            "label":"Hora salida tarde",
+            "description":"",
+            "idField":"06-11-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            },
+            "12":{
+              "label":"Hora entrada Mañana",
+              "description":"",
+              "idField":"06-12-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"06-03-additional",
+                "value":"todo el dia"
+              }
+            },
+            "13":{
+              "label":"Hora salida Mañana",
+              "description":"",
+              "idField":"06-13-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"06-03-additional",
+                "value":"todo el dia"
+              }
+            }
+          }
+        }
+      },
+      "07":{
+        "description":"Diligencia la siguiente información clave para la generación de tu documento",
+        "label":"Informacion General",
+        "fields":{
+          "01":{
+            "label":"Fecha",
+            "description":"Señala la fecha de presentacion del documento",
+            "idField":"07-01-date",
+            "contentType":"date",
+            "fieldType":"DatePicker"          
+          },
+          "02":{
+            "label":"Fecha de frima",
+            "description":"Señala la fecha de firma del documento",
+            "idField":"07-02-date",
+            "contentType":"date",
+            "fieldType":"DatePicker"
+          },
+          "03":{
+            "label":"Ciudad",
+            "description":"Señala la ciudad de presentacion del documento",
+            "idField":"07-03-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Ciudad de firma",
+            "description":"Señala la ciudad de firma del documento",
+            "idField":"07-04-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"departamento defirma",
+            "description":"Señala el departamento de firma del documento",
+            "idField":"07-05-departament",
+            "contentType":"departament",
+            "fieldType":"TextField"
+          }
+        }
+      }
+    }
+ },
+ {
+   "category":"laboral",
+   "subcategory":"contratos",
+   "referenceId":"1Rqbd7xjn1Pi0myKljReOApMLyMg1O05Q",
+   "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"",
+          "idField":"01-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+          "label":"Nombre empleador",
+          "description":"",
+          "idField":"01-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Apellido empleador",
+          "description":"",
+          "idField":"01-03-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "04":{
+          "label":"Tipo de documento",
+          "description":"",
+          "idField":"01-04-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+        },
+        "05":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField":"01-05-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Numero de contacto",
+              "description":"",
+              "idField":"01-06-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"01-01-personType",
+                "value":"persona natural"
+        }
+        },
+        "07":{
+          "label":"Razon social de la empreza",
+            "description":"",
+            "idField":"01-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        },
+        "08":{
+          "label":"NIT",
+            "description":"",
+            "idField":"01-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        }
+       }
+    },
+    "02":{
+      "description":"Diligencia los siguientes datos acerca del trabajador.",
+      "label":"Información de la trabajadora",
+      "fields":{
+       "01":{
+         "label":"Nombre del trabajador",
+         "description":"",
+         "idField":"02-01-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "02":{
+         "label":"Apellido del trabajador",
+         "description":"",
+         "idField":"02-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "03":{
+         "label":"Tipo de documento del trabajador",
+         "description":"",
+         "idField":"02-03-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+        },
+        "04":{
+         "label":"Numero de documento del trabajador",
+         "description":"",
+         "idField":"02-04-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+        },
+        "05":{
+          "label":"Ciudad de recidencia",
+          "description":"",
+          "idField":"02-05-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Direccion de recidencia",
+          "description":"",
+          "idField":"02-06-additional",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "07":{
+          "label":"Numero de telefono",
+          "description":"",
+          "idField":"02-07-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "08":{
+          "label":"Interno",
+          "description":"Selecciona si el trabajador será interno o no de la vivienda en la cual desarrollará sus labores, es decir, si residirá en ella durante la vigencia del contrato.",
+          "idField":"02-08-additional",
+          "contentType":"yesNo",
+          "fieldType":"Picker"
+        }
+      }
+    },
+    "03":{
+      "description":"En este caso, al ser un contrato a término fijo, se debe señalar el término de duración, tanto la fecha de inicio de las labores como la de su terminación.",
+      "label":"Fecha de inicio",
+      "fields":{
+        "01":{
+          "label":"Fecha de inicio",
+          "description":"",
+          "idField":"03-01-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         },
+         "02":{
+          "label":"Fecha de terminación",
+          "description":"",
+          "idField":"03-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+         }
+        }
+      },
+      "04":{
+        "description":"Señala la remuneración que recibirá el trabajador, el tipo de salario y su forma de pago. Es importante este paso porque constituye uno de los elementos esenciales del contrato de trabajo.",
+        "label":"Salario",
+        "fields":{
+          "01":{
+            "label":"Valor del salario",
+            "description":"",
+            "idField":"04-01-number",
+            "contentType":"number",
+            "fieldType":"TextField"                       
+          },
+          "02":{
+            "label":"Forma de pago",
+            "description":"",
+            "idField":"04-02-additional",
+            "contentType":"payType",
+            "fieldType":"Picker"
+          },
+          "03":{
+            "label":"Salario en especie",
+            "description":"",
+            "idField":"04-03-additional",
+            "contentType":"yesNo",
+            "fieldType":"Picker"
+          },
+          "04":{
+            "label":"Porcentaje del salario en especie letras",
+            "description":"",
+            "idField":"04-04-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "05":{
+            "label":"Valor del salario en especie numeros",
+            "description":"",
+            "idField":"04-05-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "06":{
+            "label":"Porcentaje del salario en especie numeros",
+            "description":"",
+            "idField":"04-06-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          },
+          "07":{
+            "label":"Valor del salario en especie letras",
+            "description":"",
+            "idField":"04-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"04-03-additional",
+              "value":"yes"
+            }
+          }
+        }
+      },
+      "05":{
+        "description":"Al tratarse de un empleado del servicio doméstico, existen ciertas labores propias de dicho cargo las cuales desarrollará el trabajador. Selecciona las que deseas incluir en el contrato, adicionando otras en caso que lo consideres.",
+        "label":"labores",
+        "fields":{
+          "01":{
+            "label":"Labores",
+            "description":"",
+            "idField":"05-01-additional",
+            "contentType":"number",
+            "fieldType":"TextField"
+          }
+        }
+      },
+      "06":{
+        "description":"En todo contrato de trabajo debe definirse la jornada laboral a la que estará sujeto el trabajador. Aquí se deberá señalar el tipo de jornada (si será medio tiempo o tiempo completo), el tiempo de trabajo (si será mañana o tarde) y el período de tiempo de trabajo (número de horas).",
+        "label":"Jornada laboral",
+        "fields":{
+          "01":{
+            "label":"Jornada",
+            "description":"",
+            "idField":"06-01-additional",
+            "contentType":"workType",
+            "fieldType":"Picker"
+          },
+          "02":{
+            "label":"Horas laborales por dia",
+            "description":"",
+            "idField":"06-02-number",
+            "contentType":"number",
+            "fieldType":"TextField"
+          },
+          "03":{
+            "label":"Horario",
+            "description":"",
+            "idField":"06-03-additional",
+            "contentType":"workHours",
+            "fieldType":"Picker"
+          },
+          "04":{
+            "label":"Hora entrada mañana",
+            "description":"",
+            "idField":"06-04-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"mañana"
+            }
+          },
+          "05":{
+            "label":"Hora salida mañana",
+            "description":"",
+            "idField":"06-05-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"mañana"
+            }
+          },
+          "06":{
+            "label":"Hora entrada Tarde",
+            "description":"",
+            "idField":"06-06-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"tarde"
+            }
+          },
+          "07":{
+            "label":"Hora salida Tarde",
+            "description":"",
+            "idField":"06-07-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"tarde"
+            }
+          },
+          "08":{
+            "label":"Hora entrada Almuerzo",
+            "description":"",
+            "idField":"06-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "09":{
+            "label":"Hora salida Almuerzo",
+            "description":"",
+            "idField":"06-09-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "10":{
+            "label":"Hora entrada tarde",
+            "description":"",
+            "idField":"06-10-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "11":{
+            "label":"Hora salida tarde",
+            "description":"",
+            "idField":"06-11-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "12":{
+            "label":"Hora entrada mañana",
+            "description":"",
+            "idField":"06-12-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          },
+          "13":{
+            "label":"Hora salida mañana",
+            "description":"",
+            "idField":"06-13-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"06-03-additional",
+              "value":"todo el dia"
+            }
+          }
+        }
+      },
+      "07":{
+        "description":"Diligencia la siguiente información clave para la generación de tu documento",
+        "label":"Informacion General",
+        "fields":{
+          "01":{
+            "label":"Fecha",
+            "description":"Señala la fecha de presentacion del documento",
+            "idField":"07-01-date",
+            "contentType":"date",
+            "fieldType":"DatePicker"          
+          },
+          "02":{
+            "label":"Fecha de frima",
+            "description":"Señala la fecha de firma del documento",
+            "idField":"07-02-date",
+            "contentType":"date",
+            "fieldType":"DatePicker"
+          },
+          "03":{
+            "label":"Ciudad",
+            "description":"Señala la ciudad de presentacion del documento",
+            "idField":"07-03-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "04":{
+            "label":"Ciudad de firma",
+            "description":"Señala la ciudad de firma del documento",
+            "idField":"07-04-city",
+            "contentType":"city",
+            "fieldType":"TextField"
+          },
+          "05":{
+            "label":"departamento defirma",
+            "description":"Señala el departamento de firma del documento",
+            "idField":"07-05-departament",
+            "contentType":"departament",
+            "fieldType":"TextField"
+          }
+        }
+      }
+    }
+ },
+ {
+   "category":"laboral",
+   "subcategory":"vinculacion",
+   "referenceId":"17vsWhSwRJLQ4sXBy8gqb4hk0hXMsuUtO",
+   "sections":{
+     "01":{
+       "description":"Diligencia los siguientes datos acerca del empleador",
+       "label":"Información del empleador",
+       "fields":{
+         "01":{
+           "label":"Tipo de empleador",
+           "description":"Selecciona el tipo de empleador, es decir, la parte contratante. Quien podrá ser una persona natural o jurídica.",
+           "idField":"01-01-personType",
+           "contentType":"personType",
+           "fieldType":"Picker"
+         },
+         "02":{
+          "label":"Nombre empleador",
+          "description":"",
+          "idField":"01-02-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "03":{
+          "label":"Apellido empleador",
+          "description":"",
+          "idField":"01-03-name",
+          "contentType":"name",
+          "fieldType":"TextField"
+        },
+        "04":{
+          "label":"Tipo de documento",
+          "description":"",
+          "idField":"01-04-documentType",
+          "contentType":"documentType",
+          "fieldType":"Picker"
+        },
+        "05":{
+          "label":"Numero del documento",
+          "description":"",
+          "idField":"01-05-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+        },
+        "06":{
+          "label":"Numero de contacto",
+              "description":"",
+              "idField":"01-06-number",
+              "contentType":"number",
+              "fieldType":"TextField",
+              "condition":{
+                "id":"01-01-personType",
+                "value":"persona natural"
+        }
+        },
+        "07":{
+          "label":"Razon social de la empreza",
+            "description":"",
+            "idField":"01-07-additional",
+            "contentType":"additional",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        },
+        "08":{
+          "label":"NIT",
+            "description":"",
+            "idField":"01-08-number",
+            "contentType":"number",
+            "fieldType":"TextField",
+            "condition":{
+              "id":"01-01-personType",
+              "value":"persona juridica"
+            }
+        }
+       }
+     },
+     "02":{
+      "description":"Diligencia los siguientes datos acerca del trabajador.",
+      "label":"Información de la trabajadora",
+      "fields":{
+       "01":{
+         "label":"Nombre del trabajador",
+         "description":"",
+         "idField":"02-01-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "02":{
+         "label":"Apellido del trabajador",
+         "description":"",
+         "idField":"02-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+        },
+        "03":{
+         "label":"Tipo de documento del trabajador",
+         "description":"",
+         "idField":"02-03-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+        },
+        "04":{
+         "label":"Numero de documento del trabajador",
+         "description":"",
+         "idField":"02-04-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+        }
+      }
+     },
+     "03":{
+       "description":"En este paso deberás indicar las herramientas de trabajo que serán entregados al trabajador, la cantidad y, de ser necesario, el color. Es importante identificar dichos elementos con el fin de que el empleador pueda llevar un registro de la entrega realizada.",
+       "label":"Activos",
+       "fields":{
+         "01":{
+          "label":"Activo",
+          "description":"",
+          "idField":"03-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+         },
+         "02":{
+          "label":"Cantidad",
+          "description":"",
+          "idField":"03-02-number",
+          "contentType":"number",
+          "fieldType":"TextField"
+         },
+         "03":{
+           "label":"Color",
+           "description":"",
+           "idField":"03-03-additional",
+           "contentType":"additional"
+         }
+       }
+     },
+     "04":{
+       "description":"Diligencia la siguiente información clave para la generación de tu documento",
+       "label":"Informacion General",
+       "fields":{
+         "01":{
+           "label":"Fecha",
+           "description":"Señala la fecha de presentacion del documento",
+           "idField":"04-01-date",
+           "contentType":"date",
+           "fieldType":"DatePicker"
+         },
+         "02":{
+           "label":"Ciudad",
+           "description":"Señala la ciudad de presentacion del documento",
+           "idField":"04-02-city",
+           "contentType":"city",
+           "fieldType":"TextField"
+         }
+       }
+     }
+   }
+ },
+ {
+   "category":"laboral",
+   "subcategory":"solicitudesReclamos",
+   "referenceId":"12dQmdf5KSjHWiE0Plvr5yJaEQJpGAJE9",
+   "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"Selecciona el tipo de empleador, es decir, la parte contratante. Quien podrá ser una persona natural o jurídica.",
+          "idField":"01-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       }
+      }
+    },
+    "02":{
+     "description":"Diligencia los siguientes datos acerca del trabajador.",
+     "label":"Información de la trabajadora",
+     "fields":{
+      "01":{
+        "label":"Nombre del trabajador",
+        "description":"",
+        "idField":"02-01-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "02":{
+        "label":"Apellido del trabajador",
+        "description":"",
+        "idField":"02-02-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "03":{
+        "label":"Tipo de documento del trabajador",
+        "description":"",
+        "idField":"02-03-documentType",
+        "contentType":"documentType",
+        "fieldType":"Picker"
+       },
+       "04":{
+        "label":"Numero de documento del trabajador",
+        "description":"",
+        "idField":"02-04-number",
+        "contentType":"number",
+        "fieldType":"TextField"
+       }
+     }
+    },
+    "03":{
+      "description":" Es importante señalar, en el documento, el período en el cual el trabajador desea tomar su licencia.",
+      "label":"Periodo de licencia",
+      "fields":{
+        "01":{
+          "label":"Fecha de inicio",
+          "description":"Señala la fecha en la cual iniciaría la licencia del trabajador",
+          "idField":"03-01-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        },
+        "02":{
+          "label":"Fecha de finalizacion",
+          "description":"Señala la fecha en la cual finalizaría la licencia del trabajador.",
+          "idField":"03-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        }
+      }
+    },
+    "04":{
+      "description":"En este paso, el trabajador podrá indicar los motivos por los cuales solicita la licencia, sin ser necesario profundizar en ello.",
+      "label":"Motivos",
+      "fields":{
+        "01":{
+          "label":"Motivos",
+          "description":"",
+          "idField":"04-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        }
+      }
+    },
+    "05":{
+      "description":"Diligencia la siguiente información clave para la generación de tu documento",
+      "label":"Informacion General",
+      "fields":{
+        "01":{
+          "label":"Ciudad",
+          "description":"",
+          "idField":"05-01-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Fecha",
+          "description":"",
+          "idField":"05-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        }
+      }
+    }
+   }
+ },
+ {
+   "category":"laboral",
+   "subcategory":"solicitudesReclamos",
+   "referenceId":"1UO6R995xRE0qtxjnMxTaje-NAxTIh08h",
+   "sections":{
+    "01":{
+      "description":"Diligencia los siguientes datos acerca del empleador",
+      "label":"Información del empleador",
+      "fields":{
+        "01":{
+          "label":"Tipo de empleador",
+          "description":"Selecciona el tipo de empleador, es decir, la parte contratante. Quien podrá ser una persona natural o jurídica.",
+          "idField":"01-01-personType",
+          "contentType":"personType",
+          "fieldType":"Picker"
+        },
+        "02":{
+         "label":"Nombre empleador",
+         "description":"",
+         "idField":"01-02-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "03":{
+         "label":"Apellido empleador",
+         "description":"",
+         "idField":"01-03-name",
+         "contentType":"name",
+         "fieldType":"TextField"
+       },
+       "04":{
+         "label":"Tipo de documento",
+         "description":"",
+         "idField":"01-04-documentType",
+         "contentType":"documentType",
+         "fieldType":"Picker"
+       },
+       "05":{
+         "label":"Numero del documento",
+         "description":"",
+         "idField":"01-05-number",
+         "contentType":"number",
+         "fieldType":"TextField"
+       },
+       "06":{
+         "label":"Numero de contacto",
+             "description":"",
+             "idField":"01-06-number",
+             "contentType":"number",
+             "fieldType":"TextField",
+             "condition":{
+               "id":"01-01-personType",
+               "value":"persona natural"
+       }
+       },
+       "07":{
+         "label":"Razon social de la empreza",
+           "description":"",
+           "idField":"01-07-additional",
+           "contentType":"additional",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       },
+       "08":{
+         "label":"NIT",
+           "description":"",
+           "idField":"01-08-number",
+           "contentType":"number",
+           "fieldType":"TextField",
+           "condition":{
+             "id":"01-01-personType",
+             "value":"persona juridica"
+           }
+       }
+      }
+    },
+    "02":{
+     "description":"Diligencia los siguientes datos acerca del trabajador.",
+     "label":"Información de la trabajadora",
+     "fields":{
+      "01":{
+        "label":"Nombre del trabajador",
+        "description":"",
+        "idField":"02-01-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "02":{
+        "label":"Apellido del trabajador",
+        "description":"",
+        "idField":"02-02-name",
+        "contentType":"name",
+        "fieldType":"TextField"
+       },
+       "03":{
+        "label":"Tipo de documento del trabajador",
+        "description":"",
+        "idField":"02-03-documentType",
+        "contentType":"documentType",
+        "fieldType":"Picker"
+       },
+       "04":{
+        "label":"Numero de documento del trabajador",
+        "description":"",
+        "idField":"02-04-number",
+        "contentType":"number",
+        "fieldType":"TextField"
+       }
+     }
+    },
+    "03":{
+      "description":"Diligencia la siguiente información clave para la generación de tu documento",
+      "label":"Informacion General",
+      "fields":{
+        "01":{
+          "label":"Comentarios adicionales",
+          "description":"Adicione algun comentario en particular que desees añadir a la recomendacon del trabajador.",
+          "idField":"03-01-additional",
+          "contentType":"additional",
+          "fieldType":"TextField"
+        },
+        "02":{
+          "label":"Fecha",
+          "description":"",
+          "idField":"03-02-date",
+          "contentType":"date",
+          "fieldType":"DatePicker"
+        },
+        "03":{
+          "label":"Ciudad",
+          "description":"",
+          "idField":"03-03-city",
+          "contentType":"city",
+          "fieldType":"TextField"
+        }
+      }
+    }
    }
  }
 ]

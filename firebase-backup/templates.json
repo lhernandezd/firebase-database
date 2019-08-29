@@ -44,5 +44,419 @@
       "seconds": 1565277068,
       "nanoseconds": 130000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "familia",
+    "subcategory": "hijos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento a través del cual se autoriza la salida del país de un menor de edad por parte de sus padres o uno de ellos, en caso que no funjan como acompañantes del menor.",
+    "isActive": true,
+    "name": "Permiso para salir del país",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 202000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 202000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual un trabajador puede dar por terminada su relación laboral de manera formal y voluntaria, sin que medie coacción alguna por parte de su empleador o algún tercero.",
+    "isActive": true,
+    "name": "Carta de renuncia voluntaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 210000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 210000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "familia",
+    "subcategory": "hijos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento mediante el cual un padre o madre solicita el pago de la cuota alimentaria pendiente por cancelar a favor de su hijo.",
+    "isActive": true,
+    "name": "Requerimiento de pago de cuota alimentaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 211000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 211000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "contratos",
+    "countPages": 9,
+    "downloads": 1,
+    "description": "A través de este documento, una persona natural (trabajador) puede ser contratada para prestar personalmente y por tiempo indeterminado, un servicio a otra (empleador), quien puede ser una persona natural o jurídica, bajo la continuada demendencia de ésta y acambio de una remuneración denominada salario. Debido a la naturaleza del contrato, el empleador se encuentra obligado con el trabajador, además de pagar su salario, a pagar las prestaciones sociales (primas de servicio, cesantías, intereses sobre cesantías, dotación), vacaciones, realizar aportes parafiscales y afiliarlo al sistema de seguridad social integral (salud, pensión y ARL).",
+    "isActive": true,
+    "name": "Contrato laboral a término indefinido",
+    "opened": 1,
+    "preview": "",
+    "price": 9900,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 211000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 211000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "Solicitudes y reclamos",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "Es un documento redactado por el empleador y entregado al trabajador con el fin que éste pueda probar la existencia de la relación laboral Por medio de él, se hace constar el tiempo de labor de un trabajador con su empleador, el tipo de contratación, labor desempeñada y salario devengado.",
+    "isActive": true,
+    "name": "Certificacion laboral",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 212000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 212000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "A través de este documento un empleador puede comunicar al trabajador su deseo de finalizar la realización laboral por justa causa legal.",
+    "isActive": true,
+    "name": "Carta de despido con justa causa",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 213000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 213000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "vinculacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "A través de este documento, el empleador puede ordenar la realización de un examen médico para sus trabajadores de nuevo ingreso, con el fin de revisar las condiciones de salud en las cuales se encuentran aquellos y de esa manera determinar si son o no aptos para el cargo o puesto de trabajo.",
+    "isActive": true,
+    "name": "Examen médico de ingreso",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 213000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 213000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "Solicitudes y reclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento mediante el cual un trabajador solicita a su empleador el pago de de los salarios, prestaciones sociales y seguridad social pendientes por cancelar.",
+    "isActive": true,
+    "name": "Requerimiento de pago",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 214000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 214000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "contratos",
+    "countPages": 8,
+    "downloads": 1,
+    "description": "A través de este documento, una persona natural (trabajador) puede ser contratada para prestar personalmente y por tiempo determinado, un servicio a otra (empleador), quien puede ser una persona natural o jurídica, bajo la continuada demendencia de ésta y a cambio de una remuneración denominada salario. Debido a la naturaleza del contrato, el empleador se encuentra obligado con el trabajador, además de pagar su salario, a pagar las prestaciones sociales (primas de servicio, cesantías, intereses sobre cesantías, dotación), vacaciones, realizar aportes parafiscales y afiliarlo al sistema de seguridad social integral (salud, pensión y ARL).",
+    "isActive": true,
+    "name": "Contrato laboral a termino fijo",
+    "opened": 1,
+    "preview": "",
+    "price": 9990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 215000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 215000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "contratos",
+    "countPages": 8,
+    "downloads": 1,
+    "description": "A través de este documento, una persona natural (trabajador) puede ser contratada para prestar personalmente y por tiempo determinado, un servicio a otra (empleador), quien puede ser una persona natural o jurídica, bajo la continuada demendencia de ésta y a cambio de una remuneración denominada salario. Debido a la naturaleza del contrato, el empleador se encuentra obligado con el trabajador, además de pagar su salario, a pagar las prestaciones sociales (primas de servicio, cesantías, intereses sobre cesantías, dotación), vacaciones, realizar aportes parafiscales y afiliarlo al sistema de seguridad social integral (salud, pensión y ARL).",
+    "isActive": true,
+    "name": "Contrato laboral por obra o labor",
+    "opened": 1,
+    "preview": "",
+    "price": 9990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 215000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 215000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "También conocida como carta de autodespido o despido indirecto, ese docmento permite al trabajador finalizar el contrato de trabajo suscrito su empleador en el momento en que éste incurra en incumplimiento de sus obligaciones laborales, provocando conductas que afectan al trabajador y hacen insostenibles la relación laboral.",
+    "isActive": true,
+    "name": "Carta de renuncia con justa causa",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 216000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 216000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "A través de este documento, el empleador puede ordenar la realización de un examen médico para los trabajadores que se retiren del puesto de trabajo, con el fin de revisar las condiciones de salud en las cuales se encuentran aquellos al finalizar la relación laboral.",
+    "isActive": true,
+    "name": "Examen medico de egreso",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 216000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 216000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "A través de este documento un empleador puede comunicar al trabajador su deseo de finalizar la realización laboral, sin que medie justa causa legal para ello.",
+    "isActive": true,
+    "name": "Carta de despido",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 217000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 217000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "Por medio de este documento, el empleador comunica a su trabajador la terminación, y por lo tanto no prórroga, de su contrato a término fijo.",
+    "isActive": true,
+    "name": "Terminacion del contrato a termino fijo",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 218000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 218000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "Por medio de este documento, el empleador comunica a su trabajador, durante el período de prueba, su deseo de no continuar la relación laboral.",
+    "isActive": true,
+    "name": "Terminacion del contrato en periodo de prueba",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 218000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 218000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "sanciones",
+    "countPages": 2,
+    "downloads": 1,
+    "description": "Es una comunicación a través de la cual un empleador cita a su trabajador para comunicarle una presunta falta disciplinaria de la cual tuvo conocimiento.",
+    "isActive": true,
+    "name": "Citacion a descargos",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 219000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 219000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "sanciones",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es una comunicación realizada por el empleador, por medio de la cual conmina a su trabajador a acatar las obligaciones del contrato de trabajo que sostienen, en los casos que áquel observe por parte del trabajador un incumplimeinto de las mismas.",
+    "isActive": true,
+    "name": "Llamado de atencion",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 220000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 220000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "vinculacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual el empleador lleva el control del suministro que realiza a sus trabajadores que, por ley, tienen derecho a la dotación, consistente en la entrega de un par de zapatos y un vestido de labor.",
+    "isActive": true,
+    "name": "Entrega de Dotacion",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1565663858,
+      "nanoseconds": 221000000
+    },
+    "updated": {
+      "seconds": 1565663858,
+      "nanoseconds": 221000000
+    }
   }
 ]

@@ -148,6 +148,9 @@
       {
         "value":"tiempo completo",
         "label":"Tiempo completo"
+      },{
+        "value":"interno",
+        "label":"Interno"
       }
     ]
   },
@@ -165,8 +168,8 @@
       }
     ]
   },
-  "work":{
-    "label":"work",
+  "activeWork":{
+    "label":"activeWork",
     "type":"Picker",
     "content":[
       {
@@ -179,8 +182,8 @@
       }
     ]
   },
-  "typeConc":{
-    "label":"typeConc",
+  "contractType":{
+    "label":"contractType",
     "type":"Picker",
     "content":[
       {
@@ -199,7 +202,7 @@
   },
   "legalCause":{
     "label":"legalCause",
-    "type":"Picker",
+    "type":"Checkbox",
     "content":[
       {
         "value":"engañar al empleador presentando certificados falsos",
@@ -255,9 +258,9 @@
       }
     ]
   },
-  "concepttype":{
+  "conceptType":{
     "label":"conceptType",
-    "type":"Picker",
+    "type":"Checkbox",
     "content":[
       {
         "value":"salario",
@@ -270,22 +273,11 @@
       {
         "value":"seguridad social",
         "label":"Seguridad social"
-      },
-      {
-        "value":"salario y prestaciones sociales",
-        "label": "Salario y prestaciones sociales"
-      },{
-        "value":"salario y seguirdad social",
-        "label": "Salario y seguridad social"
-      },
-      {
-        "value":"prestaciones sociales y seguridad social",
-        "label":"Prestaciones sociales y seguridad social"
       }
     ]
   },
-  "motives":{
-    "label":"motives",
+  "giveReason":{
+    "label":"giveReason",
     "type":"Picker",
     "content":[
       {
@@ -300,7 +292,7 @@
   },
   "obligation":{
     "label":"obligation",
-    "type":"Picker",
+    "type":"Checkbox",
     "content":[
       {
         "value":"realizar personalmente la labor y cumplir las órdenes del empleador",
@@ -338,7 +330,7 @@
   },
   "obligationReason":{
     "label":"obligationReason",
-    "type":"Picker",
+    "type":"Checkbox",
     "content":[
       {
         "value":"ha inobservado los preceptos del reglamento interno de trabajo",
@@ -378,23 +370,9 @@
       }
     ]
   },
-  "YN":{
-    "label":"YN",
-    "type":"Picker",
-    "content":[
-      {
-        "value":"si",
-        "label":"Si"
-      },
-      {
-        "value":null,
-        "label":"No"
-      }
-    ]
-  },
   "article":{
     "label":"article",
-    "type":"Picker",
+    "type":"Checkbox",
     "content":[
       {
         "value":"camisas",
@@ -408,6 +386,24 @@
         "value":"zapatos",
         "label":"Zapatos"
       }
+    ]
+  },
+  "workHours":{
+    "label":"workHours",
+    "type":"Picker",
+    "contetent":[
+    {
+      "value":"mañana",
+      "label":"Mañana"
+    },
+    {
+      "value":"tarde",
+      "label":"Tarde"
+    },
+    {
+      "value":"todo el dia",
+      "label":"Todo el dia"
+    }
     ]
   }
 }
