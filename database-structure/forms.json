@@ -1,5195 +1,931 @@
 
+
 [
-  {
-      "category": "negocios ",
-      "subcategory": "compraventa",
-      "referenceId": "wtLzujxHOLkZt6S9EpkcFD5ru0MXfG38",
-      "sections": {
-        "01": {
-          "description": "Es importante identificar al menor de edad, quien necesita la autorización de sus padres para salir del país sin ellos, o la autorización de sólo uno, en caso de salir con el otro. ",
-          "label": "tipo de vendedor",
-          "fields": {
-              "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "01-01-personType",
-              "contentType": "personType",
-              "fieldType": "TexTField"
-              },
-              "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-persontype",
-              "contentType": "personType",
-              "fieldType": "textField"
-              }
-            }
-          },
-          "02": {
-            "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "02-01-name",
-              "contentType": "name",
-              "fieldType": "Textfield"
-            },
-            "02": {
-              "label": "apellidos del represtante legal",
-              "description": "",
-              "idField": "02-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": " tipo de documento del representante legal",
-              "description": "",
-              "idField": "02-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker",
-              "id": "02-01-personType",
-              "value": "persona juridica"
-            },
-            "04": {
-              "label": "NIT",
-              "description": "",
-              "idField": "02-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-              
-            },
-            "05": {
-              "label": "domicilio de la empresa",
-              "description": "",
-              "idField": "02-05-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-              "06": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "02-06-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-              }
-          }
-
-          },
-          "03":{
-            "description": "",
-            "label": "persona natural",
-            "fields":{
-              "01": {
-              "label": "nombres",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "Textfield"
-              },
-              "02": {
-              "label": "apellidos",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "Textfield"
-              },
-              "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "03-03-documentType",
-              "contentType": "documenttype",
-              "fieldType": "picker",
-              "id": "03-01-personType",
-              "value": "persona natural"
-              },
-              "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "Textfield"
-              
-              },
-              "05": {
-              "label": "domicilio",
-              "description": "",
-              "idField": "03-05-additional",
-              "contentType": "additional",
-              "fieldType": "Textfield"
-              },
-              "06": {
-                "label": "NIT",
-                "description": "",
-                "idField": "03-06-number",
-                "contentType": "number",
-                "fieldType": "Textfield"
-              }
-
-            }
-          },
-          "04": {
-            "description": "",
-            "label": "tipo de comprador",
-            "fields": {
-              "01": {
-                "label": "persona natural",
-                "description": "",
-                "idField": "04-01-personType",
-                "contentType": "personType",
-                "fieldType": "TexTField"
-                },
-                "02": {
-                "label": "persona juridica",
-                "description": "",
-                "idField": "04-02-persontype",
-                "contentType": "personType",
-                "fieldType": "textField"
-                }
-              }
-            },
-          "05":{
-              "description": "",
-              "label": "persona natural",
-              "fields":{
-                "01": {
-                "label": "nombres",
-                "description": "",
-                "idField": "05-01-name",
-                "contentType": "name",
-                "fieldType": "Textfield"
-                },
-                "02": {
-                "label": "apellidos",
-                "description": "",
-                "idField": "05-02-name",
-                "contentType": "name",
-                "fieldType": "Textfield"
-                },
-                "03": {
-                "label": "tipo de documento",
-                "description": "",
-                "idField": "05-03-documentType",
-                "contentType": "documenttype",
-                "fieldType": "picker",
-                "id": "05-01-personType",
-                "value": "persona natural"
-                },
-                "04": {
-                "label": "numero de documento",
-                "description": "",
-                "idField": "05-04-number",
-                "contentType": "number",
-                "fieldType": "Textfield"
-                
-                },
-                "05": {
-                "label": "domicilio",
-                "description": "",
-                "idField": "05-05-additional",
-                "contentType": "additional",
-                "fieldType": "Textfield"
-                },
-                "06": {
-                  "label": "NIT",
-                "description": "",
-                "idField": "05-06-number",
-                "contentType": "number",
-                "fieldType": "Textfield"
-                }
-
-              }
-            },
-          "06": {
-            "description": "",
-              "label": "persona juridica",
-              "fields":{
-                "01": {
-                  "label": "nombre del representante legal",
-                  "description": "",
-                  "idField": "06-01-name",
-                  "contentType": "name",
-                  "fieldType": "Textfield"
-                },
-                "02": {
-                  "label": "apellidos del represtante legal",
-                  "description": "",
-                  "idField": "06-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "03": {
-                  "label": " tipo de documento del representante legal",
-                  "description": "",
-                  "idField": "06-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "Picker",
-                  "id": "06-01-personType",
-                  "value": "persona juridica"
-                },
-                "04": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "06-04-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                  
-                },
-                "05": {
-                  "label": "domicilio de la empresa",
-                  "description": "",
-                  "idField": "06-05-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                  "06": {
-                  "label": "razon social de la empresa",
-                  "description": "",
-                  "idField": "06-06-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                  }
-              }
-
-              },
-          "07": {
-                "description": "",
-                "label": "objetivos",
-                "fields":{
-                  "01": {
-                  "label": "clase",
-                  "description": "",
-                  "idField": "07-01-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "02": {
-                    "label": "color",
-                  "description": "",
-                  "idField": "07-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "03": {
-                    "label": "cilindraje",
-                  "description": "",
-                  "idField": "07-03-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "04": {
-                    "label": "marca",
-                  "description": "",
-                  "idField": "07-04-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "05":{
-                  "label": "placas",
-                  "description": "",
-                  "idField": "07-05-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "06": {
-                  "label": "modelos",
-                  "description": "",
-                  "idField": "07-06-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "07": {
-                  "label": "numero de chasis",
-                  "description": "",
-                  "idField": "07-07-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                  }
-                }
-              },
-          "08": {
-                "description": "",
-                "label": "precio",
-                "fields":{
-                  "01": {
-                    "label": "valor del vehiculo",
-                    "description": "",
-                    "idField": "08-01-number",
-                    "contentType": "number",
-                    "fieldType": "TextField"
-                  }
-                }
-            },
-          "09": {
-                "description": "",
-                "label": "cuotas mensuales",
-                "fields":{
-                  "01": {
-                    "label": "fecha inicial",
-                    "description": "",
-                    "idField": "09-01-date",
-                    "contentType": "dater",
-                    "fieldType": "DatePicker"
-                  },
-                  "02": {
-                  "label": "valor mensual",
-                  "description": "",
-                  "idField": "09-02-number",
-                  "contentType": "number",
-                  "fieldType": "Picker"
-                  },
-                  "03": {
-                  "label": "valor en letras",
-                  "description": "",
-                  "idField": "09-03-name",
-                  "contentType": "name",
-                  "fieldType": "additional"
-                  },
-                  "04": {
-                  "label": "fecha especifica pago",
-                  "description": "",
-                  "idField": "09-04-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                  },
-                  "05": {
-                  "label": "valor en letras",
-                  "description": "",
-                  "idField": "09-05-name",
-                  "contentType": "name",
-                  "fieldType": "additional"
-                  },
-                  "06": {
-                  "label": "dia",
-                  "description": "",
-                  "idField": "09-06-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                  },
-                  "07": {
-                  "label": "mes",
-                  "description": "",
-                  "idField": "09-07-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                  },
-                  "08": {
-                  "label": "ano",
-                  "description": "",
-                  "idField": "09-08-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                  },
-                  "09": {
-                  "label": "valor auto",
-                  "description": "",
-                  "idField": "09-09-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                  },
-                  "10": {
-                  "label": "valor mensual",
-                  "description": "",
-                  "idField": "09-10-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                  }
-                }
-              },
-          "10": {
-                "description": "",
-                "label": "efectivo",
-                "fields":{
-                  "01": {
-                    "label": "dirreccion",
-                    "description": "",
-                    "idField": "10-01-addres",
-                    "contentType": "addres",
-                    "fieldType": "TextField"
-                  }
-                }
-              },
-              "11": {
-                "description": "",
-                "label": "consignacion bancaria",
-                "fields":{
-                  "01": {
-                    "label": "tipo de cuenta",
-                    "description": "",
-                    "idField": "11-01-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                  },
-                  "02": {
-                    "label": "corriente",
-                    "description": "",
-                    "idField": "11-02-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                  },
-                  "03": {
-                    "label": "ahorros",
-                    "description": "",
-                    "idField": "11-03-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                  },
-                  "04": {
-                    "label": "numero de la cuenta",
-                    "description": "",
-                    "idField": "11-04-number",
-                    "contentType": "number",
-                    "fieldType": "TextField"
-                  },
-                  "05": {
-                    "label": "nombre del titular de la cuenta",
-                    "description": "",
-                    "idField": "11-05-name",
-                    "contentType": "name",
-                    "fieldType": "TextField"
-                  },
-                  "06": {
-                    "label": "dir pago ",
-                    "description": "",
-                    "idField": "11-06-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                  },
-                  "07": {
-                    "label": "nombre banco",
-                    "description": "",
-                    "idField": "11-07-name",
-                    "contentType": "name",
-                    "fieldType": "TextField"
-                  }
-                }
-              },
-              "12": {
-                "description": "",
-                "label": "gastos del traspaso",
-                "fields":{
-                  "01": {
-                    "label": "a nombre del vendedor",
-                    "description": "",
-                    "idField": "12-01-name",
-                    "contentType": "name",
-                    "fieldType": "TextField"
-                  },
-                  "02": {
-                  "label": "a nombre del comprador",
-                  "description": "",
-                  "idField": "12-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                  },
-                  "03": {
-                  "label": "por partes iguales",
-                  "description": "",
-                  "idField": "12-03-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                  }
-              }
-            },
-            "13": {
-              "description": "",
-                "label": "entrega",
-                "fields":{
-                  "01": {
-                    "label": "fecha",
-                    "description": "",
-                    "idField": "13-01-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                  }
-                
-                }
-            },
-            "14": {
-              "description": "",
-                "label": "responsabilidad",
-                "fields":{
-                  "01": {
-                    "label": " fecha",
-                    "description": "",
-                    "idField": " 14-01-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                  },
-                  "02": {
-                    "label": " dia",
-                    "description": "",
-                    "idField": " 14-02-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                  },
-                  "03":{
-                    "label": "mes",
-                    "description": "",
-                    "idField": " 14-03-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                  },
-                  "04": {
-                    "label": "ano",
-                    "description": "",
-                    "idField": " 14-04-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                  }
-                }
-            },
-            "15": {
-              "description": "",
-              "label": "informacion general",
-              "fields":{
-                "01": {
-                  "label": "fecha",
-                    "description": "",
-                    "idField": " 15-01-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                },
-                "02": {
-                  "label": "ciudad firma",
-                    "description": "",
-                    "idField": " 15-02-city",
-                    "contentType": "city",
-                    "fieldType": "Picker"
-                },
-                "03": {
-                  "label": "ejemplares",
-                    "description": "",
-                    "idField": " 15-03-additional",
-                    "contentType": "additional",
-                    "fieldType": "TectField"
-                },
-                "04": {
-                  "label": "departamento firma",
-                    "description": "",
-                    "idField": " 15-04-departament",
-                    "contentType": "departament",
-                    "fieldType": "TextField"
-                }
-              }
-            },
-            "16": {
-              "description": "",
-              "label": "informacion general",
-              "fields":{
-                    "01": {
-                    "label": "dia",
-                    "description": "",
-                    "idField": " 16-01-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                },
-                "02": {
-                  "label": "mes",
-                  "description": "",
-                  "idField": " 16-02-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "03": {
-                  "label": "ano",
-                  "description": "",
-                  "idField": " 16-03-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                }
-              }
-            },
-              "17": {
-                    "description": "",
-                    "label": "opcion dos",
-                    "fields":{
-                      "01": {
-                  "label": "dia",
-                    "description": "",
-                    "idField": " 17-01-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                },
-                "02": {
-                  "label": "mes",
-                  "description": "",
-                  "idField": " 17-02-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "03": {
-                  "label": "año",
-                  "description": "",
-                  "idField": " 17-03-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                }
-              }
-        }
-      }
-  },
-  {
-    "category": "negocios ",
-    "subcategory": "compraventa",
-    "referenceId": "11Ms8Lz1Vjv7BpCF_hPeFvI0q1XQ4kvSJ",
+{
+    "category": "sociedades",
+    "subcategory": "estatutos",
+    "referenceId": "1ilW6CbQqopWLp2JTHx8IA5e6ZZQTGKi2", 
     "sections":{
+      "01":{
+      "description": "Este documento es un contrato de constitución de una sociedad limitada por medio del cual se plasma el acuerdo al que llegan los socios al momento de dicha constitución. En él se recogen datos esenciales como el nombre de la sociedad, identificación de lo socios, el capital, el domicilio, entre otros.",
+      "label": "Datos de constitucion",
+      "fields": {
       "01": {
-        "description": "Selecciona el tipo de vendedor. Quien podrá ser una persona natural o jurídica",
-        "label": "tipo de vendedor",
-        "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "01-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "02-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "02-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "02-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "02-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "03": {
-          "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "03-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "03-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "03-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-  }
-        },
-        "04": {
-          "description": "",
-          "label": "tipo de comprador",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "04-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "05":{
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "05-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "05-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "05-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "05-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-        }
+      "label": "domicilio",
+      "description": "",
+      "idField": "01-01-name",
+      "contentType": "name",
+      "fieldType": "TextField"
       },
-      "06": {
-        "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "06-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "06-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "06-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "06-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "06-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "06-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-          }
-        }
+      "02": {
+      "label": "hora",
+      "description": "",
+      "idField": "01-02-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"  
       },
-      "07": {
-        "description": "",
-        "label": "un bien",
-        "fields":{
-          "01": {
-            "label": "Bien",
-            "description": "",
-            "idField": "07-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "descripcion",
-            "description": "",
-            "idField": "07-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
+      "03": {
+      "label": "razon social",
+      "description": "",
+      "idField": "01-03-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"   
       },
-      "08": {
-        "description": "",
-        "label": "varios bienes",
-        "fields":{
-          "01": {
-            "label": "Bien",
-            "description": "",
-            "idField": "08-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "cantidad",
-            "description": "",
-            "idField": "08-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "descripcion",
-            "description": "",
-            "idField": "08-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "09": {
-        "description": "",
-        "label": "precio",
-        "fields":{
-          "01": {
-            "label": "valor",
-            "description": "",
-            "idField": "09-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "valor en documentos",
-            "description": "",
-            "idField": "09-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "fecha",
-            "description": "",
-            "idField": "09-03-date",
-            "contentType": "date",
-            "fieldType": "Datepicker"
-          }
-          }
-        },
-      
-      "10": {
-        "description": "",
-        "label": "fecha determinada",
-        "fields":{
-          "01": {
-            "label": "fecha",
-            "description": "",
-            "idField": "10-01-date",
-            "contentType": "date",
-            "fieldType": "Datepicker"
-          }
-        }
-      },
-      "11": {
-        "description": "",
-        "label": "cuotas mensuales",
-        "fields":{
-          "01": {
-            "label": "numero de cuotas",
-            "description": "",
-            "idField": "11-01-number",
-            "contentType": "number",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "fecha inicial",
-            "description": "",
-            "idField": "11-02-date",
-            "contentType": "date",
-            "fieldType": "Datepicker"
-          },
-          "03": {
-            "label": "valor mensual",
-            "description": "",
-            "idField": "11-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "12": {
-        "description": "",
-        "label": "pago efectivo",
-        "fields":{
-          "01": {
-            "label": "dirreccion",
-            "description": "",
-            "idField": "12-01-addres",
-            "contentType": "addres",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "13": {
-        "description": "",
-        "label": "consignacion bancaria",
-        "fields":{
-          "01": {
-            "label": "tipo de cuenta",
-            "description": "",
-            "idField": "13-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-          "label": "corriente",
-          "description": "",
-          "idField": "13-02-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-          },
-          "03": {
-          "label": "ahorros",
-          "description": "",
-          "idField": "13-03-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-          },
-          "04": {
-          "label": "numero de la cuenta",
-          "description": "",
-          "idField": "13-04-number",
-          "contentType": "number",
-          "fieldType": "TextField"
-          },
-          "05": {
-          "label": "nombre titular de la cuenta",
-          "description": "",
-          "idField": "13-05-name",
-          "contentType": "name",
-          "fieldType": "TextField"
-          },
-          "06": {
-          "label": "banco",
-          "description": "",
-          "idField": "13-06-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-          },
-          "07": {
-          "label": "ciudad",
-          "description": "",
-          "idField": "13-04-city",
-          "contentType": "city",
-          "fieldType": "TextField"
-          }
-        }
-      },
-      "14": {
-        "description": "",
-        "label": "tiempo entrega",
-        "fields":{
-          "01": {
-            "label": "al momneto de suscribir el contrato",
-            "description": "",
-            "idField": "14-01-additional",
-            "contentType": "addtional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "fecha determinada",
-            "description": "",
-            "idField": "14-02-date",
-            "contentType": "date",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "15": {
-        "description": "",
-        "label": "clausula penal",
-        "fields":{
-          "01": {
-            "label": "valor",
-            "description": "",
-            "idField": "15-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "16": {
-        "description": "",
-        "label": "detalles",
-        "fields":{
-          "01": {
-            "label": "fecha",
-            "description": "",
-            "idField": "16-01-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          },
-          "02": {
-            "label": "ciudad",
-            "description": "",
-            "idField": "16-02-city",
-            "contentType": "city",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "ejemplares",
-            "description": "",
-            "idField": "16-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
+      "04":{
+      "label": "fecha",
+      "description": "",
+      "idField": "01-04-date",
+      "contentType": "date",       
+      "fieldType": "Datepicker"  
       }
-    }
-  },
-  {
-    "category": "negocios ",
-      "subcategory": "prestamo",
-      "referenceId": "1X9QrqdVlnUjfK_HbRlKPsHg-v2pOzhr0",
-      "sections":{
+   }
+ },
+      "02": {
+       "description": "",
+       "label": "personas naturales",
+       "fields":{
+       "01": {
+       "label": "nombre",
+       "description": "",
+       "idField": "02-01-name",
+       "contentType": "name",       
+       "fieldType": "TextField" 
+        },
+       "02": {
+       "label": "apellido",
+       "description": "",
+       "idField": "02-02-name",
+       "contentType": "name",       
+       "fieldType": "TextField"  
+       },
+       "03": {
+       "label": "tipo de documento",
+       "description": "",
+       "idField": "02-03-documentType",
+       "contentType": "documentType",       
+       "fieldType": "TextField" 
+      },
+      "04": {
+        "label": "numero de documento",
+        "description": "",
+        "idField": "02-04-number",
+        "contentType": "number",       
+        "fieldType": "TextField"  
+      },
+      "05": {
+        "label": "domicilio",
+        "description": "",
+        "idField": "02-05-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField"   
+      }
+   }
+ },
+      "03": {
+        "description": "",
+        "label": "personas juridicas",
+        "fields":{
         "01": {
-          "description": "Selecciona el tipo de mutuante, quien podrá ser una persona natural o jurídica.",
-          "label": "tipo de mutuante",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "01-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "nombre de la sociedad",
+        "description": "",
+        "idField": "03-01-name",
+        "contentType": "name",       
+        "fieldType": "TextField" 
         },
         "02": {
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "02-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "02-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "02-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "02-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "NIT",
+        "description": "",
+        "idField": "03-02-number",
+        "contentType": "number",       
+        "fieldType": "TextField"  
         },
         "03": {
-          "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "03-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "03-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "03-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "nombre del representante legal",
+        "description": "",
+        "idField": "03-03-name",
+        "contentType": "name",       
+        "fieldType": "TextField" 
         },
         "04": {
-          "description": "",
-          "label": "tipo de mutuario",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "04-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "04-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-            }
-          },
-          "05": {
-            "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "05-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "05-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "05-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "05-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "apellido de representante legal",
+        "description": "",
+        "idField": "03-04-name",
+        "contentType": "name",       
+        "fieldType": "TextField" 
+        },
+        "05": {
+        "label": "domicilio de la sociedad",
+        "description": "",
+        "idField": "03-05-additional",
+        "contentType": "additional3",       
+        "fieldType": "TextField" 
         },
         "06": {
-          "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "06-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "06-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "06-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "06-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "06-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "06-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "tipo de documento del representante legal",
+        "description": "",
+        "idField": "03-06-documentType",
+        "contentType": "documentType",       
+        "fieldType": "Picker"  
         },
         "07": {
-          "description": "",
-          "label": "objeto del contrato",
-          "fields":{
-            "01": {
-              "label": "valor",
-              "description": "",
-              "idField": "07-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-          }
+        "label": "numero del documento del representante legal",
+        "description": "",
+        "idField": "03-07-number",
+        "contentType": "number",       
+        "fieldType": "TextField"    
         },
         "08": {
-          "description": "",
-          "label": "tiempo de entrega",
-          "fields":{
-            "01": {
-              "label": "fecha determinada",
-              "description": "",
-              "idField": "08-01-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "02": {
-              "label": "al momneto de celebracion del contrato",
-              "description": "",
-              "idField": "08-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "09": {
-          "description": "",
-          "label": "en efectivo",
-          "fields":{
-            "01": {
-              "label": "direccion de pago",
-              "description": "",
-              "idField": "09-01-address",
-              "contentType": "address",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "10": {
-          "description": "",
-          "label": "consignacion bancaria",
-          "fields":{
-            "01": {
-              "label": "tipo de cuenta",
-              "description": "",
-              "idField": "10-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "numero de cuenta",
-              "description": "",
-              "idField": "10-02-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "nombre del banco",
-              "description": "",
-              "idField": "10-03-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "titular de la cuenta bancaria",
-              "description": "",
-              "idField": "10-04-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-
-            }
-          }
-        },
-        "11": {
-          "description": "",
-          "label": "cuotas mensuales",
-          "fields":{
-            "01": {
-              "label": "numero de cuotas",
-              "description": "",
-              "idField": "11-01-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "valor de cada cuota",
-              "description": "",
-              "idField": "11-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "dia de pago",
-              "description": "",
-              "idField": "11-03-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "04": {
-              "label": "dia de inicio",
-              "description": "",
-              "idField": "11-04-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "05": {
-              "label": "fecha determinada",
-              "description": "",
-              "idField": "11-05-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            }
-          }
-        },
-        "12": {
-          "description": "",
-          "label": "en efectivo",
-          "fields":{
-            "01": {
-              "label": "dirreccion de pago",
-              "description": "",
-              "idField": "12-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-            
-          }
-        },
-        "13": {
-          "description": "",
-          "label": "consignacion bancaria",
-          "fields":{
-            "01": {
-              "label": "tipo de cuenta ",
-              "description": "",
-              "idField": "13-01-additiona",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "corriente",
-              "description": "",
-              "idField": "13-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-              },
-              "03": {
-              "label": "ahorros",
-              "description": "",
-              "idField": "13-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-              },
-              "04": {
-              "label": "numero de cuenta",
-              "description": "",
-              "idField": "13-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-              },
-              "05": {
-              "label": "titular de la cuenta bancaria",
-              "description": "",
-              "idField": "13-05-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-              },
-              "06": {
-              "label": "nombre de banco",
-              "description": "",
-              "idField": "13-06-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-              },
-              "07": {
-              "label": "ciudad",
-              "description": "",
-              "idField": "13-07-city",
-              "contentType": "city",
-              "fieldType": "TextField"
-              }
-            }
-          },
-          "14": {
-            "description": "",
-            "label": "detalles",
-            "fields":{
-              "01": {
-                "label": "fecha",
-                "description": "",
-                "idField": "14-01-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "02": {
-                "label": "ciudad",
-                "description": "",
-                "idField": "14-02-city",
-                "contentType": "city",
-                "fieldType": "TextField"
-              },
-              "03": {
-                "label": "ejemplares",
-                "description": "",
-                "idField": "16-03-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              }
-            }
-          }
+        "label": "razon social",
+        "description": "",
+        "idField": "03-08-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField"  
       }
+    }
   },
-  {
-      "category": "negocios ",
-      "subcategory": "compraventa",
-      "referenceId": "11Ms8Lz1Vjv7BpCF_hPeFvI0q1XQ4kvSJ",
-      "sections":{
-        "01": {
-          "description": "Selecciona el tipo de vendedor. Quien podrá ser una persona natural o jurídica",
-          "label": "tipo de vendedor",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "01-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "02-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "02-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "02-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "02-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "03": {
-          "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "03-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "03-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "03-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-  }
-        },
         "04": {
-          "description": "",
-          "label": "tipo de comprador",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "04-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "05":{
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "05-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "05-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "05-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "05-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-        }
-      },
-      "06": {
         "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "06-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "06-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "06-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "06-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "06-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "06-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-          }
-        }
-      },
-        "07": {
-        "description": "",
-        "label": "objeto del contato",
+        "label": "objeto social",
         "fields":{
-          "01": {
-            "label": "cantidad ",
-            "description": "",
-            "idField": "07-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-        },
-        "08": {
-        "description": "",
-        "label": "un bien",
-        "fields":{
-          "01": {
-            "label": "bien",
-            "description": "",
-            "idField": "08-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "descripcion ",
-            "description": "",
-            "idField": "08-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-        },
-        "09": {
-        "description": "",
-        "label": "varios bienes",
-        "fields":{
-          "01": {
-            "label": "bien",
-            "description": "",
-            "idField": "09-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "descripcion ",
-            "description": "",
-            "idField": "09-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "cantidad ",
-            "description": "",
-            "idField": "09-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-        },
-        "10": {
-        "description": "",
-        "label": "tiempo de entrega",
-        "fields":{
-          "01": {
-            "label": "al momento de celebracion del contrato",
-            "description": "",
-            "idField": "10-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "fecha determinada ",
-            "description": "",
-            "idField": "10-02-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          }
-        }
-        },
-        "11": {
-        "description": "",
-        "label": "restitucion",
-        "fields":{
-          "01": {
-            "label": "fecha restitucion ",
-            "description": "",
-            "idField": "11-01-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          },
-          "02": {
-            "label": "direccion de restitucion",
-            "description": "",
-            "idField": "11-02-address",
-            "contentType": "address",
-            "fieldType": "TextField"
-          }
-        }
-        },
-        "12": {
-        "description": "",
-        "label": "informacion general",
-        "fields":{
-          "01": {
-            "label": "fecha",
-            "description": "",
-            "idField": "12-01-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          },
-          "02": {
-            "label": "ciudad",
-            "description": "",
-            "idField": "12-02-city",
-            "contentType": "city",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "ejemplares",
-            "description": "",
-            "idField": "12-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-        }
-      }
-  },
-  {
-      "category": "negocios ",
-      "subcategory": "prestamo",
-      "referenceId": "1DRMmnySMS3xF_Ne1adqbBIEk7LbEu6wp",
-      "sections":{
         "01": {
-          "description": "Selecciona el tipo de vendedor. Quien podrá ser una persona natural o jurídica",
-          "label": "tipo de vendedor",
-          "fields":{
-
-                "01": {
-                  "label": "persona natural",
-                  "description": "",
-                  "idField": "01-01-personType",
-                  "contentType": "personType",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "persona juridica",
-                  "description": "",
-                  "idField": "01-02-personType",
-                  "contentType": "personType",
-                  "fieldType": "TextField"
-                }
-              }
-            },
-            "02": {
-              "description": "",
-              "label": "persona natural",
-              "fields":{
-                "01": {
-                  "label": "nombre",
-                  "description": "",
-                  "idField": "02-01-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "apellido",
-                  "description": "",
-                  "idField": "02-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "03": {
-                  "label": "tipo de documento",
-                  "description": "",
-                  "idField": "02-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "Picker"
-                },
-                "04": {
-                  "label": "numero de documento",
-                  "description": "",
-                  "idField": "02-04-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                }
-              }
-            },
-            "03": {
-              "description": "",
-              "label": "persona juridica",
-              "fields":{
-                "01": {
-                  "label": "nombre del representante legal",
-                  "description": "",
-                  "idField": "03-01-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "apellido del representante legal",
-                  "description": "",
-                  "idField": "03-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "03": {
-                  "label": "tipo de documento del representante legal",
-                  "description": "",
-                  "idField": "03-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "TextField"
-                },
-                "04": {
-                  "label": "numero de documento del representante legal",
-                  "description": "",
-                  "idField": "03-04-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                },
-                "05": {
-                  "label": "razon social de la empresa",
-                  "description": "",
-                  "idField": "03-05-additioanl",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "06": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "03-06-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                }
-              }
-            },
-            "04": {
-              "description": "",
-              "label": "tipo de comprador",
-              "fields":{
-                "01": {
-                  "label": "persona natural",
-                  "description": "",
-                  "idField": "04-01-personType",
-                  "contentType": "personType",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "persona juridica",
-                  "description": "",
-                  "idField": "01-02-personType",
-                  "contentType": "personType",
-                  "fieldType": "TextField"
-                }
-              }
-            },
-            "05":{
-              "description": "",
-              "label": "persona natural",
-              "fields":{
-                "01": {
-                  "label": "nombre",
-                  "description": "",
-                  "idField": "05-01-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "apellido",
-                  "description": "",
-                  "idField": "05-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "03": {
-                  "label": "tipo de documento",
-                  "description": "",
-                  "idField": "05-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "Picker"
-                },
-                "04": {
-                  "label": "numero de documento",
-                  "description": "",
-                  "idField": "05-04-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                }
-            }
-          },
-          "06": {
-            "description": "",
-              "label": "persona juridica",
-              "fields":{
-                "01": {
-                  "label": "nombre del representante legal",
-                  "description": "",
-                  "idField": "06-01-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "apellido del representante legal",
-                  "description": "",
-                  "idField": "06-02-name",
-                  "contentType": "name",
-                  "fieldType": "TextField"
-                },
-                "03": {
-                  "label": "tipo de documento del representante legal",
-                  "description": "",
-                  "idField": "06-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "TextField"
-                },
-                "04": {
-                  "label": "numero de documento del representante legal",
-                  "description": "",
-                  "idField": "06-04-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                },
-                "05": {
-                  "label": "razon social de la empresa",
-                  "description": "",
-                  "idField": "06-05-additioanl",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "06": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "06-06-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                }
-            }
-          },
-          "07": {
-            "description": "",
-            "label": "objeto del contrato",
-            "fields":{
-              "01": {
-                "label": "valor",
-                "description": "",
-                "idField": "07-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"   
-              }
-            }
-          },
-          "08": {
-            "description": "",
-            "label": "tiempo de entrega",
-            "fields":{
-              "01": {
-                "label": "al momento de celebracion del contrato",
-                "description": "",
-                "idField": "08-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField" 
-                },
-                "02": {
-                  "label": "fecha determinada",
-                  "description": "",
-                  "idField": "08-02-date",
-                  "contentType": "date",
-                  "fieldType": "Datepicker"
-                  }
-                }
-              },
-              "09": {
-              "description": "",
-              "label": "forma de entrega",
-              "fields":{
-              "01": {
-                "label": "efectivo",
-                "description": "",
-                "idField": "09-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField" 
-                },
-                "02": {
-                  "label": "direccion de pago",
-                  "description": "",
-                  "idField": "09-02-address",
-                  "contentType": "address",
-                  "fieldType": "Datepicker"
-              }
-            }
-          },
-          "10": {
-            "description": "",
-            "label": "consignacion bancario",
-            "fields":{
-            "01": {
-              "label": "tipo de cuenta",
-              "description": "",
-              "idField": "10-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField" 
-              },
-              "02": {
-                "label": "numero de cuenta",
-                "description": "",
-                "idField": "10-02-address",
-                "contentType": "address",
-                "fieldType": "Datepicker"
-            },
-            "03": {
-              "label": "nombre del banco",
-              "description": "",
-              "idField": "10-03-name",
-              "contentType": "name",
-              "fieldType": "Datepicker"
-            },
-            "04": {
-              "label": "titular de la cuenta bancaria",
-              "description": "",
-              "idField": "10-04-additional",
-              "contentType": "additional",
-              "fieldType": "Datepicker"
-            }
-          }
-          },
-          "11": {
-            "description": "",
-            "label": "tiempo de restitucion del capital",
-            "fields":{
-            "01": {
-              "label": "fecha determinada",
-              "description": "",
-              "idField": "11-01-date",
-              "contentType": "date",
-              "fieldType": "DatePicker" 
-              }
-          }
-        },
-        "12": {
-            "description": "",
-            "label": "cuotas mensuales",
-            "fields":{
-              "01":{
-              "label": "numero de cuotas",
-              "description": "",
-              "idField": "12-01-number",
-              "contentType": "number",
-              "fieldType": "TextField" 
-              },
-              "02": {
-                "label": "valor de cada cuota",
-                "description": "",
-                "idField": "12-02-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-            },
-            "03": {
-              "label": "dia de pago",
-              "description": "",
-              "idField": "12-03-date",
-              "contentType": "date",
-              "fieldType": "Datepicker"
-            },
-            "04": {
-              "label": "dia de inicio",
-              "description": "",
-              "idField": "12-04-date",
-              "contentType": "date",
-              "fieldType": "Datepicker"            
-          
-            }
-          }
-        },
-        "13": {
-          "description": "",
-            "label": "interese de plazo",
-            "fields":{
-              "01":{
-              "label": "porcentaje",
-              "description": "",
-              "idField": "13-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField" 
-              }
-        }
-      },
-      "14": {
+        "label": "objeto social",
         "description": "",
-            "label": "interese moratarios",
-            "fields":{
-              "01":{
-              "label": "porcentaje",
-              "description": "",
-              "idField": "14-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField" 
-          }
+        "idField": "04-01-additional",
+        "contentType": "additional",       
+        "fieldType": "Picker" 
       }
-    },
-    "15": {
-      "description": "",
-      "label": "informacion general",
-      "fields":{
-        "01":{
-        "label": "fecha",
-        "description": "",
-        "idField": "15-01-date",
-        "contentType": "date",
-        "fieldType": "Datepicker" 
-    },
-    "02": {
-      "label": "ciudad",
-      "description": "",
-      "idField": "15-02-city",
-      "contentType": "city",
-      "fieldType": "TextField" 
-    },
-    "03": {
-      "label": "ejemplares",
-      "description": "",
-      "idField": "15-03-additional",
-      "contentType": "additional",
-      "fieldType": "TextField" 
-}
-}
-}
-}
-  },
-  {
-    "category": "negocios ",
-    "subcategory": "deposito",
-    "referenceId": "1CFBivZIsXEY08U6JoBCircRMjV8xFdeQ",
-    "sections":{
-    "01": {
-    "description": "Es un contrato por medio del cual una persona encarga a otra la guarda de un bien mueble, a cambio de una remuneración, y con la obligación de restituirlo posteriormente.",
-    "label": "tipo de depositante",
-    "fields":{
-    "01": {
-    "label": "persona natural",
-    "description": "",
-    "idField": "01-01-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "persona juridica",
-    "description": "",
-    "idField": "01-02-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "02": {
-    "description": "",
-    "label": "persona natural",
-    "fields":{
-    "01": {
-    "label": "nombre",
-    "description": "",
-    "idField": "02-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "apellido",
-    "description": "",
-    "idField": "02-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "tipo de documento",
-    "description": "",
-    "idField": "02-03-documentType",
-    "contentType": "documentType",
-    "fieldType": "Picker"
-    },
-    "04": {
-    "label": "numero de documento",
-    "description": "",
-    "idField": "02-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "03": {
-    "description": "",
-    "label": "persona juridica",
-    "fields":{
-    "01": {
-    "label": "nombre del representante legal",
-    "description": "",
-    "idField": "03-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "apellido del representante legal",
-    "description": "",
-    "idField": "03-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "tipo de documento del representante legal",
-    "description": "",
-    "idField": "03-03-documentType",
-    "contentType": "documentType",
-    "fieldType": "TextField"
-    },
-    "04": {
-    "label": "numero de documento del representante legal",
-    "description": "",
-    "idField": "03-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    },
-    "05": {
-    "label": "razon social de la empresa",
-    "description": "",
-    "idField": "03-05-additioanl",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "06": {
-    "label": "NIT",
-    "description": "",
-    "idField": "03-06-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "04": {
-    "description": "",
-    "label": "tipo de dipositario",
-    "fields":{
-    "01": {
-    "label": "persona natural",
-    "description": "",
-    "idField": "04-01-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "persona juridica",
-    "description": "",
-    "idField": "01-02-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "05":{
-    "description": "",
-    "label": "persona natural",
-    "fields":{
-    "01": {
-    "label": "nombre",
-    "description": "",
-    "idField": "05-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "apellido",
-    "description": "",
-    "idField": "05-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "tipo de documento",
-    "description": "",
-    "idField": "05-03-documentType",
-    "contentType": "documentType",
-    "fieldType": "Picker"
-    },
-    "04": {
-    "label": "numero de documento",
-    "description": "",
-    "idField": "05-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "06": {
-    "description": "",
-    "label": "persona juridica",
-    "fields":{
-    "01": {
-    "label": "nombre del representante legal",
-    "description": "",
-    "idField": "06-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "apellido del representante legal",
-    "description": "",
-    "idField": "06-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "tipo de documento del representante legal",
-    "description": "",
-    "idField": "06-03-documentType",
-    "contentType": "documentType",
-    "fieldType": "TextField"
-    },
-    "04": {
-    "label": "numero de documento del representante legal",
-    "description": "",
-    "idField": "06-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    },
-    "05": {
-    "label": "razon social de la empresa",
-    "description": "",
-    "idField": "06-05-additioanl",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "06": {
-    "label": "NIT",
-    "description": "",
-    "idField": "06-06-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "07": {
-    "description": "",
-    "label": "un bien",
-    "fields":{
-    "01": {
-    "label": "Bien",
-    "description": "",
-    "idField": "07-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "descripcion",
-    "description": "",
-    "idField": "07-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "08": {
-    "description": "",
-    "label": "varios bienes",
-    "fields":{
-    "01": {
-    "label": "Bien",
-    "description": "",
-    "idField": "08-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "cantidad",
-    "description": "",
-    "idField": "08-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "descripcion",
-    "description": "",
-    "idField": "08-03-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "09": {
-    "description": "",
-    "label": "tiempo de entrega",
-    "fields":{
-    "01": {
-    "label": "al momento de celebracion del contrato",
-    "description": "",
-    "idField": "09-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "fecha determinada",
-    "description": "",
-    "idField": "09-02-date",
-    "contentType": "date",
-    "fieldType": "DatePicker"
-    }          
-    }
-    },
-
-    "10": {
-    "description": "",
-    "label": "lugar de deposito",
-    "fields":{
-    "01": {
-    "label": "ciudad",
-    "description": "",
-    "idField": "10-01-city",
-    "contentType": "city",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "direccion",
-    "description": "",
-    "idField": "10-02-address",
-    "contentType": "address",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "11": {
-    "description": "",
-    "label": "periodo de pago",
-    "fields":{
-    "01": {
-    "label": "mensual",
-    "description": "",
-    "idField": "11-01-nadditional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "quincenal",
-    "description": "",
-    "idField": "11-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "valor",
-    "description": "",
-    "idField": "11-03-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "12": {
-    "description": "",
-    "label": "duraccion del acuerdo",
-    "fields":{
-    "01": {
-    "label": "termino de duracion",
-    "description": "",
-    "idField": "12-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }
-    }
-    },
-    "13": {
-    "description": "",
-    "label": "clausula penal",
-    "fields":{
-    "01": {
-    "label": "valor",
-    "description": "",
-    "idField": "13-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }         
-    }
-    },
-    "14": {
-    "description": "",
-    "label": "detalles",
-    "fields":{
-    "01": {
-    "label": "fecha",
-    "description": "",
-    "idField": "14-01-date",
-    "contentType": "date",
-    "fieldType": "DatePicker"
-    },
-    "02": {
-    "label": "ciudad",
-    "description": "",
-    "idField": "14-02-city",
-    "contentType": "city",
-    "fieldType": "TextField"
-    },
-    "03": {
-    "label": "ejemplares",
-    "description": "",
-    "idField": "14-03-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-    }
-    }
-    }
     }
   },
-  {
-  "category": "negocios ",
-    "subcategory": "arrendador",
-    "referenceId": "/1dsSdtpzwIhNWaAueC_jwyBA0kjs7mkCr",
-    "sections":{
-        "01": {
-          "description": "Este documento es un contrato que permite al propietario de un bien mueble conceder el goce de éste a otra persona, a cambio de un pago periódico denominado canon de arrendamiento.",
-          "label": "tipo de arrendador",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "01-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "02-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "02-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "02-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "02-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "domicilio",
-              "description": "",
-              "idField": "02-05-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "03": {
-          "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "03-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "03-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "03-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "03-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "03-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "03-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "07": {
-              "label": "domicilio",
-              "description": "",
-              "idField": "03-07-additional",
-              "contentType": "additional",
-              "fieldType": "TextField" 
-            }
-          }
-        },
-        "04": {
-          "description": "",
-          "label": "tipo de arrendador",
-          "fields":{
-            "01": {
-              "label": "persona natural",
-              "description": "",
-              "idField": "04-01-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "persona juridica",
-              "description": "",
-              "idField": "01-02-personType",
-              "contentType": "personType",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "05":{
-          "description": "",
-          "label": "persona natural",
-          "fields":{
-            "01": {
-              "label": "nombre",
-              "description": "",
-              "idField": "05-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido",
-              "description": "",
-              "idField": "05-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "05-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "Picker"
-            },
-            "04": {
-              "label": "numero de documento",
-              "description": "",
-              "idField": "05-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "domicilio",
-              "description": "",
-              "idField": "05-05-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            }
-        }
-      },
-      "06": {
-        "description": "",
-          "label": "persona juridica",
-          "fields":{
-            "01": {
-              "label": "nombre del representante legal",
-              "description": "",
-              "idField": "06-01-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "apellido del representante legal",
-              "description": "",
-              "idField": "06-02-name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "03": {
-              "label": "tipo de documento del representante legal",
-              "description": "",
-              "idField": "06-03-documentType",
-              "contentType": "documentType",
-              "fieldType": "TextField"
-            },
-            "04": {
-              "label": "numero de documento del representante legal",
-              "description": "",
-              "idField": "06-04-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            },
-            "05": {
-              "label": "razon social de la empresa",
-              "description": "",
-              "idField": "06-05-additioanl",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "06": {
-              "label": "NIT",
-              "description": "",
-              "idField": "06-06-number",
-              "contentType": "number",
-              "fieldType": "TextField"
-        },
-        "07": {
-          "label": "domicilio",
-          "description": "",
-          "idField": "07-01-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        }
-        }
-      },
-      "08": {
-        "description": "",
-        "label": "un bien ",
-        "fields":{
-          "01": {
-            "label": "bien",
-            "description": "",
-            "idField": "08-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "descripcion",
-            "description": "",
-            "idField": "08-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "09": {
-        "description": "",
-        "label": "varios bienes ",
-        "fields":{
-          "01": {
-            "label": "bien",
-            "description": "",
-            "idField": "09-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "descripcion",
-            "description": "",
-            "idField": "09-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "03": {
-            "label": "cantidad",
-            "description": "",
-            "idField": "09-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          }
-        }
-      },
-      "10": {
-        "description": "",
-        "label": "cannon de arrendamiento",
-        "fields":{
-          "01":{
-            "label": "valor",
-            "description": "",
-            "idField": "10-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          }
-          }
-      },
-      "11": {
-        "description": "",
-        "label": "forma de pago",
-        "fields":{
-          "01":{
-            "label": "efectivo",
-            "description": "",
-            "idField": "11-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          },
-          "02": {
-            "label": "direccion de pago",
-            "description": "",
-            "idField": "11-02-address",
-            "contentType": "address",
-            "fieldType": "TextField" 
-          },
-          "03": {
-            "label": "consigancion bancaria",
-            "description": "",
-            "idField": "11-03-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          },
-          "04": {
-            "label": "tipo de cuenta",
-            "description": "",
-            "idField": "11-04-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          },
-          "05":  {
-            "label": "numero de la cuenta",
-            "description": "",
-            "idField": "11-05-number",
-            "contentType": "number",
-            "fieldType": "TextField" 
-          },
-          "06": {
-            "label": "nombre titular de la cuenta",
-            "description": "",
-            "idField": "11-06-name",
-            "contentType": "name",
-            "fieldType": "TextField" 
-          },
-          "07": {
-            "label": "fecha de pago",
-            "description": "",
-            "idField": "11-07-date",
-            "contentType": "date",
-            "fieldType": "DatePicker" 
-          }
-          }
-      },
-      "12": {
+        "05": {
         "description": "",
         "label": "duracion",
         "fields":{
-          "01":{
-            "label": "termino de duracion",
-            "description": "",
-            "idField": "12-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          }
+        "01": {
+        "label": "termino de duracion",
+        "description": "",
+        "idField": "05-01-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField"  
       }
-    },
-    "13": {
-      "description": "",
-        "label": "clausula penal",
+    }
+  },
+        "06": {
+        "description": "",
+        "label": "capital",
         "fields":{
-          "01":{
-            "label": "valor",
-            "description": "",
-            "idField": "13-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          }
-          }
+        "01": {
+        "label": "capital",
+        "description": "",
+        "idField": "06-01-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField"   
+      },
+      "02": {
+      "label": "valor",
+      "description": "",
+      "idField": "06-02-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"   
+      },
+      "03": {
+      "label": "numero de acciones",
+      "description": "",
+      "idField": "06-03-number",
+      "contentType": "number",       
+      "fieldType": "TextField"   
+      }
+    }
+  },
+        "07": {
+        "description": "",
+        "label": "socios",
+        "fields":{
+        "01": {
+        "label": "socios",
+        "description": "",
+        "idField": "07-01-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
         },
-        "14": {
-          "description": "",
+        "02": {
+        "label": "numero de cuotas",
+        "description": "",
+        "idField": "07-02-number",
+        "contentType": "number",       
+        "fieldType": "TextField"  
+        },
+        "03": {
+        "label": "valor pagado",
+        "description": "",
+        "idField": "07-03-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
+        },
+        "04": {
+        "label": "porcentaje",
+        "description": "",
+        "idField": "07-04-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
+      }
+    }
+  },
+        "08": {
+        "description": "",
+        "label": "representante legal",
+        "fields": {
+        "01": {
+        "label": "periodo",
+        "description": "",
+        "idField": "08-01-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
+        },
+        "02": {
+        "label": "nombre",
+        "description": "",
+        "idField": "08-02-name",
+        "contentType": "name",       
+        "fieldType": "TextField"  
+        },
+        "03": {
+        "label": "apellido",
+        "description": "",
+        "idField": "08-03-name",
+        "contentType": "name",       
+        "fieldType": "TextField" 
+        },
+        "04": {
+        "label": "tipo de documento",
+        "description": "",
+        "idField": "08-04-documentType",
+        "contentType": "documenttype",       
+        "fieldType": "picker" 
+        },
+        "05": {
+        "label": "numero de documento",
+        "description": "",
+        "idField": "08-05-number",
+        "contentType": "number",       
+        "fieldType": "TextField" 
+      },
+      "06": {
+        "label": "domicilio",
+        "description": "",
+        "idField": "08-06-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
+      },
+      "07": {
+      "label": "anos",
+      "description": "",
+      "idField": "08-07-date",
+      "contentType": "date",       
+      "fieldType": "Datepicker"   
+      }
+    }
+ },
+      
+      "09": {
+        "description": "",
+        "label": "limites",
+        "fields":{
+        "01": {
+        "label": "sin limites de cuantia",
+        "description": "",
+        "idField": "09-01-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField" 
+        },
+        "02": {
+        "label": "limite cuantia",
+        "description": "",
+        "idField": "09-02-additional",
+        "contentType": "additional",       
+        "fieldType": "TextField"  
+        }
+     }
+   },
+        "10": {
+        "description": "",
         "label": "clausula compromisoria",
         "fields":{
-          "01":{
-            "label": "municipio",
-            "description": "",
-            "idField": "14-01-municipality",
-            "contentType": "municipality",
-            "fieldType": "TextField" 
+        "01": {
+        "label": "numero de arbitros",
+        "description": "",
+        "idField": "10-01-number",
+        "contentType": "number",       
+        "fieldType": "TextField"  
+         }
+      } 
+   },
+        "11": {
+        "description": "",
+        "label": "informacion general",
+        "fields":{
+        "01": {
+        "label": "ciudad",
+        "description": "",
+        "idField": "11-01-city",
+        "contentType": "city",       
+        "fieldType": "TextField"  
+        },
+        "02": {
+        "label": "fecha",
+        "description": "",
+        "idField": "11-02-date",
+        "contentType": "date",       
+        "fieldType": "DatePicker"  
         }
       }
+    }
+  }
+},
+{
+    "category": "sociedades",
+    "subcategory": "estatutos",
+    "referenceId": "1SuMnbOkmVXJ96FMuPqnoFnST45huF27T", 
+    "sections":{
+      "01":{
+      "description": "Este documento es un contrato de constitución de una sociedad en comandita simple por medio del cual se plasma el acuerdo al que llegan los socios al momento de dicha constitución. En él se recogen datos esenciales como el nombre de la sociedad, identificación de los socios, el capital, el domicilio, entre otros.",
+      "label": "Datos de constitucion",
+      "fields": {
+      "01": {
+      "label": "domicilio",
+      "description": "",
+      "idField": "01-01-name",
+      "contentType": "name",
+      "fieldType": "TextField"
+      },
+      "02": {
+      "label": "hora",
+      "description": "",
+      "idField": "01-02-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"  
+      },
+      "03": {
+      "label": "razon social",
+      "description": "",
+      "idField": "01-03-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"   
+      },
+      "04":{
+      "label": "fecha",
+      "description": "",
+      "idField": "01-04-date",
+      "contentType": "date",       
+      "fieldType": "Datepicker"  
+      }
+ }
+},
+    "02": {
+     "description": "",
+     "label": "personas naturales",
+     "fields":{
+     "01": {
+     "label": "nombre",
+     "description": "",
+     "idField": "02-01-name",
+     "contentType": "name",       
+     "fieldType": "TextField" 
+      },
+     "02": {
+     "label": "apellido",
+     "description": "",
+     "idField": "02-02-name",
+     "contentType": "name",       
+     "fieldType": "TextField"  
+     },
+     "03": {
+     "label": "tipo de documento",
+     "description": "",
+     "idField": "02-03-documentType",
+     "contentType": "documentType",       
+     "fieldType": "TextField" 
     },
-    "15": {
+    "04": {
+      "label": "numero de documento",
+      "description": "",
+      "idField": "02-04-number",
+      "contentType": "number",       
+      "fieldType": "TextField"  
+    },
+    "05": {
+      "label": "domicilio",
+      "description": "",
+      "idField": "02-05-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"   
+    },
+    "06": {
+      "label": "tipo de socio",
+      "description": "",
+      "idField": "02-06-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField" 
+    }
+ }
+},
+    "03": {
+      "description": "",
+      "label": "personas juridicas",
+      "fields":{
+      "01": {
+      "label": "nombre de la sociedad",
+      "description": "",
+      "idField": "03-01-name",
+      "contentType": "name",       
+      "fieldType": "TextField" 
+      },
+      "02": {
+      "label": "NIT",
+      "description": "",
+      "idField": "03-02-number",
+      "contentType": "number",       
+      "fieldType": "TextField"  
+      },
+      "03": {
+      "label": "nombre del representante legal",
+      "description": "",
+      "idField": "03-03-name",
+      "contentType": "name",       
+      "fieldType": "TextField" 
+      },
+      "04": {
+      "label": "apellido de representante legal",
+      "description": "",
+      "idField": "03-04-name",
+      "contentType": "name",       
+      "fieldType": "TextField" 
+      },
+      "05": {
+      "label": "domicilio de la sociedad",
+      "description": "",
+      "idField": "03-05-additional",
+      "contentType": "additional3",       
+      "fieldType": "TextField" 
+      },
+      "06": {
+      "label": "tipo de documento del representante legal",
+      "description": "",
+      "idField": "03-06-documentType",
+      "contentType": "documentType",       
+      "fieldType": "Picker"  
+      },
+      "07": {
+      "label": "numero del documento del representante legal",
+      "description": "",
+      "idField": "03-07-number",
+      "contentType": "number",       
+      "fieldType": "TextField"    
+      },
+      "08": {
+      "label": "razon social",
+      "description": "",
+      "idField": "03-08-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"  
+    },
+    "09": {
+      "label": "tipo de socio",
+      "description": "",
+      "idField": "03-09-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"
+    }
+  }
+},
+      "04": {
+      "description": "",
+      "label": "objeto social",
+      "fields":{
+      "01": {
+      "label": "objeto social",
+      "description": "",
+      "idField": "04-01-additional",
+      "contentType": "additional",       
+      "fieldType": "Picker" 
+    }
+  }
+},
+      "05": {
+      "description": "",
+      "label": "duracion",
+      "fields":{
+      "01": {
+      "label": "termino de duracion",
+      "description": "",
+      "idField": "05-01-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"  
+    }
+  }
+},
+      "06": {
+      "description": "",
+      "label": "capital",
+      "fields":{
+      "01": {
+      "label": "capital",
+      "description": "",
+      "idField": "06-01-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField"   
+      
+    }
+  }
+},
+      "07": {
+      "description": "",
+      "label": "socios",
+      "fields":{
+      "01": {
+      "label": "socios",
+      "description": "",
+      "idField": "07-01-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField" 
+      },
+      "02": {
+      "label": "numero de cuotas",
+      "description": "",
+      "idField": "07-02-number",
+      "contentType": "number",       
+      "fieldType": "TextField"  
+      },
+      "03": {
+      "label": "valor pagado",
+      "description": "",
+      "idField": "07-03-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField" 
+      },
+      "04": {
+      "label": "porcentaje",
+      "description": "",
+      "idField": "07-04-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField" 
+    }
+  }
+},
+      "08": {
+      "description": "",
+      "label": "utilidades del socio gestor",
+      "fields": {
+      "01": {
+      "label": "porcentaje",
+      "description": "",
+      "idField": "08-01-additional",
+      "contentType": "additional",       
+      "fieldType": "TextField" 
+      }
+   }
+},
+    
+    "09": {
+      "description": "",
+      "label": "clausula compromisoria",
+      "fields":{
+      "01": {
+      "label": "numero de arbitros",
+      "description": "",
+      "idField": "09-01-number",
+      "contentType": "number",       
+      "fieldType": "TextField" 
+      }
+   }
+ },
+      "10": {
       "description": "",
       "label": "informacion general",
       "fields":{
-        "01":{
-          "label": "fecha",
-          "description": "",
-          "idField": "15-01-date",
-          "contentType": "date",
-          "fieldType": "TextField" 
-    },
-    "02": {
-      "label": "ciudad",
-      "description": "",
-      "idField": "15-02-city",
-      "contentType": "city",
-      "fieldType": "TextField" 
-      },
-
-      "03": {
-        "label": "ejemplares",
-        "description": "",
-        "idField": "14-03-additional",
-        "contentType": "additional",
-        "fieldType": "TextField" 
-    }
-      }
-          },
-          "16": { 
-              "description": "",
-            "label": "arrendador",
-            "fields":{
-
-            "01": {
-            "label": "direccion",
-            "description": "",
-            "idField": "16-01-address",
-            "contentType": "address",
-            "fieldType": "TextField" 
-          },
-          "02": {
-            "label": "e mail",
-            "description": "",
-            "idField": "16-02-additional",
-            "contentType": "additional",
-            "fieldType": "TextField" 
-          },
-          "03": {
-            "label": "telefono",
-            "description": "",
-            "idField": "16-03-number",
-            "contentType": "number",
-            "fieldType": "TextField" 
-          },
-          "04":  {
-            "label": "ciudad",
-            "description": "",
-            "idField": "16-04-city",
-            "contentType": "city",
-            "fieldType": "TextField" 
-          }
-        }
-    },
-    "17": { 
-      "description": "",
-      "label": "arrendatario",
-      "fields":{
-
       "01": {
-      "label": "direccion",
-      "description": "",
-      "idField": "17-01-address",
-      "contentType": "address",
-      "fieldType": "TextField" 
-    },
-    "02": {
-      "label": "e mail",
-      "description": "",
-      "idField": "17-02-additional",
-      "contentType": "additional",
-      "fieldType": "TextField" 
-    },
-    "03": {
-      "label": "telefono",
-      "description": "",
-      "idField": "17-03-number",
-      "contentType": "number",
-      "fieldType": "TextField" 
-    },
-    "04":  {
       "label": "ciudad",
       "description": "",
-      "idField": "16-04-city",
-      "contentType": "city",
-      "fieldType": "TextField" 
-    }
-    }
-    }
-    }
-  },
-  {
-"category": "negocios ",
-"subcategory": "deposito",
-"referenceId": "1CFBivZIsXEY08U6JoBCircRMjV8xFdeQ",
+      "idField": "10-01-city",
+      "contentType": "city",       
+      "fieldType": "TextField"  
+       },
+       "02": {
+      "label": "fecha",
+      "description": "",
+      "idField": "11-02-date",
+      "contentType": "date",       
+      "fieldType": "DatePicker"   
+       }
+     } 
+   }
+  }
+},
+{ 
+"category": "sociedades",
+"subcategory": "actas",
+"referenceId": "1LeB_QMv6ghW1Dx1VNNbDQs-WAXYM0dyo", 
 "sections":{
+
 "01": {
-"description": "Es un contrato por medio del cual una persona encarga a otra la guarda de un bien mueble, a cambio de una remuneración, y con la obligación de restituirlo posteriormente.",
-"label": "tipo de depositante",
+"description": "",
+"label": "datos de la sociedad",
 "fields":{
 "01": {
-"label": "persona natural",
+"label": "razon social",
 "description": "",
-"idField": "01-01-personType",
-"contentType": "personType",
-"fieldType": "TextField"
+"idField": "01-01-additional",
+"contentType": "additional",       
+"fieldType": "TextField" 
 },
 "02": {
-"label": "persona juridica",
+"label": "domicilio de la sociedad",
 "description": "",
-"idField": "01-02-personType",
-"contentType": "personType",
-"fieldType": "TextField"
+"idField": "01-02-additional",
+"contentType": "additional",       
+"fieldType": "TextField" 
 }
 }
 },
+
 "02": {
 "description": "",
-"label": "persona natural",
-"fields":{
-"01": {
-"label": "nombre",
+"label": "asamblea",
+"fields": {
+"01":{
+"label": "tipo de asamblea",
 "description": "",
-"idField": "02-01-name",
-"contentType": "name",
-"fieldType": "TextField"
+"idField": "02-02-additional",
+"contentType": "additional",       
+"fieldType": "TextField"  
 },
 "02": {
-"label": "apellido",
+"label": "numero de acta",
 "description": "",
-"idField": "02-02-name",
-"contentType": "name",
-"fieldType": "TextField"
+"idField": "02-02-number",
+"contentType": "number",       
+"fieldType": "TextField"  
 },
 "03": {
-"label": "tipo de documento",
+"label": "ciudad asamblea",
 "description": "",
-"idField": "02-03-documentType",
-"contentType": "documentType",
-"fieldType": "Picker"
+"idField": "02-03-city",
+"contentType": "city",       
+"fieldType": "TextField"   
 },
 "04": {
-"label": "numero de documento",
+"label": "hora",
 "description": "",
-"idField": "02-04-number",
-"contentType": "number",
-"fieldType": "TextField"
-}
-}
-},
-"03": {
-"description": "",
-"label": "persona juridica",
-"fields":{
-"01": {
-  "label": "nombre del representante legal",
-  "description": "",
-  "idField": "03-01-name",
-  "contentType": "name",
-  "fieldType": "TextField"
-},
-"02": {
-  "label": "apellido del representante legal",
-  "description": "",
-  "idField": "03-02-name",
-  "contentType": "name",
-  "fieldType": "TextField"
-},
-"03": {
-  "label": "tipo de documento del representante legal",
-  "description": "",
-  "idField": "03-03-documentType",
-  "contentType": "documentType",
-  "fieldType": "TextField"
-},
-"04": {
-  "label": "numero de documento del representante legal",
-  "description": "",
-  "idField": "03-04-number",
-  "contentType": "number",
-  "fieldType": "TextField"
+"idField": "02-04-additional",
+"contentType": "additional",       
+"fieldType": "TextField"   
 },
 "05": {
-  "label": "razon social de la empresa",
-  "description": "",
-  "idField": "03-05-additioanl",
-  "contentType": "additional",
-  "fieldType": "TextField"
+"label": "fecha",
+"description": "",
+"idField": "02-05-date",
+"contentType": "date",       
+"fieldType": "DatePicker" 
 },
 "06": {
-  "label": "NIT",
-  "description": "",
-  "idField": "03-06-number",
-  "contentType": "number",
-  "fieldType": "TextField"
+"label": "fecha convocatoria",
+"description": "",
+"idField": "02-06-date",
+"contentType": "date",       
+"fieldType": "DatePicker" 
 }
 }
 },
-"04": {
-"description": "",
-"label": "tipo de dipositario",
-"fields":{
-"01": {
-"label": "persona natural",
-"description": "",
-"idField": "04-01-personType",
-"contentType": "personType",
-"fieldType": "TextField"
-},
-"02": {
-"label": "persona juridica",
-"description": "",
-"idField": "01-02-personType",
-"contentType": "personType",
-"fieldType": "TextField"
-}
-}
-},
-"05":{
-"description": "",
-"label": "persona natural",
-"fields":{
-"01": {
-"label": "nombre",
-"description": "",
-"idField": "05-01-name",
-"contentType": "name",
-"fieldType": "TextField"
-},
-"02": {
-"label": "apellido",
-"description": "",
-"idField": "05-02-name",
-"contentType": "name",
-"fieldType": "TextField"
-},
+
 "03": {
-"label": "tipo de documento",
 "description": "",
-"idField": "05-03-documentType",
-"contentType": "documentType",
-"fieldType": "Picker"
-},
-"04": {
-"label": "numero de documento",
-"description": "",
-"idField": "05-04-number",
-"contentType": "number",
-"fieldType": "TextField"
-}
-}
-},
-"06": {
-"description": "",
-"label": "persona juridica",
-"fields":{
+"label": "celebracion de la asamblea",
+"fields":  {
 "01": {
-"label": "nombre del representante legal",
+"label": "accionista",
 "description": "",
-"idField": "06-01-name",
-"contentType": "name",
-"fieldType": "TextField"
+"idField": "03-01-additional",
+"contentType": "additional",       
+ "fieldType": "TextField" 
 },
 "02": {
-"label": "apellido del representante legal",
+"label": "acciones",
 "description": "",
-"idField": "06-02-name",
-"contentType": "name",
-"fieldType": "TextField"
+"idField": "03-02-number",
+"contentType": "number",       
+"fieldType": "Textfield" 
 },
-"03": {
-"label": "tipo de documento del representante legal",
+"03":{
+"label": "porcentaje",
 "description": "",
-"idField": "06-03-documentType",
-"contentType": "documentType",
-"fieldType": "TextField"
+"idField": "03-03-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"  
+}
+}
 },
+
 "04": {
-"label": "numero de documento del representante legal",
 "description": "",
-"idField": "06-04-number",
-"contentType": "number",
-"fieldType": "TextField"
+"label": "verificacion del Quorum",
+"fields": {
+"01": {
+"label": "porcentaje",
+"description": "",
+"idField": "04-01-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
+}
+}
 },
+
 "05": {
-"label": "razon social de la empresa",
 "description": "",
-"idField": "06-05-additioanl",
-"contentType": "additional",
-"fieldType": "TextField"
+"label": "veleccion de presindete y secretario de la reuniom",
+"fields": {
+"01": {
+"label": "presidente",
+"description": "",
+"idField": "05-01-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
+},
+"02": {
+"label": "secretario",
+"description": "",
+"idField": "05-02-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"  
+},
+"03": {
+"label": "porcentaje de aprobo",
+"description": "",
+"idField": "05-03-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
+},
+"04": {
+"label": "votos en blanco",
+"description": "",
+"idField": "05-04-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
 },
 "06": {
-"label": "NIT",
+"label": "votos en contra",
 "description": "",
-"idField": "06-06-number",
-"contentType": "number",
-"fieldType": "TextField"
-}
-}
+"idField": "05-05-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
 },
 "07": {
+"label": "nombre accionista",
 "description": "",
-"label": "un bien",
-"fields":{
-"01": {
-"label": "Bien",
-"description": "",
-"idField": "07-01-additional",
-"contentType": "additional",
-"fieldType": "TextField"
-},
-"02": {
-"label": "descripcion",
-"description": "",
-"idField": "07-02-additional",
-"contentType": "additional",
-"fieldType": "TextField"
+"idField": "05-07-name",
+"contentType": "name",       
+"fieldType": "Textfield" 
 }
 }
 },
-"08": {
+
+"06": {
 "description": "",
-"label": "varios bienes",
-"fields":{
+"label": "autorizacion al representante legal",
+"fields": {
 "01": {
-"label": "Bien",
+"label": "vocero",
 "description": "",
-"idField": "08-01-additional",
-"contentType": "additional",
-"fieldType": "TextField"
+"idField": "06-01-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
 },
 "02": {
-"label": "cantidad",
+"label": "cargo",
 "description": "",
-"idField": "08-02-additional",
-"contentType": "additional",
-"fieldType": "TextField"
+"idField": "06-02-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"
 },
 "03": {
-"label": "descripcion",
+"label": "acto",
 "description": "",
-"idField": "08-03-additional",
-"contentType": "additional",
-"fieldType": "TextField"
-}
-}
+"idField": "06-03-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"
+},
+"04":{
+"label": "nombre del negociante",
+"description": "",
+"idField": "06-04-name",
+"contentType": "name",       
+"fieldType": "Textfield"
+},
+"05": {
+"label": "cuantia",
+"description": "",
+"idField": "06-05-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"
+},
+"06": {
+"label": "objeto",
+"description": "",
+"idField": "06-06-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"
+},
+"07": {
+"label": "porcentaje de aprobo",
+"description": "",
+"idField": "06-07-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"  
+},
+"08": {
+"label": "votos en blanco",
+"description": "",
+"idField": "06-08-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"   
 },
 "09": {
+"label": "votos en contra",
 "description": "",
-"label": "tiempo de entrega",
-"fields":{
-"01": {
-"label": "al momento de celebracion del contrato",
-"description": "",
-"idField": "09-01-additional",
-"contentType": "additional",
-"fieldType": "TextField"
-},
-"02": {
-"label": "fecha determinada",
-"description": "",
-"idField": "09-02-date",
-"contentType": "date",
-"fieldType": "DatePicker"
-}          
-}
+"idField": "06-09-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"  
 },
 "10": {
+"label": "nombre accionista",
 "description": "",
-"label": "lugar de deposito",
+"idField": "06-10-name",
+"contentType": "name",       
+"fieldType": "Textfield"  
+}
+}
+},
+
+"07": {
+"description": "",
+"label": "acta de asamblea",
 "fields":{
 "01": {
-"label": "ciudad",
+"label": "numero",
 "description": "",
-"idField": "10-01-city",
-"contentType": "city",
-"fieldType": "TextField"
+"idField": "07-01-number",
+"contentType": "number",       
+"fieldType": "Textfield" 
 },
 "02": {
-"label": "direccion",
+"label": "porcentaje de aprobacion",
 "description": "",
-"idField": "10-02-address",
-"contentType": "address",
-"fieldType": "TextField"
-}          
-}
+"idField": "07-02-additional",
+"contentType": "additional",       
+"fieldType": "Textfield"  
 },
-"11": {
+"03": {
+"label": "votos en blanco",
 "description": "",
-"label": "duracion el acuerdo",
-"fields":{
-"01": {
-"label": "termino de duracion",
-"description": "",
-"idField": "11-01-additional",
-"contentType": "additional",
-"fieldType": "TextField"
-}
-}
+"idField": "07-03-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
 },
-"12": {
+"04": {
+"label": "votos en contra",
 "description": "",
-"label": "clausula penal",
-"fields":{
-"01": {
-"label": "valor",
-"description": "",
-"idField": "12-01-additional",
-"contentType": "additional",
-"fieldType": "TextField"
-}
-}
+"idField": "07-04-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
 },
-"13": {
+"05": {
+"label": "fecha",
 "description": "",
-"label": "informacion general",
-"fields":{
-"01": {
-"label": "ciudad",
+"idField": "07-05-date",
+"contentType": "date",       
+"fieldType": "Textfield" 
+},
+"06": {
+"label": "hora",
 "description": "",
-"idField": "13-01-city",
-"contentType": "city",
-"fieldType": "TextField"
-        },
-          "02": {
-          "label": "fecha",
-          "description": "",
-          "idField": "13-02-date",
-          "contentType": "date",
-          "fieldType": "DatePicker"
-          },
-          "03": {
-          "label": "ejemplares",
-          "description": "",
-          "idField": "13-03-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-          }
-        }
-      }
-    }
-  },
-  {
-"category": "sociedades",
-  "subcategory": "estatutos",
-  "referenceId": "1lI3vzwVFI7ZTcw_g2DXYqA9GuCEuoxk4",
-  "sections":{
-    "01": {
-      "description": "Este documento es un contrato de constitución de una sociedad por acciones simplificada (S.A.S) por medio del cual se plasma el acuerdo al que llegan los socios, o, de ser el caso, el socio único, al momento de dicha constitución. En él se recogen datos esenciales como el nombre de la sociedad, identificación del(de los) socio(s), el capital, el domicilio, entre otros.",
-      "label": "datos de constitucion",
-      "fields":{
-        "01": {
-          "label": "razon social",
-          "description": "",
-          "idField": "01-01-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        },
-        "02": {
-          "label": "fecha",
-          "description": "",
-          "idField": "01-02-date",
-          "contentType": "date",
-          "fieldType": "DatePicker"
-        },
-        "03": {
-          "label": "hora",
-          "description": "",
-          "idField": "01-03-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        },
-        "04": {
-          "label": "domicilio",
-          "description": "",
-          "idField": "01-04-additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        }
-      }
-    },
-    "02": {
-      "description": "",
-      "label": "persona juridica",
-      "fields":{
-              "01": {
-                "label": "nombre del representante legal",
-                "description": "",
-                "idField": "02-01-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "apellido del representante legal",
-                "description": "",
-                "idField": "02-02-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "03": {
-                "label": "domicilio de la sociedad",
-                "description": "",
-                "idField": "02-03-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "04": {
-                "label": "nombre de la sociedad",
-                "description": "",
-                "idField": "02-04-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "05": {
-                "label": "NIT",
-                "description": "",
-                "idField": "02-05-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              },
-              "06": {
-                "label": "tipo de documento",
-                "description": "",
-                "idField": "02-06-documentType",
-                "contentType": "documentType",
-                "fieldType": "DatePicker"
-              },
-              "07": {
-                "label": "numero de documento",
-                "description": "",
-                "idField": "02-07-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              },
-              "08": {
-                "label": "domicilio ",
-                "description": "",
-                "idField": "02-08-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              }
-            }
-          },
-          "03": {
-            "description": "",
-            "label": "persona natural",
-            "fields":{
-              "01": {
-                "label": "nombre",
-                "description": "",
-                "idField": "03-01-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "apellido",
-                "description": "",
-                "idField": "03-02-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "03": {
-                "label": "tipo de documento",
-                "description": "",
-                "idField": "03-03-documentType",
-                "contentType": "documentType",
-                "fieldType": "Picker"
-              },
-              "04": {
-                "label": "numero de documento",
-                "description": "",
-                "idField": "03-04-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-                },
-                "05": {
-                  "label": "domicilio ",
-                  "description": "",
-                  "idField": "03-05-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "06": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "03-06-number",
-                  "contentType": "number",
-                  "fieldType": "TextField"
-                }
-            }
-          },
-          "04": {
-            "description": "",
-            "label": "objeto social",
-            "fields":{
-              "01": {
-                "label": "indeterminado",
-                "description": "",
-                "idField": "04-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "determinado",
-                "description": "",
-                "idField": "04-02-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              }
-            }
-          },
-          "05": {
-            "description": "",
-            "label": "duracion",
-            "fields":{
-              "01": {
-                "label": "indefinido",
-                "description": "",
-                "idField": "05-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "definido",
-                "description": "",
-                "idField": "05-02-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "03": {
-                "label": "razon social",
-                "description": "",
-                "idField": "05-03-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              }
-            }
-          },
-          "06": {
-            "description": "",
-            "label": "objeto social",
-            "fields":{
-              "01": {
-                "label": "autorizado",
-                "description": "",
-                "idField": "06-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "suscrito",
-                "description": "",
-                "idField": "06-02-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-            },
-              "03": {
-                "label": "pagado",
-                "description": "",
-                "idField": "06-03-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-            },
-              "04": {
-                "label": "valor",
-                "description": "",
-                "idField": "06-04-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "05": {
-                "label": "porcentaje",
-                "description": "",
-                "idField": "06-05-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-            }
-          }
+"idField": "07-06-additional",
+"contentType": "additional",       
+"fieldType": "Textfield" 
+},
+"07": {
+"label": "nombre accionista",
+"description": "",
+"idField": "07-07-name",
+"contentType": "name",       
+"fieldType": "Textfield" 
+}
+}   
+}
+}
+}
+  
 
-        },
-            
-            "07": {
-              "description": "",
-                  "label": "Acciones",
-                  "fields":{
-                    "01": {
-                      "label": "valor nominal",
-                      "description": "",
-                      "idField": "07-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                  }
-            }
-          },
-          "08": {
-            "description": "",
-            "label": "representante legal",
-            "fields":{
-              "01": {
-                "label": "periodo",
-                "description": "",
-                "idField": "08-01-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-          
-            "02": {
-              "label": "suplente",
-              "description": "",
-              "idField": "08-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-          },
-            "03": {
-              "label": "nombre",
-              "description": "",
-              "idField": "08-03-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-        },
-        "04": {
-              "label": "apellido",
-              "description": "",
-              "idField": "08-04-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-        },
-        "05": {
-              "label": "tipo de documento",
-              "description": "",
-              "idField": "08-05-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-        },
-        "06": {
-            "label": "numero de documento",
-              "description": "",
-              "idField": "08-06-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-        },
-        "07": {
-              "label": "domicilio",
-              "description": "",
-              "idField": "08-07-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-        }
-      } 
-        }
-      ,
-        "09": {
-          "description": "",
-          "label": "",
-          "fields":{
-            "01": {
-              "label": "sin limites de cuantia",
-              "description": "",
-              "idField": "09-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Límite de cuantía",
-              "description": "",
-              "idField": "09-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-          }
-        }
-      },
-      "10": {
-        "description": "",
-          "label": "clausula opcionales",
-          "fields":{
-            "01": {
-              "label": "mayorias especiales",
-              "description": "",
-              "idField": "10-01-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "clausula compromisoria",
-              "description": "",
-              "idField": "10-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
-          }
-        }
-      },
-      "11": {
-        "description": "",
-          "label": "informacion general",
-          "fields":{
-            "01": {
-              "label": "fecha",
-              "description": "",
-              "idField": "11-01-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            },
-            "02": {
-              "label": "ciudad",
-              "description": "",
-              "idField": "11-02-city",
-              "contentType": "city",
-              "fieldType": "TextField"
-          }
-        }
-      }
-  }
-  },
-  {
-    "category": "sociedades",
-      "subcategory": "estatutos",
-      "referenceId": "1vg5mGbivznWQTPt2iXsmNpDXz8SwjupX",
-      "sections":{
-        "01": {
-          "description": "Este documento es un contrato de constitución de una sociedad en comandita por acciones, a través del cual se plasma el acuerdo al que llegan los socios al momento de dicha constitución.",
-          "fields":{
-            "01": {
-              "label": "razon social",
-              "description": "",
-              "idField": "01-01-additional",
-              "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "fecha",
-                "description": "",
-                "idField": "01-02-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "03": {
-                "label": "hora",
-                "description": "",
-                "idField": "01-03-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "04": {
-                "label": "domicilio",
-                "description": "",
-                "idField": "01-04-additional",
-                "contentType": "additional",
-                "fieldType": "TextField"
-              },
-              "05": {
-                "label": "ciudad",
-                "description": "",
-                "idField": "01-05-city",
-                "contentType": "city",
-                "fieldType": "TextField"
-              }
-            }
-          },
-              "02": {
-                "description": "",
-                "label": "persona juridica",
-                "fields":{
-                    "01": {
-                      "label": "nombre del representante legal",
-                      "description": "",
-                      "idField": "02-01-name",
-                      "contentType": "name",
-                      "fieldType": "TextField"
-                    },
-                    "02": {
-                      "label": "apellido del representante legal",
-                      "description": "",
-                      "idField": "02-02-name",
-                      "contentType": "name",
-                      "fieldType": "TextField"
-                    },
-                    "03": {
-                      "label": "domicilio de la sociedad",
-                      "description": "",
-                      "idField": "02-03-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    },
-                    "04": {
-                      "label": "nombre de la sociedad",
-                      "description": "",
-                      "idField": "02-04-name",
-                      "contentType": "name",
-                      "fieldType": "TextField"
-                    },
-                    "05": {
-                      "label": "NIT",
-                      "description": "",
-                      "idField": "02-05-number",
-                      "contentType": "number",
-                      "fieldType": "TextField"
-                    },
-                    "06": {
-                      "label": "tipo de documento",
-                      "description": "",
-                      "idField": "02-06-documentType",
-                      "contentType": "documentType",
-                      "fieldType": "DatePicker"
-                    },
-                    "07": {
-                      "label": "numero de documento",
-                      "description": "",
-                      "idField": "02-07-number",
-                      "contentType": "number",
-                      "fieldType": "TextField"
-                    },
-                    "08": {
-                      "label": "domicilio ",
-                      "description": "",
-                      "idField": "02-08-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    },
-                    "09": {
-                      "label": "razon social",
-                      "description": "",
-                      "idField": "02-09-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    }
-                  }
-                },
-                "03": {
-                  "description": "",
-                  "label": "persona natural",
-                  "fields":{
-                    "01": {
-                      "label": "nombre",
-                      "description": "",
-                      "idField": "03-01-name",
-                      "contentType": "name",
-                      "fieldType": "TextField"
-                    },
-                    "02": {
-                      "label": "apellido",
-                      "description": "",
-                      "idField": "03-02-name",
-                      "contentType": "name",
-                      "fieldType": "TextField"
-                    },
-                    "03": {
-                      "label": "tipo de documento",
-                      "description": "",
-                      "idField": "03-03-documentType",
-                      "contentType": "documentType",
-                      "fieldType": "Picker"
-                    },
-                    "04": {
-                      "label": "numero de documento",
-                      "description": "",
-                      "idField": "03-04-number",
-                      "contentType": "number",
-                      "fieldType": "TextField"
-                      },
-                      "05": {
-                        "label": "domicilio ",
-                        "description": "",
-                        "idField": "03-05-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      },
-                      "06": {
-                        "label": "NIT",
-                        "description": "",
-                        "idField": "03-06-number",
-                        "contentType": "number",
-                        "fieldType": "TextField"
-                      }
-                  }
-                },
-                "04": {
-                  "description": "",
-                  "label": "objeto social",
-                  "fields":{
-                    "01": {
-                      "label": "objeto socal",
-                      "description": "",
-                      "idField": "04-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    }
-                  }
-                },
-                "05": {
-                  "description": "",
-                  "label": "duracion",
-                  "fields":{
-                    "01": {
-                      "label": "termino de duracion",
-                      "description": "",
-                      "idField": "05-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    }
-                  }
-                },
-                "06": {
-                  "description": "",
-                  "label": "capital",
-                  "fields":{
-                    "01": {
-                      "label": "autorizado",
-                      "description": "",
-                      "idField": "06-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    },
-                    "02": {
-                      "label": "suscrito",
-                      "description": "",
-                      "idField": "06-02-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                  },
-                    "03": {
-                      "label": "pagado",
-                      "description": "",
-                      "idField": "06-03-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                  },
-                  "04": {
-                    "label": "valor",
-                    "description": "",
-                    "idField": "06-04-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                  },
-                  "05": {
-                    "label": "porcentaje",
-                    "description": "",
-                    "idField": "06-05-additional",
-                    "contentType": "additional",
-                    "fieldType": "TextField"
-                }
-              }
-            },
-            "07": {
-              "description": "",
-                  "label": "Acciones",
-                  "fields":{
-                    "01": {
-                      "label": "valor nominal",
-                      "description": "",
-                      "idField": "07-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    }
-                  }
-                },
-                "08": {
-                  "description": "",
-                  "label": "clausula compromisoria",
-                  "fields":{
-                    "01": {
-                      "label": "numero de arbitros",
-                      "description": "",
-                      "idField": "08-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    }
-              }
-            },
-              "09": {
-                "description": "",
-                "label": "informacion general",
-                "fields":{
-                  "01": {
-                    "label": "ciudad",
-                    "description": "",
-                    "idField": "09-01-city",
-                    "contentType": "city",
-                    "fieldType": "TextField"
-                  },
-                  "02": {
-                    "label": "fecha",
-                    "description": "",
-                    "idField": "09-02-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-                }
-              }
-            }
-          }
-  },
-  {
-            "category": "sociedades",
-            "subcategory": "autorizacion",
-            "referenceId": "1BpUGu7RjcJnX8rdzh0Gsg4k1fOg78xzu",
-            "sections": {
-              "01": {
-                "description": "Es un documento por medio del cual el representante legal de una sociedad autoriza el pago de una suma de dinero a favor de una persona en especial, en aquellos casos en los cuales no se presentó toda la documentación requerida por la sociedad para dicho emolumento. ",
-                "label": "datos del representante legal",
-                "fields": {
-                    "01": {
-                    "label": "nombre",
-                    "description": "",
-                    "idField": "01-01-name",
-                    "contentType": "name",
-                    "fieldType": "TexTField"
-                    },
-                    "02": {
-                    "label": "apellido",
-                    "description": "",
-                    "idField": "01-02-name",
-                    "contentType": "name",
-                    "fieldType": "textField"
-                    },
-                    "03": {
-                    "label": "tipo de documento",
-                    "description": "",
-                    "idField": "01-03-documentType",
-                    "contentType": "documentType",
-                    "fieldType": "textField"
-                    },
-                    "04": {
-                    "label": "numero de documento",
-                    "description": "",
-                    "idField": "01-04-number",
-                    "contentType": "number",
-                    "fieldType": "textField"
-                    },
-                    "05": {
-                    "label": "razon social",
-                    "description": "",
-                    "idField": "01-05-additional",
-                    "contentType": "additional",
-                    "fieldType": "textField"
-                    },
-                    "06": {
-                    "label": "NIT",
-                    "description": "",
-                    "idField": "01-06-number",
-                    "contentType": "number",
-                    "fieldType": "textField"
-                    }
-                  }
-                },
-                "02": {
-                  "description": "",
-                  "label": "pago",
-                  "fields":{
-                    "01": {
-                      "label": "valor",
-                      "description": "",
-                      "idField": "02-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "textField"
 
-                    },
-                    "02": {
-                      "label": "concepto de pago",
-                      "description": "",
-                      "idField": "02-02-additional",
-                      "contentType": "additional",
-                      "fieldType": "textField"
-                    },
-                    "03": {
-                      "label": "acreedor",
-                      "description": "",
-                      "idField": "02-03-additional",
-                      "contentType": "additional",
-                      "fieldType": "textField"
-                    }
-                  }
-                },
-                "03": {
-                  "description": "",
-                  "label": "documento no presentado",
-                  "fields":{
-                    "01": {
-                      "label": "cuenta de cobro",
-                      "description": "",
-                      "idField": "03-01-additional",
-                      "contentType": "additional",
-                      "fieldType": "textField"
-
-                    },
-                    "02": {
-                      "label": "RUT",
-                      "description": "",
-                      "idField": "03-02-additional",
-                      "contentType": "additional",
-                      "fieldType": "textField"
-                    }
-                }
-              },
-              "04": {
-                "description": "",
-                "label": "informacion general",
-                "fields":{
-                  "01": {
-                    "label": "ciudad",
-                    "description": "",
-                    "idField": "04-01-city",
-                    "contentType": "city",
-                    "fieldType": "textField"
-
-                  },
-                  "02": {
-                    "label": "fecha",
-                    "description": "",
-                    "idField": "04-02-date",
-                    "contentType": "date",
-                    "fieldType": "DatePicker"
-              }
-            }
-          }
-        }
-  },
-  {
-        "category": "sociedades",
-          "subcategory": "estatutos",
-          "referenceId": "1x4xZYV9xBW2MROHbnIszNjPdr6XDFOBa",
-          "sections":{
-            "01": {
-              "description": "Este documento es un contrato de constitución de una sociedad anónima por medio del cual se plasma el acuerdo al que llegan los socios al momento de dicha constitución. En él se recogen datos esenciales como el nombre de la sociedad, identificación de los socios, el capital, el domicilio, entre otros.",
-              "fields":{
-                "01": {
-                  "label": "razon social",
-                  "description": "",
-                  "idField": "01-01-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "02": {
-                  "label": "fecha",
-                  "description": "",
-                  "idField": "01-02-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "03": {
-                  "label": "hora",
-                  "description": "",
-                  "idField": "01-03-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "04": {
-                  "label": "domicilio",
-                  "description": "",
-                  "idField": "01-04-additional",
-                  "contentType": "additional",
-                  "fieldType": "TextField"
-                },
-                "05": {
-                  "label": "ciudad",
-                  "description": "",
-                  "idField": "01-05-city",
-                  "contentType": "city",
-                  "fieldType": "TextField"
-                }
-              }
-            },
-                "02": {
-                  "description": "",
-                  "label": "persona juridica",
-                  "fields":{
-                      "01": {
-                        "label": "nombre del representante legal",
-                        "description": "",
-                        "idField": "02-01-name",
-                        "contentType": "name",
-                        "fieldType": "TextField"
-                      },
-                      "02": {
-                        "label": "apellido del representante legal",
-                        "description": "",
-                        "idField": "02-02-name",
-                        "contentType": "name",
-                        "fieldType": "TextField"
-                      },
-                      "03": {
-                        "label": "domicilio de la sociedad",
-                        "description": "",
-                        "idField": "02-03-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      },
-                      "04": {
-                        "label": "nombre de la sociedad",
-                        "description": "",
-                        "idField": "02-04-name",
-                        "contentType": "name",
-                        "fieldType": "TextField"
-                      },
-                      "05": {
-                        "label": "NIT",
-                        "description": "",
-                        "idField": "02-05-number",
-                        "contentType": "number",
-                        "fieldType": "TextField"
-                      },
-                      "06": {
-                        "label": "tipo de documento",
-                        "description": "",
-                        "idField": "02-06-documentType",
-                        "contentType": "documentType",
-                        "fieldType": "DatePicker"
-                      },
-                      "07": {
-                        "label": "numero de documento",
-                        "description": "",
-                        "idField": "02-07-number",
-                        "contentType": "number",
-                        "fieldType": "TextField"
-                      },
-                      "08": {
-                        "label": "domicilio ",
-                        "description": "",
-                        "idField": "02-08-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      },
-                      "09": {
-                        "label": "razon social",
-                        "description": "",
-                        "idField": "02-09-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      }
-                    }
-                  },
-                  "03": {
-                    "description": "",
-                    "label": "persona natural",
-                    "fields":{
-                      "01": {
-                        "label": "nombre",
-                        "description": "",
-                        "idField": "03-01-name",
-                        "contentType": "name",
-                        "fieldType": "TextField"
-                      },
-                      "02": {
-                        "label": "apellido",
-                        "description": "",
-                        "idField": "03-02-name",
-                        "contentType": "name",
-                        "fieldType": "TextField"
-                      },
-                      "03": {
-                        "label": "tipo de documento",
-                        "description": "",
-                        "idField": "03-03-documentType",
-                        "contentType": "documentType",
-                        "fieldType": "Picker"
-                      },
-                      "04": {
-                        "label": "numero de documento",
-                        "description": "",
-                        "idField": "03-04-number",
-                        "contentType": "number",
-                        "fieldType": "TextField"
-                        },
-                        "05": {
-                          "label": "domicilio ",
-                          "description": "",
-                          "idField": "03-05-additional",
-                          "contentType": "additional",
-                          "fieldType": "TextField"
-                        },
-                        "06": {
-                          "label": "NIT",
-                          "description": "",
-                          "idField": "03-06-number",
-                          "contentType": "number",
-                          "fieldType": "TextField"
-                        }
-                    }
-                  },
-                  "04": {
-                    "description": "",
-                    "label": "objeto social",
-                    "fields":{
-                      "01": {
-                        "label": "objeto socal",
-                        "description": "",
-                        "idField": "04-01-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      }
-                    }
-                  },
-                  "05": {
-                    "description": "",
-                    "label": "duracion",
-                    "fields":{
-                      "01": {
-                        "label": "termino de duracion",
-                        "description": "",
-                        "idField": "05-01-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      }
-                    }
-                  },
-                  "06": {
-                    "description": "",
-                    "label": "capital",
-                    "fields":{
-                      "01": {
-                        "label": "autorizado",
-                        "description": "",
-                        "idField": "06-01-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      },
-                      "02": {
-                        "label": "suscrito",
-                        "description": "",
-                        "idField": "06-02-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                    },
-                      "03": {
-                        "label": "pagado",
-                        "description": "",
-                        "idField": "06-03-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                    },
-                    "04": {
-                      "label": "valor",
-                      "description": "",
-                      "idField": "06-04-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                    },
-                    "05": {
-                      "label": "porcentaje",
-                      "description": "",
-                      "idField": "06-05-additional",
-                      "contentType": "additional",
-                      "fieldType": "TextField"
-                  }
-                }
-              },
-              "07": {
-                "description": "",
-                    "label": "Acciones",
-                    "fields":{
-                      "01": {
-                        "label": "valor nominal",
-                        "description": "",
-                        "idField": "07-01-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      }
-                    }
-                  },
-                  "08": {
-                    "description": "",
-                    "label": "clausula compromisoria",
-                    "fields":{
-                      "01": {
-                        "label": "numero de arbitros",
-                        "description": "",
-                        "idField": "08-01-additional",
-                        "contentType": "additional",
-                        "fieldType": "TextField"
-                      }
-                }
-              },
-                "09": {
-                  "description": "",
-                  "label": "informacion general",
-                  "fields":{
-                    "01": {
-                      "label": "ciudad",
-                      "description": "",
-                      "idField": "09-01-city",
-                      "contentType": "city",
-                      "fieldType": "TextField"
-                    },
-                    "02": {
-                      "label": "fecha",
-                      "description": "",
-                      "idField": "09-02-date",
-                      "contentType": "date",
-                      "fieldType": "DatePicker"
-                  }
-                }
-              }
-            }
-  },
-  {
-          "category": "negocios ",
-          "subcategory": "compraventa",
-          "referenceId": "1QdmnMdAOn3qBwp7OSZ-_P7_8w9FSidm1",
-          "sections":{
-            "01": {
-              "description": "Este documento es un contrato que permite al propietario de un establecimeinto de comercio transferir total o parcialmente la propiedad del mismo. ",
-              "label": "tipo de vendedor",
-              "fields":{
-                                      
-                "01": {
-                  "label": "persona natural",
-                  "description": "",
-                  "idField": "01-01-personType",
-                  "contentType": "personType",
-                  "fieldType": "TexTField"
-                },
-                "02": {
-                  "label": "persona natural",
-                  "description": "",
-                  "idField": "01-02-personType",
-                  "contentType": "personType",
-                  "fieldType": "TexTField"
-              },
-              "03": {
-                "label": "NIT",
-                "description": "",
-                "idField": "01-03-number",
-                "contentType": "number",
-                "fieldType": "TexTField"
-              }
-            }
-          },
-            "02": {
-              "description": "",
-              "label": "persona juridica",
-              "fields":{
-                "01": {
-                  "label": "nombres del representante legal",
-                  "description": "",
-                  "idField": "02-01-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "apellidos del representante legal",
-                  "description": "",
-                  "idField": "02-02-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "razon social de la empresa",
-                  "description": "",
-                  "idField": "02-03-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "04": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "02-04-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-                },
-                "05": {
-                  "label": "domicilio de la empresa",
-                  "description": "",
-                  "idField": "02-05-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "06": {
-                  "label": "tipo de documento",
-                  "description": "",
-                  "idField": "02-06-DocumentType",
-                  "contentType": "DocumentType",
-                  "fieldType": "Picker",
-                  "id": "02-01-personType",
-                  "value": "persona juridica"
-                },
-                "07": {
-                  "label": "ciudad",
-                  "description": "",
-                  "idField": "02-07-city",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                },
-                "08": {
-                  "label": "pais",
-                  "description": "",
-                  "idField": "02-08-country",
-                  "contentType": "country",
-                  "fieldType": "textField"
-                },
-                "09": {
-                  "label": "ciudad razon social",
-                  "description": "",
-                  "idField": "02-09-city",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                },
-                "10": {
-                  "label": "pais razon social ",
-                  "description": "",
-                  "idField": "02-10-country",
-                  "contentType": "country",
-                  "fieldType": "textField"
-                }
-
-              }
-            },
-            "03": {
-              "description": "",
-              "label": "persona natural",
-              "fields":{
-                "01": {
-                  "label": "nombre",
-                  "description": "",
-                  "idField": "03-01-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "apellido",
-                  "description": "",
-                  "idField": "03-02-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "tipo de documento",
-                  "description": "",
-                  "idField": "03-03-documentType",
-                  "contentType": "documentType",
-                  "fieldType": "picker",
-                  "id": "03-01-personType",
-                  "value": "persona natural"
-                },
-                "04": {
-                  "label": "number de documento",
-                  "description": "",
-                  "idField": "03-04-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-                },
-                "05": {
-                  "label": "domicilio",
-                  "description": "",
-                  "idField": "03-05-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "06": {
-                  "label": "ciudad",
-                  "description": "",
-                  "idField": "03-06-city",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                },
-                "07": {
-                  "label": "pais",
-                  "description": "",
-                  "idField": "03-07-country",
-                  "contentType": "country",
-                  "fieldType": "textField"
-                }
-              }
-            },
-            "04": {
-              "description": "",
-              "label": "tipo de comprador",
-              "fields":{
-                "01": {
-                  "label": "persona natural",
-                  "description": "",
-                  "idField": "04-01-personType",
-                  "contentType": "personType",
-                  "fieldType": "TexTField"
-                },
-                "02": {
-                  "label": "persona juridico",
-                  "description": "",
-                  "idField": "04-02-personType",
-                  "contentType": "personType",
-                  "fieldType": "TexTField"
-
-                },
-                "03": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "04-03-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-                }
-              }
-            },
-            "05": {
-              "description": "",
-              "label": "persona juridica",
-              "fields":{
-                "01": {
-                  "label": "nombres del representante legal",
-                  "description": "",
-                  "idField": "05-01-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "apellidos del representante legal",
-                  "description": "",
-                  "idField": "05-02-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "razon social de la empresa",
-                  "description": "",
-                  "idField": "05-03-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField" 
-                },
-                "04": {
-                  "label": "NIT",
-                  "description": "",
-                  "idField": "05-04-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-                },
-                "05": {
-                  "label": "domicilio de la empresa",
-                  "description": "",
-                  "idField": "05-05-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "06": {
-                  "label": "tipo de docuemento",
-                  "description": "",
-                  "idField": "05-06-DocumentType",
-                  "contentType": "DocumentType",
-                  "fieldType": "textField",
-                  "id": "04-02-personType",
-                  "value": "persona juridica"
-                },
-                "07": {
-                  "label": "ciudad",
-                  "description": "",
-                  "idField": "05-07-city",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                },
-                "08": {
-                  "label": "pais",
-                  "description": "",
-                  "idField": "05-08-country",
-                  "contentType": "country",
-                  "fieldType": "textField"
-                },
-                "09": {
-                  "label": "ciudad razon social",
-                  "description": "",
-                  "idField": "05-09-cty",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                },
-                "10": {
-                  "label": "pais razon social",
-                  "description": "",
-                  "idField": "05-10-country",
-                  "contentType": "country",
-                  "fieldType": "textField"
-                }
-              }
-            },
-            "06": {
-              "description": "",
-              "label": "persona natural",
-              "fields":{
-                "01":{
-                  "label": "nombre",
-                  "description": "",
-                  "idField": "06-01-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-              },
-              "02": {
-                "label": "apellido",
-                "description": "",
-                "idField": "06-02-name",
-                "contentType": "name",
-                "fieldType": "textField"
-              },
-              "03": {
-                "label": "tipo de documento",
-                "description": "",
-                "idField": "06-03-documentType",
-                "contentType": "documentType",
-                "fieldType": "picker",
-                "id": "04-01-personType",
-                "value": "persona juridica"
-              },
-              "04": {
-                "label": "number de documento",
-                  "description": "",
-                  "idField": "06-04-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-              },
-              "05": {
-                "label": "domicilio",
-                "description": "",
-                "idField": "06-05-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              },
-              "06": {
-                "label": "ciudad",
-                "description": "",
-                "idField": "06-06-city",
-                "contentType": "city",
-                "fieldType": "textField"
-              },
-              "07": {
-                "label": "pais",
-                "description": "",
-                "idField": "06-07-country",
-                "contentType": "country",
-                "fieldType": "textField"
-              }
-            }
-          },
-          "07": {
-            "description": "",
-              "label": "objetivo",
-              "fields":{
-                "01": {
-                  "label": "nombre del establecimiento",
-                  "description": "",
-                  "idField": "07-01-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "matricula mercantil",
-                  "description": "",
-                  "idField": "07-02-number",
-                  "contentType": "number",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "descripcion",
-                  "description": "",
-                  "idField": "07-03-name",
-                  "contentType": "name",
-                  "fieldType": "textField"
-                },
-                "04": {
-                  "label": "ciudad resgistro matricula mercantil",
-                  "description": "",
-                  "idField": "07-04-city",
-                  "contentType": "city",
-                  "fieldType": "textField"
-                }
-              }
-          },
-          "08": {
-            "description": "",
-              "label": "precio",
-              "fields":{
-                "01": {
-                  "label": "valor del establecimiento",
-                  "description": "",
-                  "idField": "08-01-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "valor en letra",
-                  "description": "",
-                  "idField": "08-02-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "fecha especial pago",
-                  "description": "",
-                  "idField": "08-03-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "04": {
-                  "label": "dia",
-                  "description": "",
-                  "idField": "08-04-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-
-                },
-                "05": {
-                  "label": "mes",
-                  "description": "",
-                  "idField": "08-05-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "06": {
-                  "label": "ano",
-                  "description": "",
-                  "idField": "08-06-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "07": {
-                  "label": "fecha primera cuota",
-                  "description": "",
-                  "idField": "08-07-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                }
-              }
-          },
-          "09": {
-            "description": "",
-              "label": "cuotas",
-              "fields":{
-                "01": {
-                  "label": "fecha inical",
-                  "description": "",
-                  "idField": "09-01-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "02": {
-                  "label": "valor mensual",
-                  "description": "",
-                  "idField": "09-02-aditional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "03": {
-                  "label": "al momento de suscribir el contrato",
-                  "description": "",
-                  "idField": "09-03-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "04": {
-                  "label": "dia",
-                  "description": "",
-                  "idField": "09-04-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "05": {
-                  "label": "mes",
-                  "description": "",
-                  "idField": "09-05-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                },
-                "06": {
-                  "label": "ano",
-                  "description": "",
-                  "idField": "09-06-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-                }
-              }
-          },
-          "10": {
-            "description": "",
-              "label": "pago en efectivo",
-              "fields":{
-                "01": {
-                  "label": "efectivo",
-                  "description": "",
-                  "idField": "10-01-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-                },
-                "02": {
-                  "label": "direccion",
-                  "description": "",
-                  "idField": "10-02-addres",
-                  "contentType": "addres",
-                  "fieldType": "textField"
-                }
-              }
-          },
-          "11": {
-            "description": "",
-            "label": "consignacion bancaria",
-            "fields":{
-              "01": {
-                "label": "tipo de cuenta",
-                  "description": "",
-                  "idField": "11-01-additional",
-                  "contentType": "additional",
-                  "fieldType": "textField"
-              },
-              "02": {
-                "label": "corriente",
-                "description": "",
-                "idField": "11-02-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              },
-              "03": {
-                "label": "ahorros",
-                "description": "",
-                "idField": "11-03-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              },
-              "04": {
-                "label": "banco",
-                "description": "",
-                "idField": "11-04-name",
-                "contentType": "name",
-                "fieldType": "textField"
-              },
-              "05": {
-                "label": "numero de la cuenta",
-                "description": "",
-                "idField": "11-05-number",
-                "contentType": "number",
-                "fieldType": "textField"
-              },
-              "06": {
-                "label": "nombre del titular de la cuenta",
-                "description": "",
-                "idField": "11-06-name",
-                "contentType": "name",
-                "fieldType": "textField"
-              }
-            }
-          },
-          "12": {
-            "description": "",
-            "label": "entrega",
-            "fields":{
-              "01": {
-                "label": "fecha",
-                "description": "",
-                "idField": "12-01-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "02": {
-                "label": "al momento de suscribir el contrato",
-                "description": "",
-                "idField": "12-02-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              },
-              "03": {
-                "label": "dia",
-                "description": "",
-                "idField": "12-03-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "04": {
-                "label": "mes",
-                "description": "",
-                "idField": "12-04-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "05": {
-                "label": "ano",
-                  "description": "",
-                  "idField": "12-05-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-              }
-            }
-          },
-          "13": {
-            "description": "",
-            "label": "clausula penal",
-            "fields":{
-              "01": {
-                "label": "valor",
-                "description": "",
-                "idField": "13-01-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              }
-            }
-          },
-          "14": {
-            "description": "",
-            "label": "perfeccionamiento del contrato",
-            "fields": {
-              "01": {
-                "label": "ciudad de registro",
-                "description": "",
-                "idField": "14-01-city",
-                "contentType": "city",
-                "fieldType": "textField"
-              },
-              "02": {
-                "label": "fecha",
-                "description": "",
-                "idField": "14-02-date",
-                "contentType": "cdate",
-                "fieldType": "DatePicker"
-              },
-              "03":{
-                "label": "ciudad de firma",
-                "description": "",
-                "idField": "14-03-city",
-                "contentType": "city",
-                "fieldType": "textField"
-              },
-              "04": {
-                "label": "ejemplares",
-                "description": "",
-                "idField": "14-04-additional",
-                "contentType": "additional",
-                "fieldType": "textField"
-              },
-              "05": {
-                "label": "dia",
-                "description": "",
-                "idField": "14-05-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "06": {
-                "label": "mes",
-                "description": "",
-                "idField": "14-06-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-              },
-              "07": {
-                "label": "ano",
-                  "description": "",
-                  "idField": "14-07-date",
-                  "contentType": "date",
-                  "fieldType": "DatePicker"
-              }
-            }
-              },
-            
-          "15": {
-            "description": "",
-            "label": "fecha de registro",
-            "fields": {
-              "01": {
-                "label": "Días contados a partir de la suscripción del contrato",
-                "description": "",
-                "idField": "15-01-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
-            },
-             "02": {
-              "label": "Días contados a partir de la entrega del establecimiento",
-              "description": "",
-              "idField": "15-02-date",
-              "contentType": "date",
-              "fieldType": "DatePicker"
-            }
-          }
-        }
-      }
-  }  
 ]
+  
+
+              
+    
