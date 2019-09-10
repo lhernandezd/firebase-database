@@ -620,7 +620,7 @@
                   "fieldType": "DatePicker"
                 },
                 "03": {
-                  "label": "ano",
+                  "label": "año",
                   "description": "",
                   "idField": " 17-03-date",
                   "contentType": "date",
