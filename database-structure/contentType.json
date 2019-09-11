@@ -94,5 +94,23 @@
         "label": "Personales"
       }
     ]
+  },
+  "majorDocumentType": {
+    "label": "documentType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "cedula de ciudadania",
+        "label": "Cédula de Ciudadanía"
+      },
+      {
+        "value": "cedula de extranjeria",
+        "label": "Cédula de extranjería"
+      }
+    ]
+  },
+  "location": {
+    "label": "location",
+    "type": "TextField"
   }
 }
