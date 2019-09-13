@@ -1,1380 +1,400 @@
 
 
 [
-{ 
-"category": "sociedades",
-"subcategory": "actas",
-"referenceId": "1FzlRx8VzZLHxsjBCCD6dM3808yG7rSGc", 
-"sections":{
-"01": {
-"description": "Es un documento por medio del cual los miembros de la junta directiva de una sociedad autorizan al representante legal de la misma para la realización de ciertos actos.",
-"label": "datos de la sociedad",
-"fields":{
-"01": {
-"label": "razon social",
+{
+  "category": "bienes raices",
+  "subcategory": "requerimiento de pago",
+  "referenceId": "12l9fobkHn1OThIF4kryAIXS3g_uyhy62",
+  "sections": {
+  "01": {
+  "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
+  "label": "tipo de arrendador",
+  "fields": {
+
+  "01": {
+"label": "persona natural",
 "description": "",
-"idField": "01-01-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
+"idField": "01-01-personType",
+"contentType": "personType",
+"fieldType": "TextField"
 },
 "02": {
-"label": "domicilio de la sociedad",
+"label": "persona juridica",
 "description": "",
-"idField": "01-02-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
+"idField": "01-02-personType",
+"contentType": "personType",
+"fieldType": "TextField"        
+}
+}
+},
+"02": {
+"description": "",
+"label": "persona narural",
+"fields":  {
+"01" : {
+  "label": "nombre",
+  "description": "",
+  "idField": "02-01-name",
+  "contentType": "nanme",
+  "fieldType": "TextField"  
+},
+"02": {
+"label": "apellido",
+"description": "",
+"idField": "02-02-name",
+"contentType": "name",
+"fieldType": "TextField"  
 },
 "03": {
-"label": "numero de acta",
+"label": "tipo de documento",
 "description": "",
-"idField": "01-03-additional",
-"contentType": "additional",       
+"idField": "02-03-pdocumentType",
+"contentType": "documentType",
+"fieldType": "TextField"  
+},
+"04": {
+"label": "numero de documento",
+"description": "",
+"idField": "02-04-number",
+"contentType": "number",
 "fieldType": "TextField"  
 }
 }
 },
-
-"02": {
-"description": "",
-"label": "convocatoria",
-"fields": {
-"01":{
-"label": "fecha de convocatoria",
-"description": "",
-"idField": "02-02-date",
-"contentType": "date",       
-"fieldType": "Datepicker"  
-}
-}
-},
-
 "03": {
-"description": "",
-"label": "celebracion de la junta",
-"fields":  {
-"01": {
-"label": "fecha",
-"description": "",
-"idField": "03-01-date",
-"contentType": "date",       
- "fieldType": "DatePicker" 
-},
-"02": {
-"label": "hora",
-"description": "",
-"idField": "03-02-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"03":{
-"label": "porcentaje de miembros",
-"description": "",
-"idField": "03-03-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
-},
-"04": {
-"label": "miembro de junta directiva",
-"description": "",
-"idField": "03-04-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
+  "description": "",
+  "label": "persona juridica",
+  "fields":  {
+  "01" : {
+    "label": "nombre del representante legal",
+    "description": "",
+    "idField": "03-01-name",
+    "contentType": "nanme",
+    "fieldType": "TextField"  
+  },
+  "02": {
+  "label": "apellido del representante legal",
+  "description": "",
+  "idField": "03-02-name",
+  "contentType": "name",
+  "fieldType": "TextField"  
+  },
+  "03": {
+  "label": "tipo de documento del documento legal",
+  "description": "",
+  "idField": "03-03-pdocumentType",
+  "contentType": "documentType",
+  "fieldType": "TextField"  
+  },
+  "04": {
+  "label": "numero de documento del reresentante legal",
+  "description": "",
+  "idField": "03-04-number",
+  "contentType": "number",
+  "fieldType": "TextField"  
+  },
+  "05": {
+    "label": "razon social",
+    "description": "",
+    "idField": "03-05-additional",
+    "contentType": "additional",
+    "fieldType": "TextField"  
+  }
+  }
+  },
+  "04": {
+  "description": "",
+  "label": "informacion del arrendatario",
+  "fields":  {
+  "01" : {
+    "label": "nombre completo",
+    "description": "",
+    "idField": "04-01-name",
+    "contentType": "name",
+    "fieldType": "TextField"  
+  }
+  }
 },
 "05": {
-"label": "estatus",
-"description": "",
-"idField": "03-05-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"06": {
-"label": "nombre del presidente",
-"description": "",
-"idField": "03-06-name",
-"contentType": "name",       
-"fieldType": "Textfield"
-},
-"07": {
-"label": "nombre del secretario",
-"description": "",
-"idField": "03-07-name",
-"contentType": "name",       
-"fieldType": "Textfield"  
-},
-"08": {
-"label": "Porcentaje de aprobación de Presidente y Secretario",
-"description": "",
-"idField": "03-08-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"09": {
-"label": "Votos en blanco en la aprobación de Presidente y Secretario",
-"description": "",
-"idField": "03-09-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"10": {
-"label": "Votos en contra en la aprobación de Presidente y Secretario",
-"description": "",
-"idField": "03-10-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"11": {
-"label": "porcentaje de aprobacion del orden del dia",
-"description": "",
-"idField": "03-11-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"12": {
-"label": "Votos en blanco en la aprobación del orden del día",
-"description": "",
-"idField": "03-12-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"13": {
-"label": "Votos en contra en la aprobación del orden del día",
-"description": "",
-"idField": "03-13-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"   
-},
-"14": {
-"label": "Votos en contra en la aprobación del orden del día",
-"description": "",
-"idField": "03-13-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
-}
-}
-},
-
-"04": {
-"description": "",
-"label": "autorizacion al representante legal",
-"fields": {
-"01": {
-"label": "vocero",
-"description": "",
-"idField": "04-01-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
+  "description": "",
+  "label": "canones adeudados",
+  "fields":  {
+  "01" : {
+    "label": "canones adeudados",
+    "description": "",
+    "idField": "05-01-additional",
+    "contentType": "additional",
+    "fieldType": "TextField"
 },
 "02": {
-"label": "cargo",
-"description": "",
-"idField": "04-02-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"
-},
-"03": {
-"label": "nombre del negociante",
-"description": "",
-"idField": "04-03-name",
-"contentType": "name",       
-"fieldType": "Textfield"
-},
-"04": {
-"label": "cuantia",
-"description": "",
-"idField": "04-04-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"
-},
-"05": {
-"label": "objeto",
-"description": "",
-"idField": "04-05-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"
+  "label": "periodo de tiempo",
+  "description": "",
+  "idField": "05-02-additional",
+  "contentType": "additional",
+  "fieldType": "TextField"
+}
+}
 },
 "06": {
-"label": "Porcentaje de aprobación de la autorización del acto",
-"description": "",
-"idField": "04-06-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"
-},
-"07": {
-"label": "Votos en blanco en la aprobación de la autorización del acto",
-"description": "",
-"idField": "04-07-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"08": {
-"label": "Votos en contra en la aprobación de la autorización del acto",
-"description": "",
-"idField": "04-08-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
-},
-"09": {
-"label": "act0",
-"description": "",
-"idField": "04-09-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
-},
-"10": {
-"label": "nombre negociante",
-"description": "",
-"idField": "04-10-name",
-"contentType": "name",       
-"fieldType": "Textfield"
-}
-}
-},
-
-"05": {
-"description": "",
-"label": "Acta",
-"fields": {
+  "description": "",
+  "label": "informacion general",
+  "fields": {
 "01": {
-"label": "numero",
-"description": "",
-"idField": "05-01-number",
-"contentType": "number",       
-"fieldType": "Textfield" 
+  "label": "fecha de firmas",
+    "description": "",
+    "idField": "06-01-date",
+    "contentType": "date",
+    "fieldType": "DatePicker"
 },
 "02": {
-"label": "Porcentaje de aprobación del acta",
-"description": "",
-"idField": "05-02-additional",
-"contentType": "additional",       
-"fieldType": "Textfield"  
+  "label": "ciudad",
+  "description": "",
+  "idField": "06-02-city",
+  "contentType": "city",
+  "fieldType": "TextField"
 },
 "03": {
-"label": "Votos en blanco en la aprobación del acta",
-"description": "",
-"idField": "05-03-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"04": {
-"label": "Votos en contra en la aprobación del acta",
-"description": "",
-"idField": "05-04-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"06": {
-"label": "Hora",
-"description": "",
-"idField": "05-05-additional",
-"contentType": "additional",       
-"fieldType": "Textfield" 
-},
-"07": {
-"label": "Fecha",
-"description": "",
-"idField": "05-07-date",
-"contentType": "date",       
-"fieldType": "DatePicker" 
+  "label": "fecha de contratos",
+  "description": "",
+  "idField": "06-03-date",
+  "contentType": "date",
+  "fieldType": "DatePicker"
 }
 }
 }
 }
 },
 {
-"category": "sociedades",
-"subcategory": "transformaciones",
-"referenceId": "19TAOoyLEg9LcTTqxbjacc9-0vD_eHiab", 
-"sections":{
-"01": {
-"description": "Es un documento por medio del cual la asamblea de accionistas de una sociedad anónima aprueba, por unanimidad, la transformación de la sociedad a una del régimen de las sociedades por acciones simplificadas.",
-"label": "datos de la S.A",
-"fields":{
-"01": {
-"label": "razon social de la S.A",
-"description": "",
-"idField": "01-01-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
-},
-"02": {
-  "label": "domicilio de la S.A",
-  "description": "",
-  "idField": "01-02-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-}   
-}
-},
-"02": {
-"description": "",
-"label": "asamblea",
-"fields": {
-"01": {
-"label": "tipo de asamblea ",
-"description": "",
-"idField": "02-01-additional",
-"contentType": "additional",       
-"fieldType": "TextField"    
-},
-"02": {
-"label": "fecha",
-"description": "",
-"idField": "02-02-date",
-"contentType": "date",       
-"fieldType": "TextField" 
-},
-"03": {
-"label": "domicilio de la S.A",
-"description": "",
-"idField": "02-03-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
-},
-"04": {
-  "label": "Hora",
-  "description": "",
-  "idField": "02-04-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-},
-"05": {
-  "label": "fecha de convocatoria",
-  "description": "",
-  "idField": "02-05-date",
-  "contentType": "date",       
-  "fieldType": "TextField" 
-}
-}
-},
-"03": {
-"description": "",
-"label": "celebracion de la asamblea",
-"fields": {
-"01": {
-"label": "accionista",
-      "description": "",
-      "idField": "03-01-additional",
-      "contentType": "additional",       
-      "fieldType": "TextField" 
-},
-"02": {
-  "label": "acciones",
-  "description": "",
-  "idField": "03-02-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-},
-"03": {
-"label": "porcentaje",
-"description": "",
-"idField": "03-03-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
-},
-"04": {
-"label": "nombre del presidente",
-"description": "",
-"idField": "03-04-name",
-"contentType": "name",       
-"fieldType": "TextField" 
-},
-"05": {
-"label": "nombre del secretario",
-"description": "",
-"idField": "03-05-name",
-"contentType": "name",       
-"fieldType": "TextField" 
-},
-"06": {
-"label": "Porcentaje de aprobación de Presidente y Secretario _",
-"description": "",
-"idField": "03-06-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
-},
-"07": {
-"label": "Votos en blanco en la aprobación de Presidente y Secretario",
-"description": "",
-"idField": "03-07-additional",
-"contentType": "additional",       
-"fieldType": "TextField" 
-},
-"08": {
-  "label": "Votos en contra en la aprobación de Presidente y Secretario",
-  "description": "",
-  "idField": "03-08-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-}
-}
-},
-"04": {
-"description": "",
-"label": "balance extraordinario",
-"fields":{
-"01": {
-  "label": "fecha de corte del balance",
-  "description": "",
-  "idField": "04-01-date",
-  "contentType": "date ",       
-  "fieldType": "DatePicker" 
-}
-} 
-},
-"05": {
-"description": "",
-"label": "transformacion de la sociedad",
-"fields":{
-"01": {
-  "label": "razon social de la S.A",
-  "description": "",
-  "idField": "05-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-}
-}    
-},
-"06": {
-"description": "",
+  "category": "bienes raices",
+  "subcategory": "rrecibo de pago de cannon",
+  "referenceId": "1zIouQhbi1I6Gl2Lb75yAM0okDdcD3Es9",
+  "sections": {
+  "01": {
+  "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
+  "label": "tipo de arrendador",
+  "fields": {
+
+  "01": {
 "label": "persona natural",
-"fields":{
-"01": {
-    "label": "Nombres",
+"description": "",
+"idField": "01-01-personType",
+"contentType": "personType",
+"fieldType": "TextField"
+},
+"02": {
+"label": "persona juridica",
+"description": "",
+"idField": "01-02-personType",
+"contentType": "personType",
+"fieldType": "TextField"        
+}
+}
+},
+"02": {
+"description": "",
+"label": "persona narural",
+"fields":  {
+"01" : {
+  "label": "nombre",
+  "description": "",
+  "idField": "02-01-name",
+  "contentType": "nanme",
+  "fieldType": "TextField"  
+},
+"02": {
+"label": "apellido",
+"description": "",
+"idField": "02-02-name",
+"contentType": "name",
+"fieldType": "TextField"  
+},
+"03": {
+"label": "tipo de documento",
+"description": "",
+"idField": "02-03-pdocumentType",
+"contentType": "documentType",
+"fieldType": "TextField"  
+},
+"04": {
+"label": "numero de documento",
+"description": "",
+"idField": "02-04-number",
+"contentType": "number",
+"fieldType": "TextField"  
+}
+}
+},
+"03": {
+  "description": "",
+  "label": "persona juridica",
+  "fields":  {
+  "01" : {
+    "label": "nombre del representante legal",
     "description": "",
-    "idField": "06-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
+    "idField": "03-01-name",
+    "contentType": "nanme",
+    "fieldType": "TextField"  
   },
   "02": {
-    "label": "Apellidos",
+  "label": "apellido del representante legal",
+  "description": "",
+  "idField": "03-02-name",
+  "contentType": "name",
+  "fieldType": "TextField"  
+  },
+  "03": {
+  "label": "tipo de documento del documento legal",
+  "description": "",
+  "idField": "03-03-pdocumentType",
+  "contentType": "documentType",
+  "fieldType": "TextField"  
+  },
+  "04": {
+  "label": "numero de documento del reresentante legal",
+  "description": "",
+  "idField": "03-04-number",
+  "contentType": "number",
+  "fieldType": "TextField"  
+  },
+  "05": {
+    "label": "razon social",
+    "description": "",
+    "idField": "03-05-additional",
+    "contentType": "additional",
+    "fieldType": "TextField"  
+  }
+  }
+  },
+  "04": {
+  "description": "",
+  "label": "informacion del arrendatario",
+  "fields":  {
+
+  "01": {
+    "label": "persona natural",
+    "description": "",
+    "idField": "04-01-personType",
+    "contentType": "personType",
+    "fieldType": "TextField"
+    },
+    "02": {
+    "label": "persona juridica",
+    "description": "",
+    "idField": "044-02-personType",
+    "contentType": "personType",
+    "fieldType": "TextField"        
+    }
+    }
+   },
+  
+"05": {
+  "description": "",
+  "label": "persona natutal",
+  "fields":  {
+    "01" : {
+      "label": "nombre",
+      "description": "",
+      "idField": "05-01-name",
+      "contentType": "nanme",
+      "fieldType": "TextField"  
+    },
+    "02": {
+    "label": "apellido",
+    "description": "",
+    "idField": "05-02-name",
+    "contentType": "name",
+    "fieldType": "TextField"  
+    },
+    "03": {
+    "label": "tipo de documento",
+    "description": "",
+    "idField": "05-03-pdocumentType",
+    "contentType": "documentType",
+    "fieldType": "TextField"  
+    },
+    "04": {
+    "label": "numero de documento",
+    "description": "",
+    "idField": "05-04-number",
+    "contentType": "number",
+    "fieldType": "TextField"  
+    }
+    }
+   },
+"06": {
+  "description": "",
+  "label": "perona juridica",
+  "fields": {
+    "01" : {
+      "label": "nombre del representante legal",
+      "description": "",
+      "idField": "06-01-name",
+      "contentType": "nanme",
+      "fieldType": "TextField"  
+    },
+    "02": {
+    "label": "apellido del representante legal",
     "description": "",
     "idField": "06-02-name",
     "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "03": {
-    "label": "Tipo de documento",
+    "fieldType": "TextField"  
+    },
+    "03": {
+    "label": "tipo de documento del documento legal",
     "description": "",
-    "idField": "06-03-documentType",
+    "idField": "06-03-pdocumentType",
     "contentType": "documentType",
-    "fieldType": "Picker"
-  },
-  "04": {
-    "label": "Numero del documento",
+    "fieldType": "TextField"  
+    },
+    "04": {
+    "label": "numero de documento del reresentante legal",
     "description": "",
     "idField": "06-04-number",
     "contentType": "number",
-    "fieldType": "TextField"
-},
-"05": {
-  "label": "domicilio",
-  "description": "",
-  "idField": "06-05-additional",
-  "contentType": "additional",
-  "fieldType": "TextField" 
-}
-}
+    "fieldType": "TextField"  
+    },
+    "05": {
+      "label": "razon social",
+      "description": "",
+      "idField": "06-05-additional",
+      "contentType": "additional",
+      "fieldType": "TextField"  
+    }
+  }
 },
 "07": {
-"description": "",
-"label": "persona juridica",
-"fields":{
-"01": {
-    "label": "Nombre del representante legal",
-    "description": "",
-    "idField": "07-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "02": {
-    "label": "Apellido del representante legal",
-    "description": "",
-    "idField": "07-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "03": {
-    "label": "domicilio de la sociedad",
-    "description": "",
-    "idField": "07-03-additional",
-    "contentType": "additional",
-    "fieldType": "Picker"
-  },
-  "04": {
-    "label": "NIT",
-    "description": "",
-    "idField": "07-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-},
-"05": {
-  "label": "nombre de la sociedad",
-  "description": "",
-  "idField": "07-05-name",
-  "contentType": "name",
-  "fieldType": "TextField" 
-},
-"06": {
-  "label": "Tipo de documento de la empresa asociada",
-    "description": "",
-    "idField": "07-06-documentType",
-    "contentType": "documentType",
-    "fieldType": "Picker"
-  },
-  "07": {
-    "label": "Numero del documento de la empresa asociada",
-    "description": "",
-    "idField": "07-07-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-}
-}
-},
-"08":{
-"description": "",
-"label": "objeto social de la sas",
-"fields":{
-"01": {
-    "label": "determinado",
-    "description": "",
-    "idField": "08-01-additional",
-    "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "02": {
-    "label": "indeterminado",
-    "description": "",
-    "idField": "08-02-additional",
-    "contentType": "additioanl",
-    "fieldType": "TextField"
-}
-}
-},
-"09": {
-"description": "",
-"label": "Duracion",
-"fields":{
-"01": {
-    "label": "indefinido",
-    "description": "",
-    "idField": "09-01-additional",
-    "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "02": {
-    "label": "definido",
-    "description": "",
-    "idField": "09-02-additional",
-    "contentType": "additioanl",
-    "fieldType": "TextField"
-}
-}
-},
-"10": {
-"description": "",
-"label": "Capital",
-"fields":{
-"01": {
-    "label": "Autorizacion",
-    "description": "",
-    "idField": "10-01-additional",
-    "contentType": "name",
-    "fieldType": "TextField"
-  },
-  "02": {
-    "label": "suscrito",
-    "description": "",
-    "idField": "10-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-  },
-  "03": {
-    "label": "pagado",
-    "description": "",
-    "idField": "10-03-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-  },
-  "04": {
-    "label": "valor",
-    "description": "",
-    "idField": "10-04-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-}
-}
-},
-
-"11": {
-"description": "",
-"label": "acciones",
-"fields":{
-"01": {
-    "label": "valor nominal",
-    "description": "",
-    "idField": "11-01-additional",
-    "contentType": "name",
-    "fieldType": "TextField"
-}
-}
-},
-"12": {
-  "description": "",
-  "label": "accionista",
-  "fields":{
-  "01": {
-      "label": "accionista",
-      "description": "",
-      "idField": "12-01-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-    },
-    "02": {
-      "label": "accionista suscritas",
-      "description": "",
-      "idField": "12-02-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-    },
-    "03": {
-      "label": "accionista pagada",
-      "description": "",
-      "idField": "12-03-additional",
-      "contentType": "additional",
-      "fieldType": "Picker"
-    },
-    "04": {
-      "label": "valor pagado",
-      "description": "",
-      "idField": "12-04-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-  },
-  "05": {
-    "label": "porcentaje",
-    "description": "",
-    "idField": "12-05-additional",
-    "contentType": "additional",
-    "fieldType": "TextField" 
-} 
-}
-},
-"13":{
-  "description": "",
-  "label": "representante legal",
-  "fields":{
-  "01": {
-      "label": "periodo",
-      "description": "",
-      "idField": "13-01-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-    },
-    "02": {
-      "label": "suplente",
-      "description": "",
-      "idField": "13-02-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-    },
-    "03": {
-      "label": "nombre",
-      "description": "",
-      "idField": "13-03-additional",
-      "contentType": "additional",
-      "fieldType": "Picker"
-    },
-    "04": {
-      "label": "apellido",
-      "description": "",
-      "idField": "13-04-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"
-  },
-  "05": {
-    "label": "tipo de docmuneto",
-    "description": "",
-    "idField": "13-05-additional",
-    "contentType": "additional",
-    "fieldType": "picker" 
-},
-"06": {
-  "label": "numero de docmuneto",
-    "description": "",
-    "idField": "13-06-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-},
-"07": {
-  "label": "domicilio",
-  "description": "",
-  "idField": "13-07-additional",
-  "contentType": "additional",
-  "fieldType": "TextField"
-},
-"08": {
-  "label": "limites",
-  "description": "",
-  "idField": "13-08-additional",
-  "contentType": "additional",
-  "fieldType": "TextField"
-
-}
-}
-},
-"14": {
-  "description": "",
-  "label": "representante legal",
-  "fields":{
-  "01": {
-    "label": "mayorias especiales",
-    "description": "",
-    "idField": "14-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-  },
-  "08": {
-    "label": "clausula compromisoria",
-    "description": "",
-    "idField": "14-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-}
-}
-},
-"15": {
-  "description": "",
-  "label": "acta de asamablea",
-  "fields":{
-  "01": {
-    "label": "numero",
-    "description": "",
-    "idField": "15-01-number",
-    "contentType": "number",
-    "fieldType": "TextField"
-  },
-  "02": {
-    "label": "hora",
-    "description": "",
-    "idField": "15-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-},
-"03": {
-  "label": "fecha",
-    "description": "",
-    "idField": "15-03-date",
-    "contentType": "date",
-    "fieldType": "Datepicker"
-}
-}
-}  
-}
-},
-{
-  "category": "sociedades",
-  "subcategory": "convocatorias",
-  "referenceId": "1Pn-toQbysxMU6Wf0x1Fpxf-z6oHUoWN-", 
-  "sections":{
-
-  "01": {
-  "description": "Es un documento mediante el cual el administrador de una sociedad o alguna persona facultada por la misma, cita a los socios a reunirse en asamblea de accionistas.",
-  "label": "Datos de la sociedad",
-  "fields":{
-  "01": {
-  "label": "razon social ",
-  "description": "",
-  "idField": "01-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "domicilio de la sociedad",
-  "description": "",
-  "idField": "01-02-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-},
-"03": {
-  "label": "Dirrecion del domicilio social ",
-  "description": "",
-  "idField": "01-03-address",
-  "contentType": "address",       
-  "fieldType": "TextField" 
-}
-}
-},
-"02":{
-"description": "",
-"label": "convocatoria",
-"fields":{
-"01": {
-    "label": "tipo de asamblea",
-    "description": "",
-    "idField": "02-01-additional",
-    "contentType": "additional",       
-    "fieldType": "TextField"    
-},
-"02": {
-  "label": "fecha",
-  "description": "",
-  "idField": "02-02-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker" 
-},
-"03": {
-  "label": "ciudad",
-  "description": "",
-  "idField": "02-03-city",
-  "contentType": "city",       
-  "fieldType": "TextField" 
-},
-"04": {
-  "label": "nombre",
-  "description": "",
-  "idField": "02-04-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-},
-"05": {
-  "label": "cargo",
-  "description": "",
-  "idField": "02-05-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"06": {
-  "label": "departamento",
-  "description": "",
-  "idField": "02-06-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-}
-}
-},
-"03": {
-  "description": "",
-  "label": "celebracion de asamblea",
-  "fields":{
-  "01": {
-  "label": "fecha",
-  "description": "",
-  "idField": "03-01-date",
-  "contentType": "date",       
-  "fieldType": "TextField"    
-  },
-  "02": {
-    "label": "hora",
-    "description": "",
-    "idField": "03-02-additional",
-    "contentType": "additional",       
-    "fieldType": "TextField" 
-},
-"03": {
-  "label": "orden del dia",
-  "description": "",
-  "idField": "03-03-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"  
-}
-}
-},
-"04": {
-  "description": "",
-  "label": "no asistencia a la asamblea",
-  "fields":{
-  "01": {
-  "label": "Participación de los socios por medios electrónicos",
-  "description": "",
-  "idField": "04-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"    
-}
-}
-}
-}
-},
-{
-  "category": "sociedades",
-  "subcategory": "carta de renuncia",
-  "referenceId": "1VvmtukP0AJAawSmYgdkN8YzSZOAlFpbH", 
-  "sections":{
-
-  "01": {
-  "description": "Es un documento por medio del cual el miembro de la junta directiva de una sociedad puede dar por terminado su período en el cargo desempeñado, de manera voluntaria.",
-  "label": "informacion del miembro",
-  "fields":{
-  "01": {
-  "label": "nombre ",
-  "description": "",
-  "idField": "01-01-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "apellido",
-  "description": "",
-  "idField": "01-02-name",
-  "contentType": "name",       
-  "fieldType": "TextField"   
-},
-"03": {
-  "label": "tipo de documento",
-  "description": "",
-  "idField": "01-03-documentType",
-  "contentType": "documentType",       
-  "fieldType": "Picker" 
-},
-"04": {
-  "label": "numero de documento",
-  "description": "",
-  "idField": "01-04-number",
-  "contentType": "number",       
-  "fieldType": "TextField" 
-},
-"05": {
-  "label": "fecha de inicio",
-  "description": "",
-  "idField": "01-05-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker" 
-},
-"06": {
-  "label": "fecha de finalizacion",
-  "description": "",
-  "idField": "01-06-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker" 
-}
-}
-},
-"02": {
-  "description": "",
-  "label": "motivo",
-  "fields":{
-  "01": {
-  "label": "profesionales",
-  "description": "",
-  "idField": "02-01-reasontype",
-  "contentType": "reasontype",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "personales",
-  "description": "",
-  "idField": "02-02-reasontype",
-  "contentType": "reasontype",       
-  "fieldType": "TextField"   
-}
-}
-},
-
-"03": {
-  "description": "",
-  "label": "motivo",
-  "fields":{
-  "01": {
-  "label": "razon social",
-  "description": "",
-  "idField": "03-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "fecha",
-  "description": "",
-  "idField": "03-02-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker"   
-},
-"03": {
-  "label": "ciudad",
-  "description": "",
-  "idField": "03-03-city",
-  "contentType": "city",       
-  "fieldType": "TextField"  
-}
-}
-}
-}
-},
-{
-  "category": "sociedades",
-  "subcategory": "comunicacion de ventas",
-  "referenceId": "1YZ5AuLs3O6y5Ls3Cj6S9CkIgbVFfKPKY", 
-  "sections":{
-
-  "01": {
-  "description": "Es un documento por medio del cual un socio comunica a los demás la venta, parcial o total, de sus acciones.",
-  "label": "datos de la sociedad",
-  "fields":{
-
-  "01": {
-  "label": "razon social ",
-  "description": "",
-  "idField": "01-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "domicilio de la sociedad",
-  "description": "",
-  "idField": "01-02-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-},
-"03": {
-  "label": "derecho de preferencia",
-  "description": "",
-  "idField": "01-03-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-}
-}
-},
-"02": {
-  "description": "",
-  "label": "comunicacion",
-  "fields":{
-
-  "01": {
-  "label": "fecha ",
-  "description": "",
-  "idField": "02-01-date",
-  "contentType": "date",       
-  "fieldType": "DatePicker" 
-},
-"02": {
-  "label": "ciudad",
-  "description": "",
-  "idField": "02-02-city",
-  "contentType": "city",       
-  "fieldType": "TextField"   
-}
-}
-},
-"03": {
-  "description": "",
-  "label": "vendedor",
-  "fields":{
-
-  "01": {
-  "label": "nombre ",
-  "description": "",
-  "idField": "03-01-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-}
-}
-},
-"04": {
-  "description": "",
-  "label": "comprador",
-  "fields":{
-
-  "01": {
-  "label": "nombre ",
-  "description": "",
-  "idField": "04-01-name",
-  "contentType": "name",       
-  "fieldType": "Textfield" 
-}
-}
-},
-"05": {
-  "description": "",
-  "label": "venta",
-  "fields":{
-  "01": {
-  "label": "acciones en venta",
-  "description": "",
-  "idField": "05-01-additional",
-  "contentType": "additional",       
-  "fieldType": "Textfield" 
-},
-"02": {
-  "label": "numero de acciones ",
-  "description": "",
-  "idField": "05-02-number",
-  "contentType": "number",       
-  "fieldType": "Textfield"
-},
-"03": {
-    "label": "porcentaje de las acciones",
-    "description": "",
-    "idField": "05-03-additional",
-    "contentType": "additional",
-    "fieldType": "additional"
-},
-"04": {
-    "label": "precio",
-    "description": "",
-    "idField": "05-04-additional",
-    "contentType": "additional",       
-    "fieldType": "additional"
-}
-}
-}
-}
-},
-{
-  "category": "sociedades",
-  "subcategory": "carta de renuncia",
-  "referenceId": "1VvmtukP0AJAawSmYgdkN8YzSZOAlFpbH", 
-  "sections":{
-
-  "01": {
-  "description": "Es un documento por medio del cual el miembro de la junta directiva de una sociedad puede dar por terminado su período en el cargo desempeñado, de manera voluntaria.",
-  "label": "informacion del miembro",
-  "fields":{
-  "01": {
-  "label": "nombre ",
-  "description": "",
-  "idField": "01-01-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "apellido",
-  "description": "",
-  "idField": "01-02-name",
-  "contentType": "name",       
-  "fieldType": "TextField"   
-},
-"03": {
-  "label": "tipo de documento",
-  "description": "",
-  "idField": "01-03-documentType",
-  "contentType": "documentType",       
-  "fieldType": "Picker" 
-},
-"04": {
-  "label": "numero de documento",
-  "description": "",
-  "idField": "01-04-number",
-  "contentType": "number",       
-  "fieldType": "TextField" 
-},
-"05": {
-  "label": "fecha de inicio",
-  "description": "",
-  "idField": "01-05-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker" 
-},
-"06": {
-  "label": "fecha de finalizacion",
-  "description": "",
-  "idField": "01-06-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker" 
-}
-}
-},
-"02": {
-  "description": "",
-  "label": "motivo",
-  "fields":{
-  "01": {
-  "label": "profesionales",
-  "description": "",
-  "idField": "02-01-reasontype",
-  "contentType": "reasontype",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "personales",
-  "description": "",
-  "idField": "02-02-reasontype",
-  "contentType": "reasontype",       
-  "fieldType": "TextField"   
-}
-}
-},
-
-"03": {
-  "description": "",
-  "label": "motivo",
-  "fields":{
-  "01": {
-  "label": "razon social",
-  "description": "",
-  "idField": "03-01-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"02": {
-  "label": "fecha",
-  "description": "",
-  "idField": "03-02-date",
-  "contentType": "date",       
-  "fieldType": "Datepicker"   
-},
-"03": {
-  "label": "ciudad",
-  "description": "",
-  "idField": "03-03-city",
-  "contentType": "city",       
-  "fieldType": "TextField"  
-}
-}
-}
-} 
-},
-{
-  "category": "sociedades",
-  "subcategory": "carta de aceptacion",
-  "referenceId": "1j6HVUC1lM2ToYNKMGGEOvSmIMB6zQaj6", 
-  "sections":{
-  "01": {
-  "description": "Es un acta a través de la cual una persona puede aceptar la designación de un cargo específico al interior de una sociedad.",
-  "label": "razon social",
-  "fields":{
-
-  "01": {
-  "label": "Nombre de la sociedad ",
-  "description": "",
-  "idField": "01-01-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-}
-}
-},
-"02": {
-  "description": "",
-  "label": "nombramiento",
-  "fields":{
-  "01": {
-      "label": "Nombre de la persona nombrada",
-      "description": "",
-      "idField": "02-01-name",
-      "contentType": "name",       
-      "fieldType": "TextField"    
-},
-"02": {
-  "label": "tipo de documento",
-  "description": "",
-  "idField": "02-02-documentType",
-  "contentType": "documentType",       
-  "fieldType": "picker"   
-},
-"03": {
-  "label": "numero de documento",
-  "description": "",
-  "idField": "02-03-number",
-  "contentType": "number",       
-  "fieldType": "TextField"    
-},
-"04": {
-  "label": "tipo de asamblea",
-  "description": "",
-  "idField": "02-04-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"05": {
-  "label": "domicilio",
-  "description": "",
-  "idField": "02-05-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-},
-"06": {
-  "label": "numero de acta",
-  "description": "",
-  "idField": "02-06-number",
-  "contentType": "number",       
-  "fieldType": "TextField" 
-},
-"07": {
-  "label": "fecha",
-  "description": "",
-  "idField": "02-07-date",
-  "contentType": "date",       
-  "fieldType": "DatePicker" 
-},
-"08": {
-  "label": "apellido del nombrado",
-  "description": "",
-  "idField": "02-08-name",
-  "contentType": "name",       
-  "fieldType": "TextField" 
-},
-"09": {
-  "label": "razon social",
-  "description": "",
-  "idField": "02-09-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"  
-}
-}
-},
-"03": {
-  "description": "",
-  "label": "cargo",
-  "fields":{
-  "01": {
-      "label": "representante legal",
-      "description": "",
-      "idField": "03-01-additional",
-      "contentType": "additional",       
-      "fieldType": "TextField"    
-}, 
-"02": {
-      "label": "representante legal suplente",
-      "description": "",
-      "idField": "03-02-additional",
-      "contentType": "additional",       
-      "fieldType": "TextField"    
-},
-"03": {
-  "label": "gerente",
-  "description": "",
-  "idField": "03-03-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
-},
-"04": {
-  "label": "revisor fiscal",
-  "description": "",
-  "idField": "03-04-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField" 
-}
-}
-},
-"04": {
   "description": "",
   "label": "informacion general",
-  "fields":{
-  "01": {
-      "label": "ciudad",
-      "description":"",
-      "idField": "04-01-city",
-      "contentType": "city",       
-      "fieldType": "TextField"    
-}, 
-"02": {
-      "label": "fecha",
-      "description": "",
-      "idField": "04-02-date",
-      "contentType": "date",       
-      "fieldType": "DatePicker"    
+  "fields": {
+"01": {
+  "label": "fecha de firmas",
+    "description": "",
+    "idField": "07-01-date",
+    "contentType": "date",
+    "fieldType": "DatePicker"
 },
-"03": {
-  "label": "organo",
+"02": {
+  "label": "ciudad",
   "description": "",
-  "idField": "04-03-additional",
-  "contentType": "additional",       
-  "fieldType": "TextField"   
+  "idField": "07-02-city",
+  "contentType": "city",
+  "fieldType": "TextField"
 }
-}
+} 
 }
 }
 },
 {
-  
 }
+
+
+  
+
+
+
+
+
+
 
 
 

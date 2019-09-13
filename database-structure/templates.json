@@ -1,8 +1,8 @@
 [
 
   {
-    "category": "sociedades",
-    "subcategory": "actas",
+    "category": "bienes raices",
+    "subcategory": "requerimiento de pago",
     "countPages": 1,
     "downloads": 1,
     "description": "",
@@ -16,83 +16,8 @@
     "version": "1.0"
   },
   {
-    "category": "sociedades",
-    "subcategory": "Transformaciones",
-    "countPages": 1,
-    "downloads": 1,
-    "description": "",
-    "descriptionURL": "",
-    "isActive": true,
-    "name": "Carta de renuncia voluntaria",
-    "opened": 1,
-    "preview": "",
-    "price": 4990,
-    "rating": 0,
-    "version": "1.0"
-  },
-  {
-    "category": "sociedades",
-    "subcategory": "convocatoria",
-    "countPages": 1,
-    "downloads": 1,
-    "description": "",
-    "descriptionURL": "",
-    "isActive": true,
-    "name": "Carta de renuncia voluntaria",
-    "opened": 1,
-    "preview": "",
-    "price": 4990,
-    "rating": 0,
-    "version": "1.0"
-  },
-  {
-    "category": "sociedades",
-    "subcategory": "carta de renuncia",
-    "countPages": 1,
-    "downloads": 1,
-    "description": "",
-    "descriptionURL": "",
-    "isActive": true,
-    "name": "Carta de renuncia voluntaria",
-    "opened": 1,
-    "preview": "",
-    "price": 4990,
-    "rating": 0,
-    "version": "1.0"
-  },
-  {
-    "category": "sociedades",
-    "subcategory": "comunicacion de ventas",
-    "countPages": 1,
-    "downloads": 1,
-    "description": "",
-    "descriptionURL": "",
-    "isActive": true,
-    "name": "Carta de renuncia voluntaria",
-    "opened": 1,
-    "preview": "",
-    "price": 4990,
-    "rating": 0,
-    "version": "1.0"
-  },
-  {
-    "category": "sociedades",
-    "subcategory": "carta de renuncia",
-    "countPages": 1,
-    "downloads": 1,
-    "description": "",
-    "descriptionURL": "",
-    "isActive": true,
-    "name": "Carta de renuncia voluntaria",
-    "opened": 1,
-    "preview": "",
-    "price": 4990,
-    "rating": 0,
-    "version": "1.0"
-  },
-  {
-    "category": "sociedades",
-    "subcategory": "carta de aceptacion",
+    "category": "bienes raices",
+    "subcategory": "recibo de pago",
     "countPages": 1,
     "downloads": 1,
     "description": "",
@@ -105,5 +30,6 @@
     "rating": 0,
     "version": "1.0"
   }
+  
  
 ]
