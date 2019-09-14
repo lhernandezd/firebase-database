@@ -1,389 +1,389 @@
 
 
 [
-{
-  "category": "bienes raices",
-  "subcategory": "requerimiento de pago",
-  "referenceId": "12l9fobkHn1OThIF4kryAIXS3g_uyhy62",
-  "sections": {
-  "01": {
-  "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
-  "label": "tipo de arrendador",
-  "fields": {
-
-  "01": {
-"label": "persona natural",
-"description": "",
-"idField": "01-01-personType",
-"contentType": "personType",
-"fieldType": "TextField"
-},
-"02": {
-"label": "persona juridica",
-"description": "",
-"idField": "01-02-personType",
-"contentType": "personType",
-"fieldType": "TextField"        
-}
-}
-},
-"02": {
-"description": "",
-"label": "persona narural",
-"fields":  {
-"01" : {
-  "label": "nombre",
-  "description": "",
-  "idField": "02-01-name",
-  "contentType": "nanme",
-  "fieldType": "TextField"  
-},
-"02": {
-"label": "apellido",
-"description": "",
-"idField": "02-02-name",
-"contentType": "name",
-"fieldType": "TextField"  
-},
-"03": {
-"label": "tipo de documento",
-"description": "",
-"idField": "02-03-pdocumentType",
-"contentType": "documentType",
-"fieldType": "TextField"  
-},
-"04": {
-"label": "numero de documento",
-"description": "",
-"idField": "02-04-number",
-"contentType": "number",
-"fieldType": "TextField"  
-}
-}
-},
-"03": {
-  "description": "",
-  "label": "persona juridica",
-  "fields":  {
-  "01" : {
-    "label": "nombre del representante legal",
-    "description": "",
-    "idField": "03-01-name",
-    "contentType": "nanme",
-    "fieldType": "TextField"  
-  },
-  "02": {
-  "label": "apellido del representante legal",
-  "description": "",
-  "idField": "03-02-name",
-  "contentType": "name",
-  "fieldType": "TextField"  
-  },
-  "03": {
-  "label": "tipo de documento del documento legal",
-  "description": "",
-  "idField": "03-03-pdocumentType",
-  "contentType": "documentType",
-  "fieldType": "TextField"  
-  },
-  "04": {
-  "label": "numero de documento del reresentante legal",
-  "description": "",
-  "idField": "03-04-number",
-  "contentType": "number",
-  "fieldType": "TextField"  
-  },
-  "05": {
-    "label": "razon social",
-    "description": "",
-    "idField": "03-05-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"  
-  }
-  }
-  },
-  "04": {
-  "description": "",
-  "label": "informacion del arrendatario",
-  "fields":  {
-  "01" : {
-    "label": "nombre completo",
-    "description": "",
-    "idField": "04-01-name",
-    "contentType": "name",
-    "fieldType": "TextField"  
-  }
-  }
-},
-"05": {
-  "description": "",
-  "label": "canones adeudados",
-  "fields":  {
-  "01" : {
-    "label": "canones adeudados",
-    "description": "",
-    "idField": "05-01-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
-},
-"02": {
-  "label": "periodo de tiempo",
-  "description": "",
-  "idField": "05-02-additional",
-  "contentType": "additional",
-  "fieldType": "TextField"
-}
-}
-},
-"06": {
-  "description": "",
-  "label": "informacion general",
-  "fields": {
-"01": {
-  "label": "fecha de firmas",
-    "description": "",
-    "idField": "06-01-date",
-    "contentType": "date",
-    "fieldType": "DatePicker"
-},
-"02": {
-  "label": "ciudad",
-  "description": "",
-  "idField": "06-02-city",
-  "contentType": "city",
-  "fieldType": "TextField"
-},
-"03": {
-  "label": "fecha de contratos",
-  "description": "",
-  "idField": "06-03-date",
-  "contentType": "date",
-  "fieldType": "DatePicker"
-}
-}
-}
-}
-},
-{
-  "category": "bienes raices",
-  "subcategory": "rrecibo de pago de cannon",
-  "referenceId": "1zIouQhbi1I6Gl2Lb75yAM0okDdcD3Es9",
-  "sections": {
-  "01": {
-  "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
-  "label": "tipo de arrendador",
-  "fields": {
-
-  "01": {
-"label": "persona natural",
-"description": "",
-"idField": "01-01-personType",
-"contentType": "personType",
-"fieldType": "TextField"
-},
-"02": {
-"label": "persona juridica",
-"description": "",
-"idField": "01-02-personType",
-"contentType": "personType",
-"fieldType": "TextField"        
-}
-}
-},
-"02": {
-"description": "",
-"label": "persona narural",
-"fields":  {
-"01" : {
-  "label": "nombre",
-  "description": "",
-  "idField": "02-01-name",
-  "contentType": "nanme",
-  "fieldType": "TextField"  
-},
-"02": {
-"label": "apellido",
-"description": "",
-"idField": "02-02-name",
-"contentType": "name",
-"fieldType": "TextField"  
-},
-"03": {
-"label": "tipo de documento",
-"description": "",
-"idField": "02-03-pdocumentType",
-"contentType": "documentType",
-"fieldType": "TextField"  
-},
-"04": {
-"label": "numero de documento",
-"description": "",
-"idField": "02-04-number",
-"contentType": "number",
-"fieldType": "TextField"  
-}
-}
-},
-"03": {
-  "description": "",
-  "label": "persona juridica",
-  "fields":  {
-  "01" : {
-    "label": "nombre del representante legal",
-    "description": "",
-    "idField": "03-01-name",
-    "contentType": "nanme",
-    "fieldType": "TextField"  
-  },
-  "02": {
-  "label": "apellido del representante legal",
-  "description": "",
-  "idField": "03-02-name",
-  "contentType": "name",
-  "fieldType": "TextField"  
-  },
-  "03": {
-  "label": "tipo de documento del documento legal",
-  "description": "",
-  "idField": "03-03-pdocumentType",
-  "contentType": "documentType",
-  "fieldType": "TextField"  
-  },
-  "04": {
-  "label": "numero de documento del reresentante legal",
-  "description": "",
-  "idField": "03-04-number",
-  "contentType": "number",
-  "fieldType": "TextField"  
-  },
-  "05": {
-    "label": "razon social",
-    "description": "",
-    "idField": "03-05-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"  
-  }
-  }
-  },
-  "04": {
-  "description": "",
-  "label": "informacion del arrendatario",
-  "fields":  {
-
-  "01": {
-    "label": "persona natural",
-    "description": "",
-    "idField": "04-01-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"
-    },
-    "02": {
-    "label": "persona juridica",
-    "description": "",
-    "idField": "044-02-personType",
-    "contentType": "personType",
-    "fieldType": "TextField"        
-    }
-    }
-   },
+  {
+    "category": "bienes raices",
+    "subcategory": "requerimiento de pago",
+    "referenceId": "12l9fobkHn1OThIF4kryAIXS3g_uyhy62",
+    "sections": {
+    "01": {
+    "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
+    "label": "tipo de arrendador",
+    "fields": {
   
-"05": {
+    "01": {
+  "label": "persona natural",
   "description": "",
-  "label": "persona natutal",
+  "idField": "01-01-personType",
+  "contentType": "personType",
+  "fieldType": "TextField"
+  },
+  "02": {
+  "label": "persona juridica",
+  "description": "",
+  "idField": "01-02-personType",
+  "contentType": "personType",
+  "fieldType": "TextField"        
+  }
+  }
+  },
+  "02": {
+  "description": "",
+  "label": "persona narural",
   "fields":  {
-    "01" : {
-      "label": "nombre",
-      "description": "",
-      "idField": "05-01-name",
-      "contentType": "nanme",
-      "fieldType": "TextField"  
-    },
-    "02": {
-    "label": "apellido",
+  "01" : {
+    "label": "nombre",
     "description": "",
-    "idField": "05-02-name",
-    "contentType": "name",
+    "idField": "02-01-name",
+    "contentType": "nanme",
     "fieldType": "TextField"  
-    },
-    "03": {
-    "label": "tipo de documento",
-    "description": "",
-    "idField": "05-03-pdocumentType",
-    "contentType": "documentType",
-    "fieldType": "TextField"  
-    },
-    "04": {
-    "label": "numero de documento",
-    "description": "",
-    "idField": "05-04-number",
-    "contentType": "number",
-    "fieldType": "TextField"  
-    }
-    }
-   },
-"06": {
+  },
+  "02": {
+  "label": "apellido",
   "description": "",
-  "label": "perona juridica",
-  "fields": {
+  "idField": "02-02-name",
+  "contentType": "name",
+  "fieldType": "TextField"  
+  },
+  "03": {
+  "label": "tipo de documento",
+  "description": "",
+  "idField": "02-03-pdocumentType",
+  "contentType": "documentType",
+  "fieldType": "TextField"  
+  },
+  "04": {
+  "label": "numero de documento",
+  "description": "",
+  "idField": "02-04-number",
+  "contentType": "number",
+  "fieldType": "TextField"  
+  }
+  }
+  },
+  "03": {
+    "description": "",
+    "label": "persona juridica",
+    "fields":  {
     "01" : {
       "label": "nombre del representante legal",
       "description": "",
-      "idField": "06-01-name",
+      "idField": "03-01-name",
       "contentType": "nanme",
       "fieldType": "TextField"  
     },
     "02": {
     "label": "apellido del representante legal",
     "description": "",
-    "idField": "06-02-name",
+    "idField": "03-02-name",
     "contentType": "name",
     "fieldType": "TextField"  
     },
     "03": {
     "label": "tipo de documento del documento legal",
     "description": "",
-    "idField": "06-03-pdocumentType",
+    "idField": "03-03-pdocumentType",
     "contentType": "documentType",
     "fieldType": "TextField"  
     },
     "04": {
     "label": "numero de documento del reresentante legal",
     "description": "",
-    "idField": "06-04-number",
+    "idField": "03-04-number",
     "contentType": "number",
     "fieldType": "TextField"  
     },
     "05": {
       "label": "razon social",
       "description": "",
-      "idField": "06-05-additional",
+      "idField": "03-05-additional",
       "contentType": "additional",
       "fieldType": "TextField"  
     }
-  }
-},
-"07": {
-  "description": "",
-  "label": "informacion general",
-  "fields": {
-"01": {
-  "label": "fecha de firmas",
+    }
+    },
+    "04": {
     "description": "",
-    "idField": "07-01-date",
+    "label": "informacion del arrendatario",
+    "fields":  {
+    "01" : {
+      "label": "nombre completo",
+      "description": "",
+      "idField": "04-01-name",
+      "contentType": "name",
+      "fieldType": "TextField"  
+    }
+    }
+  },
+  "05": {
+    "description": "",
+    "label": "canones adeudados",
+    "fields":  {
+    "01" : {
+      "label": "canones adeudados",
+      "description": "",
+      "idField": "05-01-additional",
+      "contentType": "additional",
+      "fieldType": "TextField"
+  },
+  "02": {
+    "label": "periodo de tiempo",
+    "description": "",
+    "idField": "05-02-additional",
+    "contentType": "additional",
+    "fieldType": "TextField"
+  }
+  }
+  },
+  "06": {
+    "description": "",
+    "label": "informacion general",
+    "fields": {
+  "01": {
+    "label": "fecha de firmas",
+      "description": "",
+      "idField": "06-01-date",
+      "contentType": "date",
+      "fieldType": "DatePicker"
+  },
+  "02": {
+    "label": "ciudad",
+    "description": "",
+    "idField": "06-02-city",
+    "contentType": "city",
+    "fieldType": "TextField"
+  },
+  "03": {
+    "label": "fecha de contratos",
+    "description": "",
+    "idField": "06-03-date",
     "contentType": "date",
     "fieldType": "DatePicker"
-},
-"02": {
-  "label": "ciudad",
+  }
+  }
+  }
+  }
+  },
+  {
+    "category": "bienes raices",
+    "subcategory": "rrecibo de pago de cannon",
+    "referenceId": "1zIouQhbi1I6Gl2Lb75yAM0okDdcD3Es9",
+    "sections": {
+    "01": {
+    "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
+    "label": "tipo de arrendador",
+    "fields": {
+  
+    "01": {
+  "label": "persona natural",
   "description": "",
-  "idField": "07-02-city",
-  "contentType": "city",
+  "idField": "01-01-personType",
+  "contentType": "personType",
   "fieldType": "TextField"
-}
-} 
-}
-}
-},
+  },
+  "02": {
+  "label": "persona juridica",
+  "description": "",
+  "idField": "01-02-personType",
+  "contentType": "personType",
+  "fieldType": "TextField"        
+  }
+  }
+  },
+  "02": {
+  "description": "",
+  "label": "persona narural",
+  "fields":  {
+  "01" : {
+    "label": "nombre",
+    "description": "",
+    "idField": "02-01-name",
+    "contentType": "nanme",
+    "fieldType": "TextField"  
+  },
+  "02": {
+  "label": "apellido",
+  "description": "",
+  "idField": "02-02-name",
+  "contentType": "name",
+  "fieldType": "TextField"  
+  },
+  "03": {
+  "label": "tipo de documento",
+  "description": "",
+  "idField": "02-03-pdocumentType",
+  "contentType": "documentType",
+  "fieldType": "TextField"  
+  },
+  "04": {
+  "label": "numero de documento",
+  "description": "",
+  "idField": "02-04-number",
+  "contentType": "number",
+  "fieldType": "TextField"  
+  }
+  }
+  },
+  "03": {
+    "description": "",
+    "label": "persona juridica",
+    "fields":  {
+    "01" : {
+      "label": "nombre del representante legal",
+      "description": "",
+      "idField": "03-01-name",
+      "contentType": "nanme",
+      "fieldType": "TextField"  
+    },
+    "02": {
+    "label": "apellido del representante legal",
+    "description": "",
+    "idField": "03-02-name",
+    "contentType": "name",
+    "fieldType": "TextField"  
+    },
+    "03": {
+    "label": "tipo de documento del documento legal",
+    "description": "",
+    "idField": "03-03-pdocumentType",
+    "contentType": "documentType",
+    "fieldType": "TextField"  
+    },
+    "04": {
+    "label": "numero de documento del reresentante legal",
+    "description": "",
+    "idField": "03-04-number",
+    "contentType": "number",
+    "fieldType": "TextField"  
+    },
+    "05": {
+      "label": "razon social",
+      "description": "",
+      "idField": "03-05-additional",
+      "contentType": "additional",
+      "fieldType": "TextField"  
+    }
+    }
+    },
+    "04": {
+    "description": "",
+    "label": "informacion del arrendatario",
+    "fields":  {
+  
+    "01": {
+      "label": "persona natural",
+      "description": "",
+      "idField": "04-01-personType",
+      "contentType": "personType",
+      "fieldType": "TextField"
+      },
+      "02": {
+      "label": "persona juridica",
+      "description": "",
+      "idField": "044-02-personType",
+      "contentType": "personType",
+      "fieldType": "TextField"        
+      }
+      }
+     },
+    
+  "05": {
+    "description": "",
+    "label": "persona natutal",
+    "fields":  {
+      "01" : {
+        "label": "nombre",
+        "description": "",
+        "idField": "05-01-name",
+        "contentType": "nanme",
+        "fieldType": "TextField"  
+      },
+      "02": {
+      "label": "apellido",
+      "description": "",
+      "idField": "05-02-name",
+      "contentType": "name",
+      "fieldType": "TextField"  
+      },
+      "03": {
+      "label": "tipo de documento",
+      "description": "",
+      "idField": "05-03-pdocumentType",
+      "contentType": "documentType",
+      "fieldType": "TextField"  
+      },
+      "04": {
+      "label": "numero de documento",
+      "description": "",
+      "idField": "05-04-number",
+      "contentType": "number",
+      "fieldType": "TextField"  
+      }
+      }
+     },
+  "06": {
+    "description": "",
+    "label": "perona juridica",
+    "fields": {
+      "01" : {
+        "label": "nombre del representante legal",
+        "description": "",
+        "idField": "06-01-name",
+        "contentType": "nanme",
+        "fieldType": "TextField"  
+      },
+      "02": {
+      "label": "apellido del representante legal",
+      "description": "",
+      "idField": "06-02-name",
+      "contentType": "name",
+      "fieldType": "TextField"  
+      },
+      "03": {
+      "label": "tipo de documento del documento legal",
+      "description": "",
+      "idField": "06-03-pdocumentType",
+      "contentType": "documentType",
+      "fieldType": "TextField"  
+      },
+      "04": {
+      "label": "numero de documento del reresentante legal",
+      "description": "",
+      "idField": "06-04-number",
+      "contentType": "number",
+      "fieldType": "TextField"  
+      },
+      "05": {
+        "label": "razon social",
+        "description": "",
+        "idField": "06-05-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"  
+      }
+    }
+  },
+  "07": {
+    "description": "",
+    "label": "informacion general",
+    "fields": {
+  "01": {
+    "label": "fecha de firmas",
+      "description": "",
+      "idField": "07-01-date",
+      "contentType": "date",
+      "fieldType": "DatePicker"
+  },
+  "02": {
+    "label": "ciudad",
+    "description": "",
+    "idField": "07-02-city",
+    "contentType": "city",
+    "fieldType": "TextField"
+  }
+  } 
+  }
+  }
+  },
 {
 }
 
