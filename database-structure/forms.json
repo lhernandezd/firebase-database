@@ -3,389 +3,642 @@
 [
   {
     "category": "bienes raices",
-    "subcategory": "requerimiento de pago",
-    "referenceId": "12l9fobkHn1OThIF4kryAIXS3g_uyhy62",
+    "subcategory": "propiedad horizontal",
+    "referenceId": "1cqilmhQIJ_TcZpKfqvgu1XVkXcbPnhV3",
     "sections": {
     "01": {
-    "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
-    "label": "tipo de arrendador",
+    "description": "Es un documento mediante el cual el administrador de una vivienda sometida al régimen de propiedad horizontal solicita a un copropietario el pago de las cuotas de administración pendientes por cancelar. ",
+    "label": "datos de la copropiedad",
     "fields": {
   
     "01": {
-  "label": "persona natural",
+  "label": "nombre de la copropiedad",
   "description": "",
-  "idField": "01-01-personType",
-  "contentType": "personType",
+  "idField": "01-01-name",
+  "contentType": "name",
   "fieldType": "TextField"
   },
   "02": {
-  "label": "persona juridica",
+  "label": "Número de identificación de la copropiedad.",
   "description": "",
-  "idField": "01-02-personType",
-  "contentType": "personType",
+  "idField": "01-02-number",
+  "contentType": "number",
   "fieldType": "TextField"        
   }
   }
   },
   "02": {
   "description": "",
-  "label": "persona narural",
+  "label": "fecha y cuidad",
   "fields":  {
   "01" : {
-    "label": "nombre",
+    "label": "Fecha de elaboración de la convocatoria.",
     "description": "",
-    "idField": "02-01-name",
-    "contentType": "nanme",
-    "fieldType": "TextField"  
+    "idField": "02-01-date",
+    "contentType": "date",
+    "fieldType": "DatePicker"  
   },
   "02": {
-  "label": "apellido",
+  "label": "Municipio o Distrito.",
   "description": "",
-  "idField": "02-02-name",
-  "contentType": "name",
-  "fieldType": "TextField"  
-  },
-  "03": {
-  "label": "tipo de documento",
-  "description": "",
-  "idField": "02-03-pdocumentType",
-  "contentType": "documentType",
-  "fieldType": "TextField"  
-  },
-  "04": {
-  "label": "numero de documento",
-  "description": "",
-  "idField": "02-04-number",
-  "contentType": "number",
+  "idField": "02-02-additional",
+  "contentType": "additional",
   "fieldType": "TextField"  
   }
   }
   },
   "03": {
     "description": "",
-    "label": "persona juridica",
+    "label": "datos del copropietario",
     "fields":  {
     "01" : {
-      "label": "nombre del representante legal",
+      "label": "Nombre completo del copropietario.",
       "description": "",
       "idField": "03-01-name",
       "contentType": "nanme",
       "fieldType": "TextField"  
     },
     "02": {
-    "label": "apellido del representante legal",
+    "label": "Número de apartamento o casa del cual es propietario.",
     "description": "",
-    "idField": "03-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"  
-    },
-    "03": {
-    "label": "tipo de documento del documento legal",
-    "description": "",
-    "idField": "03-03-pdocumentType",
-    "contentType": "documentType",
-    "fieldType": "TextField"  
-    },
-    "04": {
-    "label": "numero de documento del reresentante legal",
-    "description": "",
-    "idField": "03-04-number",
+    "idField": "03-02-number",
     "contentType": "number",
     "fieldType": "TextField"  
-    },
-    "05": {
-      "label": "razon social",
-      "description": "",
-      "idField": "03-05-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"  
     }
     }
     },
     "04": {
     "description": "",
-    "label": "informacion del arrendatario",
+    "label": "valor adeudado",
     "fields":  {
     "01" : {
-      "label": "nombre completo",
+      "label": "Valor en letras.",
       "description": "",
-      "idField": "04-01-name",
-      "contentType": "name",
+      "idField": "04-01-additional",
+      "contentType": "additional",
+      "fieldType": "TextField"  
+    },
+    "02": {
+      "label": "Valor en número entre paréntesis.",
+      "description": "",
+      "idField": "04-02-additional",
+      "contentType": "additional",
       "fieldType": "TextField"  
     }
     }
   },
   "05": {
     "description": "",
-    "label": "canones adeudados",
+    "label": "datos del inmueble",
     "fields":  {
     "01" : {
-      "label": "canones adeudados",
+      "label": "Número de apartamento o casa del cual se es propietario.",
       "description": "",
-      "idField": "05-01-additional",
-      "contentType": "additional",
+      "idField": "05-01-number",
+      "contentType": "number",
       "fieldType": "TextField"
-  },
-  "02": {
-    "label": "periodo de tiempo",
-    "description": "",
-    "idField": "05-02-additional",
-    "contentType": "additional",
-    "fieldType": "TextField"
   }
   }
   },
   "06": {
     "description": "",
-    "label": "informacion general",
+    "label": "tiempo adeudado",
     "fields": {
   "01": {
-    "label": "fecha de firmas",
+    "label": "Meses adeudados y los años a los que corresponden.",
       "description": "",
       "idField": "06-01-date",
       "contentType": "date",
       "fieldType": "DatePicker"
-  },
-  "02": {
-    "label": "ciudad",
-    "description": "",
-    "idField": "06-02-city",
-    "contentType": "city",
-    "fieldType": "TextField"
-  },
-  "03": {
-    "label": "fecha de contratos",
-    "description": "",
-    "idField": "06-03-date",
-    "contentType": "date",
-    "fieldType": "DatePicker"
   }
   }
+  },
+  "07": {
+    "description": "",
+    "label": "datos de pago",
+    "fields":{
+      "01": {
+        "label": "tipo de cuenta",
+        "description": "",
+        "idField": "07-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"  
+      },
+      "02": {
+        "label": "numero de cuenta",
+        "description": "",
+        "idField": "07-02-number",
+        "contentType": "number",
+        "fieldType": "TextField"
+      },
+      "03": {
+        "label": "nombre del banco",
+        "description": "",
+        "idField": "07-03-name",
+        "contentType": "name",
+        "fieldType": "TextField"
+      },
+      "04": {
+        "label": "nombre titular de la cuenta",
+        "description": "",
+        "idField": "07-04-name",
+        "contentType": "name",
+        "fieldType": "TextField"
+      }
+    }  
   }
   }
   },
   {
     "category": "bienes raices",
-    "subcategory": "rrecibo de pago de cannon",
-    "referenceId": "1zIouQhbi1I6Gl2Lb75yAM0okDdcD3Es9",
+    "subcategory": "propiedad horizontal",
+    "referenceId": "1OfeX9hfDRF0a9NJAmBJZYo8tQSJ6TFWp",
     "sections": {
     "01": {
-    "description": "Es un documento mediante el cual el arrendador de una vivienda solicita a su arrendatario el pago del canon de arrendamiento pendiente por cancelar. ",
-    "label": "tipo de arrendador",
+    "description": "Es un documento por medio del cual el adminsitrador de una vivienda sometida al régimen de propiedad horizontal, comunica a uno de los copropietarios la imposición de una sanción, debido a su incumplimiento al reglamento de propiedad horizontal. ",
+    "label": "datos de la copropiedad",
     "fields": {
   
     "01": {
-  "label": "persona natural",
+  "label": "nombre de la copropiedad",
   "description": "",
-  "idField": "01-01-personType",
-  "contentType": "personType",
+  "idField": "01-01-name",
+  "contentType": "name",
   "fieldType": "TextField"
   },
   "02": {
-  "label": "persona juridica",
+  "label": "Número de identificación de la copropiedad.",
   "description": "",
-  "idField": "01-02-personType",
-  "contentType": "personType",
+  "idField": "01-02-number",
+  "contentType": "number",
   "fieldType": "TextField"        
   }
   }
   },
   "02": {
   "description": "",
-  "label": "persona narural",
+  "label": "fecha y cuidad",
   "fields":  {
   "01" : {
-    "label": "nombre",
+    "label": "Fecha de elaboración de la convocatoria.",
     "description": "",
-    "idField": "02-01-name",
-    "contentType": "nanme",
-    "fieldType": "TextField"  
+    "idField": "02-01-date",
+    "contentType": "date",
+    "fieldType": "DatePicker"  
   },
   "02": {
-  "label": "apellido",
+  "label": "Municipio o Distrito.",
   "description": "",
-  "idField": "02-02-name",
-  "contentType": "name",
-  "fieldType": "TextField"  
-  },
-  "03": {
-  "label": "tipo de documento",
-  "description": "",
-  "idField": "02-03-pdocumentType",
-  "contentType": "documentType",
-  "fieldType": "TextField"  
-  },
-  "04": {
-  "label": "numero de documento",
-  "description": "",
-  "idField": "02-04-number",
-  "contentType": "number",
+  "idField": "02-02-additional",
+  "contentType": "additional",
   "fieldType": "TextField"  
   }
   }
   },
   "03": {
     "description": "",
-    "label": "persona juridica",
+    "label": "datos del copropietario",
     "fields":  {
     "01" : {
-      "label": "nombre del representante legal",
+      "label": "Nombre completo del copropietario.",
       "description": "",
       "idField": "03-01-name",
       "contentType": "nanme",
       "fieldType": "TextField"  
     },
     "02": {
-    "label": "apellido del representante legal",
+    "label": "Número de apartamento o casa del cual es propietario.",
     "description": "",
-    "idField": "03-02-name",
-    "contentType": "name",
-    "fieldType": "TextField"  
-    },
-    "03": {
-    "label": "tipo de documento del documento legal",
-    "description": "",
-    "idField": "03-03-pdocumentType",
-    "contentType": "documentType",
-    "fieldType": "TextField"  
-    },
-    "04": {
-    "label": "numero de documento del reresentante legal",
-    "description": "",
-    "idField": "03-04-number",
+    "idField": "03-02-number",
     "contentType": "number",
     "fieldType": "TextField"  
-    },
-    "05": {
-      "label": "razon social",
-      "description": "",
-      "idField": "03-05-additional",
-      "contentType": "additional",
-      "fieldType": "TextField"  
     }
     }
     },
     "04": {
     "description": "",
-    "label": "informacion del arrendatario",
+    "label": "fecha",
     "fields":  {
-  
-    "01": {
-      "label": "persona natural",
+    "01" : {
+      "label": "Fecha en que ocurrió el hecho que generó la sanción.",
       "description": "",
-      "idField": "04-01-personType",
-      "contentType": "personType",
-      "fieldType": "TextField"
-      },
-      "02": {
-      "label": "persona juridica",
-      "description": "",
-      "idField": "044-02-personType",
-      "contentType": "personType",
-      "fieldType": "TextField"        
-      }
-      }
-     },
-    
+      "idField": "04-01-date",
+      "contentType": "date",
+      "fieldType": "TdatePicker"  
+    }
+    }
+  },
   "05": {
     "description": "",
-    "label": "persona natutal",
+    "label": "datos del inmueble",
     "fields":  {
-      "01" : {
-        "label": "nombre",
-        "description": "",
-        "idField": "05-01-name",
-        "contentType": "nanme",
-        "fieldType": "TextField"  
-      },
-      "02": {
-      "label": "apellido",
+    "01" : {
+      "label": "Número de apartamento o casa del cual se es propietario.",
       "description": "",
-      "idField": "05-02-name",
-      "contentType": "name",
-      "fieldType": "TextField"  
-      },
-      "03": {
-      "label": "tipo de documento",
-      "description": "",
-      "idField": "05-03-pdocumentType",
-      "contentType": "documentType",
-      "fieldType": "TextField"  
-      },
-      "04": {
-      "label": "numero de documento",
-      "description": "",
-      "idField": "05-04-number",
+      "idField": "05-01-number",
       "contentType": "number",
-      "fieldType": "TextField"  
-      }
-      }
-     },
+      "fieldType": "TextField"
+  }
+  }
+  },
   "06": {
     "description": "",
-    "label": "perona juridica",
+    "label": "hechos",
     "fields": {
-      "01" : {
-        "label": "nombre del representante legal",
-        "description": "",
-        "idField": "06-01-name",
-        "contentType": "nanme",
-        "fieldType": "TextField"  
-      },
-      "02": {
-      "label": "apellido del representante legal",
+  "01": {
+    "label": "Brindar un espacio al usuario para que describa la conducta que generó la infracción.",
       "description": "",
-      "idField": "06-02-name",
-      "contentType": "name",
-      "fieldType": "TextField"  
-      },
-      "03": {
-      "label": "tipo de documento del documento legal",
-      "description": "",
-      "idField": "06-03-pdocumentType",
-      "contentType": "documentType",
-      "fieldType": "TextField"  
-      },
-      "04": {
-      "label": "numero de documento del reresentante legal",
-      "description": "",
-      "idField": "06-04-number",
-      "contentType": "number",
-      "fieldType": "TextField"  
-      },
-      "05": {
-        "label": "razon social",
-        "description": "",
-        "idField": "06-05-additional",
-        "contentType": "additional",
-        "fieldType": "TextField"  
-      }
-    }
+      "idField": "06-01-additional",
+      "contentType": "additional",
+      "fieldType": "TextFied"
+  }
+  }
   },
   "07": {
     "description": "",
-    "label": "informacion general",
-    "fields": {
-  "01": {
-    "label": "fecha de firmas",
-      "description": "",
-      "idField": "07-01-date",
-      "contentType": "date",
-      "fieldType": "DatePicker"
+    "label": "datos de la cuenta",
+    "fields":{
+      "01": {
+        "label": "tipo de cuenta",
+        "description": "",
+        "idField": "07-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"  
+      },
+      "02": {
+        "label": "numero de cuenta",
+        "description": "",
+        "idField": "07-02-number",
+        "contentType": "number",
+        "fieldType": "TextField"
+      },
+      "03": {
+        "label": "nombre del banco",
+        "description": "",
+        "idField": "07-03-name",
+        "contentType": "name",
+        "fieldType": "TextField"
+      },
+      "04": {
+        "label": "nombre titular de la cuenta",
+        "description": "",
+        "idField": "07-04-name",
+        "contentType": "name",
+        "fieldType": "TextField"
+      }
+    }  
   },
-  "02": {
-    "label": "ciudad",
+  "08": {
     "description": "",
-    "idField": "07-02-city",
-    "contentType": "city",
-    "fieldType": "TextField"
-  }
-  } 
-  }
-  }
+    "label": "articulos del reglamento",
+    "fields": {
+      "01": {
+        "label": "Artículo que describe la conducta prohibida en el reglamento de propiedad horizontal.",
+        "description": "",
+        "idField": "08-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"   
+      }
+    } 
   },
-{
-}
+  "09": {
+    "description": "",
+    "label": "asancion economica",
+    "fields": {
+      "01": {
+        "label": "valor en letra",
+        "description": "",
+        "idField": "09-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField" 
+      },
+      "02": {
+        "label": "valor en parentesis",
+        "description": "",
+        "idField": "09-02-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"
+      }
+    }  
+  },
+  "10": {
+    "description": "",
+    "label": "articulo del reglamento",
+    "fields":{
+      "01": {
+        "label": "Artículo que describe el valor de la sanción económica.",
+        "description": "",
+        "idField": "10-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField" 
+      }
+    }  
+  },
+  "11": {
+    "description": "",
+    "label": "firma",
+    "fields": {
+      "01":{ 
+      "label": "firma",
+      "description": "",
+      "idField": "11-01-additional",
+      "contentType": "additional",
+      "fieldType": "TextField" 
+    },
+    "02": {
+      "label": "Nombre de la persona que firma.",
+      "description": "",
+      "idField": "11-02-name",
+      "contentType": "name",
+      "fieldType": "TextField" 
+   ,
+   "03": {
+    "label": "Se añade leyenda “Administrador de la copropiedad”.",
+    "description": "",
+    "idField": "11-03-additional",
+    "contentType": "additional",
+    "fieldType": "TextField" 
+   }
+  }
+  }
+  }
+ }
+  },
+  {
+      "category": "bienes raices",
+      "subcategory": "propiedad horizontal",
+      "referenceId": "1-Kk99hzekHfBScXtX-ZKycDB32QZpWfE",
+      "sections": {
+      "01": {
+      "description": "Es un documento en virtud del cual una persona confiere facultades a otra para la asistencia a una asamblea de copropiedad, la cual debiese ser asistida inicial y presencialmente por la primera. ",
+      "label": "datos notaria",
+      "fields": {
+    
+      "01": {
+    "label": "numero de notaria",
+    "description": "",
+    "idField": "01-01-number",
+    "contentType": "number",
+    "fieldType": "TextField"
+    },
+    "02": {
+    "label": "Municipio o Distrito",
+    "description": "",
+    "idField": "01-02-additional",
+    "contentType": "additional",
+    "fieldType": "TextField"        
+    }
+    }
+    },
+    "02": {
+    "description": "",
+    "label": "persona natural",
+    "fields":  {
+    "01" : {
+      "label": "nombre y apellidos",
+      "description": "",
+      "idField": "02-01-name",
+      "contentType": "name",
+      "fieldType": "Textfield"  
+    },
+    "02": {
+    "label": "tipo de documento",
+    "description": "",
+    "idField": "02-02-documentType",
+    "contentType": "documentType",
+    "fieldType": "picker"  
+    },
+    "03": {
+      "label": "numero de documento",
+      "description": "",
+      "idField": "02-03-number",
+      "contentType": "number",
+      "fieldType": "Textfield"
+    }
+    }
+    },
+    "03": {
+      "description": "",
+      "label": "persona juridica",
+      "fields":  {
+      "01" : {
+        "label": "razon social",
+        "description": "",
+        "idField": "03-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextField"  
+      },
+      "02": {
+      "label": "tipo de documento persona juridica",
+      "description": "",
+      "idField": "03-02-documentype",
+      "contentType": "documentType",
+      "fieldType": "picker"  
+      },
+      "03": {
+        "label": "numero de documento persona juridica",
+      "description": "",
+      "idField": "03-03-number",
+      "contentType": "number",
+      "fieldType": "Textfield" 
+      }
+      }
+      },
+      "04": {
+      "description": "",
+      "label": "fecha",
+      "fields":  {
+      "01" : {
+        "label": "Fecha en que ocurrió el hecho que generó la sanción.",
+        "description": "",
+        "idField": "04-01-date",
+        "contentType": "date",
+        "fieldType": "TdatePicker"  
+      }
+      }
+    },
+    "05": {
+      "description": "",
+      "label": "persona natural",
+      "fields":  {
+        "01": {
+        "label": "nombre y apellidos",
+        "description": "",
+        "idField": "05-01-name",
+        "contentType": "name",
+        "fieldType": "Textfield"  
+      },
+      "02": {
+      "label": "tipo de documento",
+      "description": "",
+      "idField": "05-02-documentType",
+      "contentType": "documentType",
+      "fieldType": "picker"  
+      },
+      "03": {
+        "label": "numero de documento",
+        "description": "",
+        "idField": "05-03-number",
+        "contentType": "number",
+        "fieldType": "Textfield"
+    }
+    }
+    },
+    "06": {
+      "description": "",
+      "label": "tipo de asamblea",
+      "fields": {
+    "01": {
+      "label": "Si es asamblea ordinaria o xtraordinaria.",
+        "description": "",
+        "idField": "06-01-additional",
+        "contentType": "additional",
+        "fieldType": "TextFied"
+    }
+    }
+    },
+    "07": {
+      "description": "",
+      "label": "nombre de la copropiedad",
+      "fields":{
+        "01": {
+          "label": "Nombre de la copropiedad.",
+          "description": "",
+          "idField": "07-01-nmae",
+          "contentType": "name",
+          "fieldType": "TextField"  
+        }
+      }  
+    },
+    "08": {
+      "description": "",
+      "label": "fecha y hora de la asamblea",
+      "fields": {
+        "01": {
+          "label": "Fecha de la reunión.",
+          "description": "",
+          "idField": "08-01-date",
+          "contentType": "date",
+          "fieldType": "datePicker"   
+        },
+        "02": {
+          "label": "Hora de la reunión.",
+          "description": "",
+          "idField": "08-02-additional",
+          "contentType": "additional",
+          "fieldType": "TextFied"  
+        }
+      } 
+    },
+    "09": {
+      "description": "",
+      "label": "dirrecion, distrito o municipio",
+      "fields": {
+        "01": {
+          "label": "Dirección donde se llevará a cabo la reunión.",
+          "description": "",
+          "idField": "09-01-address",
+          "contentType": "address",
+          "fieldType": "TextField" 
+        },
+        "02": {
+          "label": "Municipio o Distrito donde se llevará a cabo la reunión.",
+          "description": "",
+          "idField": "09-02-additional",
+          "contentType": "additional",
+          "fieldType": "TextField"
+        }
+      }  
+    },
+    "10": {
+      "description": "",
+      "label": "fecha de la convocatoria",
+      "fields":{
+        "01": {
+          "label": "Fecha en la que se convocatoria.",
+          "description": "",
+          "idField": "10-01-date",
+          "contentType": "date",
+          "fieldType": "datepicker" 
+        }
+      }  
+    },
+    "11": {
+      "description": "",
+      "label": "firma persona natural",
+      "fields": {
+        "01":{ 
+        "label": "tipo de documento",
+        "description": "",
+        "idField": "11-01-documenttype",
+        "contentType": "docuemntType",
+        "fieldType": "picker" 
+      },
+      "02": {
+        "label": "Nombre de la persona que firma.",
+        "description": "",
+        "idField": "11-02-name",
+        "contentType": "name",
+        "fieldType": "TextField" 
+      },
+     "03": {
+      "label": "numero de documento",
+      "description": "",
+      "idField": "11-03-number",
+      "contentType": "number",
+      "fieldType": "TextField" 
+     }
+    }
+    },
+    "12": {
+      "description": "",
+      "label": "persona juridica",
+      "fields": {
+        "01":{ 
+        "label": "nombre de la sociedad",
+        "description": "",
+        "idField": "12-01-name",
+        "contentType": "name",
+        "fieldType": "TextField" 
+      }
+    }
+    },
+    "13": {
+      "description": "",
+      "label": " persona natural",
+      "fields": {
+        "01":{ 
+        "label": "tipo de documento",
+        "description": "",
+        "idField": "13-01-documenttype",
+        "contentType": "docuemntType",
+        "fieldType": "picker" 
+      },
+      "02": {
+        "label": "Nombre de la persona que firma.",
+        "description": "",
+        "idField": "13-02-name",
+        "contentType": "name",
+        "fieldType": "TextField" 
+      },
+     "03": {
+      "label": "numero de documento",
+      "description": "",
+      "idField": "13-03-number",
+      "contentType": "number",
+      "fieldType": "TextField" 
+     } 
+     }
+    } 
+    }
+  }
+  
+
+  
+
+    
+  
+
 
 
   
