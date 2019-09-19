@@ -3592,5 +3592,953 @@
         }
       }
     }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "17avpR0cGxrKCrYy0cOhoTNVCzSjgXQ9j",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar a quién será enviada la carta de despido",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del trabajador",
+            "description": "Nombre completo del trabajador",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombre",
+                "description": "Nombres del trabajador",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del trabajador",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del empleador, es importante identificar quien presentará la carta de despido.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "required": "true",
+            "icon": "PersonTypeIcon",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del empleador",
+            "description": "Nombre completo del empleador",
+            "required": "true",
+            "icon": "NameIcon",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "Nombres del empleador",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del empleador",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento del empleador",
+            "description": "Ingresa los datos referentes a la identificación personal del empleador",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "idField": "02-03-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField",
+                "02": {
+                  "label": "NIT",
+                  "description": "",
+                  "idField": "02-04-02-number",
+                  "contentType": "number",
+                  "fieldType": "TextField"
+                },
+                "condition": {
+                  "id": "02-01-personType",
+                  "value": "persona juridica"
+                }
+              }
+            }
+          },
+          "05": {
+            "label": "Nombre del representante legal",
+            "description": "Ingresa el nombre completo del representante legal de la empresa",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Selecciona e ingresa la información correspondiente a la identificación personal del representante legal",
+            "idField": "02-06-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-06-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Motivos",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "description": "Ingrese los motivos por el cual se ejecuta la carta de despido",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-03-location",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "03-03-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "03-03-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "17avpR0cGxrKCrYy0cOhoTNVCzSjgXQ9j",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar a quién será enviada la carta de despido",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del trabajador",
+            "description": "Nombre completo del trabajador",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombre",
+                "description": "Nombres del trabajador",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del trabajador",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del empleador, es importante identificar quien presentará la carta de despido.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "required": "true",
+            "icon": "PersonTypeIcon",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del empleador",
+            "description": "Nombre completo del empleador",
+            "required": "true",
+            "icon": "NameIcon",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "Nombres del empleador",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del empleador",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento del empleador",
+            "description": "Ingresa los datos referentes a la identificación personal del empleador",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "idField": "02-03-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField",
+                "02": {
+                  "label": "NIT",
+                  "description": "",
+                  "idField": "02-04-02-number",
+                  "contentType": "number",
+                  "fieldType": "TextField"
+                }
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre del representante legal",
+            "description": "Ingresa el nombre completo del representante legal de la empresa",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Selecciona e ingresa la información correspondiente a la identificación personal del representante legal",
+            "idField": "02-06-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-06-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Motivos",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "description": "Ingrese los motivos por el cual se ejecuta la carta de despido",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-03-location",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "03-03-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "03-03-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "17avpR0cGxrKCrYy0cOhoTNVCzSjgXQ9j",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar a quién será enviada la carta de despido",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del trabajador",
+            "description": "Nombre completo del trabajador",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombre",
+                "description": "Nombres del trabajador",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del trabajador",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del empleador, es importante identificar quien presentará la carta de despido.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "required": "true",
+            "icon": "PersonTypeIcon",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del empleador",
+            "description": "Nombre completo del empleador",
+            "required": "true",
+            "icon": "NameIcon",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "Nombres del empleador",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del empleador",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento del empleador",
+            "description": "Ingresa los datos referentes a la identificación personal del empleador",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "idField": "02-03-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "condition": {
+            "id": "02-01-personType",
+            "value": "persona juridica"
+          }
+        },
+        "05": {
+          "label": "Nombre del representante legal",
+          "description": "Ingresa el nombre completo del representante legal de la empresa",
+          "idField": "02-05-name",
+          "contentType": "name",
+          "fieldType": "NameComponent",
+          "componentFields": {
+            "01": {
+              "label": "Nombres",
+              "description": "",
+              "idField": "02-06-01-name",
+              "contentType": "name",
+              "fieldType": "TextField"
+            },
+            "02": {
+              "label": "Apellidos",
+              "description": "",
+              "idField": "02-06-02-name",
+              "contentType": "name",
+              "fieldType": "TextField"
+            }
+          },
+          "condition": {
+            "id": "02-01-personType",
+            "value": "persona juridica"
+          }
+        },
+        "06": {
+          "label": "Documento del representante legal",
+          "description": "Selecciona e ingresa la información correspondiente a la identificación personal del representante legal",
+          "idField": "02-06-majorDocumentType",
+          "fieldType": "DocumentComponent",
+          "componentFields": {
+            "01": {
+              "label": "Tipo de documento",
+              "description": "",
+              "idField": "02-06-01-majorDocumentType",
+              "contentType": "majorDocumentType",
+              "fieldType": "Dropdown"
+            },
+            "02": {
+              "label": "Numero del documento",
+              "description": "",
+              "idField": "02-06-02-number",
+              "contentType": "number",
+              "fieldType": "TextField"
+            }
+          },
+          "condition": {
+            "id": "02-01-personType",
+            "value": "persona juridica"
+          }
+        }
+      }
+    },
+    "03": {
+      "description": "Diligencia la siguiente información clave para la generación de tu documento",
+      "label": "Información general",
+      "fields": {
+        "01": {
+          "label": "Motivos",
+          "required": "true",
+          "icon": "ReasonsIcon",
+          "description": "Ingrese los motivos por el cual se ejecuta la carta de despido",
+          "idField": "03-01-additional",
+          "contentType": "additional",
+          "fieldType": "TextField"
+        },
+        "02": {
+          "label": "Fecha",
+          "description": "",
+          "idField": "03-02-date",
+          "contentType": "date",
+          "fieldType": "DatePicker"
+        },
+        "03": {
+          "label": "Lugar",
+          "description": "",
+          "idField": "03-03-location",
+          "contentType": "location",
+          "fieldType": "LocationComponent",
+          "componentFields": {
+            "01": {
+              "label": "Departamento",
+              "description": "",
+              "idField": "03-03-01-department",
+              "contentType": "department",
+              "fieldType": "TextField"
+            },
+            "02": {
+              "label": "Ciudad",
+              "description": "",
+              "idField": "03-03-02-city",
+              "contentType": "city",
+              "fieldType": "TextField"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "17avpR0cGxrKCrYy0cOhoTNVCzSjgXQ9j",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar a quién será enviada la carta de despido",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del trabajador",
+            "description": "Nombre completo del trabajador",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombre",
+                "description": "Nombres del trabajador",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del trabajador",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del empleador, es importante identificar quien presentará la carta de despido.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "required": "true",
+            "icon": "PersonTypeIcon",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del empleador",
+            "description": "Nombre completo del empleador",
+            "required": "true",
+            "icon": "NameIcon",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "Nombres del empleador",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "Apellidos del empleador",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento del empleador",
+            "description": "Ingresa los datos referentes a la identificación personal del empleador",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "idField": "02-03-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre del representante legal",
+            "description": "Ingresa el nombre completo del representante legal de la empresa",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Selecciona e ingresa la información correspondiente a la identificación personal del representante legal",
+            "idField": "02-06-majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-06-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Numero del documento",
+                "description": "",
+                "idField": "02-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Motivos",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "description": "Ingrese los motivos por el cual se ejecuta la carta de despido",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-03-location",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "03-03-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "03-03-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      }
+    }
   }
 ]
