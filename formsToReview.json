@@ -1,0 +1,497 @@
+[
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "1zDj-6P1h8Bbed_2IpwPiRCXrDeAAxnKL",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que se retira de su cargo, teniendo en cuenta que será a ella a quien le será practicado el examen médico",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "01-02-majorDocumentType",
+            "contentType": "majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-02-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "03": {
+            "label": "Cargo desempeñado",
+            "description": "",
+            "idField": "01-03-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, es decir, quien ordenará la práctica del éxamen médico y podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "02-03-majorDocumentType",
+            "contentType": "majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "02-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "02-07-majorDocumentType",
+            "contentType": "majorDocumentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-07-01-majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación de de la carta ante la entidad correspondiente",
+            "idField": "03-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "IPS",
+            "description": "Señala el instituto prestador de salud en el cual se realizará el examen médico",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-03-location",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "03-03-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "03-03-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "referenceId": "1ByYhhFQYZCRc-AJPNzTRr418VV611j7H",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador, es importante identificar la persona con quien se finalizará la relación laboral durante su período de prueba.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "02": {
+              "label": "Cargo desempeñado",
+              "description": "",
+              "idField": "01-02-additional",
+              "contentType": "additional",
+              "fieldType": "TextField"
+            }
+          },
+          "03": {
+            "label": "Fecha de ingreso",
+            "description": "Señala la fecha en la cual ingresó a su cargo",
+            "idField": "01-03-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "04": {
+            "label": "Fecha de terminación",
+            "description": "Señala la fecha en la cual entregará su cargo",
+            "idField": "01-04-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral con su trabajador durante el período de prueba. Podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "02-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "02-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Motivos",
+            "description": "Si deseas, podrás indicar las razones por las cuales el empleador desea finalizar el contrato.",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación del documento al trabajador",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-03-location",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "03-03-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "03-03-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

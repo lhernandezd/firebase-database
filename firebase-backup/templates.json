@@ -692,5 +692,30 @@
       "seconds": 1569014129,
       "nanoseconds": 790000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Por medio de este documento, el empleador comunica a su trabajador la terminación, y  por lo tanto no prórroga, de su contrato a término fijo.",
+    "longDescription": "<p><strong>TÉRMINACIÓN DEL CONTRATO A TÉRMINO FIJO</strong></p><p>Por medio de este documento, el empleador comunica a su trabajador la terminación, y por lo tanto no prórroga, de su contrato a término fijo. </p><p><strong>¿A quiénes va drigido el documento?</strong></p><p>Va dirigido a los empleadores, sean personas naturales o jurídicas, quienes, llegado el término mínimo de preaviso (30 días previos al vencimiento del plazo fijo) no deseen prorrogar el contrato.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El empleador o la persona que éste designe, deberá ingresar toda la información solicitada para efectos de llenar el documento y entregarle validez, y sólo para aquellos casos en los cuales la terminación del contrato obedezca al vencimiento del término fijo pactado. </p><p>Al diligenciar la información, el empleador debe indicar la fecha exacta en la cual el trabajador finalizará su labor, la cual corresponde a la pactada inicialmente en el contrato </p><p>Es importante tener en cuenta que, el término de presentación de este documento debe ser con 30 días de anticipación al vencimiento del plazo fijo pactado, y de lo contrario el contrato se prorrogará automáticamente de acuerdo a lo dispuesto en la Ley. </p><p>En los casos que el empleador desee terminar el contrato de trabajo a término fijo con su trabajador, sin que obedezca al vencimiento del plazo, debrá presentar una carta de despido sin justa causa y pagar la indemnización que corresponde por ley al trabajador</p>",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Terminación del contrato a término fijo",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569329167,
+      "nanoseconds": 961000000
+    },
+    "updated": {
+      "seconds": 1569329167,
+      "nanoseconds": 961000000
+    }
   }
 ]
