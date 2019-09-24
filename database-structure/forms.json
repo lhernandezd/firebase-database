@@ -2,20 +2,20 @@
   {
     "category": "laboral",
     "subcategory": "terminacion",
-    "referenceId": "1ysQYfj2buovLa0ZQwXuLNhwz3Qvdtdab",
+    "referenceId": "1ByYhhFQYZCRc-AJPNzTRr418VV611j7H",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar la persona con la cual se finalizará la relación laboral.",
+        "description": "Diligencia los siguientes datos acerca del trabajador, es importante identificar la persona con quien se finalizará la relación laboral durante su período de prueba.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
-            "label": "Nombre completo del trabajador",
-            "description": "Ingrese el nombre completo del trabajador",
-            "icon": "NameIcon",
-            "required": "true",
+            "label": "Nombre completo del empleado",
+            "description": "",
             "idField": "01-01-name",
             "contentType": "name",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
@@ -34,34 +34,43 @@
             },
             "02": {
               "label": "Cargo desempeñado",
-              "description": "Ingrese el cargo desempeñado por el trabajador",
-              "required": "true",
+              "description": "",
               "icon": "PositionIcon",
+              "required": "true",
               "idField": "01-02-additional",
               "contentType": "additional",
               "fieldType": "TextField"
             }
           },
           "03": {
-            "label": "Fecha de terminación",
-            "description": "Señala la fecha en la cual finalizará su contrato",
+            "label": "Fecha de ingreso",
+            "description": "Señala la fecha en la cual ingresó a su cargo",
+            "icon": "DateIcon",
+            "required": "true",
             "idField": "01-03-date",
             "contentType": "date",
-            "fieldType": "DatePicker",
+            "fieldType": "DatePicker"
+          },
+          "04": {
+            "label": "Fecha de terminación",
             "required": "true",
-            "icon": "DateIcon"
+            "icon": "DateIcon",
+            "description": "Señala la fecha en la cual entregará su cargo",
+            "idField": "01-04-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
           }
         }
       },
       "02": {
-        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral y podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral con su trabajador durante el período de prueba. Podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
         "label": "Información del empleador",
         "fields": {
           "01": {
             "label": "Tipo de empleador",
             "description": "Seleccione el tipo de empleador",
-            "required": "true",
             "icon": "PersonTypeIcon",
+            "required": "true",
             "idField": "02-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
@@ -98,17 +107,17 @@
           "03": {
             "label": "Documento",
             "description": "Señala el tipo y número de documento del empleador",
-            "idField": "02-03-majorDocumentType",
-            "contentType": "majorDocumentType",
-            "fieldType": "DocumentComponent",
-            "icon": "DocumentTypeIcon",
+            "idField": "02-03-documentType",
             "required": "true",
+            "icon": "DocumentTypeIcon",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "02-03-01-majorDocumentType",
-                "contentType": "majorDocumentType",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
@@ -163,14 +172,14 @@
             "fieldType": "NameComponent",
             "componentFields": {
               "01": {
-                "label": "Nombres",
+                "label": "Nombres del representante legal",
                 "description": "",
                 "idField": "02-05-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
-                "label": "Apellidos",
+                "label": "Apellidos del representante legal",
                 "description": "",
                 "idField": "02-05-02-name",
                 "contentType": "name",
@@ -185,17 +194,17 @@
           "06": {
             "label": "Documento del representante legal",
             "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "02-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
             "required": "true",
             "icon": "DocumentTypeIcon",
-            "idField": "02-07-majorDocumentType",
-            "contentType": "majorDocumentType",
-            "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "02-06-01-majorDocumentType",
-                "contentType": "majorDocumentType",
+                "idField": "02-06-01-documentType",
+                "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
@@ -218,34 +227,43 @@
         "label": "Información general",
         "fields": {
           "01": {
+            "label": "Motivos",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "description": "Si deseas, podrás indicar las razones por las cuales el empleador desea finalizar el contrato.",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
             "label": "Fecha",
             "description": "Señala la fecha de presentación del documento al trabajador",
-            "idField": "03-01-date",
+            "idField": "03-02-date",
             "contentType": "date",
             "required": "true",
             "icon": "DateIcon",
             "fieldType": "DatePicker"
           },
-          "02": {
+          "03": {
             "label": "Lugar",
             "description": "",
-            "idField": "03-02-location",
+            "idField": "03-03-location",
             "contentType": "location",
-            "fieldType": "LocationComponent",
             "required": "true",
             "icon": "LocationIcon",
+            "fieldType": "LocationComponent",
             "componentFields": {
               "01": {
                 "label": "Departamento",
                 "description": "",
-                "idField": "03-02-01-department",
+                "idField": "03-03-01-department",
                 "contentType": "department",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Ciudad",
                 "description": "",
-                "idField": "03-02-02-city",
+                "idField": "03-03-02-city",
                 "contentType": "city",
                 "fieldType": "TextField"
               }
