@@ -15,5 +15,22 @@
     "price": 4990,
     "rating": 0,
     "version": "1.0"
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "terminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual un trabajador puede dar por terminada su relación laboral de manera formal y voluntaria, sin que medie coacción alguna por parte de su empleador o algún tercero.",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Carta de renuncia",
+    "longDescription": "<p><strong>CARTA DE RENUNCIA</strong></p><p>Es un documento por medio del cual un trabajador puede dar por terminada su relación laboral de manera formal y voluntaria, sin que medie coacción alguna por parte de su empleador o algún tercero.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los trabajadores, nacionales o extranjeros, que, de manera voluntaria, desean finalizar el contrato de trabajo que sostenían con su empleador, sea persona natural o jurídica.</p><p>El documento está pensado para personas mayores de 18 años, toda vez que la ley preveee unos requisitos específicos en casos de trabajo de menores de edad, en atención a su edad y a la actividad que realizarán, los cuales no se encuentran tratados en este documento.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El trabajador deberá ingresar toda la información solicitada para efectos de llenar el documento, el cual solo podrá utilizarse en aquellos casos en que no existe culpa por parte del empleador, la cual motive el retiro.</p><p>Al momento de diligenciar el documento es importante señalar:</p><ul><li>Los datos de identificación de las partes</li><li>El cargo que desempeñaba el trabajador</li><li>Fecha en la cual entragará el cargo</li><li>Los motivos de la renuncia; profesionales o personales</li><li>Si la renuncia es irrevocable</li></ul><p>El trabajador no se encuentra obligado a detallar las razones que motivaron su renuncia, sin embargo podrá hacerlo. Esto será indicado en un espacio del documento.</p><p>Una vez el documento sea completado, el trabajador deberá firmar la renuncia y presentarla ante su empleador. Es importante tener en cuenta que para la presentación este documento no existe un término mínimo de anticipación que obligue al trabajador; podrá realizarlo en cualquier momento, sin que ello genere consecuencias en su contra.</p>",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
   }
 ]
