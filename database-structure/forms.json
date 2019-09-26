@@ -2,17 +2,17 @@
   {
     "category": "laboral",
     "subcategory": "solicitudesReclamos",
-    "referenceId": "1IMYWXBmUyKmkzOVtS17m6w7Gcs-k-pah",
+    "referenceId": "1xOHaC7McVA29oahnMv40pL1pEiNuZQpw",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos del trabajador, acerca de quien se rendirá la información contenida en el documento.",
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien presentará la reclamación de pago.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
             "label": "Nombre completo del trabajador",
             "description": "",
-            "icon": "NameIcon",
             "required": "true",
+            "icon": "NameIcon",
             "idField": "01-01-name",
             "contentType": "name",
             "fieldType": "NameComponent",
@@ -34,12 +34,12 @@
             }
           },
           "02": {
-            "label": "Documento",
+            "label": "Documento del trabajador",
             "description": "Señala el tipo y número de documento del trabajador",
-            "required": "true",
-            "icon": "DocumentTypeIcon",
             "idField": "01-02-documentType",
             "contentType": "documentType",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
             "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
@@ -59,36 +59,27 @@
             }
           },
           "03": {
-            "label": "Cargo",
-            "description": "Señala el cargo desempeñado por el trabajador",
+            "label": "Número de contacto del trabajador",
+            "description": "",
+            "idField": "01-03-number",
             "required": "true",
-            "icon": "PositionIcon",
-            "idField": "01-03-additional",
-            "contentType": "additional",
+            "icon": "NumberIcon",
+            "contentType": "number",
             "fieldType": "TextField"
           },
           "04": {
-            "label": "Estado laboral",
-            "description": "Señala si el trabajador se encuentra actualmente laborando o si ya finalizó su relación laboral.",
+            "label": "Dirección de notificaciones del trabajador",
+            "description": "",
             "required": "true",
-            "icon": "PositionIcon",
-            "idField": "01-04-jobStatus",
-            "contentType": "jobStatus",
-            "fieldType": "Picker"
-          },
-          "05": {
-            "label": "Salario",
-            "description": "Indica el salario devengado por el trabajador",
-            "required": "true",
-            "icon": "MoneyIcon",
-            "idField": "01-05-number",
-            "contentType": "number",
+            "icon": "AddressIcon",
+            "idField": "01-04-address",
+            "contentType": "address",
             "fieldType": "TextField"
           }
         }
       },
       "02": {
-        "description": "Selecciona el tipo de empleador, es decir, quien podrá ser una persona natural o jurídica. Es importante la identificación de la persona que contrata, toda vez que es la obligada a entregar la certificación laboral al trabajador y quien firmará el documento",
+        "description": "Selecciona el tipo de empleador, quien podrá ser una persona natural o jurídica. Es importante la identificación de la persona que contrata, toda vez que la reclamación de pago será dirigida a ella, siendo la obligada a realizar los pagos de salarios, prestaciones sociales y seguridad social.",
         "label": "Información del empleador",
         "fields": {
           "01": {
@@ -101,10 +92,10 @@
             "fieldType": "Picker"
           },
           "02": {
-            "label": "Nombre completo del empleador",
-            "description": "",
+            "label": "Nombre completo",
             "required": "true",
             "icon": "NameIcon",
+            "description": "",
             "idField": "02-02-name",
             "contentType": "name",
             "fieldType": "NameComponent",
@@ -130,55 +121,39 @@
             }
           },
           "03": {
-            "label": "Documento",
-            "description": "Señala el tipo y número de documento del empleador",
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-03-name",
             "required": "true",
-            "icon": "DocumentTypeIcon",
-            "idField": "02-03-documentType",
-            "contentType": "documentType",
-            "fieldType": "DocumentComponent",
-            "componentFields": {
-              "01": {
-                "label": "Tipo de documento",
-                "description": "",
-                "idField": "02-03-01-documentType",
-                "contentType": "documentType",
-                "fieldType": "Dropdown"
-              },
-              "02": {
-                "label": "Número de documento",
-                "description": "",
-                "idField": "02-03-02-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              }
-            },
+            "icon": "CompanyIcon",
+            "contentType": "name",
+            "fieldType": "TextField",
             "condition": {
               "id": "02-01-personType",
-              "value": "persona natural"
+              "value": "persona juridica"
             }
           },
           "04": {
-            "label": "Información de la empresa",
-            "description": "Ingresa la razón social y nit de la compañía",
+            "label": "Encargado de realizar el pago",
+            "description": "Señala el nombre completo de la persona encargada de realizar el pago",
+            "idField": "02-04-name",
+            "contentType": "name",
             "required": "true",
-            "icon": "CompanyIcon",
-            "idField": "02-04-additional",
-            "contentType": "additional",
-            "fieldType": "CompanyDataComponent",
+            "icon": "NameIcon",
+            "fieldType": "NameComponent",
             "componentFields": {
               "01": {
-                "label": "Razón social",
+                "label": "Nombres",
                 "description": "",
-                "idField": "02-04-01-additional",
-                "contentType": "additional",
+                "idField": "02-04-01-name",
+                "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
-                "label": "NIT",
+                "label": "Apellidos",
                 "description": "",
-                "idField": "02-04-02-number",
-                "contentType": "number",
+                "idField": "02-04-02-name",
+                "contentType": "name",
                 "fieldType": "TextField"
               }
             },
@@ -188,58 +163,13 @@
             }
           },
           "05": {
-            "label": "Nombre completo del representante legal",
-            "description": "",
+            "label": "Cargo del encargado de realizar el pago",
+            "description": "Indica cuál es el cargo de la persona encargada de realizar el pago",
             "required": "true",
-            "icon": "NameIcon",
-            "idField": "02-05-name",
-            "contentType": "name",
-            "fieldType": "NameComponent",
-            "componentFields": {
-              "01": {
-                "label": "Nombres del representante legal",
-                "description": "",
-                "idField": "02-05-01-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "Apellidos del representante legal",
-                "description": "",
-                "idField": "02-05-02-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              }
-            },
-            "condition": {
-              "id": "02-01-personType",
-              "value": "persona juridica"
-            }
-          },
-          "06": {
-            "label": "Documento del representante legal",
-            "description": "Señala el tipo y número de documento del representante legal",
-            "idField": "02-06-documentType",
-            "contentType": "documentType",
-            "fieldType": "DocumentComponent",
-            "required": "true",
-            "icon": "DocumentTypeIcon",
-            "componentFields": {
-              "01": {
-                "label": "Tipo de documento",
-                "description": "",
-                "idField": "02-06-01-documentType",
-                "contentType": "documentType",
-                "fieldType": "Dropdown"
-              },
-              "02": {
-                "label": "Número de documento",
-                "description": "",
-                "idField": "02-07-02-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              }
-            },
+            "icon": "PositionIcon",
+            "idField": "02-05-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
             "condition": {
               "id": "02-01-personType",
               "value": "persona juridica"
@@ -248,68 +178,67 @@
         }
       },
       "03": {
+        "description": "Selecciona el concepto dejado de percibir por parte del empleador; es decir, si lo dejado de pagar corresponde a salarios, prestaciones sociales, seguridad social o incluso los tres conceptos al tiempo. Igualmente indica la fecha en la cual se realizó el último pago.",
+        "label": "Concepto dejado de percibir",
+        "fields": {
+          "01": {
+            "label": "Concepto",
+            "description": "Selecciona el(los) concepto(s) dejado(s) de percibir",
+            "required": "true",
+            "icon": "ReasonIcon",
+            "idField": "03-01-fallenPayments",
+            "contentType": "fallenPayments",
+            "fieldType": "Checkbox"
+          },
+          "02": {
+            "label": "Fecha de último pago",
+            "description": "Señala la fecha en la cual se realizó el último pago",
+            "required": "true",
+            "icon": "DateIcon",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          }
+        }
+      },
+      "04": {
         "description": "Diligencia la siguiente información clave para la generación de tu documento",
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Fecha de presentación",
-            "description": "Selecciona la fecha en la cual será presentada la certificación",
-            "idField": "03-01-date",
+            "label": "Fecha de presentación de la carta",
+            "description": "Señala la fecha de presentación de la carta",
+            "idField": "04-01-date",
             "contentType": "date",
-            "fieldType": "DatePicker",
             "required": "true",
-            "icon": "DateIcon"
+            "icon": "DateIcon",
+            "fieldType": "DatePicker"
           },
+
           "02": {
-            "label": "Fecha de ingreso",
-            "description": "Señala la fecha en la cual ingresó a laborar el trabajador",
-            "idField": "03-02-date",
-            "contentType": "date",
-            "fieldType": "TextField",
+            "label": "Lugar",
+            "description": "",
+            "idField": "03-02-location",
             "required": "true",
-            "icon": "DateIcon",
-            "condition": {
-              "id": "01-04-jobStatus",
-              "value": "actualmente laborando"
-            }
-          },
-          "03": {
-            "label": "Duración",
-            "description": "Señala la fecha de ingreso y finalización de la relación laboral del trabajador",
-            "idField": "03-03-jobStatus",
-            "contentType": "jobStatus",
-            "fieldType": "jobStatusComponent",
-            "required": "true",
-            "icon": "DateIcon",
+            "icon": "LocationIcon",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
             "componentFields": {
               "01": {
-                "label": "Fecha de ingreso",
+                "label": "Departamento",
                 "description": "",
-                "idField": "03-03-01-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
+                "idField": "03-02-01-department",
+                "contentType": "department",
+                "fieldType": "TextField"
               },
               "02": {
-                "label": "Fecha de finalización",
+                "label": "Ciudad",
                 "description": "",
-                "idField": "03-03-02-date",
-                "contentType": "date",
-                "fieldType": "DatePicker"
+                "idField": "03-02-02-city",
+                "contentType": "city",
+                "fieldType": "TextField"
               }
-            },
-            "condition": {
-              "id": "01-04-jobStatus",
-              "value": "finalizo la relacion laboral"
             }
-          },
-          "04": {
-            "label": "Ciudad",
-            "description": "Señala la ciudad en la cual se firmará la certificación",
-            "idField": "03-04-destinationcity",
-            "contentType": "destinationcity",
-            "fieldType": "TextField",
-            "required": "true",
-            "icon": "LocationIcon"
           }
         }
       }

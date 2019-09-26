@@ -126,5 +126,23 @@
         "label": "Finalizó la relación laboral"
       }
     ]
+  },
+  "fallenPayments": {
+    "label": "fallenPayments",
+    "type": "Checkbox",
+    "content": [
+      {
+        "value": "salario",
+        "label": "Salario"
+      },
+      {
+        "value": "prestaciones sociales",
+        "label": "Prestaciones sociales"
+      },
+      {
+        "value": "seguridad social",
+        "label": "Seguridad social"
+      }
+    ]
   }
 }
