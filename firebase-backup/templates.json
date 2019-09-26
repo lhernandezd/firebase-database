@@ -867,5 +867,55 @@
       "seconds": 1569510851,
       "nanoseconds": 843000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento redactado por el empleador y entregado al trabajador con el fin que éste pueda probar la existencia de la relación laboral",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>CERTIFICACIÓN LABORAL</strong></p><p>Es un documento redactado por el empleador y entregado al trabajador con el fin que éste pueda probar la existencia de la relación laboral</p><p>Por medio de él, se hace constar el tiempo de labor de un trabajador con su empleador, el tipo de contratación, labor desempeñada y salario devengado.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los empleadores, quienes tienen la obligación de expedir una certificación laboral a sus trabajadores al finalizar su relación laboral o en cualquier momento cuando éstos lo soliciten aún durante el tiempo de labor.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>Una vez el trabajador solicita un certificado laboral a su empleador, éste tiene la obligación de expedirla, y debe contener al menos la siguiente información:</p><ul><li>Empresa o persona para quien labora el trabajador</li><li>Puesto o cargo desempeñado por el trabajador</li><li>Tiempo de labor del trabajador</li><li>Salario devengado por el trabajador</li></ul><p>Este documento puede ser utilizado por el trabajador para presentarlo en su nuevo lugar de trabajo, en el cual tengan interés de confirmar que áquel perteneció a una empresa y desempeñó las funciones que registra en su hoja de vida. Igualmente puede ser utilizado para presentarlo ante una entidad de crédito con el fin de conocer la asignación salarial del trabajador en caso que éste solicite un producto, para trámites como matrículas en educación, arrendamientos, entre otros.</p>",
+    "isActive": true,
+    "name": "Certificación laboral",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569524715,
+      "nanoseconds": 167000000
+    },
+    "updated": {
+      "seconds": 1569524715,
+      "nanoseconds": 167000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento redactado por el empleador y entregado al trabajador con el fin que éste pueda probar la existencia de la relación laboral",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>CERTIFICACIÓN LABORAL</strong></p><p>Es un documento redactado por el empleador y entregado al trabajador con el fin que éste pueda probar la existencia de la relación laboral</p><p>Por medio de él, se hace constar el tiempo de labor de un trabajador con su empleador, el tipo de contratación, labor desempeñada y salario devengado.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los empleadores, quienes tienen la obligación de expedir una certificación laboral a sus trabajadores al finalizar su relación laboral o en cualquier momento cuando éstos lo soliciten aún durante el tiempo de labor.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>Una vez el trabajador solicita un certificado laboral a su empleador, éste tiene la obligación de expedirla, y debe contener al menos la siguiente información:</p><ul><li>Empresa o persona para quien labora el trabajador</li><li>Puesto o cargo desempeñado por el trabajador</li><li>Tiempo de labor del trabajador</li><li>Salario devengado por el trabajador</li></ul><p>Este documento puede ser utilizado por el trabajador para presentarlo en su nuevo lugar de trabajo, en el cual tengan interés de confirmar que áquel perteneció a una empresa y desempeñó las funciones que registra en su hoja de vida. Igualmente puede ser utilizado para presentarlo ante una entidad de crédito con el fin de conocer la asignación salarial del trabajador en caso que éste solicite un producto, para trámites como matrículas en educación, arrendamientos, entre otros.</p>",
+    "isActive": true,
+    "name": "Certificación laboral",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569524917,
+      "nanoseconds": 497000000
+    },
+    "updated": {
+      "seconds": 1569524917,
+      "nanoseconds": 497000000
+    }
   }
 ]

@@ -112,5 +112,19 @@
   "location": {
     "label": "location",
     "type": "TextField"
+  },
+  "jobStatus": {
+    "label": "jobStatus",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "actualmente laborando",
+        "label": "Actualmente laborando"
+      },
+      {
+        "value": "finalizo la relacion laboral",
+        "label": "Finalizó la relación laboral"
+      }
+    ]
   }
 }
