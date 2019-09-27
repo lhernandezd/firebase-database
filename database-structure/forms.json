@@ -2,84 +2,99 @@
   {
     "category": "laboral",
     "subcategory": "solicitudesReclamos",
-    "referenceId": "1xOHaC7McVA29oahnMv40pL1pEiNuZQpw",
+    "referenceId": "1WvzRyHKjHOv8xm185QSAwrraIqghFhLy",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos acerca del trabajador, quien presentará la reclamación de pago.",
+        "description": "Diligencia la siguiente información acerca del fondo de cesantías al cual se encuentra afiliado el trabajador y ante quien será dirigido el documento.",
+        "label": "Fondo de cesantías",
+        "fields": {
+          "01": {
+            "label": "Nombre del fondo",
+            "description": "Señala el nombre del fondo al cual se encuentra afiliado el trabajador. Ej: Protección S.A",
+            "icon": "CompanyIcon",
+            "required": "true",
+            "idField": "01-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha de consignación",
+            "description": "Señala la fecha en la cual se realizó la consignación de las cesantías en el fondo",
+            "required": "true",
+            "icon": "DateIcon",
+            "idField": "01-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que se retira de su cargo, teniendo en cuenta que será a ella a quien se entregarán las cesantías.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
-            "label": "Nombre completo del trabajador",
+            "label": "Nombre completo",
             "description": "",
-            "required": "true",
-            "icon": "NameIcon",
-            "idField": "01-01-name",
+            "idField": "02-01-name",
             "contentType": "name",
+            "icon": "NameIcon",
+            "required": "true",
             "fieldType": "NameComponent",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "01-01-01-name",
+                "idField": "02-01-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "01-01-02-name",
+                "idField": "02-01-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             }
           },
           "02": {
-            "label": "Documento del trabajador",
+            "label": "Documento",
             "description": "Señala el tipo y número de documento del trabajador",
-            "idField": "01-02-documentType",
-            "contentType": "documentType",
-            "required": "true",
             "icon": "DocumentTypeIcon",
+            "required": "true",
+            "idField": "02-02-documentType",
+            "contentType": "documentType",
             "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "01-02-01-documentType",
+                "idField": "02-02-01-documentType",
                 "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
                 "label": "Número de documento",
                 "description": "",
-                "idField": "01-02-02-number",
+                "idField": "02-02-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             }
           },
           "03": {
-            "label": "Número de contacto del trabajador",
-            "description": "",
-            "idField": "01-03-number",
+            "label": "Fecha de terminación",
+            "description": "Señala la fecha de terminación de sus labores",
             "required": "true",
-            "icon": "NumberIcon",
-            "contentType": "number",
-            "fieldType": "TextField"
-          },
-          "04": {
-            "label": "Dirección de notificaciones del trabajador",
-            "description": "",
-            "required": "true",
-            "icon": "AddressIcon",
-            "idField": "01-04-address",
-            "contentType": "address",
-            "fieldType": "TextField"
+            "icon": "DateIcon",
+            "idField": "02-03-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
           }
         }
       },
-      "02": {
-        "description": "Selecciona el tipo de empleador, quien podrá ser una persona natural o jurídica. Es importante la identificación de la persona que contrata, toda vez que la reclamación de pago será dirigida a ella, siendo la obligada a realizar los pagos de salarios, prestaciones sociales y seguridad social.",
+      "03": {
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, quien autorizará ante el fondo el retiro de las cesantías.",
         "label": "Información del empleador",
         "fields": {
           "01": {
@@ -87,73 +102,89 @@
             "description": "Seleccione el tipo de empleador",
             "required": "true",
             "icon": "PersonTypeIcon",
-            "idField": "02-01-personType",
+            "idField": "03-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
           },
           "02": {
             "label": "Nombre completo",
-            "required": "true",
-            "icon": "NameIcon",
             "description": "",
-            "idField": "02-02-name",
+            "idField": "03-02-name",
             "contentType": "name",
+            "icon": "NameIcon",
+            "required": "true",
             "fieldType": "NameComponent",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "02-02-01-name",
+                "idField": "03-02-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "02-02-02-name",
+                "idField": "03-02-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "03-01-personType",
               "value": "persona natural"
             }
           },
           "03": {
-            "label": "Razón social de la empresa",
-            "description": "",
-            "idField": "02-03-name",
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "icon": "DocumentTypeIcon",
             "required": "true",
-            "icon": "CompanyIcon",
-            "contentType": "name",
-            "fieldType": "TextField",
+            "idField": "03-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "03-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "03-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
             "condition": {
-              "id": "02-01-personType",
-              "value": "persona juridica"
+              "id": "03-01-personType",
+              "value": "persona natural"
             }
           },
           "04": {
-            "label": "Encargado de realizar el pago",
-            "description": "Señala el nombre completo de la persona encargada de realizar el pago",
-            "idField": "02-04-name",
-            "contentType": "name",
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
             "required": "true",
-            "icon": "NameIcon",
-            "fieldType": "NameComponent",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
             "componentFields": {
               "01": {
-                "label": "Nombres",
+                "label": "Razón social",
                 "description": "",
-                "idField": "02-04-01-name",
-                "contentType": "name",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
                 "fieldType": "TextField"
               },
               "02": {
-                "label": "Apellidos",
+                "label": "NIT",
                 "description": "",
-                "idField": "02-04-02-name",
-                "contentType": "name",
+                "idField": "02-04-02-number",
+                "contentType": "number",
                 "fieldType": "TextField"
               }
             },
@@ -163,41 +194,62 @@
             }
           },
           "05": {
-            "label": "Cargo del encargado de realizar el pago",
-            "description": "Indica cuál es el cargo de la persona encargada de realizar el pago",
+            "label": "Nombre completo del representante legal",
+            "description": "",
             "required": "true",
-            "icon": "PositionIcon",
-            "idField": "02-05-additional",
-            "contentType": "additional",
-            "fieldType": "TextField",
+            "icon": "NameIcon",
+            "idField": "03-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "03-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "03-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
             "condition": {
-              "id": "02-01-personType",
+              "id": "03-01-personType",
               "value": "persona juridica"
             }
-          }
-        }
-      },
-      "03": {
-        "description": "Selecciona el concepto dejado de percibir por parte del empleador; es decir, si lo dejado de pagar corresponde a salarios, prestaciones sociales, seguridad social o incluso los tres conceptos al tiempo. Igualmente indica la fecha en la cual se realizó el último pago.",
-        "label": "Concepto dejado de percibir",
-        "fields": {
-          "01": {
-            "label": "Concepto",
-            "description": "Selecciona el(los) concepto(s) dejado(s) de percibir",
-            "required": "true",
-            "icon": "ReasonIcon",
-            "idField": "03-01-fallenPayments",
-            "contentType": "fallenPayments",
-            "fieldType": "Checkbox"
           },
-          "02": {
-            "label": "Fecha de último pago",
-            "description": "Señala la fecha en la cual se realizó el último pago",
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
             "required": "true",
-            "icon": "DateIcon",
-            "idField": "03-02-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
+            "icon": "DocumentTypeIcon",
+            "idField": "03-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "03-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "03-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-personType",
+              "value": "persona juridica"
+            }
           }
         }
       },
@@ -206,35 +258,34 @@
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Fecha de presentación de la carta",
-            "description": "Señala la fecha de presentación de la carta",
-            "idField": "04-01-date",
-            "contentType": "date",
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación del documento ante el fondo de cesantías",
             "required": "true",
             "icon": "DateIcon",
+            "idField": "04-01-date",
+            "contentType": "date",
             "fieldType": "DatePicker"
           },
-
           "02": {
             "label": "Lugar",
             "description": "",
-            "idField": "03-02-location",
             "required": "true",
             "icon": "LocationIcon",
+            "idField": "04-02-location",
             "contentType": "location",
             "fieldType": "LocationComponent",
             "componentFields": {
               "01": {
                 "label": "Departamento",
                 "description": "",
-                "idField": "03-02-01-department",
+                "idField": "04-02-01-department",
                 "contentType": "department",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Ciudad",
                 "description": "",
-                "idField": "03-02-02-city",
+                "idField": "04-02-02-city",
                 "contentType": "city",
                 "fieldType": "TextField"
               }

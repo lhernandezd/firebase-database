@@ -942,5 +942,55 @@
       "seconds": 1569526516,
       "nanoseconds": 218000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual el empleador solicita ante el fondo de cesantías al cual se encuentra afiliado su trabajador, el retiro de las mismas, toda vez que ha finalizado la relación laboral entre las partes.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>AUTORIZACIÓN RETIRO DE CESANTÍAS</strong></p><p>Es un documento por medio del cual el empleador solicita ante el fondo de cesantías al cual se encuentra afiliado su trabajador, el retiro de las mismas, toda vez que ha finalizado la relación laboral entre las partes.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los empleadores, sean personas naturales o jurídicas, los cuales finalizaron la relación laboral con su trabajador, y en virtud de ello deban solicitar ante el fondo de cesantías el retiro de las mismas.</p><p>Este documento está diseñado para los casos en los cuales la relación laboral finalizó antes que el trabajador cumpliese un año de labor. De no ser así, y el trabajador alcance más de un año de labor, este solo podrá retirar sus cesantías por los motivos que la ley le permite y el documento que deberá enviar el empleador al fondo corresponde al de retiro parcial de cesantías.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El empleador o la persona que éste designe, deberá ingresar toda la información solicitada para efectos de llenar el documento, tal como:</p><ul><li>Identificación de las partes.</li><li>Nombre del fondo de cesantías al cual se encuentra afiliado el trabajador</li><li>Fecha en la cual fueron consignadas las cesantías.</li><li>Fecha de terminación del contrato.</li></ul><p>Luego de generar el documento, el empleador debe firmarlo y enviarlo ante el fondo de cesantías. </p>",
+    "isActive": true,
+    "name": "Autorización de retiro de cesantías",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569613342,
+      "nanoseconds": 180000000
+    },
+    "updated": {
+      "seconds": 1569613342,
+      "nanoseconds": 180000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual el empleador solicita ante el fondo de cesantías al cual se encuentra afiliado su trabajador, el retiro de las mismas, toda vez que ha finalizado la relación laboral entre las partes.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>AUTORIZACIÓN RETIRO DE CESANTÍAS</strong></p><p>Es un documento por medio del cual el empleador solicita ante el fondo de cesantías al cual se encuentra afiliado su trabajador, el retiro de las mismas, toda vez que ha finalizado la relación laboral entre las partes.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los empleadores, sean personas naturales o jurídicas, los cuales finalizaron la relación laboral con su trabajador, y en virtud de ello deban solicitar ante el fondo de cesantías el retiro de las mismas.</p><p>Este documento está diseñado para los casos en los cuales la relación laboral finalizó antes que el trabajador cumpliese un año de labor. De no ser así, y el trabajador alcance más de un año de labor, este solo podrá retirar sus cesantías por los motivos que la ley le permite y el documento que deberá enviar el empleador al fondo corresponde al de retiro parcial de cesantías.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El empleador o la persona que éste designe, deberá ingresar toda la información solicitada para efectos de llenar el documento, tal como:</p><ul><li>Identificación de las partes.</li><li>Nombre del fondo de cesantías al cual se encuentra afiliado el trabajador</li><li>Fecha en la cual fueron consignadas las cesantías.</li><li>Fecha de terminación del contrato.</li></ul><p>Luego de generar el documento, el empleador debe firmarlo y enviarlo ante el fondo de cesantías. </p>",
+    "isActive": true,
+    "name": "Autorización de retiro de cesantías",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569613616,
+      "nanoseconds": 498000000
+    },
+    "updated": {
+      "seconds": 1569613616,
+      "nanoseconds": 499000000
+    }
   }
 ]
