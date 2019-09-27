@@ -2,165 +2,76 @@
   {
     "category": "laboral",
     "subcategory": "solicitudesReclamos",
-    "referenceId": "1WvzRyHKjHOv8xm185QSAwrraIqghFhLy",
+    "referenceId": "1Y4dUY8MtYIzoSSWAv72Dqwve1hwr_p_L",
     "sections": {
       "01": {
-        "description": "Diligencia la siguiente información acerca del fondo de cesantías al cual se encuentra afiliado el trabajador y ante quien será dirigido el documento.",
-        "label": "Fondo de cesantías",
-        "fields": {
-          "01": {
-            "label": "Nombre del fondo",
-            "description": "Señala el nombre del fondo al cual se encuentra afiliado el trabajador. Ej: Protección S.A",
-            "icon": "CompanyIcon",
-            "required": "true",
-            "idField": "01-01-additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
-            "label": "Fecha de consignación",
-            "description": "Señala la fecha en la cual se realizó la consignación de las cesantías en el fondo",
-            "required": "true",
-            "icon": "DateIcon",
-            "idField": "01-02-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          }
-        }
-      },
-      "02": {
-        "description": "Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que se retira de su cargo, teniendo en cuenta que será a ella a quien se entregarán las cesantías.",
-        "label": "Información del trabajador",
-        "fields": {
-          "01": {
-            "label": "Nombre completo",
-            "description": "",
-            "idField": "02-01-name",
-            "contentType": "name",
-            "icon": "NameIcon",
-            "required": "true",
-            "fieldType": "NameComponent",
-            "componentFields": {
-              "01": {
-                "label": "Nombres",
-                "description": "",
-                "idField": "02-01-01-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "Apellidos",
-                "description": "",
-                "idField": "02-01-02-name",
-                "contentType": "name",
-                "fieldType": "TextField"
-              }
-            }
-          },
-          "02": {
-            "label": "Documento",
-            "description": "Señala el tipo y número de documento del trabajador",
-            "icon": "DocumentTypeIcon",
-            "required": "true",
-            "idField": "02-02-documentType",
-            "contentType": "documentType",
-            "fieldType": "DocumentComponent",
-            "componentFields": {
-              "01": {
-                "label": "Tipo de documento",
-                "description": "",
-                "idField": "02-02-01-documentType",
-                "contentType": "documentType",
-                "fieldType": "Dropdown"
-              },
-              "02": {
-                "label": "Número de documento",
-                "description": "",
-                "idField": "02-02-02-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              }
-            }
-          },
-          "03": {
-            "label": "Fecha de terminación",
-            "description": "Señala la fecha de terminación de sus labores",
-            "required": "true",
-            "icon": "DateIcon",
-            "idField": "02-03-date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          }
-        }
-      },
-      "03": {
-        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, quien autorizará ante el fondo el retiro de las cesantías.",
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se deberá notificar del estado de embarazo.",
         "label": "Información del empleador",
         "fields": {
           "01": {
             "label": "Tipo de empleador",
             "description": "Seleccione el tipo de empleador",
-            "required": "true",
-            "icon": "PersonTypeIcon",
-            "idField": "03-01-personType",
+            "idField": "01-01-personType",
             "contentType": "personType",
-            "fieldType": "Picker"
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
           },
           "02": {
             "label": "Nombre completo",
             "description": "",
-            "idField": "03-02-name",
+            "idField": "01-02-name",
             "contentType": "name",
-            "icon": "NameIcon",
-            "required": "true",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "03-02-01-name",
+                "idField": "01-02-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "03-02-02-name",
+                "idField": "01-02-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "03-01-personType",
+              "id": "01-01-personType",
               "value": "persona natural"
             }
           },
           "03": {
             "label": "Documento",
             "description": "Señala el tipo y número de documento del empleador",
-            "icon": "DocumentTypeIcon",
-            "required": "true",
-            "idField": "03-03-documentType",
+            "idField": "01-03-documentType",
             "contentType": "documentType",
             "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "03-03-01-documentType",
+                "idField": "01-03-01-documentType",
                 "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
                 "label": "Número de documento",
                 "description": "",
-                "idField": "03-03-02-number",
+                "idField": "01-03-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "03-01-personType",
+              "id": "01-01-personType",
               "value": "persona natural"
             }
           },
@@ -189,107 +100,143 @@
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "01-01-personType",
               "value": "persona juridica"
             }
           },
           "05": {
             "label": "Nombre completo del representante legal",
             "description": "",
-            "required": "true",
-            "icon": "NameIcon",
-            "idField": "03-05-name",
+            "idField": "01-05-name",
             "contentType": "name",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres del representante legal",
                 "description": "",
-                "idField": "03-05-01-name",
+                "idField": "01-05-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos del representante legal",
                 "description": "",
-                "idField": "03-05-02-name",
+                "idField": "01-05-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "03-01-personType",
+              "id": "01-01-personType",
               "value": "persona juridica"
             }
           },
           "06": {
             "label": "Documento del representante legal",
             "description": "Señala el tipo y número de documento del representante legal",
-            "required": "true",
-            "icon": "DocumentTypeIcon",
-            "idField": "03-06-documentType",
+            "idField": "01-06-documentType",
             "contentType": "documentType",
             "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "03-06-01-documentType",
+                "idField": "01-06-01-documentType",
                 "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
                 "label": "Número de documento",
                 "description": "",
-                "idField": "03-06-02-number",
+                "idField": "01-07-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "03-01-personType",
+              "id": "01-01-personType",
               "value": "persona juridica"
             }
           }
         }
       },
-      "04": {
+      "02": {
+        "description": "Diligencia los siguientes datos acerca de la trabajadora que se encuentra en estado de embarazo y desea notificar el mismo a su empleador.",
+        "label": "Información de la trabajadora",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "02-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-02-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "03": {
         "description": "Diligencia la siguiente información clave para la generación de tu documento",
         "label": "Información general",
         "fields": {
           "01": {
             "label": "Fecha",
-            "description": "Señala la fecha de presentación del documento ante el fondo de cesantías",
-            "required": "true",
-            "icon": "DateIcon",
-            "idField": "04-01-date",
+            "description": "Señala la fecha de presentación del documento",
+            "idField": "03-01-date",
             "contentType": "date",
             "fieldType": "DatePicker"
           },
           "02": {
-            "label": "Lugar",
-            "description": "",
-            "required": "true",
-            "icon": "LocationIcon",
-            "idField": "04-02-location",
-            "contentType": "location",
-            "fieldType": "LocationComponent",
-            "componentFields": {
-              "01": {
-                "label": "Departamento",
-                "description": "",
-                "idField": "04-02-01-department",
-                "contentType": "department",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "Ciudad",
-                "description": "",
-                "idField": "04-02-02-city",
-                "contentType": "city",
-                "fieldType": "TextField"
-              }
-            }
+            "label": "Ciudad",
+            "description": "Señala la ciudad de presentación del documento",
+            "idField": "03-02-destinationcity",
+            "contentType": "destinationcity",
+            "fieldType": "TextField"
           }
         }
       }

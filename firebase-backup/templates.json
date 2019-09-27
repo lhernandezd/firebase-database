@@ -992,5 +992,30 @@
       "seconds": 1569613616,
       "nanoseconds": 499000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual una trabajadora en estado de embarazo comunica a su empleador el mismo.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>NOTIFICACIÓN DE EMBARAZO AL EMPLEADOR</strong></p><p>Es un documento por medio del cual una trabajadora en estado de embarazo comunica a su empleador el mismo.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a las trabajadoras en estado de embarazo, quienes deben comunicar a su empleador dicho estado en aras de que se adopten las medidas de protección previstas en la Ley.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la presentación de este documento, toda vez que es la misma trabajadora quien lo presenta a su empleador, sin necesidad de acudir a una autoridad en material laboral. </p><p>Al diligenciar este modelo, es importante que la trabajadora identifique la persona a la cual comunicará su estado de embarazo y señale la fecha de presentación del documento. Asímismo la trabajadora deberá anexar, al documento, el certificado médico en el cual conste el número de semanas de gestación.</p><p>La ley laboral ofrece a la mujer trabajadora en estado de embarazo o período de lactancia, una protección especial, es decir el fuero de maternidad, lo cual implica que no pueden ser despedidas sin previa autorización del ministerio de trabajo, toda vez que gozan de una estabilidad reforzada. De modo que, cualquier despido o desmejora respecto a estas mujeres durante su etapa de embarazo o lactancia, se presumirá con ocasión a su estado.</p><p>En ese sentido, para que pueda aplicarse tal presunción y en su defecto el fuero de maternidad, la trabajadora debe presentar este documento y garantizar que su empleador efectivamente conozca su situación. De lo contrario, si el empleador no conoce del estado de su trabajadora y no es un hecho notorio, cualquier despido o desmejora no se presumirá con ocasión de aquel.</p>",
+    "isActive": true,
+    "name": "Notificación de embarazo al empleador",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1569619011,
+      "nanoseconds": 784000000
+    },
+    "updated": {
+      "seconds": 1569619011,
+      "nanoseconds": 784000000
+    }
   }
 ]
