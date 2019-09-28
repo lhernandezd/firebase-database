@@ -94,5 +94,163 @@
         "label": "Personales"
       }
     ]
+  },
+  "fechaType": {
+    "label": "fechaType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Al momento de suscribir el contrato",
+        "label": "Al momento de suscribir el contrato"
+      },
+      {
+        "value": "Cuotas mensuales ",
+        "label": "Cuotas mensuales "
+      }
+    ]
+  },
+  "formaType": {
+    "label": "formaType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Efectivo",
+        "label": "Efectivo"
+      },
+      {
+        "value": "Consignación bancaria ",
+        "label": "Consignación bancaria"
+    }
+   ]
+  },
+  "tiempoType": {
+    "label": "tiempoType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Con la suscripción del contrato",
+        "label": "Con la suscripción del contrato"
+      },
+      {
+        "value": "Fecha determinada",
+        "label": "Fecha determinada"
+    }
+   ]
+  },
+  "BienesType": {
+    "label": "BienesType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": " un bien",
+        "label": " un bien"
+      },
+      {
+        "value": "Mas de un bien",
+        "label": "Mas de un bien"
+      }
+    ]
+  },
+  "valorType": {
+    "label": "valorType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "primer permutante",
+        "label": "primer permutante"
+      },
+      {
+        "value": "Segundo permutante ",
+        "label": "Segundopermutante"
+    }
+   ]
+  },
+  "dateType": {
+    "label": "dateType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Al momento de suscribir el contrato",
+        "label": "Al momento de suscribir el contrato"
+      },
+      {
+        "value": "Fecha determinada",
+        "label": "Fecha determinada"
+    }
+   ]
+  },
+  "registroType": {
+    "label": "registroType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Días contados a partir de la suscripción del contrato",
+        "label": "Días contados a partir de la suscripción del contrato"
+      },
+      {
+        "value": "Días contados a partir de la entrega del establecimiento ",
+        "label": "Días contados a partir de la entrega del establecimiento"
+    }
+   ]
+  },
+  "permutanteType": {
+    "label": "permutanteType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "si",
+        "label": "si"
+      },
+      {
+        "value": "no",
+        "label": "no"
+    }
+   ]
+  },
+  "periodoType": {
+    "label": "periodoType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Mensual",
+        "label": "Mensual"
+      },
+      {
+        "value": "Quincenal",
+        "label": "Quincenal"
+    }
+   ]
+  },
+  "TribunalType": {
+    "label": "tribuNALType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Composición del Tribunal:",
+        "label": "Composición del Tribunal:"
+      },
+      {
+        "value": "cuidad",
+        "label": "ciudad"
+      }
+    ]
+  },
+  "cuotasType": {
+    "label": "cuotasType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "cuotas mensuales",
+        "label": "Cuotas mensuales"
+      },
+      {
+        "value": "Fecha determinada",
+        "label": "Fecha determinada"
+    }
+   ]
   }
+  
+  
+  
+
 }

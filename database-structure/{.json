@@ -5,7 +5,7 @@
     "subcategory": "compraventa",
     "countPages": 1,
     "downloads": 1,
-    "description": "",
+    "description": "Este documento es un contrato que permite al propietario de un vehículo automóvil concluir con otra persona una transacción de compraventa por el mismo. El documento determina las condiciones de la compraventa del vehículo y su cambio de titularidad.",
     "descriptionURL": "",
     "isActive": true,
     "name": "Carta de renuncia voluntaria",
@@ -16,11 +16,11 @@
     "version": "1.0"
   },
   {
-    "category": "bienes raices",
-    "subcategory": "propiedad horizontal",
+    "category": "negocios",
+    "subcategory": "compraventa",
     "countPages": 1,
     "downloads": 1,
-    "description": "",
+    "description": "Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes inmuebles entre ellas.",
     "descriptionURL": "",
     "isActive": true,
     "name": "Carta de renuncia voluntaria",
@@ -31,11 +31,71 @@
     "version": "1.0"
   },
   {
-    "category": "bienes raices",
-    "subcategory": "propiedad horizontal",
+    "category": "negocios",
+    "subcategory": "compraventa",
     "countPages": 1,
     "downloads": 1,
-    "description": "",
+    "description": "Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes inmuebles entre ellas.",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Carta de renuncia voluntaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+  {
+    "category": "negocios",
+    "subcategory": "acuerdos y contratos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual una persona encarga a otra la guarda de un bien mueble, a cambio de una remuneración, y con la obligación de restituirlo posteriormente.",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Carta de renuncia voluntaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+  {
+    "category": "negocios",
+    "subcategory": "acuerdos y contratos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual una persona encarga a otra la guarda de un bien mueble, a cambio de una remuneración, y con la obligación de restituirlo posteriormente.",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Carta de renuncia voluntaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+  {
+    "category": "negocios",
+    "subcategory": "prestado",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual se documenta el préstamo de dinero con intereses por parte de una persona a otra.",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Carta de renuncia voluntaria",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0"
+  },
+  {
+    "category": "negocios",
+    "subcategory": "prestado",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual se documenta el préstamo de dinero con intereses por parte de una persona a otra.",
     "descriptionURL": "",
     "isActive": true,
     "name": "Carta de renuncia voluntaria",
@@ -46,6 +106,8 @@
     "version": "1.0" 
   }
   
+  
+    
   
  
 ]
