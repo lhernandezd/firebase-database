@@ -237,50 +237,57 @@
       "label": "Capital",
       "fields": {
       "01":  {
-      "label": "Capital",
-      "description": "El capital es aquel al cual se obligan los socios al momento de la constitución",
+      "label": "Autorizado",
+      "description": "El capital autorizado es el que la sociedad aspira alcanzar en algún momento (límite máximo)",
       "idField": "05-01-Adiitional",
       "contentType": "Additional",
       "fieldType": "TextField"
-          }
+      },
+      "02": {
+      "label": "Suscrito",
+      "description": "El capital suscrito es aquel al cual se obliga el(los) socio(s) al momento de la constitución",
+      "idField": "05-02-Adiitional",
+      "contentType": "Additional",
+      "fieldType": "TextField"
+      },
+      "03": {
+      "label": "Pagado",
+      "description": "El capital pagado es aquel que efectivamente se ha cancelado al momento de la constitución",
+      "idField": "05-03-Adiitional",
+      "contentType": "Additional",
+      "fieldType": "TextField"
+           }
         }
       },
       "06": {
-      "description": "Se conoce como socios a aquellas personas, naturales o jurídicas, quienes integran la sociedad.  En este paso deberás indicar el nombre de cada socio, las cuotas suscritas en la sociedad y el valor cancelado por cada uno de ellos.",
-      "label": "Socios",
+      "description": "Las acciones son las partes iguales en las cuales se divide el capital y aquellos títulos representativos de la participación de cada socio comanditario en la sociedad. Aquí deberá indicarse cuál será el valor de cada acción de la sociedad.",
+      "label": "Acciones",
+      "fields":{
+      "01": {
+      "label": "Valor de nominal",
+      "description": "Es el valor inicial que tienen las acciones, aquel con el cual son emitidas por primera vez.",
+      "idField": "06-01-Additional",
+      "contentType": "Additional",
+      "fieldType": "Textfield" 
+          }
+        }
+      },
+      "07": {
+      "description": "Se conoce con el nombre de accionistas a aquellas personas, naturales o jurídicas, quienes fungen como socios comanditarios de la sociedad. En este paso deberás indicar el nombre de cada accionista, las acciones suscritas y pagadas en favor de la sociedad y el valor cancelado por cada uno de ellos.",
+      "label": "Accionista",
       "fields": {
       "01": {
-      "label": "Socios",
+      "label": "Accionistas",
       "description": "",
-      "idField": "06-01-Additional",
+      "idField": "07-01-Additional",
       "contentType": "Additional",
       "fieldType": "Textfield" 
             }
          }
       },
-      "07": {
-      "description": "El representante legal es aquella persona que actúa en nombre de la sociedad para el desarrollo de diversas actividades en función de la misma. Deberás identificar a quien fungirá como representante legal, el término de duración de su cargo y si deseas limitar la cuantía de las negociaciones a realizar por él.",
-      "label": "Representante legal",
-      "fields":{
-      "01": {
-      "label": "Periodo",
-      "description": "Selecciona el término de duración del cargo",
-      "idField": "07-01-Additional",
-      "contentType": "Additional",
-      "fieldType": "TextField"
-      },
-      "02": {
-      "label": "Limites",
-      "description": "Señala si el representante legal tendrá límite para la realización de sus negocios.",
-      "idField": "07-02-LimitesType",
-      "contentType": "LimitesType",
-      "fieldType": "Picker"   
-          }
-        }
-      },
       "08": {
-      "description": "El representante legal es aquella persona que actúa en nombre de la sociedad para el desarrollo de diversas actividades en función de la misma. Deberás identificar a quien fungirá como representante legal, el término de duración de su cargo y si deseas limitar la cuantía de las negociaciones a realizar por él.",
-      "label": "Representante legal",
+      "description": "La cláusula compromisoria es un apartado del contrato en el cual se establece que las diferencias o controversias al mismo será resuelta por un Tribunal de Arbitraje. En caso que desees incorporar esta forma de solución de controversias selecciona el botón.",
+      "label": "Clausula compromisoria",
       "fields":{
       "01": {
       "label": "Numero de arbitros",
