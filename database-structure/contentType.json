@@ -248,6 +248,20 @@
         "label": "Fecha determinada"
     }
    ]
+  },
+  "LimitesType": {
+    "label": "LimitesType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "Sin límite de cuantía",
+        "label": "Sin límite de cuantía"
+      },
+      {
+        "value": "Límite de cuantía",
+        "label": "Límite de cuantía"
+    }
+   ]
   }
   
   
