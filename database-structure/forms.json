@@ -2,7 +2,7 @@
   {
     "category": "laboral",
     "subcategory": "solicitudesReclamos",
-    "referenceId": "1098C56tHzBPZSgySRvvgFC8Zz4VMFvsiKPQ7tNxR4dk",
+    "referenceId": "1dnS3Y0HrxOlDE6lnRjHGEtp5vBPSWWvG",
     "sections": {
       "01": {
         "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia.",
@@ -165,7 +165,7 @@
         }
       },
       "02": {
-        "description": "Diligencia los siguientes datos acerca del trabajador, quien solicitar su licencia de paternidad.",
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien desea solicitar la licencia.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
@@ -221,31 +221,70 @@
         }
       },
       "03": {
+        "description": "Es importante señalar, en el documento, el período en el cual el trabajador desea tomar su licencia.",
+        "label": "Período de licencia",
+        "fields": {
+          "01": {
+            "label": "Fecha de inicio",
+            "description": "Señala la fecha en la cual iniciaría la licencia del trabajador",
+            "idField": "03-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "Icon": "DateIcon",
+            "required": "true"
+          },
+          "02": {
+            "label": "Fecha de finalización",
+            "description": "Señala la fecha en la cual finalizaría la licencia del trabajador.",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "Icon": "DateIcon",
+            "required": "true"
+          }
+        }
+      },
+      "04": {
+        "description": "Es importante que el trabajador indique el parentesco sostenido entre él y la persona fallecida, con el fin de verificar si podrá solicitar la licencia.",
+        "label": "Defunción",
+        "fields": {
+          "01": {
+            "label": "Parentesco",
+            "description": "Señala el parentesco sostenido entre el trabajador y la persona fallecida.",
+            "idField": "04-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "NameIcon"
+          },
+          "02": {
+            "label": "Fecha de defunción",
+            "description": "Señala la fecha en la cual falleció el(la) cónyuge o familiar del trabajador.",
+            "idField": "04-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "required": "true",
+            "icon": "DateIcon"
+          }
+        }
+      },
+      "05": {
         "description": "Diligencia la siguiente información clave para la generación de tu documento",
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Fecha de nacimiento",
-            "description": "Señala la fecha de nacimiento del hijo(a) del trabajador",
-            "idField": "03-01-date",
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación del documento",
+            "idField": "05-01-date",
             "contentType": "date",
             "fieldType": "DatePicker",
-            "required": "true",
-            "icon": "DateIcon"
+            "Icon": "DateIcon",
+            "required": "true"
           },
           "02": {
-            "label": "Fecha del documento",
-            "description": "Señala la fecha de presentación del documento",
-            "idField": "03-02-date",
-            "contentType": "date",
-            "fieldType": "DatePicker",
-            "required": "true",
-            "icon": "DateIcon"
-          },
-          "03": {
             "label": "Ciudad",
             "description": "Señala la ciudad de presentación del documento",
-            "idField": "03-03-destinationcity",
+            "idField": "05-02-destinationcity",
             "contentType": "destinationcity",
             "fieldType": "TextField",
             "required": "true",
