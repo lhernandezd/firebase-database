@@ -2,7 +2,7 @@
   {
     "category": "laboral",
     "subcategory": "solicitudesReclamos",
-    "referenceId": "1x3dNn7d3Jv0IUT6GUyLoy0LU1Ts5kWiD",
+    "referenceId": "1098C56tHzBPZSgySRvvgFC8Zz4VMFvsiKPQ7tNxR4dk",
     "sections": {
       "01": {
         "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia.",
@@ -156,13 +156,17 @@
                 "contentType": "number",
                 "fieldType": "TextField"
               }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
             }
           }
         }
       },
       "02": {
-        "description": "Diligencia los siguientes datos acerca de la trabajadora que se encuentra en estado de embarazo y desea solicitar su licencia de maternidad.",
-        "label": "Información de la trabajadora",
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien solicitar su licencia de paternidad.",
+        "label": "Información del trabajador",
         "fields": {
           "01": {
             "label": "Nombre completo",
@@ -221,8 +225,8 @@
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Fecha de la licencia",
-            "description": "Señala la fecha a partir de la cual iniciaría el tiempo de licencia",
+            "label": "Fecha de nacimiento",
+            "description": "Señala la fecha de nacimiento del hijo(a) del trabajador",
             "idField": "03-01-date",
             "contentType": "date",
             "fieldType": "DatePicker",
@@ -244,8 +248,8 @@
             "idField": "03-03-destinationcity",
             "contentType": "destinationcity",
             "fieldType": "TextField",
-            "icon": "locationIcon",
-            "required": "true"
+            "required": "true",
+            "icon": "AddressIcon"
           }
         }
       }
