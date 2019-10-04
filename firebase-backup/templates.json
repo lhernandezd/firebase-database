@@ -1042,5 +1042,30 @@
       "seconds": 1569620797,
       "nanoseconds": 410000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento a través del cual una trabajadora en estado de embarazo solicita a su empleador el descanso remunerado que le corresponde por ley, conocido como licencia de maternidad, durante las semanas previas al parto y primeros meses del nacimiento de su hijo.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>SOLICITUD DE LICENCIA DE MATERNIDAD</strong></p><p>Es un documento a través del cual una trabajadora en estado de embarazo solicita a su empleador el descanso remunerado que le corresponde por ley, conocido como licencia de maternidad, durante las semanas previas al parto y primeros meses del nacimiento de su hijo.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a las trabajadoras en estado de embarazo y con proximidad de parto, quienes deben solicitar a su empleador la concesión de la licencia de maternidad en aras de iniciar el descanso obligatorio y remunerado por ley.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la presentación de este documento, toda vez que es la misma trabajadora quien lo presenta a su empleador, sin necesidad de acudir a una autoridad en material laboral. No obstante la trabajadora al diligenciar este modelo deberá señalar la fecha a partir de la cual tomará la licencia.</p><p>Asímismo, la trabajadora deberá anexar, al documento, el certificado médico en el cual conste la fecha probable de parto.</p>",
+    "isActive": true,
+    "name": "Solicitud de licencia de maternidad",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1570153919,
+      "nanoseconds": 424000000
+    },
+    "updated": {
+      "seconds": 1570153919,
+      "nanoseconds": 424000000
+    }
   }
 ]
