@@ -12642,5 +12642,513 @@
         }
       }
     }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "referenceId": "1UO6R995xRE0qtxjnMxTaje-NAxTIh08h",
+    "sections": {
+      "01": {
+        "description": "Señala los siguientes datos acerca del trabajador a quien se expedirá la carta de recomendación.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "01-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-02-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica. Es importante identificar quien realizará y firmará la carta de recomendación",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "02-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Comentarios adicionales",
+            "description": "Adiciona algún comentario en particular que desees añadir a la recomendación del trabajador.",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "ReasonsIcon"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "Señala la fecha de firma de la carta",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "required": "true",
+            "icon": "DateIcon"
+          },
+          "03": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad de firma de la carta",
+            "idField": "03-03-destinationcity",
+            "contentType": "destinationcity",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "laboral",
+    "subcategory": "solicitudesReclamos",
+    "referenceId": "1UO6R995xRE0qtxjnMxTaje-NAxTIh08h",
+    "sections": {
+      "01": {
+        "description": "Señala los siguientes datos acerca del trabajador a quien se expedirá la carta de recomendación.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "01-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-02-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica. Es importante identificar quien realizará y firmará la carta de recomendación",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "02-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Comentarios adicionales",
+            "description": "Adiciona algún comentario en particular que desees añadir a la recomendación del trabajador.",
+            "idField": "03-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "ReasonsIcon"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "Señala la fecha de firma de la carta",
+            "idField": "03-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "required": "true",
+            "icon": "DateIcon"
+          },
+          "03": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad de firma de la carta",
+            "idField": "03-03-destinationcity",
+            "contentType": "destinationcity",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
   }
 ]
