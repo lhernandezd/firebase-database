@@ -9,14 +9,14 @@
   },
   "additional": {
     "label": "additional",
-    "type": "textField"
+    "type": "TextField"
   },
   "country": {
     "label": "destinationCountry",
     "type": "TextField"
   },
   "city": {
-    "label": "destination city",
+    "label": "destinationCity",
     "type": "TextField"
   },
   "department": {
@@ -95,24 +95,6 @@
       }
     ]
   },
-  "majorDocumentType": {
-    "label": "documentType",
-    "type": "Picker",
-    "content": [
-      {
-        "value": "cedula de ciudadania",
-        "label": "Cédula de Ciudadanía"
-      },
-      {
-        "value": "cedula de extranjeria",
-        "label": "Cédula de extranjería"
-      }
-    ]
-  },
-  "location": {
-    "label": "location",
-    "type": "TextField"
-  },
   "jobStatus": {
     "label": "jobStatus",
     "type": "Picker",
@@ -142,6 +124,322 @@
       {
         "value": "seguridad social",
         "label": "Seguridad social"
+      }
+    ]
+  },
+  "paymentDate": {
+    "label": "paymentDate",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "al momento de suscribir el contrato",
+        "label": "Al momento de suscribir el contrato"
+      },
+      {
+        "value": "cuotas mensuales",
+        "label": "Cuotas mensuales"
+      }
+    ]
+  },
+  "paymentMethod": {
+    "label": "paymentMethod",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "en efectivo",
+        "label": "En efectivo"
+      },
+      {
+        "value": "consignacion bancaria",
+        "label": "Consignación bancaria"
+      }
+    ]
+  },
+  "account": {
+    "label": "account",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "ahorros",
+        "label": "Ahorros"
+      },
+      {
+        "value": "corriente",
+        "label": "Corriente"
+      }
+    ]
+  },
+  "transfer": {
+    "label": "transfer",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "a nombre del vendedor",
+        "label": "A nombre del vendedor"
+      },
+      {
+        "value": "a nombre del comprador",
+        "label": "A nombre del comprador"
+      },
+      {
+        "value": "por partes iguales",
+        "label": "Por partes iguales"
+      }
+    ]
+  },
+  "delivery": {
+    "label": "delivery",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "al momento de suscribir el contrato",
+        "label": "Al momento de suscribir el contrato"
+      },
+      {
+        "value": "en fecha determinada",
+        "label": "En fecha determinada"
+      }
+    ]
+  },
+  "daysCounted": {
+    "label": "daysCounted",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "a partir de la suscripción del contrato",
+        "label": "A partir de la suscripción del contrato"
+      },
+      {
+        "value": "a partir de la entrega del establecimiento al comprador",
+        "label": "A partir de la entrega del establecimiento al comprador"
+      }
+    ]
+  },
+  "differentsValue": {
+    "label": "differentsValue",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "primer permutante",
+        "label": "Primer permutante"
+      },
+      {
+        "value": "segundo permutante",
+        "label": "Segundo permutante"
+      }
+    ]
+  },
+  "payOffTime": {
+    "label": "payOffTime",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "con la suscripcion del contrato",
+        "label": "Con la suscripción del contrato"
+      },
+      {
+        "value": "fecha determinada",
+        "label": "Fecha determinada"
+      }
+    ]
+  },
+  "quantity": {
+    "label": "quantity",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "un bien",
+        "label": "Un bien"
+      },
+      {
+        "value": "Más de un bien",
+        "label": "Más de un bien"
+      }
+    ]
+  },
+  "paymentDate2": {
+    "label": "paymentDate2",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "en fecha determinada",
+        "label": "En fecha determinada"
+      },
+      {
+        "value": "cuotas mensuales",
+        "label": "Cuotas mensuales"
+      }
+    ]
+  },
+  "paymentPeriod": {
+    "label": "paymentPeriod",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "mensual",
+        "label": "Mensual"
+      },
+      {
+        "value": "quincenal",
+        "label": "Quincenal"
+      }
+    ]
+  },
+  "objectType": {
+    "label": "objectType",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "venta de un bien",
+        "label": "Venta de un bien"
+      },
+      {
+        "value": "prestación de un servicio",
+        "label": "Prestación de un servicio"
+      }
+    ]
+  },
+  "yesOrNo": {
+    "label": "yesOrNo",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "si",
+        "label": "Si"
+      },
+      {
+        "value": "no",
+        "label": "No"
+      }
+    ]
+  },
+  "percent": {
+    "label": "percent",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "diariamente",
+        "label": "Diariamente"
+      },
+      {
+        "value": "semanalmente",
+        "label": "Semanalmente"
+      },
+      {
+        "value": "mensualmente",
+        "label": "Mensualmente"
+      },
+      {
+        "value": "al finalizar la vigencia del acuerdo",
+        "label": "Al finalizar la vigencia del acuerdo"
+      }
+    ]
+  },
+  "objectType2": {
+    "label": "objectType2",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "mueble",
+        "label": "Mueble"
+      },
+      {
+        "value": "inmueble",
+        "label": "Inmueble"
+      }
+    ]
+  },
+  "judge": {
+    "label": "judge",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "corte suprema de justicia - sala de decision",
+        "label": "Corte Suprema de Justicia - sala de decisión"
+      },
+      {
+        "value": "consejo de estado - sala de decision",
+        "label": "Consejo de Estado - sala de decisión"
+      },
+      {
+        "value": "consejo superior de la judicatura - sala de decision",
+        "label": "Consejo Superior de la Judicatura - sala de decisión"
+      },
+      {
+        "value": "tribunal superior del distrito judicial",
+        "label": "Tribunal Superior del Distrito judicial"
+      },
+      {
+        "value": "tribunal contencioso administrativo",
+        "label": "Tribunal Contencioso administrativo"
+      },
+      {
+        "value": "consejo seccional de la judicatura",
+        "label": "Consejo Seccional de la Judicatura"
+      },
+      {
+        "value": "juez del circuito",
+        "label": "Juez del circuito"
+      },
+      {
+        "value": "juez municipal",
+        "label": "Juez municipal"
+      }
+    ]
+  },
+  "specialty": {
+    "label": "specialty",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "civil",
+        "label": "Civil"
+      },
+      {
+        "value": "penal",
+        "label": "Penal"
+      }
+    ]
+  },
+  "victims": {
+    "label": "victims",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "solo el peticionario",
+        "label": "Solo el peticionario"
+      },
+      {
+        "value": "el peticionario y su familia",
+        "label": "El peticionario y su familia"
+      }
+    ]
+  },
+  "victimsRegistration": {
+    "label": "victimsRegistration",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "en el lugar de desplazamiento",
+        "label": "En el lugar de desplazamiento"
+      },
+      {
+        "value": "en lugar distinto",
+        "label": "En lugar distinto"
+      }
+    ]
+  },
+  "billing": {
+    "label": "billing",
+    "type": "Picker",
+    "content": [
+      {
+        "value": "facturacion mensual",
+        "label": "Facturación mensual"
+      },
+      {
+        "value": "facturacion bimestral",
+        "label": "Facturación bimestral"
       }
     ]
   }
