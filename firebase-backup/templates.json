@@ -1442,5 +1442,30 @@
       "seconds": 1570519766,
       "nanoseconds": 141000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "negocios",
+    "subcategory": "compraventa",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes inmuebles entre ellas.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>PERMUTA DE INMUEBLES</strong></p><p>Es un contrato por medio del cual las partes intervinientes realizan el intercambio de bienes inmuebles entre ellas.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a las personas, naturales o jurídicas, quienes desean acordar la entrega del derecho de propiedad de un bien inmueble, para adquirir, por parte de otra persona, el derecho de propiedad de otro inmueble, intercambiando entre ellas los bienes objeto del contrato y transfiriendo la plena propiedad sobre ellos.</p><p><strong>Partes</strong></p><p>A las partes intervinientes en la celebración de este contrato se les conoce como <strong>permutantes,</strong> y a efectos de poder identificar a quién pertenece cada uno de los bienes objeto del contrato y por tanto identificar quién realiza la entrega, a una de ellas se le denomina “Primer permutante” y a la otra “Segundo permutante”.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El contenido del contrato puede ser libremente fijado por las partes, no obstante, al diligenciar este modelo el usuario deberá señalar lo siguiente:</p><ul><li>Tipo de permutantes (si se trata de una persona natural o jurídica)</li><li>Identificación de las partes (primer y segundo permutante).</li><li>Identificación de los bienes objeto del contrato.</li><li>El precio de los bienes.</li><li>Cláusula penal.</li><li>La diferencia de valores entre bienes, en caso de existir.</li></ul><p>Un panorama ideal en el desarrollo de un contrato de permuta sería que los valores de los bienes objeto del contrato fuesen equivalentes, sin embargo, en el caso que exista diferencia entre estos, en el documento deberá quedar constancia de : la diferencia de valores, a favor de quién se genera la diferencia, si se entenderá saldada con la firma del documento, o, en el caso contrario, si no es saldada, el momento en el cual será cancelada por la parte deudora de la misma.</p>",
+    "isActive": true,
+    "name": "Permuta de inmuebles",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1570604643,
+      "nanoseconds": 961000000
+    },
+    "updated": {
+      "seconds": 1570604643,
+      "nanoseconds": 961000000
+    }
   }
 ]
