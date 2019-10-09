@@ -1467,5 +1467,80 @@
       "seconds": 1570604643,
       "nanoseconds": 961000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "negocios",
+    "subcategory": "acuerdosContratos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Este documento es un contrato por medio del cual una parte otorga a otra el derecho exclusivo o no, de vender una cantidad determinada de bienes o prestar determinados servicios, como contraprestación a una comisión, es decir, un porcentaje sobre el precio obtenido de la venta o la prestación.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>ACUERDO DE COMISIONES</strong></p><p>Este documento es un contrato por medio del cual una parte otorga a otra el derecho exclusivo o no, de vender una cantidad determinada de bienes o prestar determinados servicios, como contraprestación a una comisión, es decir, un porcentaje sobre el precio obtenido de la venta o la prestación. </p><p>En el acuerdo se pacta el porcentaje que recibirá el comisionista, la forma y el momento de pago.</p><p><strong>Partes </strong></p><p>Son partes intervinientes en la elaboración del documento:</p><ul><li><strong>El comitente: </strong>es quien otorga al comisionista el derecho de vender determinados bienes o prestar determinados servicios. Además es el encargado de pagar la comisión.</li><li><strong>El comisionista: </strong>es quien realiza la venta del bien o presta el servicio, percibiendo por ello un porcentaje sobre el previo de la venta o la prestación.</li></ul><p><strong>¿A quienes va dirigido el documento?</strong></p><p>Va dirigido a las personas, naturales o jurídicas, que desean acordar un porcentaje sobre la venta de un bien o prestación de un servicio.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El contenido del contrato puede ser libremente fijado por las partes, no obstante, al diligenciar este modelo el usuario deberá diligenciar lo siguiente:</p><ul><li>Tipo de contratante y contratista (si se trata de una persona natural o jurídica)</li><li>Identificación de las partes (comitente y comisionista)</li><li>Objeto del acuerdo; descripción del bien o servicio por los cuales se otorgará la comisión </li><li>Si el derecho otorgado por el comitente es exclusivo o no</li><li>Duración del acuerdo</li><li>Porcentaje de comisión</li><li>Tiempo de pago</li></ul><p>Parte importante del contrato es establecer el objeto del mismo, esto es, detallando lo más posible los bienes que venderá o los servicios a desarrollar por el comisionista, de manera que se evidencie claramente la obligación que correrá por su cuenta.</p>",
+    "isActive": true,
+    "name": "Acuerdo de comisiones",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1570610178,
+      "nanoseconds": 713000000
+    },
+    "updated": {
+      "seconds": 1570610178,
+      "nanoseconds": 714000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "negocios",
+    "subcategory": "otros",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento que acredita el pago de un dinero por parte de una persona a otra.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>RECIBO DE PAGO</strong></p><p>Es un documento que acredita el pago de un dinero por parte de una persona a otra.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a las personas, naturales o jurídicas, quienes fungen como acreedoras de una deuda, y al momento de recibir el dinero pendiente por parte de su deudor, desean documentar por escrito el pago efectivo del mismo, dejando constancia de la fecha y el concepto del pago.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la elaboración de este documento, si embargo es importante, al diligenciarlo, identificar el monto recibido por parte del deudor, la identificación de éste último, la fecha y el concepto del pago. De la misma manera es indispensable que el acreedor firme el documento, toda vez que es con dicha firma que se entiende como recibido el dinero.</p>",
+    "isActive": true,
+    "name": "Recibo de pago",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1570610178,
+      "nanoseconds": 716000000
+    },
+    "updated": {
+      "seconds": 1570610178,
+      "nanoseconds": 716000000
+    }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "negocios",
+    "subcategory": "otros",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual una persona realiza el cobro de una suma de dinero a otra, en virtud de una relación preexistente generadora de una deuda.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>CUENTA DE COBRO</strong></p><p>Es un documento por medio del cual una persona realiza el cobro de una suma de dinero a otra, en virtud de una relación preexistente generadora de una deuda.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a las personas, naturales o jurídicas, quienes fungen como acreedoras de una deuda, y desean realizar el cobro de la misma mediante un documento escrito dirigido a su deudor, dejando constancia de la fecha y el concepto de pago.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la elaboración de este documento, sin embargo es importante, al diligenciarlo, identificar los datos de quienes fungen como acreedor y deudor, así la fecha de firma y el el concepto de la deuda. </p><p>En algunas ocasiones, las empresas solicitan a sus acreedores el envío de una cuenta de cobro para la realización de los pagos pendientes, ya sean proveedores, contratistas, o cualquier persona con una relación de acreencia.</p>",
+    "isActive": true,
+    "name": "Cuenta de cobro",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1570610178,
+      "nanoseconds": 716000000
+    },
+    "updated": {
+      "seconds": 1570610178,
+      "nanoseconds": 716000000
+    }
   }
 ]
