@@ -1,0 +1,3324 @@
+[
+  {
+    "category": "laboral",
+    "subcategory": "contratos",
+    "referenceId": "1pb0I9xMcxWkcXSMb7EhF7udO2AcL5IOs",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral y podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "01-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "01-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres ",
+                "description": "",
+                "idField": "01-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que será contratada, teniendo en cuenta que su labor será realizada de manera personal.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "02-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-02-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "03": {
+            "label": "Cargo",
+            "description": "Señala el cargo para el cual será contratado el trabajador",
+            "idField": "02-03-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "04": {
+            "label": "Ciudad de residencia",
+            "description": "Señala la ciudad de residencia del trabajador",
+            "idField": "02-04-destinationcity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "05": {
+            "label": "Dirección de notificaciones",
+            "description": "",
+            "idField": "02-05-address",
+            "contentType": "address",
+            "fieldType": "TextField"
+          },
+          "06": {
+            "label": "Teléfono/Celular",
+            "description": "",
+            "idField": "02-06-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "03": {
+        "description": "Señala la fecha de inicio de las labores. En este caso, al ser un contrato a término indefinido, no será necesario establecer en el documento una fecha de terminación.",
+        "label": "Fecha de inicio",
+        "fields": {
+          "01": {
+            "label": "Fecha de inicio",
+            "description": "",
+            "idField": "03-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          }
+        }
+      },
+      "04": {
+        "description": "Señala la remuneración que recibirá el trabajador y su forma de pago. Es importante este paso porque constituye  uno de los elementos esenciales del contrato de trabajo.",
+        "label": "Salario",
+        "fields": {
+          "01": {}
+        }
+      },
+      "05": {
+        "description": "En todo contrato de trabajo debe definirse la jornada laboral a la que estará sujeto el trabajador. Aquí se deberá señalar el tipo de jornada (si será medio tiempo o tiempo completo), el tiempo de trabajo (si será mañana o tarde) y el período de tiempo de trabajo (número de horas).",
+        "label": "Jornada laboral",
+        "fields": {
+          "01": {}
+        }
+      },
+      "06": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual se firmará el contrato",
+            "idField": "06-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del documento que serán impresos",
+            "idField": "06-02-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "compraventa",
+    "referenceId": "1GhZWxUv8rMoV4J6aWHPP7mCNkO_EpkRz",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de permutante, si es una persona natural o jurídica. Es importante identificar la persona que entregará el dominio y posesión de un(unos) bien(es) muebles, toda vez que deberá ser el legítimo propietario del(los) mismo(s).",
+        "label": "Información del primer permutante",
+        "fields": {
+          "01": {
+            "label": "Tipo de permutante",
+            "description": "Seleccione el tipo de permutante",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del primer permutante",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del primer permutante",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "01-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "01-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "01-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de permutante, si es una persona natural o jurídica. Es importante identificar a la otra persona que entregará el dominio y posesión de un(unos) bien(es) muebles, toda vez que deberá ser el legítimo propietario del(los) mismo(s).",
+        "label": "Información del segundo permutante",
+        "fields": {
+          "01": {
+            "label": "Tipo de permutante",
+            "description": "Seleccione el tipo de permutante",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del segundo permutante",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del segundo permutante",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "En este paso deberás especificar el objeto del contrato, es decir, los bienes a intercambiar por las partes.",
+        "label": "Objeto del contrato",
+        "fields": {}
+      },
+      "04": {
+        "description": "A efectos de conocer el valor que tienen los bienes objeto de contrato, es necesario determinar el valor de cada uno por separado.",
+        "label": "Precio",
+        "fields": {
+          "01": {
+            "label": "Valor del(de los) bien(es) del primer permutante",
+            "description": "Señala el valor total",
+            "idField": "04-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Valor del(de los) bien(es) del segundo permutante",
+            "description": "Señala el valor total",
+            "idField": "04-02-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "05": {
+        "description": "En caso de existir diferencia entre los valores de los bienes a intercambiar por las partes, es importante señalar el momento en que será saldada dicha diferencia. De lo contrario, continuar con el siguiente paso.",
+        "label": "Diferencia de valores",
+        "fields": {
+          "01": {
+            "label": "¿A favor de quién es la diferencia de valores?",
+            "description": "Señala a favor de quien es la diferencia de valores, en caso que exista.",
+            "idField": "05-01-differentsValue",
+            "contentType": "differentsValue",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "¿El permutante a favor de quien se encuentra la diferencia desea saldar la misma con la firma del contrato?",
+            "description": "Señala si será saldada la diferencia con la firma del contrato",
+            "idField": "05-02-yesOrNo",
+            "contentType": "yesOrNo",
+            "fieldType": "Picker"
+          },
+          "03": {
+            "label": "Tiempo de saldo",
+            "description": "Señala el tiempo en el cual será saldada la diferencia",
+            "idField": "05-03-payOffTime",
+            "contentType": "payOffTime",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "05-02-yesOrNo",
+              "value": "no"
+            }
+          },
+          "04": {
+            "label": "Fecha determinada",
+            "description": "Señala la fecha en la cual será saldada la diferencia de valores",
+            "idField": "05-04-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "05-03-payOffTime",
+              "value": "fecha determinada"
+            }
+          },
+          "05": {
+            "label": "Forma de pago",
+            "description": "Señala el método de pago a emplear para saldar la deuda",
+            "idField": "05-05-paymentMethod",
+            "contentType": "paymentMethod",
+            "fieldType": "Picker",
+            "condition": {
+              "id": "05-03-payOffTime",
+              "value": "fecha determinada"
+            }
+          },
+          "06": {
+            "label": "Dirección de pago",
+            "description": "Diligencia la dirección en la cual se realizará el pago ",
+            "idField": "05-02-address",
+            "contentType": "address",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-03-paymentMethod",
+              "value": "en efectivo"
+            }
+          },
+          "07": {
+            "label": "Consignación bancaria",
+            "description": "Diligencia los siguientes datos de la cuenta bancaria a la cual se consignará el saldo pendiente",
+            "idField": "05-07-additional",
+            "contentType": "additional",
+            "fieldType": "paymentMethodComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de cuenta",
+                "description": "Señala el tipo de cuenta",
+                "idField": "05-07-01-account",
+                "contentType": "account",
+                "fieldType": "Picker"
+              },
+              "02": {
+                "label": "Banco",
+                "description": "Señala el nombre del banco",
+                "idField": "05-07-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "05-05-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "08": {
+            "label": "Número de cuenta",
+            "description": "Señala el número de cuenta",
+            "idField": "05-08-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "05-05-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "09": {
+            "label": "Titular de la cuenta",
+            "description": "Señala el nombre del titular de la cuenta",
+            "idField": "05-09-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "05-05-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          }
+        }
+      },
+      "06": {
+        "description": "La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "label": "Cláusula penal",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala la suma de dinero que pactarán como cláusula penal en caso de incumplimiento",
+            "idField": "06-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "07": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "07-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "07-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "07-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "compraventa",
+    "referenceId": "11Ms8Lz1Vjv7BpCF_hPeFvI0q1XQ4kvSJ",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de vendedor, si es una persona natural o jurídica. Es importante identificar la persona que venderá su(s) bien(es), toda vez que deberá ser el legítimo propietario del(los) mismo(s).",
+        "label": "Información del vendedor",
+        "fields": {
+          "01": {
+            "label": "Tipo de vendedor",
+            "description": "Seleccione el tipo de vendedor",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del vendedor",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "01-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "01-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de comprador, si es una persona natural o jurídica. Es importante identificar la persona que va a adquirir el(los) bien(es) y pagar un precio por él(ellos).",
+        "label": "Información del comprador",
+        "fields": {
+          "01": {
+            "label": "Tipo de comprador",
+            "description": "Seleccione el tipo de comprador",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del comprador",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "02-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información acerca del(de los) bien(es) en venta. Es importante señalar las particularidades del(de los) mismo(s), con el fin de identificar el objeto del contrato y asegurar que lo entregado corresponda a lo pactado en este documento",
+        "label": "Objeto del contrato",
+        "fields": {
+          "01": {
+            "label": "Cantidad",
+            "description": "Señala si se trata de un solo bien o más de uno",
+            "idField": "03-01-quantity",
+            "contentType": "quantity",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Bien",
+            "description": "Identifica y describe el bien objeto de venta",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "AdditionalComponent",
+            "componentFields": {
+              "01": {
+                "label": "Bien",
+                "description": "Identifica el bien. Ej: Casa, Oficina, Apto.",
+                "idField": "03-02-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Descripción",
+                "description": "Describe brevemente el bien",
+                "idField": "03-02-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-quantity",
+              "value": "un bien"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "A efectos de conocer las obligaciones que corren por cuenta del comprador, es necesario determinar el valor a pagar por el(los) bien(es), la fecha y forma en que se efectuará el pago.",
+        "label": "Precio",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala el valor total del objeto del contrato. En caso de ser varios bienes, señala la suma total de estos.",
+            "idField": "04-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha de pago",
+            "description": "Señala el momento en el cual el comprador realizará el pago de(de los) bien(es)",
+            "idField": "04-02-paymentDate2",
+            "contentType": "paymentDate2",
+            "fieldType": "Picker"
+          },
+          "03": {
+            "label": "Forma de pago",
+            "description": "Señala el método de pago empleado por parte del comprador.",
+            "idField": "04-03-paymentMethod",
+            "contentType": "paymentMethod",
+            "fieldType": "Picker"
+          }
+        }
+      },
+      "05": {
+        "description": "Teniendo en cuenta las opciones seleccionadas en el paso anterior, es indispensable indicar los detalles acerca de la forma y el momento en el cual será cancelado el valor del(los) bien(es) por parte del comprador",
+        "label": "Detalles del pago",
+        "fields": {
+          "01": {
+            "label": "Fecha de pago",
+            "description": "Señala la fecha de pago",
+            "idField": "05-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "04-02-paymentDate2",
+              "value": "en fecha determinada"
+            }
+          },
+          "02": {
+            "label": "Cuotas",
+            "description": "",
+            "idField": "05-02-additional",
+            "contentType": "additional",
+            "fieldType": "paymentDate2Component",
+            "componentFields": {
+              "01": {
+                "label": "Número de cuotas",
+                "description": "Señala el número de cuotas en las cuales será cancelado el precio de la venta",
+                "idField": "05-02-01-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Valor mensual",
+                "description": "Señala el valor mensual de cada cuota",
+                "idField": "05-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              },
+              "03": {
+                "label": "Fecha inicial",
+                "description": "Señala la fecha de pago de la primera cuota",
+                "idField": "05-02-03-date",
+                "contentType": "date",
+                "fieldType": "DatePicker"
+              }
+            },
+            "condition": {
+              "id": "04-02-paymentDate2",
+              "value": "cuotas mensuales"
+            }
+          },
+          "03": {
+            "label": "Dirección de pago",
+            "description": "Diligencia la dirección en la cual se realizará el pago ",
+            "idField": "05-03-address",
+            "contentType": "address",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-03-paymentMethod",
+              "value": "en efectivo"
+            }
+          },
+          "04": {
+            "label": "Consignación bancaria",
+            "description": "Diligencia los siguientes datos de la cuenta bancaria a la cual se consignará el pago",
+            "idField": "05-04-additional",
+            "contentType": "additional",
+            "fieldType": "paymentMethodComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de cuenta",
+                "description": "Señala el tipo de cuenta",
+                "idField": "05-04-01-account",
+                "contentType": "account",
+                "fieldType": "Picker"
+              },
+              "02": {
+                "label": "Banco",
+                "description": "Señala el nombre del banco",
+                "idField": "05-04-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "04-03-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "05": {
+            "label": "Número de cuenta",
+            "description": "Señala el número de cuenta",
+            "idField": "05-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-03-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "06": {
+            "label": "Titular de la cuenta ",
+            "description": "Señala el nombre del titular de la cuenta",
+            "idField": "05-06-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-03-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          }
+        }
+      },
+      "06": {
+        "description": "Es indispensable determinar la fecha en la cual será entregado el(los) bien(es) al comprador. Puede ser al momento de suscribir el contrato o en una fecha futura.",
+        "label": "Entrega del bien ",
+        "fields": {
+          "01": {
+            "label": "Fecha de entrega",
+            "description": "Selecciona la fecha de entrega del(de los) bien(es) al comprador",
+            "idField": "06-01-delivery",
+            "contentType": "delivery",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Fecha determinada",
+            "description": "Selecciona la fecha de entrega",
+            "idField": "06-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "06-01-delivery",
+              "value": "en fecha determinada"
+            }
+          }
+        }
+      },
+      "07": {
+        "description": "La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "label": "Cláusula penal",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala la suma de dinero que pactarán como cláusula penal en caso de incumplimiento",
+            "idField": "07-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "08": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "08-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "08-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "08-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "acuerdosContratos",
+    "referenceId": "1dsSdtpzwIhNWaAueC_jwyBA0kjs7mkCr",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de arrendador, si es una persona natural o jurídica. Es importante identificar la persona que dará en arriendo el bien objeto del contrato, toda vez que debe estar legitimado para ello",
+        "label": "Información del arrendador",
+        "fields": {
+          "01": {
+            "label": "Tipo de arrendador",
+            "description": "Seleccione el tipo de arrendador",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del arrendador",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "01-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "01-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "01-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de arrendatario, si es una persona natural o jurídica. Es importante identificar la persona que arrendará el bien objeto de contrato.",
+        "label": "Información del arrendatario",
+        "fields": {
+          "01": {
+            "label": "Tipo de arrendatario",
+            "description": "Seleccione el tipo de arrendatario",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del arrendatario",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Las partes deberán identificar el bien o bienes objeto del contrato.",
+        "label": "Objeto del contrato",
+        "fields": {
+          "01": {
+            "label": "Cantidad",
+            "description": "Señala si se trata de un solo bien o más de uno",
+            "idField": "03-01-quantity",
+            "contentType": "quantity",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Bien",
+            "description": "Identifica y describe el bien objeto de arriendo",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "AdditionalComponent",
+            "componentFields": {
+              "01": {
+                "label": "Bien",
+                "description": "Identifica el bien. Ej: Lavadora, Computador, Mesa.",
+                "idField": "03-02-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Descripción",
+                "description": "Describe brevemente el bien",
+                "idField": "03-02-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-quantity",
+              "value": "un bien"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "El canon de arrendamiento es el precio a pagar periódicamente por el arrendatario al arrendador. Es indispensable indicar el valor del mismo y su forma de pago.",
+        "label": "Canon de arrendamiento",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala el valor mensual a pagar como canon de arrendamiento.",
+            "idField": "04-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Forma de pago",
+            "description": "Señala el método de pago a emplear por el arrendatario para cancelar el canon de arrendamiento.",
+            "idField": "04-02-paymentMethod",
+            "contentType": "paymentMethod",
+            "fieldType": "Picker"
+          }
+        }
+      },
+      "05": {
+        "description": "De acuerdo a la forma de pago seleccionada en el paso anterior, se debe establecer los detalles del pago a realizar por el arrendatario",
+        "label": "Pago",
+        "fields": {
+          "01": {
+            "label": "Fecha de pago",
+            "description": "Señala el número de días que se brindan al arrendatario para realizar el pago. Los días empiezan a contarse desde el primer día de cada mes. Pasado este término, se entiende que el arrendatario está en mora.",
+            "idField": "05-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+
+          "02": {
+            "label": "Dirección de pago",
+            "description": "Diligencia la dirección en la cual se realizará el pago ",
+            "idField": "05-02-address",
+            "contentType": "address",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-02-paymentMethod",
+              "value": "en efectivo"
+            }
+          },
+          "03": {
+            "label": "Consignación bancaria",
+            "description": "Diligencia los siguientes datos de la cuenta bancaria a la cual se consignará el pago",
+            "idField": "05-03-additional",
+            "contentType": "additional",
+            "fieldType": "paymentMethodComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de cuenta",
+                "description": "Señala el tipo de cuenta",
+                "idField": "05-03-01-account",
+                "contentType": "account",
+                "fieldType": "Picker"
+              },
+              "02": {
+                "label": "Banco",
+                "description": "Señala el nombre del banco",
+                "idField": "05-03-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "04-02-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "04": {
+            "label": "Número de cuenta",
+            "description": "Señala el número de cuenta",
+            "idField": "05-04-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-02-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          },
+          "05": {
+            "label": "Titular de la cuenta ",
+            "description": "Señala el nombre del titular de la cuenta",
+            "idField": "05-05-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "04-02-paymentMethod",
+              "value": "consignacion bancaria"
+            }
+          }
+        }
+      },
+      "06": {
+        "description": "Señala el término de duración del contrato",
+        "label": "Duración",
+        "fields": {
+          "01": {
+            "label": "Término de duración",
+            "description": "Ej: 1 año, 6 meses.",
+            "idField": "06-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "07": {
+        "description": "En este paso, se deberá indciar la destinación exclusiva que podrá brindar el arrendatario al bien objeto del contrato.",
+        "label": "Destinación del bien",
+        "fields": {
+          "01": {
+            "label": "Destinación",
+            "description": "Ej: uso académico",
+            "idField": "07-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "08": {
+        "description": "La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "label": "Cláusula penal",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala la suma de dinero que pactarán como cláusula penal en caso de incumplimiento",
+            "idField": "08-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "09": {
+        "description": "La cláusula compromisoria es un apartado del contrato en el cual se establece que las diferencias o controversias al mismo será resuelta por un Tribunal de Arbitraje. En caso que desees incorporar esta forma de solución de controversias selecciona el botón.",
+        "label": "Cláusula compromisoria",
+        "fields": {
+          "01": {
+            "label": "¿Desea incluir una cláusula compromisoria?",
+            "description": "",
+            "idField": "09-01-yesOrNo",
+            "contentType": "yesOrNo",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual se conformará el Tribunal de Arbitraje",
+            "idField": "09-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "09-01-yesOrNo",
+              "value": "si"
+            }
+          }
+        }
+      },
+
+      "10": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "10-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "10-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "10-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "prestamos",
+    "referenceId": "1tjxK4FAqdNsKM5OsNkjkZDif8ppPRO05",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de mutuante, es decir quien entregará el(los) bien(es) al mutuario como préstamo. Podrá ser una persona natural o jurídica.",
+        "label": "Información del mutuante",
+        "fields": {
+          "01": {
+            "label": "Tipo de mutuante",
+            "description": "Seleccione el tipo de mutuante",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del mutuante",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "01-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "01-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "01-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de mutuario, es decir quien recibirá el(los) bien(es) como préstamo del mutuante. Podrá ser una persona natural o jurídica.",
+        "label": "Información del mutuario",
+        "fields": {
+          "01": {
+            "label": "Tipo de mutuario",
+            "description": "Seleccione el tipo de mutuario",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del mutuario",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "02-04-additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "02-04-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "02-04-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-05-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-05-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-05-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-06-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-06-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-06-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "En este paso deberás indicar el objeto del contrato, en este caso, al tratatarse de un préstamo de dinero, deberá señalarse el valor a entregar.",
+        "label": "Objeto del contrato",
+        "fields": {
+          "01": {
+            "label": "Cantidad",
+            "description": "Señala si se trata de un solo bien o más de uno",
+            "idField": "03-01-quantity",
+            "contentType": "quantity",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Bien",
+            "description": "Identifica y describe el bien objeto de mutuo",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "AdditionalComponent",
+            "componentFields": {
+              "01": {
+                "label": "Bien",
+                "description": "Identifica el bien. Ej: Carro, Muebles.",
+                "idField": "03-02-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Descripción",
+                "description": "Describe brevemente el bien",
+                "idField": "03-02-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-quantity",
+              "value": "un bien"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "Es importante señalar en el contrato el momento en el cual se realiza la entrega del dinero por parte del mutuante al mutuario.",
+        "label": "Entrega del dinero",
+        "fields": {
+          "01": {
+            "label": "Tiempo de entrega",
+            "description": "Señala el momento en el cual se realizará la entrega del dinero por parte del mutuante",
+            "idField": "04-01-payOffTime",
+            "contentType": "payOffTime",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Fecha de entrega",
+            "description": "Señala la fecha en la cual será entregado el dinero",
+            "idField": "04-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "04-01-payOffTime",
+              "value": "fecha determinada"
+            }
+          },
+          "03": {
+            "label": "Forma de entrega",
+            "description": "Señala la forma a través de la cual será entregado el dinero",
+            "idField": "04-03-paymentMethod",
+            "contentType": "paymentMethod",
+            "fieldType": "Picker"
+          }
+        }
+      },
+      "05": {
+        "description": "Es importante señalar en el contrato el momento y lugar en el cual se realiza la entrega del(de los) bien(es) por parte del mutuante, y por lo tanto el momento en el cual el mutuario lo(s) recibe.",
+        "label": "Entrega del bien",
+        "fields": {
+          "01": {
+            "label": "Tiempo de entrega",
+            "description": "Señala el tiempo en el cual será entregado el bien al mutuario",
+            "idField": "05-01-delivery",
+            "contentType": "delivery",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha de entrega",
+            "description": "",
+            "idField": "05-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "05-01-delivery",
+              "value": "en fecha determinada"
+            }
+          },
+          "03": {
+            "label": "Dirección de entrega",
+            "description": "Señala la dirección en la cual será(n) entregado(s) el(los) bien(es) al comodatario",
+            "idField": "05-03-address",
+            "contentType": "adress",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "06": {
+        "description": "Señala el tiempo en el cual el mutuario deberá restituir al mutuante el(los) bien(es) entregado(s) como préstamo.",
+        "label": "Restitución",
+        "fields": {
+          "01": {
+            "label": "Fecha de restitución",
+            "description": "",
+            "idField": "06-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Dirección de restitución",
+            "description": "Señala la dirección en la cual será(n) restituido(s) el(los) bien(es) al comodante",
+            "idField": "05-03-address",
+            "contentType": "adress",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "07": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "07-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "07-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "07-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "acuerdosContratos",
+    "referenceId": "1CFBivZIsXEY08U6JoBCircRMjV8xFdeQ",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de depositante, si es una persona natural o jurídica. Esta es la persona que entregará el(los) bien(es) muebles a título de depósito al depositario.",
+        "label": "Información del depositante",
+        "fields": {
+          "01": {
+            "label": "Tipo de depositante",
+            "description": "Seleccione el tipo de depositante",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del depositante",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "01-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "01-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de depositario, si es una persona natural o jurídica. Esta es la persona que recibirá el(los) bien(es) mueble(es) a título de depósito por parte del depositante.",
+        "label": "Información del depositario",
+        "fields": {
+          "01": {
+            "label": "Tipo de depositario",
+            "description": "Seleccione el tipo de depositario",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del depositario",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "02-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Las partes deberán identificar el bien o bienes objeto del contrato.",
+        "label": "Objeto del contrato",
+        "fields": {
+          "01": {
+            "label": "Cantidad",
+            "description": "Señala si se trata de un solo bien o más de uno",
+            "idField": "03-01-quantity",
+            "contentType": "quantity",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Bien",
+            "description": "Identifica y describe el bien objeto de depósito",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "AdditionalComponent",
+            "componentFields": {
+              "01": {
+                "label": "Bien",
+                "description": "Identifica el bien. Ej: Carro, Muebles.",
+                "idField": "03-02-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Descripción",
+                "description": "Describe brevemente el bien",
+                "idField": "03-02-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-quantity",
+              "value": "un bien"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "Es importante señalar en el contrato el momento en el cual se realiza la entrega del(los) bien(es) por parte del depositante al depositario.",
+        "label": "Entrega del bien",
+        "fields": {
+          "01": {
+            "label": "Fecha de entrega",
+            "description": "Selecciona la fecha de entrega del(de los) bien(es) al depositario",
+            "idField": "04-01-delivery",
+            "contentType": "delivery",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Fecha determinada",
+            "description": "Selecciona la fecha de entrega",
+            "idField": "04-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "04-01-delivery",
+              "value": "en fecha determinada"
+            }
+          }
+        }
+      },
+      "05": {
+        "description": "Señala el lugar en el cual deberá(n) permanecer el(los) bien(es) objeto de depósito.",
+        "label": "Lugar de depósito",
+        "fields": {
+          "01": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual permanecerá el depósito",
+            "idField": "05-01-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Dirección",
+            "description": "Selecciona la dirección de entrega",
+            "idField": "05-02-address",
+            "contentType": "address",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "06": {
+        "description": "Señala la suma de dinero a la cual se obliga el depositante con el depositario, como contraprestación a sus servicios prestados.",
+        "label": "Remuneración",
+        "fields": {
+          "01": {
+            "label": "Período de pago",
+            "description": "",
+            "idField": "06-01-paymentPeriod",
+            "contentType": "paymentPeriod",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Valor",
+            "description": "(Señala el valor a pagar en los períodos establecidos)",
+            "idField": "06-02-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "07": {
+        "description": "Debes señalar el tiempo de duración del contrato, el cual empezará a correr a partir de la entrega del(los) bien(es) objeto de depósito.",
+        "label": "Duración del acuerdo",
+        "fields": {
+          "01": {
+            "label": "Término de duración",
+            "description": "Ej: 1 año, 6 meses.",
+            "idField": "07-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "08": {
+        "description": "La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. Quien incumpla, estará obligada a cancelar dicha cláusula.",
+        "label": "Cláusula penal",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala la suma de dinero que pactarán como cláusula penal en caso de incumplimiento",
+            "idField": "08-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "09": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "09-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "09-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "09-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "negocios",
+    "subcategory": "acuerdosContratos",
+    "referenceId": "1g1qfUTjO4lIRrKsHaWSFx0XPfNptYbpP",
+    "sections": {
+      "01": {
+        "description": "Selecciona el tipo de depositante, si es una persona natural o jurídica. Esta es la persona que entregará el(los) bien(es) muebles a título de depósito al depositario.",
+        "label": "Información del depositante",
+        "fields": {
+          "01": {
+            "label": "Tipo de depositante",
+            "description": "Seleccione el tipo de depositante",
+            "idField": "01-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "01-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del depositante",
+            "idField": "01-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "01-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "01-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "01-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "01-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "01-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "01-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "02": {
+        "description": "Selecciona el tipo de depositario, si es una persona natural o jurídica. Esta es la persona que recibirá el(los) bien(es) mueble(es) a título de depósito por parte del depositante.",
+        "label": "Información del depositario",
+        "fields": {
+          "01": {
+            "label": "Tipo de depositario",
+            "description": "Seleccione el tipo de depositario",
+            "idField": "02-01-personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "02-02-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "02-02-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "02-02-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del depositario",
+            "idField": "02-03-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "02-03-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "02-03-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Razón social de la empresa",
+            "description": "",
+            "idField": "02-04-name",
+            "contentType": "name",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "NIT de la empresa",
+            "description": "",
+            "idField": "02-05-number",
+            "contentType": "number",
+            "fieldType": "TextField",
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "02-06-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres del representante legal",
+                "description": "",
+                "idField": "02-06-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos del representante legal",
+                "description": "",
+                "idField": "02-06-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          },
+          "07": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "01-07-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-07-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-07-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "02-01-personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Las partes deberán identificar el bien o bienes objeto del contrato.",
+        "label": "Objeto del contrato",
+        "fields": {
+          "01": {
+            "label": "Cantidad",
+            "description": "Señala si se trata de un solo bien o más de uno",
+            "idField": "03-01-quantity",
+            "contentType": "quantity",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Bien",
+            "description": "Identifica y describe el bien objeto de depósito",
+            "idField": "03-02-additional",
+            "contentType": "additional",
+            "fieldType": "AdditionalComponent",
+            "componentFields": {
+              "01": {
+                "label": "Bien",
+                "description": "Identifica el bien. Ej: Carro, Muebles.",
+                "idField": "03-02-01-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Descripción",
+                "description": "Describe brevemente el bien",
+                "idField": "03-02-02-additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "03-01-quantity",
+              "value": "un bien"
+            }
+          }
+        }
+      },
+      "04": {
+        "description": "Es importante señalar en el contrato el momento en el cual se realiza la entrega del(los) bien(es) por parte del depositante al depositario.",
+        "label": "Entrega del bien",
+        "fields": {
+          "01": {
+            "label": "Fecha de entrega",
+            "description": "Selecciona la fecha de entrega del(de los) bien(es) al depositario",
+            "idField": "04-01-delivery",
+            "contentType": "delivery",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Fecha determinada",
+            "description": "Selecciona la fecha de entrega",
+            "idField": "04-02-date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "condition": {
+              "id": "04-01-delivery",
+              "value": "en fecha determinada"
+            }
+          }
+        }
+      },
+      "05": {
+        "description": "Señala el lugar en el cual deberá(n) permanecer el(los) bien(es) objeto de depósito.",
+        "label": "Lugar de depósito",
+        "fields": {
+          "01": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual permanecerá el depósito",
+            "idField": "05-01-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Dirección",
+            "description": "Selecciona la dirección de entrega",
+            "idField": "05-02-address",
+            "contentType": "address",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "06": {
+        "description": "Debes señalar el tiempo de duración del contrato, el cual empezará a correr a partir de la entrega del(los) bien(es) objeto de depósito.",
+        "label": "Duración del acuerdo",
+        "fields": {
+          "01": {
+            "label": "Término de duración",
+            "description": "Ej: 1 año, 6 meses.",
+            "idField": "06-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "07": {
+        "description": "La cláusula penal es un apartado del contrato en el cual se establece una suma determinada de dinero a pagar en caso de incumplimiento de alguna de las partes contratantes. En este caso, si el depositario incumple, estará obligado a cancelar dicha cláusula.",
+        "label": "Cláusula penal",
+        "fields": {
+          "01": {
+            "label": "Valor",
+            "description": "Señala la suma de dinero que pactarán como cláusula penal en caso de incumplimiento",
+            "idField": "07-01-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "08": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha en la cual será firmado el contrato",
+            "idField": "08-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad en la cual será firmado el contrato",
+            "idField": "08-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          },
+          "03": {
+            "label": "Ejemplares",
+            "description": "Señala el número de ejemplares del contrato que serán impresos",
+            "idField": "08-03-number",
+            "contentType": "number",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  },
+  {
+    "category": "peticiones",
+    "subcategory": "dependencias del estado",
+    "referenceId": "10XIEIMaWbO9rf1aBgQzPmtyIzUE2EOuT",
+    "sections": {
+      "01": {
+        "description": "Debes diligenciar la siguiente información acerca del propietario del vehículo, quien presentará la solicitud ante la Gobernación, debido al cumplimiento del término de prescripción.",
+        "label": "Propietario del vehículo",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del propietario del vehículo",
+            "description": "",
+            "idField": "01-01-name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "01-01-01-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "01-01-02-name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del propietario del vehículo",
+            "idField": "01-02-documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "01-02-01-documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "01-02-02-number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "03": {
+            "label": "Dirección de notificaciones",
+            "description": "Señala la dirección en la cual podrá recibir las notificaciones",
+            "idField": "01-03-additional",
+            "contentType": "additional",
+            "fieldType": "AddressComponent",
+            "componentFields": {
+              "01": {
+                "label": "Dirección",
+                "description": "",
+                "idField": "01-03-01-addreess",
+                "contentType": "address",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "01-03-02-destinationCity",
+                "contentType": "destinationCity",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "04": {
+            "label": "Correo electrónico",
+            "description": "Señala su correo electrónico",
+            "required": "true",
+            "icon": "EmailIcon",
+            "idField": "01-04-additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "02": {
+        "description": "Teniendo en cuenta que el documento va dirigido a solicitar la prescripción del impuesto vehicular, en este paso deberás señalar la placa del vehículo sobre el cual recae el impuesto, así como los años sobre los cuales se encamina la solicitud.",
+        "label": "Impuesto vehicular",
+        "fields": {
+          "01": {
+            "label": "Placa del vehículo",
+            "description": "Identifica la placa del vehículo sobre el cual se está solicitando la prescripción del impuesto",
+            "idField": "02-01-additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "ReasonsIcon"
+          },
+          "02": {
+            "label": "Vigencias",
+            "description": "Señala el(los) año(s) sobre el(los) cual(es) se solicita la prescripción. Ej: 2010,2011,2012",
+            "idField": "02-02-",
+            "contentType": "",
+            "fieldType": ""
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación de la solicitud",
+            "idField": "03-01-date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "02": {
+            "label": "Ciudad",
+            "description": "Señala la ciudad de presentación de la solicitud",
+            "idField": "03-02-destinationCity",
+            "contentType": "destinationCity",
+            "fieldType": "TextField"
+          }
+        }
+      }
+    }
+  }
+]
