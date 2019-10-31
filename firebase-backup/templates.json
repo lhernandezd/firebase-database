@@ -1986,5 +1986,30 @@
       "seconds": 1572491658,
       "nanoseconds": 30000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "cSolicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual un trabajador solicita a su empleador la concesión de una licencia remunerada, debido al fallecimiento de un familiar cercano.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>SOLICITUD DE LICENCIA POR LUTO</strong></p><p>Es un documento por medio del cual un trabajador solicita a su empleador la concesión de una licencia remunerada, debido al fallecimiento de un familiar cercano.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los trabajadores, quienes, con ocasión del fallecimiento de su cónyuge o compañero permanente, de un familiar hasta el segundo grado de consanguinidad o primero de afinidad, solicitan a su empleador una licencia remunerada, la cual es de cinco (5) días hábiles remunerados por ley. </p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la presentación de este documento, toda vez que es el mismo trabajador quien lo presenta a su empleador, sin necesidad de acudir a una autoridad en material laboral. Sin embargo, al diligenciar este modelo, deberá indicar:</p><ul><li>La fecha en que falleció su familiar o pareja.</li><li>El parentezco que tenía con el(la) fallecido(a).</li><li>El día en el que iniciará y finalizará la licencia.</li></ul><p>Es muy importante que el trabajador, posterior a tomar su licencia por luto, presente ante su empleador el Registro Civil de Defunción dentro de los treinta (30) días siguientes.</p>",
+    "isActive": true,
+    "name": "Solicitud de licencia por luto",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1572491939,
+      "nanoseconds": 966000000
+    },
+    "updated": {
+      "seconds": 1572491939,
+      "nanoseconds": 966000000
+    }
   }
 ]

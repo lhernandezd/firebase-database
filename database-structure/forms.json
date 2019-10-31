@@ -2,7 +2,7 @@
   {
     "category": "laboral",
     "subcategory": "cSolicitudesReclamos",
-    "referenceId": "1EJDkBwtWRF9jH8aG9-FmZ3YqSUx1AhtI",
+    "referenceId": "1dnS3Y0HrxOlDE6lnRjHGEtp5vBPSWWvG",
     "sections": {
       "01": {
         "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia.",
@@ -230,8 +230,8 @@
             "idField": "three_one_date",
             "contentType": "date",
             "fieldType": "DatePicker",
-            "required": "true",
-            "Icon": "DateIcon"
+            "Icon": "DateIcon",
+            "required": "true"
           },
           "02": {
             "label": "Fecha de finalización",
@@ -239,28 +239,56 @@
             "idField": "three_two_date",
             "contentType": "date",
             "fieldType": "DatePicker",
-            "required": "true",
-            "Icon": "DateIcon"
+            "Icon": "DateIcon",
+            "required": "true"
           }
         }
       },
       "04": {
+        "description": "Es importante que el trabajador indique el parentesco sostenido entre él y la persona fallecida, con el fin de verificar si podrá solicitar la licencia.",
+        "label": "Defunción",
+        "fields": {
+          "01": {
+            "label": "Parentesco",
+            "description": "Señala el parentesco sostenido entre el trabajador y la persona fallecida.",
+            "idField": "four_one_additional",
+            "contentType": "additional",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "NameIcon"
+          },
+          "02": {
+            "label": "Fecha de defunción",
+            "description": "Señala la fecha en la cual falleció el(la) cónyuge o familiar del trabajador.",
+            "idField": "four_two_date",
+            "contentType": "date",
+            "fieldType": "DatePicker",
+            "required": "true",
+            "icon": "DateIcon"
+          }
+        }
+      },
+      "05": {
         "description": "Diligencia la siguiente información clave para la generación de tu documento",
         "label": "Información general",
         "fields": {
           "01": {
             "label": "Fecha",
             "description": "Señala la fecha de presentación del documento",
-            "idField": "four_one_date",
+            "idField": "five_one_date",
             "contentType": "date",
-            "fieldType": "DatePicker"
+            "fieldType": "DatePicker",
+            "Icon": "DateIcon",
+            "required": "true"
           },
           "02": {
             "label": "Ciudad",
             "description": "Señala la ciudad de presentación del documento",
-            "idField": "four_two_destinationcity",
+            "idField": "five_two_destinationcity",
             "contentType": "destinationcity",
-            "fieldType": "TextField"
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "AddressIcon"
           }
         }
       }
