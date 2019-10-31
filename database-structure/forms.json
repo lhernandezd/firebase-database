@@ -2,10 +2,10 @@
   {
     "category": "laboral",
     "subcategory": "cSolicitudesReclamos",
-    "referenceId": "1yTYJ9XRFrNQjPp3wkKZhBjamhbAFzGNr",
+    "referenceId": "12dQmdf5KSjHWiE0Plvr5yJaEQJpGAJE9",
     "sections": {
       "01": {
-        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitarán las vacaciones acumuladas",
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia",
         "label": "Información del empleador",
         "fields": {
           "01": {
@@ -165,7 +165,7 @@
         }
       },
       "02": {
-        "description": "Diligencia los siguientes datos acerca del trabajador, quien desea solicitar la concesión de sus vacaciones acumuladas.",
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien desea solicitar la licencia.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
@@ -221,31 +221,22 @@
         }
       },
       "03": {
-        "description": "Es importante señalar, en el documento, el período en el cual el trabajador desea tomar sus vacaciones, indicando además el número de días acumulados.",
-        "label": "Vacaciones",
+        "description": "Es importante señalar, en el documento, el período en el cual el trabajador desea tomar su licencia.",
+        "label": "Período de licencia",
         "fields": {
           "01": {
-            "label": "Días acumulados",
-            "description": "Señala el número de días de vacaciones acumulados a favor del trabajador",
-            "idField": "three_one_number",
-            "contentType": "number",
-            "fieldType": "TextField",
-            "required": "true",
-            "icon": "TravelIcon"
-          },
-          "02": {
             "label": "Fecha de inicio",
-            "description": "Señala la fecha en la cual iniciarían las vacaciones del trabajador",
-            "idField": "three_two_date",
+            "description": "Señala la fecha en la cual iniciaría la licencia del trabajador",
+            "idField": "three_one_date",
             "contentType": "date",
             "fieldType": "DatePicker",
             "required": "true",
             "icon": "DateIcon"
           },
-          "03": {
+          "02": {
             "label": "Fecha de finalización",
-            "description": "Señala la fecha en la cual finalizarían las vacaciones del trabajador.",
-            "idField": "three_three_date",
+            "description": "Señala la fecha en la cual finalizaría la licencia del trabajador.",
+            "idField": "three_two_date",
             "contentType": "date",
             "fieldType": "DatePicker",
             "required": "true",

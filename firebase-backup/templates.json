@@ -1911,5 +1911,30 @@
       "seconds": 1572491036,
       "nanoseconds": 429000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "cSolicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento por medio del cual un trabajador solicita a su empleador la concesión de una licencia no remunerada, por unos días determinados.",
+    "longDescription": "<p><strong>SOLICITUD DE LICENCIA NO REMUNERADA</strong></p><p>Es un documento por medio del cual un trabajador solicita a su empleador la concesión de una licencia no remunerada, por unos días determinados.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los trabajadores, quienes deseen solicitar a su empleador unos días de permiso sin remuneración, por cualquier motivo que les ataña y les impida presentarse en el lugar de trabajo.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la presentación de este documento, toda vez que es el mismo trabajador quien lo presenta a su empleador, sin necesidad de acudir a una autoridad en material laboral. Sin embargo, al diligenciar este modelo, deberá indicar la fecha a partir de la cual inciará y finalizará la licencia, motivando las razones de su ausencia temporal en el trabajo, sin profundizar en ello.</p>",
+    "descriptionURL": "",
+    "isActive": true,
+    "name": "Solicitud de licencia no remunerada",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1572491303,
+      "nanoseconds": 445000000
+    },
+    "updated": {
+      "seconds": 1572491303,
+      "nanoseconds": 445000000
+    }
   }
 ]
