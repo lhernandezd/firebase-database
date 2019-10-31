@@ -2,83 +2,74 @@
   {
     "category": "laboral",
     "subcategory": "eTerminacion",
-    "referenceId": "1ByYhhFQYZCRc-AJPNzTRr418VV611j7H",
+    "referenceId": "1ysQYfj2buovLa0ZQwXuLNhwz3Qvdtdab",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos acerca del trabajador, es importante identificar la persona con quien se finalizará la relación laboral durante su período de prueba.",
+        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar la persona con la cual se finalizará la relación laboral.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
-            "label": "Nombre completo del empleado",
-            "description": "",
-            "idField": "one_one_name",
+            "label": "Nombre completo del trabajador",
+            "description": "Ingrese el nombre completo del trabajador",
+            "icon": "NameIcon",
+            "required": "true",
+            "idField": "01-01-name",
             "contentType": "name",
             "fieldType": "NameComponent",
-            "required": "true",
-            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "one_one_one_name",
+                "idField": "01-01-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "one_one_two_name",
+                "idField": "01-01-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "02": {
               "label": "Cargo desempeñado",
-              "description": "",
-              "icon": "PositionIcon",
+              "description": "Ingrese el cargo desempeñado por el trabajador",
               "required": "true",
-              "idField": "one_two_additional",
+              "icon": "PositionIcon",
+              "idField": "01-02-additional",
               "contentType": "additional",
               "fieldType": "TextField"
             }
           },
           "03": {
-            "label": "Fecha de ingreso",
-            "description": "Señala la fecha en la cual ingresó a su cargo",
-            "icon": "DateIcon",
-            "required": "true",
-            "idField": "one_three_date",
-            "contentType": "date",
-            "fieldType": "DatePicker"
-          },
-          "04": {
             "label": "Fecha de terminación",
-            "required": "true",
-            "icon": "DateIcon",
-            "description": "Señala la fecha en la cual entregará su cargo",
-            "idField": "one_four_date",
+            "description": "Señala la fecha en la cual finalizará su contrato",
+            "idField": "01-03-date",
             "contentType": "date",
-            "fieldType": "DatePicker"
+            "fieldType": "DatePicker",
+            "required": "true",
+            "icon": "DateIcon"
           }
         }
       },
       "02": {
-        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral con su trabajador durante el período de prueba. Podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral y podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
         "label": "Información del empleador",
         "fields": {
           "01": {
             "label": "Tipo de empleador",
             "description": "Seleccione el tipo de empleador",
-            "icon": "PersonTypeIcon",
             "required": "true",
-            "idField": "two_one_personType",
+            "icon": "PersonTypeIcon",
+            "idField": "02-01-personType",
             "contentType": "personType",
             "fieldType": "Picker"
           },
           "02": {
             "label": "Nombre completo del empleador",
             "description": "",
-            "idField": "two_two_name",
+            "idField": "02-02-name",
             "contentType": "name",
             "required": "true",
             "icon": "NameIcon",
@@ -87,49 +78,49 @@
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "two_two_one_name",
+                "idField": "02-02-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "two_two_two_name",
+                "idField": "02-02-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "two_one_personType",
+              "id": "02-01-personType",
               "value": "persona natural"
             }
           },
           "03": {
             "label": "Documento",
             "description": "Señala el tipo y número de documento del empleador",
-            "idField": "two_three_documentType",
-            "required": "true",
-            "icon": "DocumentTypeIcon",
-            "contentType": "documentType",
+            "idField": "02-03-majorDocumentType",
+            "contentType": "majorDocumentType",
             "fieldType": "DocumentComponent",
+            "icon": "DocumentTypeIcon",
+            "required": "true",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "two_three_one_documentType",
-                "contentType": "documentType",
+                "idField": "02-03-01-majorDocumentType",
+                "contentType": "majorDocumentType",
                 "fieldType": "Dropdown"
               },
               "02": {
                 "label": "Número de documento",
                 "description": "",
-                "idField": "two_three_two_number",
+                "idField": "02-03-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "two_one_personType",
+              "id": "02-01-personType",
               "value": "persona natural"
             }
           },
@@ -138,34 +129,34 @@
             "description": "Ingresa la razón social y nit de la compañía",
             "required": "true",
             "icon": "CompanyIcon",
-            "idField": "two_four_additional",
+            "idField": "02-04-additional",
             "contentType": "additional",
             "fieldType": "CompanyDataComponent",
             "componentFields": {
               "01": {
                 "label": "Razón social",
                 "description": "",
-                "idField": "two_four_one_additional",
+                "idField": "02-04-01-additional",
                 "contentType": "additional",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "NIT",
                 "description": "",
-                "idField": "two_four_two_number",
+                "idField": "02-04-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "two_one_personType",
+              "id": "02-01-personType",
               "value": "persona juridica"
             }
           },
           "05": {
             "label": "Nombre completo del representante legal",
             "description": "",
-            "idField": "two_five_name",
+            "idField": "02-05-name",
             "contentType": "name",
             "required": "true",
             "icon": "NameIcon",
@@ -174,49 +165,49 @@
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "two_five_one_name",
+                "idField": "02-05-01-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "two_five_two_name",
+                "idField": "02-05-02-name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "two_one_personType",
+              "id": "02-01-personType",
               "value": "persona juridica"
             }
           },
           "06": {
             "label": "Documento del representante legal",
             "description": "Señala el tipo y número de documento del representante legal",
-            "idField": "two_six_documentType",
-            "contentType": "documentType",
-            "fieldType": "DocumentComponent",
             "required": "true",
             "icon": "DocumentTypeIcon",
+            "idField": "02-07-majorDocumentType",
+            "contentType": "majorDocumentType",
+            "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "two_six_one_documentType",
-                "contentType": "documentType",
+                "idField": "02-06-01-majorDocumentType",
+                "contentType": "majorDocumentType",
                 "fieldType": "Dropdown"
               },
               "02": {
                 "label": "Número de documento",
                 "description": "",
-                "idField": "two_six_two_number",
+                "idField": "02-06-02-number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "two_one_personType",
+              "id": "02-01-personType",
               "value": "persona juridica"
             }
           }
@@ -227,43 +218,34 @@
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Motivos",
-            "required": "true",
-            "icon": "ReasonsIcon",
-            "description": "Si deseas, podrás indicar las razones por las cuales el empleador desea finalizar el contrato.",
-            "idField": "three_one_additional",
-            "contentType": "additional",
-            "fieldType": "TextField"
-          },
-          "02": {
             "label": "Fecha",
             "description": "Señala la fecha de presentación del documento al trabajador",
-            "idField": "three_two_date",
+            "idField": "03-01-date",
             "contentType": "date",
             "required": "true",
             "icon": "DateIcon",
             "fieldType": "DatePicker"
           },
-          "03": {
+          "02": {
             "label": "Lugar",
             "description": "",
-            "idField": "three_three_location",
+            "idField": "03-02-location",
             "contentType": "location",
+            "fieldType": "LocationComponent",
             "required": "true",
             "icon": "LocationIcon",
-            "fieldType": "LocationComponent",
             "componentFields": {
               "01": {
                 "label": "Departamento",
                 "description": "",
-                "idField": "three_three_one_department",
+                "idField": "03-02-01-department",
                 "contentType": "department",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Ciudad",
                 "description": "",
-                "idField": "three_three_two_city",
+                "idField": "03-02-02-city",
                 "contentType": "city",
                 "fieldType": "TextField"
               }
