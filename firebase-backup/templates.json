@@ -2011,5 +2011,30 @@
       "seconds": 1572491939,
       "nanoseconds": 966000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "cSolicitudesReclamos",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Es un documento a través del cual un trabajador solicita a su empleador el descanso remunerado que le corresponde por ley, conocido como licencia de paternidad, durante los 8 días hábiles siguientes al nacimiento de su hijo.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>SOLICITUD DE LICENCIA DE PATERNIDAD</strong></p><p>Es un documento a través del cual un trabajador solicita a su empleador el descanso remunerado que le corresponde por ley, conocido como licencia de paternidad, durante los 8 días hábiles siguientes al nacimiento de su hijo. </p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los trabajadores padres de un hijo recién nacido, quienes deben solicitar a su empleador la concesión de la licencia de paternidad en aras de iniciar el descanso obligatorio y remunerado por ley.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>No existe una formalidad para la presentación de este documento, toda vez que es el mismo trabajador quien lo presenta a su empleador, sin necesidad de acudir a una autoridad en material laboral. Sin embargo, al diligenciar este modelo, deberá indicar la fecha de nacimiento de su hijo.</p><p>Es indispensable, para la concesión de esta licencia, que el trabajador sea cotizante de la la E.P.S y haya realizado los aportes, además, que notifique a su empleador, con anterioridad, se encuentra a la espera del nacimiento de su hijo.</p>",
+    "isActive": true,
+    "name": "Solicitud de licencia de paternidad",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1572492304,
+      "nanoseconds": 785000000
+    },
+    "updated": {
+      "seconds": 1572492304,
+      "nanoseconds": 785000000
+    }
   }
 ]
