@@ -2336,5 +2336,30 @@
       "seconds": 1572497834,
       "nanoseconds": 748000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "eTerminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "A través de este documento, el empleador puede ordenar la realización de un examen médico para los trabajadores que se retiren del puesto de trabajo, con el fin de revisar las condiciones de salud en las cuales se encuentran aquellos al finalizar la relación laboral.",
+    "descriptionURL": "",
+    "isActive": true,
+    "longDescription": "<p><strong>EXAMEN MÉDICO DE EGRESO</strong></p><p>A través de este documento, el empleador puede ordenar la realización de un examen médico para los trabajadores que se retiren del puesto de trabajo, con el fin de revisar las condiciones de salud en las cuales se encuentran aquellos al finalizar la relación laboral.</p><p><strong>¿A quiénes va dirigido el documento?</strong></p><p>Va dirigido a los empleadores, sean personas naturales o jurídicas, quienes son los encargados de ordenar la práctica de los examenes médicos para los trabajadores que sean retirados de su puesto de trabajo, ante institutos prestadores de salud o ante un médico especialista en seguridad y salud en el trabajo.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El empleador o la persona que éste designe, deberá ingresar toda la información solicitada para efectos de llenar el documento, tal como:</p><ul><li>Identificación de las partes</li><li>Cargo que desempeñó el trabajador</li><li>Nombre del Instituto prestador de salud o del médico ante el cual se presentará la orden</li></ul><p>Luego de emitida la orden, el empleador debe asegurarse de informar a su proveedor específico el perfil del cargo, las funciones y el medio al que se encontraba expuesto el trabajador. es</p><p>A través de los resultados obtenidos en los exámenes, el empleador determina las condiciones de salud del trabajador al finalizar sus labores, todo ello con el fin de dejar constancia de las condiciones bajo las cuales el trabajador se retira, a prevención de que una enfermedad futura se atribuya al trabajo.</p><p>Todos los trabajadores tienen derecho a solicitar la práctica de este examen a sus empleadores.</p>",
+    "name": "Examen médico de egreso",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1572498016,
+      "nanoseconds": 236000000
+    },
+    "updated": {
+      "seconds": 1572498016,
+      "nanoseconds": 236000000
+    }
   }
 ]
