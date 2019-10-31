@@ -1,16 +1,16 @@
 [
   {
     "category": "laboral",
-    "subcategory": "eTerminacion",
-    "referenceId": "17avpR0cGxrKCrYy0cOhoTNVCzSjgXQ9j",
+    "subcategory": "cSolicitudesReclamos",
+    "referenceId": "1UO6R995xRE0qtxjnMxTaje-NAxTIh08h",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar a quién será enviada la carta de despido",
+        "description": "Señala los siguientes datos acerca del trabajador a quien se expedirá la carta de recomendación.",
         "label": "Información del trabajador",
         "fields": {
           "01": {
-            "label": "Nombre completo del trabajador",
-            "description": "Nombre completo del trabajador",
+            "label": "Nombre completo",
+            "description": "",
             "idField": "one_one_name",
             "contentType": "name",
             "fieldType": "NameComponent",
@@ -19,16 +19,41 @@
             "componentFields": {
               "01": {
                 "label": "Nombres",
-                "description": "Nombres del trabajador",
+                "description": "",
                 "idField": "one_one_one_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
-                "description": "Apellidos del trabajador",
+                "description": "",
                 "idField": "one_one_two_name",
                 "contentType": "name",
+                "fieldType": "TextField"
+              }
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "one_two_documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "one_two_one_documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "one_two_two_number",
+                "contentType": "number",
                 "fieldType": "TextField"
               }
             }
@@ -36,37 +61,37 @@
         }
       },
       "02": {
-        "description": "Diligencia los siguientes datos acerca del empleador, es importante identificar quien presentará la carta de despido.",
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica. Es importante identificar quien realizará y firmará la carta de recomendación",
         "label": "Información del empleador",
         "fields": {
           "01": {
             "label": "Tipo de empleador",
             "description": "Seleccione el tipo de empleador",
-            "required": "true",
-            "icon": "PersonTypeIcon",
             "idField": "two_one_personType",
             "contentType": "personType",
-            "fieldType": "Picker"
+            "fieldType": "Picker",
+            "required": "true",
+            "icon": "PersonTypeIcon"
           },
           "02": {
-            "label": "Nombre completo del empleador",
-            "description": "Nombre completo del empleador",
-            "required": "true",
-            "icon": "NameIcon",
+            "label": "Nombre completo",
+            "description": "",
             "idField": "two_two_name",
             "contentType": "name",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
-                "description": "Nombres",
+                "description": "",
                 "idField": "two_two_one_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
-                "description": "Apellidos",
+                "description": "",
                 "idField": "two_two_two_name",
                 "contentType": "name",
                 "fieldType": "TextField"
@@ -78,22 +103,23 @@
             }
           },
           "03": {
-            "label": "Documento del empleador",
-            "description": "Ingresa los datos referentes a la identificación personal del empleador",
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "two_three_documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
             "required": "true",
             "icon": "DocumentTypeIcon",
-            "idField": "two_three_majorDocumentType",
-            "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "two_three_one_majorDocumentType",
-                "contentType": "majorDocumentType",
+                "idField": "two_three_one_documentType",
+                "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
-                "label": "Numero del documento",
+                "label": "Número de documento",
                 "description": "",
                 "idField": "two_three_two_number",
                 "contentType": "number",
@@ -135,11 +161,13 @@
             }
           },
           "05": {
-            "label": "Nombre del representante legal",
-            "description": "Ingresa el nombre completo del representante legal de la empresa",
+            "label": "Nombre completo del representante legal",
+            "description": "",
             "idField": "two_five_name",
             "contentType": "name",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
@@ -163,19 +191,22 @@
           },
           "06": {
             "label": "Documento del representante legal",
-            "description": "Selecciona e ingresa la información correspondiente a la identificación personal del representante legal",
-            "idField": "two_six_majorDocumentType",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "two_six_documentType",
+            "contentType": "documentType",
             "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "two_six_one_majorDocumentType",
-                "contentType": "majorDocumentType",
+                "idField": "two_six_one_documentType",
+                "contentType": "documentType",
                 "fieldType": "Dropdown"
               },
               "02": {
-                "label": "Numero del documento",
+                "label": "Número de documento",
                 "description": "",
                 "idField": "two_six_two_number",
                 "contentType": "number",
@@ -194,44 +225,29 @@
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Motivos",
-            "required": "true",
-            "icon": "ReasonsIcon",
-            "description": "Ingrese los motivos por el cual se ejecuta la carta de despido",
+            "label": "Comentarios adicionales",
+            "description": "Adiciona algún comentario en particular que desees añadir a la recomendación del trabajador.",
             "idField": "three_one_additional",
             "contentType": "additional",
-            "fieldType": "TextField"
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "ReasonsIcon"
           },
           "02": {
             "label": "Fecha",
-            "description": "",
+            "description": "Señala la fecha de firma de la carta",
             "idField": "three_two_date",
             "contentType": "date",
             "fieldType": "DatePicker",
-            "icon": "DatePicker"
+            "required": "true",
+            "icon": "DateIcon"
           },
           "03": {
-            "label": "Lugar",
-            "description": "",
-            "idField": "three_three_location",
-            "contentType": "location",
-            "fieldType": "LocationComponent",
-            "componentFields": {
-              "01": {
-                "label": "Departamento",
-                "description": "",
-                "idField": "three_three_one_department",
-                "contentType": "department",
-                "fieldType": "TextField"
-              },
-              "02": {
-                "label": "Ciudad",
-                "description": "",
-                "idField": "three_three_two_city",
-                "contentType": "city",
-                "fieldType": "TextField"
-              }
-            }
+            "label": "Ciudad",
+            "description": "Señala la ciudad de firma de la carta",
+            "idField": "three_three_destinationcity",
+            "contentType": "destinationcity",
+            "fieldType": "TextField"
           }
         }
       }
