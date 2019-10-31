@@ -1,263 +1,276 @@
-{
-  "category": "laboral",
-  "subcategory": "bVinculacion",
-  "referenceId": "1ewts15GAGb5bhixhGZDrlTeLu-8aTGlK",
-  "sections": {
-    "01": {
-      "description": "Diligencia los siguientes datos acerca del trabajador, quien debe ser una persona natural. Es importante la identificación de la persona que será contratada, teniendo en cuenta que será a ella a quien le será practicado el examen médico",
-      "label": "Información del trabajador",
-      "fields": {
-        "01": {
-          "label": "Nombre completo del trabajador",
-          "description": "",
-          "idField": "one_one_name",
-          "icon": "NameIcon",
-          "required": "true",
-          "contentType": "name",
-          "fieldType": "NameComponent",
-          "componentFields": {
-            "01": {
-              "label": "Nombres",
-              "description": "",
-              "idField": "one_one_one_name",
-              "contentType": "name",
-              "fieldType": "TextField"
+[
+  {
+    "category": "laboral",
+    "subcategory": "eTerminacion",
+    "referenceId": "1ByYhhFQYZCRc-AJPNzTRr418VV611j7H",
+    "sections": {
+      "01": {
+        "description": "Diligencia los siguientes datos acerca del trabajador, es importante identificar la persona con quien se finalizará la relación laboral durante su período de prueba.",
+        "label": "Información del trabajador",
+        "fields": {
+          "01": {
+            "label": "Nombre completo del empleado",
+            "description": "",
+            "idField": "one_one_name",
+            "contentType": "name",
+            "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "one_one_one_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "one_one_two_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
             },
             "02": {
-              "label": "Apellidos",
+              "label": "Cargo desempeñado",
               "description": "",
-              "idField": "one_one_two_name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "02": {
-          "label": "Documento del trabajador",
-          "description": "Señala el tipo y número de documento del trabajador",
-          "icon": "DocumentTypeIcon",
-          "required": "true",
-          "idField": "one_two_documentType",
-          "contentType": "documentType",
-          "fieldType": "DocumentComponent",
-          "componentFields": {
-            "01": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "one_two_one_documentType",
-              "contentType": "documentType",
-              "fieldType": "Dropdown"
-            },
-            "02": {
-              "label": "Número de documento",
-              "description": "",
-              "idField": "one_two_two_number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          }
-        },
-        "03": {
-          "label": "Cargo a desempeñar",
-          "description": "Señala el cargo a ocupar por el trabajador de nuevo ingreso",
-          "required": "true",
-          "icon": "PositionIcon",
-          "idField": "one_three_additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        }
-      }
-    },
-    "02": {
-      "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica. Es importante identificar quien emitirá la orden de examen médico.",
-      "label": "Información del empleador",
-      "fields": {
-        "01": {
-          "label": "Tipo de empleador",
-          "description": "Seleccione el tipo de empleador",
-          "required": "true",
-          "icon": "PersonTypeIcon",
-          "idField": "two_one_personType",
-          "contentType": "personType",
-          "fieldType": "Picker"
-        },
-        "02": {
-          "label": "Nombre completo del empleador",
-          "description": "",
-          "idField": "two_two_name",
-          "contentType": "name",
-          "required": "true",
-          "icon": "NameIcon",
-          "fieldType": "NameComponent",
-          "componentFields": {
-            "01": {
-              "label": "Nombres",
-              "description": "",
-              "idField": "two_two_one_name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Apellidos",
-              "description": "",
-              "idField": "two_two_two_name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            }
-          },
-          "condition": {
-            "id": "two_one_personType",
-            "value": "persona natural"
-          }
-        },
-        "03": {
-          "label": "Documento",
-          "description": "Señala el tipo y número de documento del empleador",
-          "icon": "DocumentTypeIcon",
-          "required": "true",
-          "idField": "two_three_documentType",
-          "contentType": "documentType",
-          "fieldType": "DocumentComponent",
-          "componentFields": {
-            "01": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "two_three_one_documentType",
-              "contentType": "documentType",
-              "fieldType": "Dropdown"
-            },
-            "02": {
-              "label": "Número de documento",
-              "description": "",
-              "idField": "two_three_two_number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          },
-          "condition": {
-            "id": "two_one_personType",
-            "value": "persona natural"
-          }
-        },
-        "04": {
-          "label": "Información de la empresa",
-          "description": "Ingresa la razón social y nit de la compañía",
-          "required": "true",
-          "icon": "CompanyIcon",
-          "idField": "two_four_additional",
-          "contentType": "additional",
-          "fieldType": "CompanyDataComponent",
-          "componentFields": {
-            "01": {
-              "label": "Razón social",
-              "description": "",
-              "idField": "two_four_one_additional",
+              "icon": "PositionIcon",
+              "required": "true",
+              "idField": "one_two_additional",
               "contentType": "additional",
               "fieldType": "TextField"
-            },
-            "02": {
-              "label": "NIT",
-              "description": "",
-              "idField": "two_four_two_number",
-              "contentType": "number",
-              "fieldType": "TextField"
             }
           },
-          "condition": {
-            "id": "two_one_personType",
-            "value": "persona juridica"
-          }
-        },
-        "05": {
-          "label": "Nombre completo del representante legal",
-          "description": "",
-          "idField": "two_five_name",
-          "contentType": "name",
-          "required": "true",
-          "icon": "NameIcon",
-          "fieldType": "NameComponent",
-          "componentFields": {
-            "01": {
-              "label": "Nombres",
-              "description": "",
-              "idField": "two_five_one_name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            },
-            "02": {
-              "label": "Apellidos",
-              "description": "",
-              "idField": "two_five_two_name",
-              "contentType": "name",
-              "fieldType": "TextField"
-            }
+          "03": {
+            "label": "Fecha de ingreso",
+            "description": "Señala la fecha en la cual ingresó a su cargo",
+            "icon": "DateIcon",
+            "required": "true",
+            "idField": "one_three_date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
           },
-          "condition": {
-            "id": "two_one_personType",
-            "value": "persona juridica"
-          }
-        },
-        "06": {
-          "label": "Documento del representante legal",
-          "description": "Señala el tipo y número de documento del representante legal",
-          "idField": "two_six_documentType",
-          "contentType": "documentType",
-          "fieldType": "DocumentComponent",
-          "componentFields": {
-            "01": {
-              "label": "Tipo de documento",
-              "description": "",
-              "idField": "two_six_one_documentType",
-              "contentType": "documentType",
-              "fieldType": "Dropdown"
-            },
-            "02": {
-              "label": "Número de documento",
-              "description": "",
-              "idField": "two_six_two_number",
-              "contentType": "number",
-              "fieldType": "TextField"
-            }
-          },
-          "condition": {
-            "id": "two_one_personType",
-            "value": "persona juridica"
+          "04": {
+            "label": "Fecha de terminación",
+            "required": "true",
+            "icon": "DateIcon",
+            "description": "Señala la fecha en la cual entregará su cargo",
+            "idField": "one_four_date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
           }
         }
-      }
-    },
-    "03": {
-      "description": "Diligencia la siguiente información clave para la generación de tu documento",
-      "label": "Información general",
-      "fields": {
-        "01": {
-          "label": "Fecha",
-          "description": "Señala la fecha de presentación de la carta ante la entidad correspondiente",
-          "required": "true",
-          "icon": "DateIcon",
-          "idField": "three_one_date",
-          "contentType": "date",
-          "fieldType": "DatePicker"
-        },
-        "02": {
-          "label": "IPS",
-          "description": "Señala el instituto prestador de salud en el cual se realizará el examen médico",
-          "icon": "HealthIcon",
-          "required": "true",
-          "idField": "three_two_additional",
-          "contentType": "additional",
-          "fieldType": "TextField"
-        },
-        "03": {
-          "label": "Ciudad",
-          "description": "Señala la ciudad en la cual se realizará el examen médico",
-          "required": "true",
-          "icon": "LocationIcon",
-          "idField": "three_three_destinationcity",
-          "contentType": "destinationcity",
-          "fieldType": "TextField"
+      },
+      "02": {
+        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral con su trabajador durante el período de prueba. Podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "label": "Información del empleador",
+        "fields": {
+          "01": {
+            "label": "Tipo de empleador",
+            "description": "Seleccione el tipo de empleador",
+            "icon": "PersonTypeIcon",
+            "required": "true",
+            "idField": "two_one_personType",
+            "contentType": "personType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Nombre completo del empleador",
+            "description": "",
+            "idField": "two_two_name",
+            "contentType": "name",
+            "required": "true",
+            "icon": "NameIcon",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "two_two_one_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "two_two_two_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "two_one_personType",
+              "value": "persona natural"
+            }
+          },
+          "03": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del empleador",
+            "idField": "two_three_documentType",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "two_three_one_documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "two_three_two_number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "two_one_personType",
+              "value": "persona natural"
+            }
+          },
+          "04": {
+            "label": "Información de la empresa",
+            "description": "Ingresa la razón social y nit de la compañía",
+            "required": "true",
+            "icon": "CompanyIcon",
+            "idField": "two_four_additional",
+            "contentType": "additional",
+            "fieldType": "CompanyDataComponent",
+            "componentFields": {
+              "01": {
+                "label": "Razón social",
+                "description": "",
+                "idField": "two_four_one_additional",
+                "contentType": "additional",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "NIT",
+                "description": "",
+                "idField": "two_four_two_number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "two_one_personType",
+              "value": "persona juridica"
+            }
+          },
+          "05": {
+            "label": "Nombre completo del representante legal",
+            "description": "",
+            "idField": "two_five_name",
+            "contentType": "name",
+            "required": "true",
+            "icon": "NameIcon",
+            "fieldType": "NameComponent",
+            "componentFields": {
+              "01": {
+                "label": "Nombres",
+                "description": "",
+                "idField": "two_five_one_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Apellidos",
+                "description": "",
+                "idField": "two_five_two_name",
+                "contentType": "name",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "two_one_personType",
+              "value": "persona juridica"
+            }
+          },
+          "06": {
+            "label": "Documento del representante legal",
+            "description": "Señala el tipo y número de documento del representante legal",
+            "idField": "two_six_documentType",
+            "contentType": "documentType",
+            "fieldType": "DocumentComponent",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "two_six_one_documentType",
+                "contentType": "documentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "two_six_two_number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
+            },
+            "condition": {
+              "id": "two_one_personType",
+              "value": "persona juridica"
+            }
+          }
+        }
+      },
+      "03": {
+        "description": "Diligencia la siguiente información clave para la generación de tu documento",
+        "label": "Información general",
+        "fields": {
+          "01": {
+            "label": "Motivos",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "description": "Si deseas, podrás indicar las razones por las cuales el empleador desea finalizar el contrato.",
+            "idField": "three_one_additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "02": {
+            "label": "Fecha",
+            "description": "Señala la fecha de presentación del documento al trabajador",
+            "idField": "three_two_date",
+            "contentType": "date",
+            "required": "true",
+            "icon": "DateIcon",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Lugar",
+            "description": "",
+            "idField": "three_three_location",
+            "contentType": "location",
+            "required": "true",
+            "icon": "LocationIcon",
+            "fieldType": "LocationComponent",
+            "componentFields": {
+              "01": {
+                "label": "Departamento",
+                "description": "",
+                "idField": "three_three_one_department",
+                "contentType": "department",
+                "fieldType": "TextField"
+              },
+              "02": {
+                "label": "Ciudad",
+                "description": "",
+                "idField": "three_three_two_city",
+                "contentType": "city",
+                "fieldType": "TextField"
+              }
+            }
+          }
         }
       }
     }
   }
-}
+]

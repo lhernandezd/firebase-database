@@ -2211,5 +2211,30 @@
       "seconds": 1572495748,
       "nanoseconds": 231000000
     }
+  },
+  {
+    "availableFormats": "pdf/doc",
+    "category": "laboral",
+    "subcategory": "eTerminacion",
+    "countPages": 1,
+    "downloads": 1,
+    "description": "Por medio de este documento, el empleador comunica a su trabajador, durante el período de prueba, su deseo de no continuar la relación laboral.",
+    "descriptionURL": "",
+    "longDescription": "<p><strong>TERMINACIÓN DEL CONTRATO EN PERÍODO DE PRUEBA</strong></p><p>Por medio de este documento, el empleador comunica a su trabajador, durante el período de prueba, su deseo de no continuar la relación laboral. </p><p><strong>¿A quiénes va drigido el documento?</strong></p><p>Va dirigido a los empleadores, sean personas naturales o jurídicas, quienes, durante el período de prueba de un trabajador, finalizan su contrato de trabajo.</p><p><strong>¿Cómo utilizar este documento?</strong></p><p>El empleador o la persona que éste designe, deberá ingresar toda la información solicitada para efectos de llenar el documento y entregarle validez, y sólo para aquellos casos en los cuales la terminación del contrato se realice durante el período de prueba del trabajador. </p><p>Al diligenciar la información, el empleador debe indicar la fecha exacta en la cual el trabajador finalizará su labor, la cual corresponde a la pactada inicialmente en el contrato </p><p>Es importante tener en cuenta que, el término de presentación de este documento debe ser con 30 días de anticipación al vencimiento del plazo fijo pactado, y de lo contrario el contrato se prorrogará automáticamente de acuerdo a lo dispuesto en la Ley. </p>",
+    "isActive": true,
+    "name": "Terminación de contrato de trabajo en período de prueba",
+    "opened": 1,
+    "preview": "",
+    "price": 4990,
+    "rating": 0,
+    "version": "1.0",
+    "created": {
+      "seconds": 1572496570,
+      "nanoseconds": 951000000
+    },
+    "updated": {
+      "seconds": 1572496570,
+      "nanoseconds": 951000000
+    }
   }
 ]
