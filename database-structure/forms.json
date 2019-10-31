@@ -2,59 +2,102 @@
   {
     "category": "laboral",
     "subcategory": "eTerminacion",
-    "referenceId": "1ysQYfj2buovLa0ZQwXuLNhwz3Qvdtdab",
+    "referenceId": "1-u3ZI1JuvdxFSqBF912x163Xnu1KoYaw",
     "sections": {
       "01": {
-        "description": "Diligencia los siguientes datos acerca del trabajador. Es importante identificar la persona con la cual se finalizará la relación laboral.",
+        "description": "Diligencia los siguientes datos acerca del trabajador, quien presentará la carta de renuncia",
         "label": "Información del trabajador",
         "fields": {
           "01": {
-            "label": "Nombre completo del trabajador",
-            "description": "Ingrese el nombre completo del trabajador",
-            "icon": "NameIcon",
-            "required": "true",
-            "idField": "01-01-name",
+            "label": "Nombre completo",
+            "description": "",
+            "idField": "one_one_name",
             "contentType": "name",
             "fieldType": "NameComponent",
+            "required": "true",
+            "icon": "NameIcon",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "01-01-01-name",
+                "idField": "one_one_one_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "01-01-02-name",
+                "idField": "one_one_two_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
-            },
-            "02": {
-              "label": "Cargo desempeñado",
-              "description": "Ingrese el cargo desempeñado por el trabajador",
-              "required": "true",
-              "icon": "PositionIcon",
-              "idField": "01-02-additional",
-              "contentType": "additional",
-              "fieldType": "TextField"
+            }
+          },
+          "02": {
+            "label": "Documento",
+            "description": "Señala el tipo y número de documento del trabajador",
+            "idField": "one_two_majorDocumentType",
+            "contentType": "majorDocumentType",
+            "required": "true",
+            "icon": "DocumentTypeIcon",
+            "fieldType": "DocumentComponent",
+            "componentFields": {
+              "01": {
+                "label": "Tipo de documento",
+                "description": "",
+                "idField": "one_two_one_majorDocumentType",
+                "contentType": "majorDocumentType",
+                "fieldType": "Dropdown"
+              },
+              "02": {
+                "label": "Número de documento",
+                "description": "",
+                "idField": "one_two_two_number",
+                "contentType": "number",
+                "fieldType": "TextField"
+              }
             }
           },
           "03": {
-            "label": "Fecha de terminación",
-            "description": "Señala la fecha en la cual finalizará su contrato",
-            "idField": "01-03-date",
-            "contentType": "date",
-            "fieldType": "DatePicker",
+            "label": "Cargo desempeñado",
+            "description": "Ingrese el cargo desempeñado",
             "required": "true",
-            "icon": "DateIcon"
+            "icon": "PositionIcon",
+            "idField": "one_three_additional",
+            "contentType": "additional",
+            "fieldType": "TextField"
+          },
+          "04": {
+            "label": "Fecha de ingreso",
+            "description": "Selecciona la fecha en la cual ingresó a laborar",
+            "required": "true",
+            "icon": "DateIcon",
+            "idField": "one_four_date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "05": {
+            "label": "Número de contacto",
+            "description": "",
+            "idField": "one_five_number",
+            "required": "true",
+            "icon": "NumberIcon",
+            "contentType": "number",
+            "fieldType": "TextField"
+          },
+          "06": {
+            "label": "Dirección de notificaciones",
+            "description": "",
+            "idField": "one_six_address",
+            "contentType": "address",
+            "fieldType": "TextField",
+            "required": "true",
+            "icon": "AddressIcon"
           }
         }
       },
       "02": {
-        "description": "Selecciona el tipo de empleador, es decir, quien desea finalizar la relación laboral y podrá ser una persona natural o jurídica. A su vez, indica los datos solicitados.",
+        "description": "Selecciona el tipo de empleador, es decir, la parte contratante, quien podrá ser una persona natural o jurídica, e indica los datos solicitados.",
         "label": "Información del empleador",
         "fields": {
           "01": {
@@ -62,65 +105,62 @@
             "description": "Seleccione el tipo de empleador",
             "required": "true",
             "icon": "PersonTypeIcon",
-            "idField": "02-01-personType",
+            "idField": "two_one_personType",
             "contentType": "personType",
             "fieldType": "Picker"
           },
           "02": {
             "label": "Nombre completo del empleador",
-            "description": "",
-            "idField": "02-02-name",
+            "description": "Ingrese el nombre completo del empleador",
+            "idField": "two_two_name",
             "contentType": "name",
-            "required": "true",
-            "icon": "NameIcon",
             "fieldType": "NameComponent",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "02-02-01-name",
+                "idField": "two_two_one_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "02-02-02-name",
+                "idField": "two_two_two_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "two_one_personType",
               "value": "persona natural"
             }
           },
           "03": {
-            "label": "Documento",
-            "description": "Señala el tipo y número de documento del empleador",
-            "idField": "02-03-majorDocumentType",
-            "contentType": "majorDocumentType",
-            "fieldType": "DocumentComponent",
-            "icon": "DocumentTypeIcon",
+            "label": "Documento del empleador",
+            "description": "Ingresa los datos referentes a la identificación personal del empleador",
             "required": "true",
+            "icon": "DocumentTypeIcon",
+            "idField": "two_three_majorDocumentType",
+            "fieldType": "DocumentComponent",
             "componentFields": {
               "01": {
                 "label": "Tipo de documento",
                 "description": "",
-                "idField": "02-03-01-majorDocumentType",
+                "idField": "two_three_one_majorDocumentType",
                 "contentType": "majorDocumentType",
                 "fieldType": "Dropdown"
               },
               "02": {
-                "label": "Número de documento",
+                "label": "Numero del documento",
                 "description": "",
-                "idField": "02-03-02-number",
+                "idField": "two_three_two_number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "two_one_personType",
               "value": "persona natural"
             }
           },
@@ -129,123 +169,147 @@
             "description": "Ingresa la razón social y nit de la compañía",
             "required": "true",
             "icon": "CompanyIcon",
-            "idField": "02-04-additional",
+            "idField": "two_four_additional",
             "contentType": "additional",
             "fieldType": "CompanyDataComponent",
             "componentFields": {
               "01": {
                 "label": "Razón social",
                 "description": "",
-                "idField": "02-04-01-additional",
+                "idField": "two_four_one_additional",
                 "contentType": "additional",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "NIT",
                 "description": "",
-                "idField": "02-04-02-number",
+                "idField": "two_four_two_number",
                 "contentType": "number",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "two_one_personType",
               "value": "persona juridica"
             }
           },
           "05": {
-            "label": "Nombre completo del representante legal",
+            "label": "Nombre completo del jefe inmediato",
             "description": "",
-            "idField": "02-05-name",
+            "idField": "two_five_name",
             "contentType": "name",
-            "required": "true",
-            "icon": "NameIcon",
             "fieldType": "NameComponent",
             "componentFields": {
               "01": {
                 "label": "Nombres",
                 "description": "",
-                "idField": "02-05-01-name",
+                "idField": "two_five_one_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Apellidos",
                 "description": "",
-                "idField": "02-05-02-name",
+                "idField": "two_five_two_name",
                 "contentType": "name",
                 "fieldType": "TextField"
               }
             },
             "condition": {
-              "id": "02-01-personType",
+              "id": "two_one_personType",
               "value": "persona juridica"
             }
           },
           "06": {
-            "label": "Documento del representante legal",
-            "description": "Señala el tipo y número de documento del representante legal",
+            "label": "Cargo del jefe inmediato",
+            "description": "Ingrese el cargo del jefe inmediato",
             "required": "true",
-            "icon": "DocumentTypeIcon",
-            "idField": "02-07-majorDocumentType",
-            "contentType": "majorDocumentType",
-            "fieldType": "DocumentComponent",
-            "componentFields": {
-              "01": {
-                "label": "Tipo de documento",
-                "description": "",
-                "idField": "02-06-01-majorDocumentType",
-                "contentType": "majorDocumentType",
-                "fieldType": "Dropdown"
-              },
-              "02": {
-                "label": "Número de documento",
-                "description": "",
-                "idField": "02-06-02-number",
-                "contentType": "number",
-                "fieldType": "TextField"
-              }
-            },
+            "icon": "PositionIcon",
+            "idField": "two_six_name",
+            "contentType": "name",
+            "fieldType": "TextField",
             "condition": {
-              "id": "02-01-personType",
+              "id": "two_one_personType",
               "value": "persona juridica"
             }
           }
         }
       },
       "03": {
+        "description": "Descripción: En este paso deberá indicarse si los motivos de la renuncia son profesionales o personales. A su vez podrás exponer de manera más amplia las razones de la renuncia.",
+        "label": "Motivos",
+        "fields": {
+          "01": {
+            "label": "Tipo de motivo",
+            "description": "Señala el tipo de motivo por el cual presentarás la carta de renunica",
+            "required": "true",
+            "icon": "ReasonsIcon",
+            "idField": "three_one_reasonType",
+            "contentType": "reasonType",
+            "fieldType": "Picker"
+          },
+          "02": {
+            "label": "Ampliar explicación de motivos",
+            "description": "Ej. Otra oportunidad de trabajo, cambio de ciudad.",
+            "required": "false",
+            "icon": "ReasonsIcon",
+            "idField": "three_two_additional",
+            "contentType": "addittional",
+            "fieldType": "TextField"
+          }
+        }
+      },
+      "04": {
         "description": "Diligencia la siguiente información clave para la generación de tu documento",
         "label": "Información general",
         "fields": {
           "01": {
-            "label": "Fecha",
-            "description": "Señala la fecha de presentación del documento al trabajador",
-            "idField": "03-01-date",
-            "contentType": "date",
+            "label": "Irrevocabilidad",
+            "description": "Señala si tu renuncia es irrevocable o no",
             "required": "true",
-            "icon": "DateIcon",
-            "fieldType": "DatePicker"
+            "icon": "IrrevocabilityIcon",
+            "idField": "four_one_irrevocability",
+            "contentType": "irrevocability",
+            "fieldType": "Picker"
           },
           "02": {
+            "label": "Fecha de presentación",
+            "description": "Señala la fecha de presentación de la carta de renuncia",
+            "icon": "DateIcon",
+            "required": "true",
+            "idField": "four_two_date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "03": {
+            "label": "Entrega del cargo",
+            "description": "Señala la fecha en la cual el trabajador entregará el cargo",
+            "icon": "DateIcon",
+            "required": "true",
+            "idField": "four_three_date",
+            "contentType": "date",
+            "fieldType": "DatePicker"
+          },
+          "04": {
             "label": "Lugar",
             "description": "",
-            "idField": "03-02-location",
-            "contentType": "location",
-            "fieldType": "LocationComponent",
+            "idField": "four_four_location",
             "required": "true",
             "icon": "LocationIcon",
+            "contentType": "location",
+            "fieldType": "LocationComponent",
             "componentFields": {
               "01": {
                 "label": "Departamento",
                 "description": "",
-                "idField": "03-02-01-department",
+                "idField": "four_four_one_department",
                 "contentType": "department",
                 "fieldType": "TextField"
               },
               "02": {
                 "label": "Ciudad",
                 "description": "",
-                "idField": "03-02-02-city",
+                "idField": "four_four_two_city",
                 "contentType": "city",
                 "fieldType": "TextField"
               }
