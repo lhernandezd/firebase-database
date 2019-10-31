@@ -2,10 +2,10 @@
   {
     "category": "laboral",
     "subcategory": "cSolicitudesReclamos",
-    "referenceId": "12dQmdf5KSjHWiE0Plvr5yJaEQJpGAJE9",
+    "referenceId": "1EJDkBwtWRF9jH8aG9-FmZ3YqSUx1AhtI",
     "sections": {
       "01": {
-        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia",
+        "description": "Selecciona el tipo de empleador, si es una persona natural o jurídica, a quien se solicitará la licencia.",
         "label": "Información del empleador",
         "fields": {
           "01": {
@@ -231,7 +231,7 @@
             "contentType": "date",
             "fieldType": "DatePicker",
             "required": "true",
-            "icon": "DateIcon"
+            "Icon": "DateIcon"
           },
           "02": {
             "label": "Fecha de finalización",
@@ -240,7 +240,7 @@
             "contentType": "date",
             "fieldType": "DatePicker",
             "required": "true",
-            "icon": "DateIcon"
+            "Icon": "DateIcon"
           }
         }
       },
@@ -253,18 +253,14 @@
             "description": "Señala la fecha de presentación del documento",
             "idField": "four_one_date",
             "contentType": "date",
-            "fieldType": "DatePicker",
-            "required": "true",
-            "icon": "DateIcon"
+            "fieldType": "DatePicker"
           },
           "02": {
             "label": "Ciudad",
             "description": "Señala la ciudad de presentación del documento",
             "idField": "four_two_destinationcity",
             "contentType": "destinationcity",
-            "fieldType": "TextField",
-            "required": "true",
-            "icon": "AddressIcon"
+            "fieldType": "TextField"
           }
         }
       }
